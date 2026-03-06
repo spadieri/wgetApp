@@ -3,13 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'">
   <title>Wget App - Software Installer</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div id="app">
-    <aside id="sidebar"></aside>
-    <main id="content"></main>
+    <aside id="sidebar">
+      <div class="sidebar-title">Categorie</div>
+      <nav class="sidebar-nav" id="sidebar-nav"></nav>
+    </aside>
+    <main id="content">
+      <header id="header">
+        <h1 id="category-title">Browser & Internet</h1>
+        <div class="search-wrapper">
+          <input type="text" id="search" placeholder="Cerca software...">
+        </div>
+      </header>
+      <div id="cards-grid"></div>
+    </main>
   </div>
   <script src="renderer.js"></script>
 </body>

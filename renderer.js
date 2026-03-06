@@ -1,0 +1,412 @@
+// ============================================================
+// Wget App - Renderer Process
+// Handles UI rendering, user interaction, and IPC communication
+// ============================================================
+
+// ----- Icon Map -----
+const ICON_MAP = {
+  'globe': '\u{1F310}',
+  'code': '\u{1F4BB}',
+  'film': '\u{1F3AC}',
+  'tool': '\u{1F527}',
+  'shield': '\u{1F6E1}\uFE0F',
+  'message-circle': '\u{1F4AC}',
+  'file-text': '\u{1F4C4}',
+  'cpu': '\u2699\uFE0F'
+};
+
+// ----- State -----
+let currentCategory = null;
+let categories = [];
+const softwareData = {};
+const installedStatus = {};
+
+// ----- DOM References -----
+const sidebarNav = document.getElementById('sidebar-nav');
+const categoryTitle = document.getElementById('category-title');
+const cardsGrid = document.getElementById('cards-grid');
+const searchInput = document.getElementById('search');
+
+// ============================================================
+// Initialization
+// ============================================================
+
+async function init() {
+  try {
+    const response = await fetch('data/categories.json');
+    categories = await response.json();
+    renderSidebar(categories);
+
+    if (categories.length > 0) {
+      await selectCategory(categories[0].id);
+    }
+
+    setupProgressListener();
+    setupSearchHandler();
+  } catch (err) {
+    console.error('Failed to initialize app:', err);
+    showToast('Errore durante il caricamento delle categorie', 'error');
+  }
+}
+
+// ============================================================
+// Sidebar Rendering
+// ============================================================
+
+function renderSidebar(cats) {
+  sidebarNav.innerHTML = '';
+
+  cats.forEach((cat, index) => {
+    const btn = document.createElement('button');
+    btn.className = 'sidebar-tab';
+    if (index === 0) btn.classList.add('active');
+    btn.dataset.categoryId = cat.id;
+
+    const iconSpan = document.createElement('span');
+    iconSpan.className = 'tab-icon';
+    iconSpan.textContent = ICON_MAP[cat.icon] || cat.icon;
+
+    const labelSpan = document.createElement('span');
+    labelSpan.className = 'tab-label';
+    labelSpan.textContent = cat.name;
+
+    const countSpan = document.createElement('span');
+    countSpan.className = 'tab-count';
+    countSpan.textContent = '...';
+
+    btn.appendChild(iconSpan);
+    btn.appendChild(labelSpan);
+    btn.appendChild(countSpan);
+
+    btn.addEventListener('click', () => selectCategory(cat.id));
+
+    sidebarNav.appendChild(btn);
+
+    // Load count asynchronously
+    loadCategoryCount(cat.id, countSpan);
+  });
+}
+
+async function loadCategoryCount(categoryId, countSpan) {
+  try {
+    if (!softwareData[categoryId]) {
+      const response = await fetch(`data/${categoryId}.json`);
+      const data = await response.json();
+      softwareData[categoryId] = data;
+    }
+    countSpan.textContent = softwareData[categoryId].length;
+  } catch (err) {
+    countSpan.textContent = '0';
+  }
+}
+
+// ============================================================
+// Category Selection
+// ============================================================
+
+async function selectCategory(categoryId) {
+  currentCategory = categoryId;
+
+  // Update active tab in sidebar
+  const tabs = sidebarNav.querySelectorAll('.sidebar-tab');
+  tabs.forEach(tab => {
+    tab.classList.toggle('active', tab.dataset.categoryId === categoryId);
+  });
+
+  // Update header title
+  const cat = categories.find(c => c.id === categoryId);
+  if (cat) {
+    categoryTitle.textContent = cat.name;
+  }
+
+  // Clear search when changing categories
+  searchInput.value = '';
+
+  // Load category data if not cached
+  if (!softwareData[categoryId]) {
+    try {
+      const response = await fetch(`data/${categoryId}.json`);
+      softwareData[categoryId] = await response.json();
+    } catch (err) {
+      console.error(`Failed to load category data for ${categoryId}:`, err);
+      showToast('Errore nel caricamento dei dati', 'error');
+      softwareData[categoryId] = [];
+    }
+  }
+
+  // Check installed status via electronAPI
+  try {
+    if (window.electronAPI && window.electronAPI.checkInstalled) {
+      const results = await window.electronAPI.checkInstalled(softwareData[categoryId]);
+      if (results && typeof results === 'object') {
+        Object.assign(installedStatus, results);
+      }
+    }
+  } catch (err) {
+    console.error('Failed to check installed status:', err);
+  }
+
+  renderCards();
+}
+
+// ============================================================
+// Card Rendering
+// ============================================================
+
+function renderCards() {
+  cardsGrid.innerHTML = '';
+
+  const data = softwareData[currentCategory] || [];
+  const searchTerm = searchInput.value.trim().toLowerCase();
+
+  const filtered = searchTerm
+    ? data.filter(sw => sw.name.toLowerCase().includes(searchTerm))
+    : data;
+
+  if (filtered.length === 0) {
+    const emptyDiv = document.createElement('div');
+    emptyDiv.className = 'empty-state';
+    emptyDiv.innerHTML = `
+      <div class="empty-state-icon">\u{1F50D}</div>
+      <div class="empty-state-title">Nessun risultato</div>
+      <div class="empty-state-description">Nessun software trovato${searchTerm ? ' per "' + escapeHtml(searchTerm) + '"' : ''}.</div>
+    `;
+    cardsGrid.appendChild(emptyDiv);
+    return;
+  }
+
+  filtered.forEach(sw => {
+    const isInstalled = installedStatus[sw.id] === true;
+
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.dataset.id = sw.id;
+    card.dataset.name = sw.name;
+
+    if (isInstalled) {
+      card.classList.add('installed');
+    }
+
+    // Card header
+    const header = document.createElement('div');
+    header.className = 'card-header';
+
+    const nameSpan = document.createElement('span');
+    nameSpan.className = 'card-name';
+    nameSpan.textContent = sw.name;
+    header.appendChild(nameSpan);
+
+    if (isInstalled) {
+      const badge = document.createElement('span');
+      badge.className = 'installed-badge';
+      header.appendChild(badge);
+    }
+
+    // Description
+    const desc = document.createElement('p');
+    desc.className = 'card-description';
+    desc.textContent = sw.description;
+
+    // Footer
+    const footer = document.createElement('div');
+    footer.className = 'card-footer';
+
+    const sizeSpan = document.createElement('span');
+    sizeSpan.className = 'card-size';
+    sizeSpan.textContent = sw.size || '';
+    footer.appendChild(sizeSpan);
+
+    const progressText = document.createElement('span');
+    progressText.className = 'progress-text';
+    progressText.style.display = 'none';
+    footer.appendChild(progressText);
+
+    // Progress bar
+    const progressContainer = document.createElement('div');
+    progressContainer.className = 'progress-bar-container';
+
+    const progressBar = document.createElement('div');
+    progressBar.className = 'progress-bar';
+    progressContainer.appendChild(progressBar);
+
+    // Assemble card
+    card.appendChild(header);
+    card.appendChild(desc);
+    card.appendChild(footer);
+    card.appendChild(progressContainer);
+
+    // Click handler
+    card.addEventListener('click', () => handleDownload(sw, card));
+
+    cardsGrid.appendChild(card);
+  });
+}
+
+// ============================================================
+// Download Handler
+// ============================================================
+
+async function handleDownload(software, card) {
+  // If already downloading, ignore
+  if (card.classList.contains('downloading')) {
+    return;
+  }
+
+  // If already installed, show toast and return
+  if (installedStatus[software.id] === true) {
+    showToast('Gi\u00E0 installato', 'warning');
+    return;
+  }
+
+  // Start downloading state
+  card.classList.add('downloading');
+  card.classList.remove('error');
+
+  // Show indeterminate progress bar
+  const progressBar = card.querySelector('.progress-bar');
+  const progressText = card.querySelector('.progress-text');
+  if (progressBar) {
+    progressBar.classList.add('indeterminate');
+    progressBar.style.width = '';
+  }
+  if (progressText) {
+    progressText.style.display = '';
+    progressText.textContent = 'Download...';
+  }
+
+  try {
+    if (window.electronAPI && window.electronAPI.downloadSoftware) {
+      await window.electronAPI.downloadSoftware(software);
+      showToast('Download completato, avvio installazione...', 'success');
+
+      // Mark progress as complete
+      if (progressBar) {
+        progressBar.classList.remove('indeterminate');
+        progressBar.classList.add('complete');
+      }
+    } else {
+      throw new Error('electronAPI non disponibile');
+    }
+  } catch (err) {
+    console.error('Download failed:', err);
+    card.classList.add('error');
+    showToast(`Errore: ${err.message || 'Download fallito'}`, 'error');
+
+    // Reset progress bar on error
+    if (progressBar) {
+      progressBar.classList.remove('indeterminate');
+      progressBar.style.width = '0%';
+    }
+    if (progressText) {
+      progressText.style.display = 'none';
+    }
+  } finally {
+    card.classList.remove('downloading');
+  }
+}
+
+// ============================================================
+// Progress Listener
+// ============================================================
+
+function setupProgressListener() {
+  if (window.electronAPI && window.electronAPI.onDownloadProgress) {
+    window.electronAPI.onDownloadProgress((data) => {
+      const { softwareId, percent } = data;
+      const card = cardsGrid.querySelector(`.card[data-id="${softwareId}"]`);
+      if (!card) return;
+
+      const progressBar = card.querySelector('.progress-bar');
+      const progressText = card.querySelector('.progress-text');
+
+      if (progressBar && typeof percent === 'number') {
+        progressBar.classList.remove('indeterminate');
+        progressBar.style.width = `${Math.round(percent)}%`;
+      }
+
+      if (progressText && typeof percent === 'number') {
+        progressText.style.display = '';
+        progressText.textContent = `${Math.round(percent)}%`;
+      }
+    });
+  }
+}
+
+// ============================================================
+// Search Handler
+// ============================================================
+
+function setupSearchHandler() {
+  searchInput.addEventListener('input', () => {
+    const searchTerm = searchInput.value.trim().toLowerCase();
+    const cards = cardsGrid.querySelectorAll('.card');
+
+    // If renderCards was called (e.g., after category switch), cards reflect current data.
+    // For live filtering, hide/show existing cards by name.
+    if (cards.length === 0 && searchTerm) {
+      // No cards rendered yet, do a full re-render
+      renderCards();
+      return;
+    }
+
+    let visibleCount = 0;
+
+    cards.forEach(card => {
+      const name = (card.dataset.name || '').toLowerCase();
+      if (!searchTerm || name.includes(searchTerm)) {
+        card.style.display = '';
+        visibleCount++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    // Handle empty state
+    const existingEmpty = cardsGrid.querySelector('.empty-state');
+    if (visibleCount === 0 && !existingEmpty) {
+      const emptyDiv = document.createElement('div');
+      emptyDiv.className = 'empty-state';
+      emptyDiv.innerHTML = `
+        <div class="empty-state-icon">\u{1F50D}</div>
+        <div class="empty-state-title">Nessun risultato</div>
+        <div class="empty-state-description">Nessun software trovato per "${escapeHtml(searchTerm)}".</div>
+      `;
+      cardsGrid.appendChild(emptyDiv);
+    } else if (visibleCount > 0 && existingEmpty) {
+      existingEmpty.remove();
+    }
+  });
+}
+
+// ============================================================
+// Toast Notifications
+// ============================================================
+
+function showToast(message, type = 'info') {
+  const toast = document.createElement('div');
+  toast.className = `toast toast-${type}`;
+  toast.textContent = message;
+  document.body.appendChild(toast);
+
+  setTimeout(() => {
+    if (toast.parentNode) {
+      toast.remove();
+    }
+  }, 4000);
+}
+
+// ============================================================
+// Utility
+// ============================================================
+
+function escapeHtml(str) {
+  const div = document.createElement('div');
+  div.textContent = str;
+  return div.innerHTML;
+}
+
+// ============================================================
+// Start
+// ============================================================
+
+document.addEventListener('DOMContentLoaded', init);
