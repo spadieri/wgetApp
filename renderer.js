@@ -312,21 +312,21 @@ async function handleDownload(software, card) {
 function setupProgressListener() {
   if (window.electronAPI && window.electronAPI.onDownloadProgress) {
     window.electronAPI.onDownloadProgress((data) => {
-      const { softwareId, percent } = data;
-      const card = cardsGrid.querySelector(`.card[data-id="${softwareId}"]`);
+      const { id, progress } = data;
+      const card = cardsGrid.querySelector(`.card[data-id="${id}"]`);
       if (!card) return;
 
       const progressBar = card.querySelector('.progress-bar');
       const progressText = card.querySelector('.progress-text');
 
-      if (progressBar && typeof percent === 'number') {
+      if (progressBar && typeof progress === 'number') {
         progressBar.classList.remove('indeterminate');
-        progressBar.style.width = `${Math.round(percent)}%`;
+        progressBar.style.width = `${Math.round(progress)}%`;
       }
 
-      if (progressText && typeof percent === 'number') {
+      if (progressText && typeof progress === 'number') {
         progressText.style.display = '';
-        progressText.textContent = `${Math.round(percent)}%`;
+        progressText.textContent = `${Math.round(progress)}%`;
       }
     });
   }
