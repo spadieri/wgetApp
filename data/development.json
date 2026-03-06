@@ -23,8 +23,8 @@
     "id": "notepadplusplus",
     "name": "Notepad++",
     "description": "Editor di testo e codice sorgente gratuito con supporto plugin",
-    "downloadUrl": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/latest/download/npp.Installer.x64.exe",
-    "filename": "npp.Installer.x64.exe",
+    "downloadUrl": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.9.2/npp.8.9.2.Installer.x64.exe",
+    "filename": "npp.8.9.2.Installer.x64.exe",
     "detectRegistry": ["Notepad++"],
     "detectPaths": ["C:/Program Files/Notepad++/notepad++.exe"],
     "size": "~5MB"
