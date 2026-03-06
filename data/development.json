@@ -1,0 +1,502 @@
+[
+  {
+    "id": "vscode",
+    "name": "Visual Studio Code",
+    "description": "Editor di codice sorgente leggero e potente di Microsoft",
+    "downloadUrl": "https://code.visualstudio.com/sha/download?build=stable&os=win32-x64",
+    "filename": "VSCodeSetup-x64.exe",
+    "detectRegistry": ["Microsoft Visual Studio Code"],
+    "detectPaths": ["C:/Program Files/Microsoft VS Code/Code.exe"],
+    "size": "~95MB"
+  },
+  {
+    "id": "sublimetext",
+    "name": "Sublime Text",
+    "description": "Editor di testo sofisticato per codice e markup",
+    "downloadUrl": "https://www.sublimetext.com/download_thanks?target=win-x64",
+    "filename": "SublimeTextSetup-x64.exe",
+    "detectRegistry": ["Sublime Text"],
+    "detectPaths": ["C:/Program Files/Sublime Text/sublime_text.exe"],
+    "size": "~20MB"
+  },
+  {
+    "id": "notepadplusplus",
+    "name": "Notepad++",
+    "description": "Editor di testo e codice sorgente gratuito con supporto plugin",
+    "downloadUrl": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/latest/download/npp.Installer.x64.exe",
+    "filename": "npp.Installer.x64.exe",
+    "detectRegistry": ["Notepad++"],
+    "detectPaths": ["C:/Program Files/Notepad++/notepad++.exe"],
+    "size": "~5MB"
+  },
+  {
+    "id": "atom",
+    "name": "Atom",
+    "description": "Editor di testo hackerabile del 21° secolo di GitHub (archiviato)",
+    "downloadUrl": "https://github.com/atom/atom/releases/latest/download/AtomSetup-x64.exe",
+    "filename": "AtomSetup-x64.exe",
+    "detectRegistry": ["Atom"],
+    "detectPaths": ["C:/Users/%USERNAME%/AppData/Local/atom/atom.exe"],
+    "size": "~200MB"
+  },
+  {
+    "id": "intellij-idea-community",
+    "name": "IntelliJ IDEA Community",
+    "description": "IDE Java gratuito e open source di JetBrains",
+    "downloadUrl": "https://download.jetbrains.com/idea/ideaIC-2024.3.exe",
+    "filename": "ideaIC-2024.3.exe",
+    "detectRegistry": ["IntelliJ IDEA Community Edition"],
+    "detectPaths": ["C:/Program Files/JetBrains/IntelliJ IDEA Community Edition/bin/idea64.exe"],
+    "size": "~900MB"
+  },
+  {
+    "id": "pycharm-community",
+    "name": "PyCharm Community",
+    "description": "IDE Python gratuito e open source di JetBrains",
+    "downloadUrl": "https://download.jetbrains.com/python/pycharm-community-2024.3.exe",
+    "filename": "pycharm-community-2024.3.exe",
+    "detectRegistry": ["JetBrains PyCharm Community Edition"],
+    "detectPaths": ["C:/Program Files/JetBrains/PyCharm Community Edition/bin/pycharm64.exe"],
+    "size": "~500MB"
+  },
+  {
+    "id": "eclipse",
+    "name": "Eclipse IDE",
+    "description": "IDE open source per sviluppatori Java e multi-linguaggio",
+    "downloadUrl": "https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2024-12/R/eclipse-inst-jre-win64.exe",
+    "filename": "eclipse-inst-jre-win64.exe",
+    "detectRegistry": ["Eclipse IDE"],
+    "detectPaths": ["C:/eclipse/eclipse.exe"],
+    "size": "~55MB"
+  },
+  {
+    "id": "netbeans",
+    "name": "Apache NetBeans",
+    "description": "IDE open source per Java, PHP, C++ e altri linguaggi",
+    "downloadUrl": "https://dlcdn.apache.org/netbeans/netbeans-installers/24/Apache-NetBeans-24-bin-windows-x64.exe",
+    "filename": "Apache-NetBeans-24-bin-windows-x64.exe",
+    "detectRegistry": ["Apache NetBeans IDE"],
+    "detectPaths": ["C:/Program Files/NetBeans/netbeans/bin/netbeans64.exe"],
+    "size": "~500MB"
+  },
+  {
+    "id": "android-studio",
+    "name": "Android Studio",
+    "description": "IDE ufficiale di Google per lo sviluppo di app Android",
+    "downloadUrl": "https://redirector.gvt1.com/edgedl/android/studio/install/2024.2.1.12/android-studio-2024.2.1.12-windows.exe",
+    "filename": "android-studio-windows.exe",
+    "detectRegistry": ["Android Studio"],
+    "detectPaths": ["C:/Program Files/Android/Android Studio/bin/studio64.exe"],
+    "size": "~1.1GB"
+  },
+  {
+    "id": "git",
+    "name": "Git",
+    "description": "Sistema di controllo versione distribuito open source",
+    "downloadUrl": "https://github.com/git-for-windows/git/releases/latest/download/Git-2.47.1-64-bit.exe",
+    "filename": "Git-64-bit.exe",
+    "detectRegistry": ["Git"],
+    "detectPaths": ["C:/Program Files/Git/bin/git.exe"],
+    "size": "~65MB"
+  },
+  {
+    "id": "tortoisegit",
+    "name": "TortoiseGit",
+    "description": "Interfaccia grafica per Git integrata in Windows Explorer",
+    "downloadUrl": "https://download.tortoisegit.org/tgit/2.16.0.0/TortoiseGit-2.16.0.0-64bit.msi",
+    "filename": "TortoiseGit-64bit.msi",
+    "detectRegistry": ["TortoiseGit"],
+    "detectPaths": ["C:/Program Files/TortoiseGit/bin/TortoiseGitProc.exe"],
+    "size": "~22MB"
+  },
+  {
+    "id": "github-desktop",
+    "name": "GitHub Desktop",
+    "description": "Client desktop ufficiale per GitHub con interfaccia semplice",
+    "downloadUrl": "https://central.github.com/deployments/desktop/desktop/latest/win32",
+    "filename": "GitHubDesktopSetup-x64.exe",
+    "detectRegistry": ["GitHub Desktop"],
+    "detectPaths": ["C:/Users/%USERNAME%/AppData/Local/GitHubDesktop/GitHubDesktop.exe"],
+    "size": "~120MB"
+  },
+  {
+    "id": "sourcetree",
+    "name": "Sourcetree",
+    "description": "Client Git gratuito con interfaccia visiva di Atlassian",
+    "downloadUrl": "https://product-downloads.atlassian.com/software/sourcetree/windows/ga/SourceTreeSetup-3.4.21.exe",
+    "filename": "SourceTreeSetup.exe",
+    "detectRegistry": ["Sourcetree"],
+    "detectPaths": ["C:/Users/%USERNAME%/AppData/Local/SourceTree/SourceTree.exe"],
+    "size": "~35MB"
+  },
+  {
+    "id": "gitkraken",
+    "name": "GitKraken",
+    "description": "Client Git multi-piattaforma con interfaccia grafica avanzata",
+    "downloadUrl": "https://release.gitkraken.com/win64/GitKrakenSetup.exe",
+    "filename": "GitKrakenSetup.exe",
+    "detectRegistry": ["GitKraken"],
+    "detectPaths": ["C:/Users/%USERNAME%/AppData/Local/gitkraken/gitkraken.exe"],
+    "size": "~130MB"
+  },
+  {
+    "id": "nodejs",
+    "name": "Node.js LTS",
+    "description": "Runtime JavaScript lato server basato su V8 (versione LTS)",
+    "downloadUrl": "https://nodejs.org/dist/v22.12.0/node-v22.12.0-x64.msi",
+    "filename": "node-v22-x64.msi",
+    "detectRegistry": ["Node.js"],
+    "detectPaths": ["C:/Program Files/nodejs/node.exe"],
+    "size": "~30MB"
+  },
+  {
+    "id": "python",
+    "name": "Python",
+    "description": "Linguaggio di programmazione versatile e di alto livello",
+    "downloadUrl": "https://www.python.org/ftp/python/3.13.1/python-3.13.1-amd64.exe",
+    "filename": "python-3.13.1-amd64.exe",
+    "detectRegistry": ["Python 3"],
+    "detectPaths": ["C:/Python313/python.exe", "C:/Users/%USERNAME%/AppData/Local/Programs/Python/Python313/python.exe"],
+    "size": "~28MB"
+  },
+  {
+    "id": "ruby",
+    "name": "Ruby",
+    "description": "Linguaggio di programmazione dinamico orientato agli oggetti",
+    "downloadUrl": "https://github.com/oneclick/rubyinstaller2/releases/latest/download/rubyinstaller-devkit-3.3.6-1-x64.exe",
+    "filename": "rubyinstaller-devkit-3.3.6-1-x64.exe",
+    "detectRegistry": ["Ruby"],
+    "detectPaths": ["C:/Ruby33-x64/bin/ruby.exe"],
+    "size": "~155MB"
+  },
+  {
+    "id": "go",
+    "name": "Go",
+    "description": "Linguaggio di programmazione compilato e concorrente di Google",
+    "downloadUrl": "https://go.dev/dl/go1.23.4.windows-amd64.msi",
+    "filename": "go1.23.4.windows-amd64.msi",
+    "detectRegistry": ["Go Programming Language"],
+    "detectPaths": ["C:/Program Files/Go/bin/go.exe"],
+    "size": "~70MB"
+  },
+  {
+    "id": "rust",
+    "name": "Rust (rustup)",
+    "description": "Linguaggio di programmazione per prestazioni e sicurezza della memoria",
+    "downloadUrl": "https://static.rust-lang.org/rustup/dist/x86_64-pc-windows-msvc/rustup-init.exe",
+    "filename": "rustup-init.exe",
+    "detectRegistry": ["Rustup"],
+    "detectPaths": ["C:/Users/%USERNAME%/.cargo/bin/rustc.exe"],
+    "size": "~8MB"
+  },
+  {
+    "id": "php",
+    "name": "PHP",
+    "description": "Linguaggio di scripting lato server per lo sviluppo web",
+    "downloadUrl": "https://windows.php.net/downloads/releases/php-8.4.2-Win32-vs17-x64.zip",
+    "filename": "php-8.4.2-Win32-vs17-x64.zip",
+    "detectRegistry": [],
+    "detectPaths": ["C:/php/php.exe"],
+    "size": "~25MB"
+  },
+  {
+    "id": "java-jdk",
+    "name": "Java JDK",
+    "description": "Kit di sviluppo Java (Eclipse Temurin OpenJDK)",
+    "downloadUrl": "https://github.com/adoptium/temurin21-binaries/releases/latest/download/OpenJDK21U-jdk_x64_windows_hotspot.msi",
+    "filename": "OpenJDK21U-jdk_x64_windows_hotspot.msi",
+    "detectRegistry": ["Eclipse Temurin JDK"],
+    "detectPaths": ["C:/Program Files/Eclipse Adoptium/jdk-21/bin/java.exe"],
+    "size": "~180MB"
+  },
+  {
+    "id": "dotnet-sdk",
+    "name": ".NET SDK",
+    "description": "Kit di sviluppo per applicazioni .NET di Microsoft",
+    "downloadUrl": "https://download.visualstudio.microsoft.com/download/pr/dotnet-sdk-9.0-win-x64.exe",
+    "filename": "dotnet-sdk-9.0-win-x64.exe",
+    "detectRegistry": ["Microsoft .NET SDK"],
+    "detectPaths": ["C:/Program Files/dotnet/dotnet.exe"],
+    "size": "~220MB"
+  },
+  {
+    "id": "xampp",
+    "name": "XAMPP",
+    "description": "Distribuzione Apache con PHP, MySQL e Perl per sviluppo web locale",
+    "downloadUrl": "https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/8.2.12/xampp-windows-x64-8.2.12-0-VS16-installer.exe/download",
+    "filename": "xampp-windows-x64-installer.exe",
+    "detectRegistry": ["XAMPP"],
+    "detectPaths": ["C:/xampp/xampp-control.exe"],
+    "size": "~165MB"
+  },
+  {
+    "id": "wampserver",
+    "name": "WampServer",
+    "description": "Ambiente di sviluppo web Windows con Apache, MySQL e PHP",
+    "downloadUrl": "https://sourceforge.net/projects/wampserver/files/WampServer%203/WampServer%203.0.0/wampserver3.3.6_x64.exe/download",
+    "filename": "wampserver3_x64.exe",
+    "detectRegistry": ["WampServer"],
+    "detectPaths": ["C:/wamp64/wampmanager.exe"],
+    "size": "~600MB"
+  },
+  {
+    "id": "docker-desktop",
+    "name": "Docker Desktop",
+    "description": "Piattaforma per creare ed eseguire container su Windows",
+    "downloadUrl": "https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe",
+    "filename": "DockerDesktopInstaller.exe",
+    "detectRegistry": ["Docker Desktop"],
+    "detectPaths": ["C:/Program Files/Docker/Docker/Docker Desktop.exe"],
+    "size": "~550MB"
+  },
+  {
+    "id": "vagrant",
+    "name": "Vagrant",
+    "description": "Strumento per la creazione e gestione di ambienti virtuali di sviluppo",
+    "downloadUrl": "https://releases.hashicorp.com/vagrant/2.4.3/vagrant_2.4.3_windows_amd64.msi",
+    "filename": "vagrant_windows_amd64.msi",
+    "detectRegistry": ["Vagrant"],
+    "detectPaths": ["C:/HashiCorp/Vagrant/bin/vagrant.exe"],
+    "size": "~120MB"
+  },
+  {
+    "id": "virtualbox",
+    "name": "VirtualBox",
+    "description": "Software di virtualizzazione gratuito e open source di Oracle",
+    "downloadUrl": "https://download.virtualbox.org/virtualbox/7.1.4/VirtualBox-7.1.4-165100-Win.exe",
+    "filename": "VirtualBox-Win.exe",
+    "detectRegistry": ["Oracle VM VirtualBox"],
+    "detectPaths": ["C:/Program Files/Oracle/VirtualBox/VirtualBox.exe"],
+    "size": "~105MB"
+  },
+  {
+    "id": "podman-desktop",
+    "name": "Podman Desktop",
+    "description": "Strumento open source per gestire container senza daemon",
+    "downloadUrl": "https://github.com/containers/podman-desktop/releases/latest/download/podman-desktop-setup.exe",
+    "filename": "podman-desktop-setup.exe",
+    "detectRegistry": ["Podman Desktop"],
+    "detectPaths": ["C:/Users/%USERNAME%/AppData/Local/Programs/Podman Desktop/Podman Desktop.exe"],
+    "size": "~90MB"
+  },
+  {
+    "id": "cmake",
+    "name": "CMake",
+    "description": "Sistema di build multi-piattaforma open source",
+    "downloadUrl": "https://github.com/Kitware/CMake/releases/latest/download/cmake-3.31.3-windows-x86_64.msi",
+    "filename": "cmake-windows-x86_64.msi",
+    "detectRegistry": ["CMake"],
+    "detectPaths": ["C:/Program Files/CMake/bin/cmake.exe"],
+    "size": "~35MB"
+  },
+  {
+    "id": "mingw",
+    "name": "MinGW-w64",
+    "description": "Port di GCC per Windows per compilare programmi C/C++",
+    "downloadUrl": "https://github.com/niXman/mingw-builds-binaries/releases/latest/download/x86_64-14.2.0-release-posix-seh-ucrt-rt_v12-rev0.7z",
+    "filename": "x86_64-mingw-posix-seh.7z",
+    "detectRegistry": [],
+    "detectPaths": ["C:/mingw64/bin/gcc.exe"],
+    "size": "~55MB"
+  },
+  {
+    "id": "msys2",
+    "name": "MSYS2",
+    "description": "Ambiente Unix-like per Windows con gestore di pacchetti pacman",
+    "downloadUrl": "https://github.com/msys2/msys2-installer/releases/latest/download/msys2-x86_64-latest.exe",
+    "filename": "msys2-x86_64-latest.exe",
+    "detectRegistry": ["MSYS2"],
+    "detectPaths": ["C:/msys64/msys2.exe"],
+    "size": "~95MB"
+  },
+  {
+    "id": "cygwin",
+    "name": "Cygwin",
+    "description": "Ambiente Unix-like e strumenti a riga di comando per Windows",
+    "downloadUrl": "https://www.cygwin.com/setup-x86_64.exe",
+    "filename": "setup-x86_64.exe",
+    "detectRegistry": ["Cygwin"],
+    "detectPaths": ["C:/cygwin64/bin/bash.exe"],
+    "size": "~1MB (installer)"
+  },
+  {
+    "id": "windows-terminal",
+    "name": "Windows Terminal",
+    "description": "Terminale moderno di Microsoft con schede e personalizzazione",
+    "downloadUrl": "https://aka.ms/terminal",
+    "filename": "WindowsTerminal.msixbundle",
+    "detectRegistry": ["Windows Terminal"],
+    "detectPaths": ["C:/Program Files/WindowsApps/Microsoft.WindowsTerminal/wt.exe"],
+    "size": "~25MB"
+  },
+  {
+    "id": "alacritty",
+    "name": "Alacritty",
+    "description": "Emulatore di terminale accelerato tramite GPU, veloce e minimale",
+    "downloadUrl": "https://github.com/alacritty/alacritty/releases/latest/download/Alacritty-v0.14.0-installer.exe",
+    "filename": "Alacritty-installer.exe",
+    "detectRegistry": ["Alacritty"],
+    "detectPaths": ["C:/Program Files/Alacritty/alacritty.exe"],
+    "size": "~8MB"
+  },
+  {
+    "id": "hyper",
+    "name": "Hyper",
+    "description": "Terminale moderno basato su Electron con temi e plugin",
+    "downloadUrl": "https://releases.hyper.is/download/win",
+    "filename": "Hyper-Setup.exe",
+    "detectRegistry": ["Hyper"],
+    "detectPaths": ["C:/Users/%USERNAME%/AppData/Local/hyper/Hyper.exe"],
+    "size": "~75MB"
+  },
+  {
+    "id": "conemu",
+    "name": "ConEmu",
+    "description": "Emulatore di console avanzato per Windows con schede",
+    "downloadUrl": "https://github.com/Maximus5/ConEmu/releases/latest/download/ConEmuSetup.exe",
+    "filename": "ConEmuSetup.exe",
+    "detectRegistry": ["ConEmu"],
+    "detectPaths": ["C:/Program Files/ConEmu/ConEmu64.exe"],
+    "size": "~10MB"
+  },
+  {
+    "id": "cmder",
+    "name": "Cmder",
+    "description": "Emulatore di console portatile per Windows basato su ConEmu",
+    "downloadUrl": "https://github.com/cmderdev/cmder/releases/latest/download/cmder.zip",
+    "filename": "cmder.zip",
+    "detectRegistry": [],
+    "detectPaths": ["C:/cmder/Cmder.exe"],
+    "size": "~150MB"
+  },
+  {
+    "id": "wsl",
+    "name": "WSL (Windows Subsystem for Linux)",
+    "description": "Sottosistema Windows per eseguire distribuzioni Linux nativamente",
+    "downloadUrl": "https://aka.ms/wslstorepage",
+    "filename": "wsl_update_x64.msi",
+    "detectRegistry": ["Windows Subsystem for Linux"],
+    "detectPaths": ["C:/Windows/System32/wsl.exe"],
+    "size": "~15MB"
+  },
+  {
+    "id": "insomnia",
+    "name": "Insomnia",
+    "description": "Client REST e GraphQL per testare e debuggare API",
+    "downloadUrl": "https://github.com/Kong/insomnia/releases/latest/download/Insomnia.Core-10.2.0.exe",
+    "filename": "Insomnia.Core.exe",
+    "detectRegistry": ["Insomnia"],
+    "detectPaths": ["C:/Users/%USERNAME%/AppData/Local/insomnia/Insomnia.exe"],
+    "size": "~85MB"
+  },
+  {
+    "id": "postman",
+    "name": "Postman",
+    "description": "Piattaforma completa per lo sviluppo e il test di API",
+    "downloadUrl": "https://dl.pstmn.io/download/latest/win64",
+    "filename": "Postman-win64-Setup.exe",
+    "detectRegistry": ["Postman"],
+    "detectPaths": ["C:/Users/%USERNAME%/AppData/Local/Postman/Postman.exe"],
+    "size": "~180MB"
+  },
+  {
+    "id": "dbeaver",
+    "name": "DBeaver",
+    "description": "Client di database universale gratuito e open source",
+    "downloadUrl": "https://dbeaver.io/files/dbeaver-ce-latest-x86_64-setup.exe",
+    "filename": "dbeaver-ce-x86_64-setup.exe",
+    "detectRegistry": ["DBeaver Community"],
+    "detectPaths": ["C:/Program Files/DBeaver/dbeaver.exe"],
+    "size": "~120MB"
+  },
+  {
+    "id": "heidisql",
+    "name": "HeidiSQL",
+    "description": "Client leggero per MySQL, MariaDB, PostgreSQL e SQL Server",
+    "downloadUrl": "https://www.heidisql.com/installers/HeidiSQL_12.8.0.6908_Setup.exe",
+    "filename": "HeidiSQL_Setup.exe",
+    "detectRegistry": ["HeidiSQL"],
+    "detectPaths": ["C:/Program Files/HeidiSQL/heidisql.exe"],
+    "size": "~30MB"
+  },
+  {
+    "id": "mysql-workbench",
+    "name": "MySQL Workbench",
+    "description": "Strumento visivo per la progettazione e amministrazione di database MySQL",
+    "downloadUrl": "https://dev.mysql.com/get/Downloads/MySQLGUITools/mysql-workbench-community-8.0.40-winx64.msi",
+    "filename": "mysql-workbench-community-winx64.msi",
+    "detectRegistry": ["MySQL Workbench"],
+    "detectPaths": ["C:/Program Files/MySQL/MySQL Workbench 8.0 CE/MySQLWorkbench.exe"],
+    "size": "~45MB"
+  },
+  {
+    "id": "pgadmin",
+    "name": "pgAdmin",
+    "description": "Strumento di gestione e amministrazione per PostgreSQL",
+    "downloadUrl": "https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v8.14/windows/pgadmin4-8.14-x64.exe",
+    "filename": "pgadmin4-x64.exe",
+    "detectRegistry": ["pgAdmin 4"],
+    "detectPaths": ["C:/Program Files/pgAdmin 4/runtime/pgAdmin4.exe"],
+    "size": "~120MB"
+  },
+  {
+    "id": "mongodb-compass",
+    "name": "MongoDB Compass",
+    "description": "Interfaccia grafica ufficiale per MongoDB",
+    "downloadUrl": "https://downloads.mongodb.com/compass/mongodb-compass-1.44.7-win32-x64.exe",
+    "filename": "mongodb-compass-win32-x64.exe",
+    "detectRegistry": ["MongoDB Compass"],
+    "detectPaths": ["C:/Users/%USERNAME%/AppData/Local/MongoDBCompass/MongoDBCompass.exe"],
+    "size": "~140MB"
+  },
+  {
+    "id": "redis-desktop-manager",
+    "name": "Redis Desktop Manager",
+    "description": "Interfaccia grafica per gestire server Redis (ora RESP.app)",
+    "downloadUrl": "https://github.com/RedisInsight/RedisDesktopManager/releases/latest/download/resp-2024.5.exe",
+    "filename": "resp-2024.5.exe",
+    "detectRegistry": ["RESP.app"],
+    "detectPaths": ["C:/Program Files/RESP.app/resp.exe"],
+    "size": "~45MB"
+  },
+  {
+    "id": "fiddler",
+    "name": "Fiddler Classic",
+    "description": "Proxy di debug per il traffico HTTP/HTTPS di Telerik",
+    "downloadUrl": "https://telerik-fiddler.s3.amazonaws.com/fiddler/FiddlerSetup.exe",
+    "filename": "FiddlerSetup.exe",
+    "detectRegistry": ["Fiddler"],
+    "detectPaths": ["C:/Users/%USERNAME%/AppData/Local/Programs/Fiddler/Fiddler.exe"],
+    "size": "~8MB"
+  },
+  {
+    "id": "charles-proxy",
+    "name": "Charles Proxy",
+    "description": "Proxy HTTP per monitorare e intercettare il traffico di rete",
+    "downloadUrl": "https://www.charlesproxy.com/assets/release/4.6.7/charles-proxy-4.6.7-win64.msi",
+    "filename": "charles-proxy-win64.msi",
+    "detectRegistry": ["Charles"],
+    "detectPaths": ["C:/Program Files/Charles/Charles.exe"],
+    "size": "~60MB"
+  },
+  {
+    "id": "wireshark",
+    "name": "Wireshark",
+    "description": "Analizzatore di protocolli di rete open source",
+    "downloadUrl": "https://2.na.dl.wireshark.org/win64/Wireshark-4.4.2-x64.exe",
+    "filename": "Wireshark-x64.exe",
+    "detectRegistry": ["Wireshark"],
+    "detectPaths": ["C:/Program Files/Wireshark/Wireshark.exe"],
+    "size": "~85MB"
+  },
+  {
+    "id": "beyond-compare",
+    "name": "Beyond Compare",
+    "description": "Strumento professionale per confronto e unione di file e cartelle",
+    "downloadUrl": "https://www.scootersoftware.com/files/BCompare-5.0.4.30422_x64.exe",
+    "filename": "BCompare-x64.exe",
+    "detectRegistry": ["Beyond Compare"],
+    "detectPaths": ["C:/Program Files/Beyond Compare 5/BCompare.exe"],
+    "size": "~35MB"
+  }
+]

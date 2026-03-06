@@ -1,0 +1,10 @@
+[
+  { "id": "browsers", "name": "Browser & Internet", "icon": "globe" },
+  { "id": "development", "name": "Sviluppo", "icon": "code" },
+  { "id": "multimedia", "name": "Multimedia", "icon": "film" },
+  { "id": "utilities", "name": "Utilità", "icon": "tool" },
+  { "id": "security", "name": "Sicurezza", "icon": "shield" },
+  { "id": "communication", "name": "Comunicazione", "icon": "message-circle" },
+  { "id": "office", "name": "Office & Produttività", "icon": "file-text" },
+  { "id": "system", "name": "Sistema", "icon": "cpu" }
+]

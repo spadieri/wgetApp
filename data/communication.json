@@ -1,0 +1,502 @@
+[
+  {
+    "id": "discord",
+    "name": "Discord",
+    "description": "Chat vocale e testuale per gaming e community",
+    "downloadUrl": "https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x64",
+    "filename": "DiscordSetup.exe",
+    "detectRegistry": ["Discord"],
+    "detectPaths": ["C:/Users/Pd85/AppData/Local/Discord/Update.exe"],
+    "size": "~80MB"
+  },
+  {
+    "id": "telegram",
+    "name": "Telegram Desktop",
+    "description": "Messaggistica veloce e sicura basata su cloud",
+    "downloadUrl": "https://telegram.org/dl/desktop/win64",
+    "filename": "tsetup-x64.exe",
+    "detectRegistry": ["Telegram Desktop"],
+    "detectPaths": ["C:/Users/Pd85/AppData/Roaming/Telegram Desktop/Telegram.exe"],
+    "size": "~40MB"
+  },
+  {
+    "id": "whatsapp",
+    "name": "WhatsApp Desktop",
+    "description": "Client desktop per la messaggistica WhatsApp",
+    "downloadUrl": "https://web.whatsapp.com/desktop/windows/release/x64/WhatsAppSetup.exe",
+    "filename": "WhatsAppSetup.exe",
+    "detectRegistry": ["WhatsApp"],
+    "detectPaths": ["C:/Users/Pd85/AppData/Local/WhatsApp/WhatsApp.exe"],
+    "size": "~150MB"
+  },
+  {
+    "id": "signal",
+    "name": "Signal Desktop",
+    "description": "Messaggistica crittografata end-to-end per la privacy",
+    "downloadUrl": "https://updates.signal.org/desktop/signal-desktop-win-7.34.0.exe",
+    "filename": "signal-desktop-win.exe",
+    "detectRegistry": ["Signal"],
+    "detectPaths": ["C:/Users/Pd85/AppData/Local/Programs/signal-desktop/Signal.exe"],
+    "size": "~130MB"
+  },
+  {
+    "id": "slack",
+    "name": "Slack",
+    "description": "Piattaforma di comunicazione per team e aziende",
+    "downloadUrl": "https://slack.com/ssb/download-win64-msi",
+    "filename": "SlackSetup.msi",
+    "detectRegistry": ["Slack"],
+    "detectPaths": ["C:/Users/Pd85/AppData/Local/slack/slack.exe"],
+    "size": "~120MB"
+  },
+  {
+    "id": "teams",
+    "name": "Microsoft Teams",
+    "description": "Piattaforma di collaborazione e videoconferenza Microsoft",
+    "downloadUrl": "https://go.microsoft.com/fwlink/?linkid=2196106&clcid=0x409&culture=en-us&country=us",
+    "filename": "MSTeamsSetup.exe",
+    "detectRegistry": ["Microsoft Teams"],
+    "detectPaths": ["C:/Users/Pd85/AppData/Local/Microsoft/Teams/current/Teams.exe"],
+    "size": "~150MB"
+  },
+  {
+    "id": "zoom",
+    "name": "Zoom",
+    "description": "Videoconferenze e riunioni online per lavoro e studio",
+    "downloadUrl": "https://zoom.us/client/latest/ZoomInstallerFull.exe?archType=x64",
+    "filename": "ZoomInstallerFull.exe",
+    "detectRegistry": ["Zoom"],
+    "detectPaths": ["C:/Users/Pd85/AppData/Roaming/Zoom/bin/Zoom.exe"],
+    "size": "~90MB"
+  },
+  {
+    "id": "google-meet",
+    "name": "Google Meet",
+    "description": "Videoconferenze gratuite integrate con Google Workspace",
+    "downloadUrl": "https://meet.google.com/",
+    "filename": "",
+    "detectRegistry": [],
+    "detectPaths": [],
+    "size": "Web App"
+  },
+  {
+    "id": "skype",
+    "name": "Skype",
+    "description": "Chiamate vocali, video e messaggistica istantanea",
+    "downloadUrl": "https://go.skype.com/windows.desktop.download",
+    "filename": "Skype-Setup.exe",
+    "detectRegistry": ["Skype"],
+    "detectPaths": ["C:/Program Files/Microsoft/Skype for Desktop/Skype.exe"],
+    "size": "~80MB"
+  },
+  {
+    "id": "viber",
+    "name": "Viber",
+    "description": "Messaggistica e chiamate gratuite con crittografia end-to-end",
+    "downloadUrl": "https://download.cdn.viber.com/desktop/windows/ViberSetup.exe",
+    "filename": "ViberSetup.exe",
+    "detectRegistry": ["Viber"],
+    "detectPaths": ["C:/Users/Pd85/AppData/Local/Viber/Viber.exe"],
+    "size": "~120MB"
+  },
+  {
+    "id": "line",
+    "name": "LINE",
+    "description": "App di messaggistica popolare in Asia con sticker e giochi",
+    "downloadUrl": "https://desktop.line-scdn.net/win/new/LineInst.exe",
+    "filename": "LineInst.exe",
+    "detectRegistry": ["LINE"],
+    "detectPaths": ["C:/Users/Pd85/AppData/Local/LINE/bin/LineLauncher.exe"],
+    "size": "~100MB"
+  },
+  {
+    "id": "wechat",
+    "name": "WeChat",
+    "description": "App di messaggistica e social media cinese multi-funzionale",
+    "downloadUrl": "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe",
+    "filename": "WeChatSetup.exe",
+    "detectRegistry": ["WeChat"],
+    "detectPaths": ["C:/Program Files/Tencent/WeChat/WeChat.exe"],
+    "size": "~150MB"
+  },
+  {
+    "id": "element",
+    "name": "Element (Matrix)",
+    "description": "Client di messaggistica decentralizzato basato su protocollo Matrix",
+    "downloadUrl": "https://packages.riot.im/desktop/install/win32/x64/Element%20Setup.exe",
+    "filename": "Element Setup.exe",
+    "detectRegistry": ["Element"],
+    "detectPaths": ["C:/Users/Pd85/AppData/Local/element-desktop/Element.exe"],
+    "size": "~80MB"
+  },
+  {
+    "id": "jitsi-meet",
+    "name": "Jitsi Meet",
+    "description": "Videoconferenze open source gratuite senza registrazione",
+    "downloadUrl": "https://github.com/jitsi/jitsi-meet-electron/releases/latest/download/jitsi-meet.exe",
+    "filename": "jitsi-meet.exe",
+    "detectRegistry": ["Jitsi Meet"],
+    "detectPaths": ["C:/Users/Pd85/AppData/Local/Programs/jitsi-meet/Jitsi Meet.exe"],
+    "size": "~90MB"
+  },
+  {
+    "id": "mumble",
+    "name": "Mumble",
+    "description": "Software di chat vocale open source a bassa latenza per gaming",
+    "downloadUrl": "https://github.com/mumble-voip/mumble/releases/latest/download/mumble_client-1.5.634.0.winx64.msi",
+    "filename": "mumble_client.msi",
+    "detectRegistry": ["Mumble"],
+    "detectPaths": ["C:/Program Files/Mumble/client/mumble.exe"],
+    "size": "~30MB"
+  },
+  {
+    "id": "teamspeak",
+    "name": "TeamSpeak",
+    "description": "Comunicazione vocale professionale per gaming e community",
+    "downloadUrl": "https://files.teamspeak-services.com/pre_releases/client/5.0.0-beta77/teamspeak-client.msi",
+    "filename": "teamspeak-client.msi",
+    "detectRegistry": ["TeamSpeak"],
+    "detectPaths": ["C:/Program Files/TeamSpeak/TeamSpeak.exe"],
+    "size": "~90MB"
+  },
+  {
+    "id": "ventrilo",
+    "name": "Ventrilo",
+    "description": "Software di comunicazione vocale classico per gaming",
+    "downloadUrl": "https://www.ventrilo.com/dlprod.php?id=403",
+    "filename": "Ventrilo-4.1.2-Windows-x64.exe",
+    "detectRegistry": ["Ventrilo Client"],
+    "detectPaths": ["C:/Program Files/Ventrilo/Ventrilo.exe"],
+    "size": "~10MB"
+  },
+  {
+    "id": "guilded",
+    "name": "Guilded",
+    "description": "Piattaforma di chat per community di gaming con strumenti avanzati",
+    "downloadUrl": "https://www.guilded.gg/downloads/app/win32/ia32",
+    "filename": "Guilded-Setup.exe",
+    "detectRegistry": ["Guilded"],
+    "detectPaths": ["C:/Users/Pd85/AppData/Local/Guilded/Guilded.exe"],
+    "size": "~80MB"
+  },
+  {
+    "id": "revolt",
+    "name": "Revolt",
+    "description": "Piattaforma di chat open source alternativa a Discord",
+    "downloadUrl": "https://github.com/nicoo/revolt-desktop/releases/latest/download/revolt-desktop-setup.exe",
+    "filename": "revolt-desktop-setup.exe",
+    "detectRegistry": ["Revolt"],
+    "detectPaths": ["C:/Users/Pd85/AppData/Local/Programs/revolt-desktop/Revolt.exe"],
+    "size": "~70MB"
+  },
+  {
+    "id": "franz",
+    "name": "Franz",
+    "description": "Aggregatore di servizi di messaggistica in un'unica app",
+    "downloadUrl": "https://github.com/nicoo/franz/releases/latest/download/Franz-Setup.exe",
+    "filename": "Franz-Setup.exe",
+    "detectRegistry": ["Franz"],
+    "detectPaths": ["C:/Users/Pd85/AppData/Local/Programs/franz/Franz.exe"],
+    "size": "~85MB"
+  },
+  {
+    "id": "rambox",
+    "name": "Rambox",
+    "description": "Workspace aggregatore per app di messaggistica e email",
+    "downloadUrl": "https://rambox.app/api/download?os=windows&package=exe",
+    "filename": "Rambox-Setup.exe",
+    "detectRegistry": ["Rambox"],
+    "detectPaths": ["C:/Users/Pd85/AppData/Local/Programs/rambox/Rambox.exe"],
+    "size": "~100MB"
+  },
+  {
+    "id": "ferdi",
+    "name": "Ferdi",
+    "description": "Aggregatore di servizi di messaggistica fork di Franz",
+    "downloadUrl": "https://github.com/getferdi/ferdi/releases/latest/download/Ferdi-Setup.exe",
+    "filename": "Ferdi-Setup.exe",
+    "detectRegistry": ["Ferdi"],
+    "detectPaths": ["C:/Users/Pd85/AppData/Local/Programs/ferdi/Ferdi.exe"],
+    "size": "~85MB"
+  },
+  {
+    "id": "ferdium",
+    "name": "Ferdium",
+    "description": "Aggregatore di messaggistica open source, successore di Ferdi",
+    "downloadUrl": "https://github.com/ferdium/ferdium-app/releases/latest/download/Ferdium-Setup.exe",
+    "filename": "Ferdium-Setup.exe",
+    "detectRegistry": ["Ferdium"],
+    "detectPaths": ["C:/Users/Pd85/AppData/Local/Programs/ferdium/Ferdium.exe"],
+    "size": "~90MB"
+  },
+  {
+    "id": "beeper",
+    "name": "Beeper",
+    "description": "App universale che unifica tutte le piattaforme di messaggistica",
+    "downloadUrl": "https://download.beeper.com/windows/appinstaller/x64",
+    "filename": "Beeper-Setup.exe",
+    "detectRegistry": ["Beeper"],
+    "detectPaths": ["C:/Users/Pd85/AppData/Local/Programs/beeper/Beeper.exe"],
+    "size": "~100MB"
+  },
+  {
+    "id": "pidgin",
+    "name": "Pidgin",
+    "description": "Client di messaggistica multi-protocollo open source",
+    "downloadUrl": "https://sourceforge.net/projects/pidgin/files/Pidgin/2.14.13/pidgin-2.14.13-offline.exe/download",
+    "filename": "pidgin-2.14.13-offline.exe",
+    "detectRegistry": ["Pidgin"],
+    "detectPaths": ["C:/Program Files (x86)/Pidgin/pidgin.exe"],
+    "size": "~50MB"
+  },
+  {
+    "id": "miranda-im",
+    "name": "Miranda IM",
+    "description": "Client di messaggistica istantanea leggero e modulare",
+    "downloadUrl": "https://www.miranda-ng.org/distr/stable/miranda-ng-v0.96.3-x64.exe",
+    "filename": "miranda-ng.exe",
+    "detectRegistry": ["Miranda NG"],
+    "detectPaths": ["C:/Program Files/Miranda NG/miranda64.exe"],
+    "size": "~30MB"
+  },
+  {
+    "id": "hexchat",
+    "name": "HexChat",
+    "description": "Client IRC gratuito e open source per Windows",
+    "downloadUrl": "https://github.com/hexchat/hexchat/releases/latest/download/HexChat-2.16.2-x64.exe",
+    "filename": "HexChat-2.16.2-x64.exe",
+    "detectRegistry": ["HexChat"],
+    "detectPaths": ["C:/Program Files/HexChat/hexchat.exe"],
+    "size": "~15MB"
+  },
+  {
+    "id": "mirc",
+    "name": "mIRC",
+    "description": "Client IRC classico per Windows con scripting integrato",
+    "downloadUrl": "https://www.mirc.com/get.php",
+    "filename": "mirc.exe",
+    "detectRegistry": ["mIRC"],
+    "detectPaths": ["C:/Program Files/mIRC/mirc.exe"],
+    "size": "~5MB"
+  },
+  {
+    "id": "thunderbird",
+    "name": "Mozilla Thunderbird",
+    "description": "Client email open source con calendario e gestione contatti",
+    "downloadUrl": "https://download.mozilla.org/?product=thunderbird-latest&os=win64&lang=it",
+    "filename": "Thunderbird Setup.exe",
+    "detectRegistry": ["Mozilla Thunderbird"],
+    "detectPaths": ["C:/Program Files/Mozilla Thunderbird/thunderbird.exe"],
+    "size": "~55MB"
+  },
+  {
+    "id": "mailspring",
+    "name": "Mailspring",
+    "description": "Client email moderno e veloce con interfaccia elegante",
+    "downloadUrl": "https://updates.getmailspring.com/download?platform=win32",
+    "filename": "Mailspring-Setup.exe",
+    "detectRegistry": ["Mailspring"],
+    "detectPaths": ["C:/Users/Pd85/AppData/Local/Mailspring/mailspring.exe"],
+    "size": "~90MB"
+  },
+  {
+    "id": "em-client",
+    "name": "eM Client",
+    "description": "Client email completo con calendario, contatti e chat",
+    "downloadUrl": "https://www.emclient.com/dist/latest/setup.msi",
+    "filename": "setup.msi",
+    "detectRegistry": ["eM Client"],
+    "detectPaths": ["C:/Program Files (x86)/eM Client/MailClient.exe"],
+    "size": "~85MB"
+  },
+  {
+    "id": "bluemail",
+    "name": "BlueMail",
+    "description": "Client email gratuito con supporto multi-account",
+    "downloadUrl": "https://download.bluemail.me/BlueMail/dists/BlueMail-Setup.exe",
+    "filename": "BlueMail-Setup.exe",
+    "detectRegistry": ["BlueMail"],
+    "detectPaths": ["C:/Users/Pd85/AppData/Local/Programs/bluemail/BlueMail.exe"],
+    "size": "~80MB"
+  },
+  {
+    "id": "spark",
+    "name": "Spark Mail",
+    "description": "Client email intelligente con inbox prioritaria e collaborazione",
+    "downloadUrl": "https://downloads.sparkmailapp.com/Spark3/win/dist/Spark.exe",
+    "filename": "Spark.exe",
+    "detectRegistry": ["Spark"],
+    "detectPaths": ["C:/Users/Pd85/AppData/Local/Spark/Spark.exe"],
+    "size": "~100MB"
+  },
+  {
+    "id": "protonmail-bridge",
+    "name": "ProtonMail Bridge",
+    "description": "Bridge per usare ProtonMail con client email desktop",
+    "downloadUrl": "https://proton.me/download/bridge/Bridge-Installer.exe",
+    "filename": "Bridge-Installer.exe",
+    "detectRegistry": ["Proton Mail Bridge"],
+    "detectPaths": ["C:/Users/Pd85/AppData/Local/Programs/proton-mail-bridge/bridge.exe"],
+    "size": "~60MB"
+  },
+  {
+    "id": "tutanota",
+    "name": "Tutanota Desktop",
+    "description": "Client email crittografato per comunicazioni sicure e private",
+    "downloadUrl": "https://app.tuta.com/desktop/tutanota-desktop-win.exe",
+    "filename": "tutanota-desktop-win.exe",
+    "detectRegistry": ["Tutanota Desktop"],
+    "detectPaths": ["C:/Users/Pd85/AppData/Local/Programs/tutanota-desktop/Tutanota Desktop.exe"],
+    "size": "~100MB"
+  },
+  {
+    "id": "notion",
+    "name": "Notion",
+    "description": "Workspace all-in-one per note, wiki, database e gestione progetti",
+    "downloadUrl": "https://www.notion.so/desktop/windows/download",
+    "filename": "Notion-Setup.exe",
+    "detectRegistry": ["Notion"],
+    "detectPaths": ["C:/Users/Pd85/AppData/Local/Programs/Notion/Notion.exe"],
+    "size": "~120MB"
+  },
+  {
+    "id": "obsidian",
+    "name": "Obsidian",
+    "description": "App per appunti basata su Markdown con collegamenti tra note",
+    "downloadUrl": "https://github.com/obsidianmd/obsidian-releases/releases/latest/download/Obsidian.exe",
+    "filename": "Obsidian.exe",
+    "detectRegistry": ["Obsidian"],
+    "detectPaths": ["C:/Users/Pd85/AppData/Local/Obsidian/Obsidian.exe"],
+    "size": "~80MB"
+  },
+  {
+    "id": "joplin",
+    "name": "Joplin",
+    "description": "App di note-taking open source con sincronizzazione e crittografia",
+    "downloadUrl": "https://github.com/laurent22/joplin/releases/latest/download/Joplin-Setup.exe",
+    "filename": "Joplin-Setup.exe",
+    "detectRegistry": ["Joplin"],
+    "detectPaths": ["C:/Users/Pd85/AppData/Local/Programs/Joplin/Joplin.exe"],
+    "size": "~180MB"
+  },
+  {
+    "id": "standard-notes",
+    "name": "Standard Notes",
+    "description": "App di note crittografate end-to-end semplice e sicura",
+    "downloadUrl": "https://github.com/nicoo/standardnotes/releases/latest/download/Standard-Notes-Setup.exe",
+    "filename": "Standard-Notes-Setup.exe",
+    "detectRegistry": ["Standard Notes"],
+    "detectPaths": ["C:/Users/Pd85/AppData/Local/Programs/standard-notes/Standard Notes.exe"],
+    "size": "~90MB"
+  },
+  {
+    "id": "simplenote",
+    "name": "Simplenote",
+    "description": "App di note minimalista e gratuita con sincronizzazione cloud",
+    "downloadUrl": "https://github.com/Automattic/simplenote-electron/releases/latest/download/Simplenote-Setup.exe",
+    "filename": "Simplenote-Setup.exe",
+    "detectRegistry": ["Simplenote"],
+    "detectPaths": ["C:/Users/Pd85/AppData/Local/Programs/simplenote/Simplenote.exe"],
+    "size": "~75MB"
+  },
+  {
+    "id": "onenote",
+    "name": "Microsoft OneNote",
+    "description": "App di note digitali Microsoft con sincronizzazione OneDrive",
+    "downloadUrl": "https://www.onenote.com/download",
+    "filename": "",
+    "detectRegistry": ["Microsoft OneNote"],
+    "detectPaths": ["C:/Program Files/Microsoft Office/root/Office16/ONENOTE.EXE"],
+    "size": "Web App"
+  },
+  {
+    "id": "evernote",
+    "name": "Evernote",
+    "description": "App di note e organizzazione con ricerca potente e web clipper",
+    "downloadUrl": "https://evernote.com/download",
+    "filename": "Evernote-Setup.exe",
+    "detectRegistry": ["Evernote"],
+    "detectPaths": ["C:/Users/Pd85/AppData/Local/Programs/Evernote/Evernote.exe"],
+    "size": "~130MB"
+  },
+  {
+    "id": "todoist",
+    "name": "Todoist",
+    "description": "Gestore di attività e to-do list con progetti e priorità",
+    "downloadUrl": "https://todoist.com/windows_app",
+    "filename": "Todoist-Setup.exe",
+    "detectRegistry": ["Todoist"],
+    "detectPaths": ["C:/Users/Pd85/AppData/Local/Programs/todoist/Todoist.exe"],
+    "size": "~80MB"
+  },
+  {
+    "id": "ticktick",
+    "name": "TickTick",
+    "description": "App di gestione attività con timer Pomodoro e calendario",
+    "downloadUrl": "https://ticktick.com/static/getApp/download?type=win",
+    "filename": "TickTick-Setup.exe",
+    "detectRegistry": ["TickTick"],
+    "detectPaths": ["C:/Users/Pd85/AppData/Local/Programs/ticktick/TickTick.exe"],
+    "size": "~80MB"
+  },
+  {
+    "id": "trello",
+    "name": "Trello",
+    "description": "Strumento di gestione progetti con bacheche Kanban visive",
+    "downloadUrl": "https://trello.com/platforms",
+    "filename": "",
+    "detectRegistry": [],
+    "detectPaths": [],
+    "size": "Web App"
+  },
+  {
+    "id": "asana",
+    "name": "Asana",
+    "description": "Piattaforma di gestione del lavoro e progetti di team",
+    "downloadUrl": "https://asana.com/download",
+    "filename": "",
+    "detectRegistry": [],
+    "detectPaths": [],
+    "size": "Web App"
+  },
+  {
+    "id": "clickup",
+    "name": "ClickUp",
+    "description": "Piattaforma di produttività all-in-one per gestione progetti",
+    "downloadUrl": "https://clickup.com/download",
+    "filename": "",
+    "detectRegistry": [],
+    "detectPaths": [],
+    "size": "Web App"
+  },
+  {
+    "id": "monday",
+    "name": "Monday.com",
+    "description": "Sistema operativo di lavoro per gestione team e progetti",
+    "downloadUrl": "https://monday.com/download",
+    "filename": "",
+    "detectRegistry": [],
+    "detectPaths": [],
+    "size": "Web App"
+  },
+  {
+    "id": "mattermost",
+    "name": "Mattermost",
+    "description": "Piattaforma di messaggistica open source per team aziendali",
+    "downloadUrl": "https://releases.mattermost.com/desktop/5.9.0/mattermost-desktop-setup-5.9.0-win.exe",
+    "filename": "mattermost-desktop-setup.exe",
+    "detectRegistry": ["Mattermost"],
+    "detectPaths": ["C:/Users/Pd85/AppData/Local/Programs/mattermost-desktop/Mattermost.exe"],
+    "size": "~95MB"
+  },
+  {
+    "id": "rocketchat",
+    "name": "Rocket.Chat",
+    "description": "Piattaforma di comunicazione open source self-hosted per team",
+    "downloadUrl": "https://github.com/nicoo/Rocket.Chat.Electron/releases/latest/download/rocketchat-setup.exe",
+    "filename": "rocketchat-setup.exe",
+    "detectRegistry": ["Rocket.Chat"],
+    "detectPaths": ["C:/Users/Pd85/AppData/Local/Programs/rocketchat/Rocket.Chat.exe"],
+    "size": "~100MB"
+  }
+]

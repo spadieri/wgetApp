@@ -1,0 +1,502 @@
+[
+  {
+    "id": "7zip",
+    "name": "7-Zip",
+    "description": "Compressore e estrattore di archivi open source",
+    "downloadUrl": "https://www.7-zip.org/a/7z2408-x64.exe",
+    "filename": "7z2408-x64.exe",
+    "detectRegistry": ["7-Zip"],
+    "detectPaths": ["C:/Program Files/7-Zip/7z.exe"],
+    "size": "~1.5MB"
+  },
+  {
+    "id": "winrar",
+    "name": "WinRAR",
+    "description": "Gestore di archivi con supporto RAR nativo",
+    "downloadUrl": "https://www.win-rar.com/fileadmin/winrar-versions/winrar/winrar-x64-701.exe",
+    "filename": "winrar-x64-701.exe",
+    "detectRegistry": ["WinRAR archiver"],
+    "detectPaths": ["C:/Program Files/WinRAR/WinRAR.exe"],
+    "size": "~3.5MB"
+  },
+  {
+    "id": "peazip",
+    "name": "PeaZip",
+    "description": "Gestore di archivi gratuito e open source",
+    "downloadUrl": "https://github.com/peazip/PeaZip/releases/latest/download/peazip-10.0.0.WIN64.exe",
+    "filename": "peazip-10.0.0.WIN64.exe",
+    "detectRegistry": ["PeaZip"],
+    "detectPaths": ["C:/Program Files/PeaZip/peazip.exe"],
+    "size": "~9MB"
+  },
+  {
+    "id": "bandizip",
+    "name": "Bandizip",
+    "description": "Archiviatore veloce con supporto multiformato",
+    "downloadUrl": "https://dl.bandisoft.com/bandizip.std/BANDIZIP-SETUP-STD-X64.EXE",
+    "filename": "BANDIZIP-SETUP-STD-X64.EXE",
+    "detectRegistry": ["Bandizip"],
+    "detectPaths": ["C:/Program Files/Bandizip/Bandizip.exe"],
+    "size": "~7MB"
+  },
+  {
+    "id": "nanazip",
+    "name": "NanaZip",
+    "description": "Fork moderno di 7-Zip ottimizzato per Windows 11",
+    "downloadUrl": "https://github.com/M2Team/NanaZip/releases/latest/download/NanaZip.msixbundle",
+    "filename": "NanaZip.msixbundle",
+    "detectRegistry": ["NanaZip"],
+    "detectPaths": ["C:/Program Files/NanaZip/NanaZip.exe"],
+    "size": "~5MB"
+  },
+  {
+    "id": "everything",
+    "name": "Everything",
+    "description": "Motore di ricerca file istantaneo per Windows",
+    "downloadUrl": "https://www.voidtools.com/Everything-1.4.1.1026.x64-Setup.exe",
+    "filename": "Everything-1.4.1.1026.x64-Setup.exe",
+    "detectRegistry": ["Everything"],
+    "detectPaths": ["C:/Program Files/Everything/Everything.exe"],
+    "size": "~1.7MB"
+  },
+  {
+    "id": "listary",
+    "name": "Listary",
+    "description": "Utilità di ricerca e avvio rapido per Windows",
+    "downloadUrl": "https://www.listary.com/download/Listary.exe",
+    "filename": "Listary.exe",
+    "detectRegistry": ["Listary"],
+    "detectPaths": ["C:/Program Files/Listary/Listary.exe"],
+    "size": "~10MB"
+  },
+  {
+    "id": "wox",
+    "name": "Wox",
+    "description": "Launcher completo per Windows simile a Alfred",
+    "downloadUrl": "https://github.com/Wox-launcher/Wox/releases/latest/download/Wox-Full-Installer.exe",
+    "filename": "Wox-Full-Installer.exe",
+    "detectRegistry": ["Wox"],
+    "detectPaths": ["C:/Users/%USERNAME%/AppData/Local/Wox/Wox.exe"],
+    "size": "~15MB"
+  },
+  {
+    "id": "powertoys",
+    "name": "Microsoft PowerToys",
+    "description": "Raccolta di utilità avanzate per utenti esperti Windows",
+    "downloadUrl": "https://github.com/microsoft/PowerToys/releases/latest/download/PowerToysSetup-0.87.1-x64.exe",
+    "filename": "PowerToysSetup-0.87.1-x64.exe",
+    "detectRegistry": ["PowerToys (Preview)"],
+    "detectPaths": ["C:/Program Files/PowerToys/PowerToys.exe"],
+    "size": "~250MB"
+  },
+  {
+    "id": "autohotkey",
+    "name": "AutoHotkey",
+    "description": "Linguaggio di scripting per automazione desktop",
+    "downloadUrl": "https://www.autohotkey.com/download/ahk-v2.exe",
+    "filename": "ahk-v2.exe",
+    "detectRegistry": ["AutoHotkey"],
+    "detectPaths": ["C:/Program Files/AutoHotkey/v2/AutoHotkey.exe"],
+    "size": "~4MB"
+  },
+  {
+    "id": "ditto",
+    "name": "Ditto",
+    "description": "Gestore appunti avanzato con cronologia clipboard",
+    "downloadUrl": "https://github.com/sabrogden/Ditto/releases/latest/download/DittoSetup_64bit_3_24_246_0.exe",
+    "filename": "DittoSetup_64bit_3_24_246_0.exe",
+    "detectRegistry": ["Ditto"],
+    "detectPaths": ["C:/Program Files/Ditto/Ditto.exe"],
+    "size": "~8MB"
+  },
+  {
+    "id": "greenshot",
+    "name": "Greenshot",
+    "description": "Strumento di cattura schermo leggero e gratuito",
+    "downloadUrl": "https://github.com/greenshot/greenshot/releases/latest/download/Greenshot-INSTALLER-1.2.10.6-RELEASE.exe",
+    "filename": "Greenshot-INSTALLER-1.2.10.6-RELEASE.exe",
+    "detectRegistry": ["Greenshot"],
+    "detectPaths": ["C:/Program Files/Greenshot/Greenshot.exe"],
+    "size": "~1.6MB"
+  },
+  {
+    "id": "flameshot",
+    "name": "Flameshot",
+    "description": "Strumento di screenshot potente e personalizzabile",
+    "downloadUrl": "https://github.com/flameshot-org/flameshot/releases/latest/download/Flameshot-12.1.0-win64.msi",
+    "filename": "Flameshot-12.1.0-win64.msi",
+    "detectRegistry": ["Flameshot"],
+    "detectPaths": ["C:/Program Files/Flameshot/bin/flameshot.exe"],
+    "size": "~25MB"
+  },
+  {
+    "id": "sharex",
+    "name": "ShareX",
+    "description": "Strumento avanzato per cattura schermo e condivisione",
+    "downloadUrl": "https://github.com/ShareX/ShareX/releases/latest/download/ShareX-16.1.0-setup.exe",
+    "filename": "ShareX-16.1.0-setup.exe",
+    "detectRegistry": ["ShareX"],
+    "detectPaths": ["C:/Program Files/ShareX/ShareX.exe"],
+    "size": "~7MB"
+  },
+  {
+    "id": "treesizefree",
+    "name": "TreeSize Free",
+    "description": "Analizzatore spazio disco con visualizzazione ad albero",
+    "downloadUrl": "https://downloads.jam-software.de/treesize_free/TreeSizeFreeSetup.exe",
+    "filename": "TreeSizeFreeSetup.exe",
+    "detectRegistry": ["TreeSize Free"],
+    "detectPaths": ["C:/Program Files/JAM Software/TreeSize Free/TreeSizeFree.exe"],
+    "size": "~10MB"
+  },
+  {
+    "id": "windirstat",
+    "name": "WinDirStat",
+    "description": "Visualizzatore di utilizzo disco con mappa grafica",
+    "downloadUrl": "https://windirstat.net/download/windirstat1_1_2_setup.exe",
+    "filename": "windirstat1_1_2_setup.exe",
+    "detectRegistry": ["WinDirStat"],
+    "detectPaths": ["C:/Program Files (x86)/WinDirStat/windirstat.exe"],
+    "size": "~0.6MB"
+  },
+  {
+    "id": "bulkrenameutility",
+    "name": "Bulk Rename Utility",
+    "description": "Rinominatore di file in massa potente e gratuito",
+    "downloadUrl": "https://www.bulkrenameutility.co.uk/Downloads/BRU_NoAdm.exe",
+    "filename": "BRU_NoAdm.exe",
+    "detectRegistry": ["Bulk Rename Utility"],
+    "detectPaths": ["C:/Program Files/Bulk Rename Utility/Bulk Rename Utility.exe"],
+    "size": "~12MB"
+  },
+  {
+    "id": "advancedrenamer",
+    "name": "Advanced Renamer",
+    "description": "Strumento avanzato per rinominare file in batch",
+    "downloadUrl": "https://www.advancedrenamer.com/download/advanced_renamer_setup.exe",
+    "filename": "advanced_renamer_setup.exe",
+    "detectRegistry": ["Advanced Renamer"],
+    "detectPaths": ["C:/Program Files/Advanced Renamer/ARen.exe"],
+    "size": "~18MB"
+  },
+  {
+    "id": "revouninstaller",
+    "name": "Revo Uninstaller",
+    "description": "Disinstallatore avanzato con pulizia residui",
+    "downloadUrl": "https://download.revouninstaller.com/download/revosetup.exe",
+    "filename": "revosetup.exe",
+    "detectRegistry": ["Revo Uninstaller"],
+    "detectPaths": ["C:/Program Files/VS Revo Group/Revo Uninstaller/RevoUnin.exe"],
+    "size": "~7MB"
+  },
+  {
+    "id": "iobituninstaller",
+    "name": "IObit Uninstaller",
+    "description": "Disinstallatore con rimozione completa dei programmi",
+    "downloadUrl": "https://cdn.iobit.com/dl/IObitUninstallerSetup.exe",
+    "filename": "IObitUninstallerSetup.exe",
+    "detectRegistry": ["IObit Uninstaller"],
+    "detectPaths": ["C:/Program Files (x86)/IObit/IObit Uninstaller/IObitUninstaler.exe"],
+    "size": "~25MB"
+  },
+  {
+    "id": "geekuninstaller",
+    "name": "Geek Uninstaller",
+    "description": "Disinstallatore leggero e portatile",
+    "downloadUrl": "https://geekuninstaller.com/geek.zip",
+    "filename": "geek.zip",
+    "detectRegistry": ["Geek Uninstaller"],
+    "detectPaths": ["C:/Program Files/Geek Uninstaller/geek.exe"],
+    "size": "~2.5MB"
+  },
+  {
+    "id": "ccleaner",
+    "name": "CCleaner",
+    "description": "Strumento di pulizia e ottimizzazione del sistema",
+    "downloadUrl": "https://download.ccleaner.com/ccsetup625.exe",
+    "filename": "ccsetup625.exe",
+    "detectRegistry": ["CCleaner"],
+    "detectPaths": ["C:/Program Files/CCleaner/CCleaner64.exe"],
+    "size": "~40MB"
+  },
+  {
+    "id": "bleachbit",
+    "name": "BleachBit",
+    "description": "Pulitore di sistema open source per liberare spazio",
+    "downloadUrl": "https://www.bleachbit.org/download/file/t?file=BleachBit-4.6.2-setup.exe",
+    "filename": "BleachBit-4.6.2-setup.exe",
+    "detectRegistry": ["BleachBit"],
+    "detectPaths": ["C:/Program Files (x86)/BleachBit/bleachbit.exe"],
+    "size": "~15MB"
+  },
+  {
+    "id": "glaryutilities",
+    "name": "Glary Utilities",
+    "description": "Suite completa di ottimizzazione e manutenzione sistema",
+    "downloadUrl": "https://download.glarysoft.com/glaryutilities5.exe",
+    "filename": "glaryutilities5.exe",
+    "detectRegistry": ["Glary Utilities"],
+    "detectPaths": ["C:/Program Files (x86)/Glary Utilities/Integrator.exe"],
+    "size": "~25MB"
+  },
+  {
+    "id": "wisediskcleaner",
+    "name": "Wise Disk Cleaner",
+    "description": "Pulitore disco con deframmentazione integrata",
+    "downloadUrl": "https://downloads.wisecleaner.com/soft/WDCFree.exe",
+    "filename": "WDCFree.exe",
+    "detectRegistry": ["Wise Disk Cleaner"],
+    "detectPaths": ["C:/Program Files (x86)/Wise/Wise Disk Cleaner/WiseDiskCleaner.exe"],
+    "size": "~5MB"
+  },
+  {
+    "id": "recuva",
+    "name": "Recuva",
+    "description": "Strumento di recupero file cancellati",
+    "downloadUrl": "https://download.ccleaner.com/rcsetup153.exe",
+    "filename": "rcsetup153.exe",
+    "detectRegistry": ["Recuva"],
+    "detectPaths": ["C:/Program Files/Recuva/recuva64.exe"],
+    "size": "~8MB"
+  },
+  {
+    "id": "testdisk",
+    "name": "TestDisk",
+    "description": "Strumento di recupero dati e riparazione partizioni",
+    "downloadUrl": "https://www.cgsecurity.org/testdisk-7.2-WIP.win64.zip",
+    "filename": "testdisk-7.2-WIP.win64.zip",
+    "detectRegistry": ["TestDisk"],
+    "detectPaths": ["C:/Program Files/TestDisk/testdisk_win.exe"],
+    "size": "~30MB"
+  },
+  {
+    "id": "easeus-partition",
+    "name": "EaseUS Partition Master",
+    "description": "Gestore partizioni disco con interfaccia grafica",
+    "downloadUrl": "https://down.easeus.com/product/epm_free_setup.exe",
+    "filename": "epm_free_setup.exe",
+    "detectRegistry": ["EaseUS Partition Master"],
+    "detectPaths": ["C:/Program Files (x86)/EaseUS/EaseUS Partition Master/bin/EaseUS Partition Master.exe"],
+    "size": "~60MB"
+  },
+  {
+    "id": "minitool-partition",
+    "name": "MiniTool Partition Wizard",
+    "description": "Gestore partizioni gratuito con funzioni avanzate",
+    "downloadUrl": "https://cdn2.minitool.com/download/pw-free-online.exe",
+    "filename": "pw-free-online.exe",
+    "detectRegistry": ["MiniTool Partition Wizard"],
+    "detectPaths": ["C:/Program Files/MiniTool Partition Wizard/partitionwizard.exe"],
+    "size": "~3MB"
+  },
+  {
+    "id": "rufus",
+    "name": "Rufus",
+    "description": "Creatore di unità USB avviabili veloce e affidabile",
+    "downloadUrl": "https://github.com/pbatard/rufus/releases/latest/download/rufus-4.6.exe",
+    "filename": "rufus-4.6.exe",
+    "detectRegistry": ["Rufus"],
+    "detectPaths": ["C:/Program Files/Rufus/rufus.exe"],
+    "size": "~1.5MB"
+  },
+  {
+    "id": "balena-etcher",
+    "name": "balenaEtcher",
+    "description": "Strumento per flashare immagini OS su schede SD e USB",
+    "downloadUrl": "https://github.com/balena-io/etcher/releases/latest/download/balenaEtcher-Setup-1.19.25.exe",
+    "filename": "balenaEtcher-Setup-1.19.25.exe",
+    "detectRegistry": ["balenaEtcher"],
+    "detectPaths": ["C:/Program Files/balenaEtcher/balenaEtcher.exe"],
+    "size": "~160MB"
+  },
+  {
+    "id": "ventoy",
+    "name": "Ventoy",
+    "description": "Strumento per creare USB multiboot senza formattazione",
+    "downloadUrl": "https://github.com/ventoy/Ventoy/releases/latest/download/ventoy-1.0.99-windows.zip",
+    "filename": "ventoy-1.0.99-windows.zip",
+    "detectRegistry": ["Ventoy"],
+    "detectPaths": ["C:/Program Files/Ventoy/Ventoy2Disk.exe"],
+    "size": "~16MB"
+  },
+  {
+    "id": "ultraiso",
+    "name": "UltraISO (Trial)",
+    "description": "Editor e creatore di immagini ISO professionale",
+    "downloadUrl": "https://www.ultraiso.com/uiso9_pe.exe",
+    "filename": "uiso9_pe.exe",
+    "detectRegistry": ["UltraISO"],
+    "detectPaths": ["C:/Program Files (x86)/UltraISO/UltraISO.exe"],
+    "size": "~4MB"
+  },
+  {
+    "id": "poweriso",
+    "name": "PowerISO (Trial)",
+    "description": "Strumento completo per gestione immagini disco",
+    "downloadUrl": "https://www.poweriso.com/PowerISO8.exe",
+    "filename": "PowerISO8.exe",
+    "detectRegistry": ["PowerISO"],
+    "detectPaths": ["C:/Program Files/PowerISO/PowerISO.exe"],
+    "size": "~8MB"
+  },
+  {
+    "id": "imgburn",
+    "name": "ImgBurn",
+    "description": "Masterizzatore di immagini disco leggero e versatile",
+    "downloadUrl": "https://download.imgburn.com/SetupImgBurn_2.5.8.0.exe",
+    "filename": "SetupImgBurn_2.5.8.0.exe",
+    "detectRegistry": ["ImgBurn"],
+    "detectPaths": ["C:/Program Files (x86)/ImgBurn/ImgBurn.exe"],
+    "size": "~3MB"
+  },
+  {
+    "id": "virtualclonedrive",
+    "name": "Virtual CloneDrive",
+    "description": "Lettore virtuale di immagini disco gratuito",
+    "downloadUrl": "https://www.elby.ch/download/SetupVCDE5530.exe",
+    "filename": "SetupVCDE5530.exe",
+    "detectRegistry": ["Virtual CloneDrive"],
+    "detectPaths": ["C:/Program Files (x86)/Elaborate Bytes/VirtualCloneDrive/VCDMount.exe"],
+    "size": "~1.5MB"
+  },
+  {
+    "id": "hashcheck",
+    "name": "HashCheck",
+    "description": "Estensione shell per il calcolo e la verifica di hash",
+    "downloadUrl": "https://github.com/gurnec/HashCheck/releases/latest/download/HashCheckSetup-v2.4.0.55.exe",
+    "filename": "HashCheckSetup-v2.4.0.55.exe",
+    "detectRegistry": ["HashCheck Shell Extension"],
+    "detectPaths": ["C:/Program Files/HashCheck/HashCheck.dll"],
+    "size": "~0.3MB"
+  },
+  {
+    "id": "quickhash",
+    "name": "QuickHash GUI",
+    "description": "Strumento di hashing file con interfaccia grafica",
+    "downloadUrl": "https://www.quickhash-gui.org/download/quickhash-v3.3.4-win64-setup.exe",
+    "filename": "quickhash-v3.3.4-win64-setup.exe",
+    "detectRegistry": ["QuickHash GUI"],
+    "detectPaths": ["C:/Program Files/QuickHash GUI/QuickHash.exe"],
+    "size": "~30MB"
+  },
+  {
+    "id": "sysinternals",
+    "name": "Sysinternals Suite",
+    "description": "Raccolta completa di utilità di sistema Microsoft",
+    "downloadUrl": "https://download.sysinternals.com/files/SysinternalsSuite.zip",
+    "filename": "SysinternalsSuite.zip",
+    "detectRegistry": ["Sysinternals Suite"],
+    "detectPaths": ["C:/SysinternalsSuite/procexp.exe"],
+    "size": "~45MB"
+  },
+  {
+    "id": "processexplorer",
+    "name": "Process Explorer",
+    "description": "Gestore processi avanzato di Microsoft Sysinternals",
+    "downloadUrl": "https://download.sysinternals.com/files/ProcessExplorer.zip",
+    "filename": "ProcessExplorer.zip",
+    "detectRegistry": ["Process Explorer"],
+    "detectPaths": ["C:/SysinternalsSuite/procexp64.exe"],
+    "size": "~2MB"
+  },
+  {
+    "id": "autoruns",
+    "name": "Autoruns",
+    "description": "Gestore completo dei programmi di avvio automatico",
+    "downloadUrl": "https://download.sysinternals.com/files/Autoruns.zip",
+    "filename": "Autoruns.zip",
+    "detectRegistry": ["Autoruns"],
+    "detectPaths": ["C:/SysinternalsSuite/autoruns64.exe"],
+    "size": "~2MB"
+  },
+  {
+    "id": "keypirinha",
+    "name": "Keypirinha",
+    "description": "Launcher semantico veloce per Windows",
+    "downloadUrl": "https://keypirinha.com/download/Keypirinha-x64-portable.zip",
+    "filename": "Keypirinha-x64-portable.zip",
+    "detectRegistry": ["Keypirinha"],
+    "detectPaths": ["C:/Program Files/Keypirinha/keypirinha-x64.exe"],
+    "size": "~5MB"
+  },
+  {
+    "id": "flowlauncher",
+    "name": "Flow Launcher",
+    "description": "Launcher rapido e ricercatore di file open source",
+    "downloadUrl": "https://github.com/Flow-Launcher/Flow.Launcher/releases/latest/download/Flow-Launcher-Setup.exe",
+    "filename": "Flow-Launcher-Setup.exe",
+    "detectRegistry": ["Flow Launcher"],
+    "detectPaths": ["C:/Users/%USERNAME%/AppData/Local/FlowLauncher/Flow.Launcher.exe"],
+    "size": "~70MB"
+  },
+  {
+    "id": "rainmeter",
+    "name": "Rainmeter",
+    "description": "Piattaforma di personalizzazione desktop con widget",
+    "downloadUrl": "https://github.com/rainmeter/rainmeter/releases/latest/download/Rainmeter-4.5.20.exe",
+    "filename": "Rainmeter-4.5.20.exe",
+    "detectRegistry": ["Rainmeter"],
+    "detectPaths": ["C:/Program Files/Rainmeter/Rainmeter.exe"],
+    "size": "~2.5MB"
+  },
+  {
+    "id": "wallpaperengine",
+    "name": "Wallpaper Engine",
+    "description": "Sfondi animati e interattivi per il desktop (Steam)",
+    "downloadUrl": "https://store.steampowered.com/app/431960/Wallpaper_Engine/",
+    "filename": "steam-redirect",
+    "detectRegistry": ["Wallpaper Engine"],
+    "detectPaths": ["C:/Program Files (x86)/Steam/steamapps/common/wallpaper_engine/wallpaper64.exe"],
+    "size": "~250MB"
+  },
+  {
+    "id": "flux",
+    "name": "f.lux",
+    "description": "Regolatore automatico della temperatura colore dello schermo",
+    "downloadUrl": "https://justgetflux.com/dlfiles/flux-setup.exe",
+    "filename": "flux-setup.exe",
+    "detectRegistry": ["f.lux"],
+    "detectPaths": ["C:/Users/%USERNAME%/AppData/Local/FluxSoftware/Flux/flux.exe"],
+    "size": "~1MB"
+  },
+  {
+    "id": "eartrumpet",
+    "name": "EarTrumpet",
+    "description": "Controllo volume avanzato per singole applicazioni",
+    "downloadUrl": "https://apps.microsoft.com/detail/9NBLGGH516XP",
+    "filename": "ms-store-redirect",
+    "detectRegistry": ["EarTrumpet"],
+    "detectPaths": ["C:/Program Files/WindowsApps/40459File-New-Project.EarTrumpet/EarTrumpet.exe"],
+    "size": "~5MB"
+  },
+  {
+    "id": "files-app",
+    "name": "Files App",
+    "description": "File manager moderno con interfaccia a schede per Windows",
+    "downloadUrl": "https://apps.microsoft.com/detail/9NGHP3DX8HDX",
+    "filename": "ms-store-redirect",
+    "detectRegistry": ["Files"],
+    "detectPaths": ["C:/Program Files/WindowsApps/49306ateam.Files/Files.exe"],
+    "size": "~80MB"
+  },
+  {
+    "id": "directoryopus",
+    "name": "Directory Opus (Trial)",
+    "description": "File manager professionale con doppio pannello",
+    "downloadUrl": "https://www.gpsoft.com.au/DScripts/DOpusInstall.exe",
+    "filename": "DOpusInstall.exe",
+    "detectRegistry": ["Directory Opus"],
+    "detectPaths": ["C:/Program Files/GPSoftware/Directory Opus/dopus.exe"],
+    "size": "~30MB"
+  },
+  {
+    "id": "teracopy",
+    "name": "TeraCopy",
+    "description": "Copia file veloce con verifica e ripresa trasferimenti",
+    "downloadUrl": "https://www.codesector.com/files/teracopy.exe",
+    "filename": "teracopy.exe",
+    "detectRegistry": ["TeraCopy"],
+    "detectPaths": ["C:/Program Files/TeraCopy/TeraCopy.exe"],
+    "size": "~7MB"
+  }
+]

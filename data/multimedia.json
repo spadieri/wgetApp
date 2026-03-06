@@ -1,0 +1,502 @@
+[
+  {
+    "id": "vlc",
+    "name": "VLC media player",
+    "description": "Lettore multimediale open source che riproduce qualsiasi formato",
+    "downloadUrl": "https://get.videolan.org/vlc/3.0.21/win64/vlc-3.0.21-win64.exe",
+    "filename": "vlc-3.0.21-win64.exe",
+    "detectRegistry": ["VLC media player"],
+    "detectPaths": ["C:/Program Files/VideoLAN/VLC/vlc.exe"],
+    "size": "~45MB"
+  },
+  {
+    "id": "mpc-hc",
+    "name": "Media Player Classic",
+    "description": "Lettore multimediale leggero e classico per Windows",
+    "downloadUrl": "https://github.com/clsid2/mpc-hc/releases/latest/download/MPC-HC.2.3.5.x64.exe",
+    "filename": "MPC-HC.x64.exe",
+    "detectRegistry": ["MPC-HC"],
+    "detectPaths": ["C:/Program Files/MPC-HC/mpc-hc64.exe"],
+    "size": "~30MB"
+  },
+  {
+    "id": "potplayer",
+    "name": "PotPlayer",
+    "description": "Lettore multimediale avanzato con accelerazione hardware DXVA",
+    "downloadUrl": "https://t1.daumcdn.net/potplayer/PotPlayer/Version/Latest/PotPlayerSetup64.exe",
+    "filename": "PotPlayerSetup64.exe",
+    "detectRegistry": ["PotPlayer 64 bit"],
+    "detectPaths": ["C:/Program Files/DAUM/PotPlayer/PotPlayerMini64.exe"],
+    "size": "~28MB"
+  },
+  {
+    "id": "kmplayer",
+    "name": "KMPlayer",
+    "description": "Lettore multimediale versatile con supporto 3D e 4K",
+    "downloadUrl": "https://www.kmplayer.com/down/KMPlayer64X.exe",
+    "filename": "KMPlayer64X.exe",
+    "detectRegistry": ["KMPlayer"],
+    "detectPaths": ["C:/Program Files/KMPlayer/KMPlayer.exe"],
+    "size": "~45MB"
+  },
+  {
+    "id": "gom-player",
+    "name": "GOM Player",
+    "description": "Lettore multimediale con ricerca automatica di codec e sottotitoli",
+    "downloadUrl": "https://www.gomlab.com/down/gom/GOMPlayerGlobalSetup.exe",
+    "filename": "GOMPlayerGlobalSetup.exe",
+    "detectRegistry": ["GOM Player"],
+    "detectPaths": ["C:/Program Files/GRETECH/GomPlayer/GOM.exe"],
+    "size": "~30MB"
+  },
+  {
+    "id": "mpv",
+    "name": "mpv",
+    "description": "Lettore multimediale minimalista e ad alte prestazioni da riga di comando",
+    "downloadUrl": "https://sourceforge.net/projects/mpv-player-windows/files/64bit/mpv-x86_64-latest.7z/download",
+    "filename": "mpv-x86_64-latest.7z",
+    "detectRegistry": [],
+    "detectPaths": ["C:/mpv/mpv.exe"],
+    "size": "~25MB"
+  },
+  {
+    "id": "kodi",
+    "name": "Kodi",
+    "description": "Centro multimediale open source per organizzare e riprodurre contenuti",
+    "downloadUrl": "https://mirrors.kodi.tv/releases/windows/win64/kodi-21.2-Omega-x64.exe",
+    "filename": "kodi-21.2-Omega-x64.exe",
+    "detectRegistry": ["Kodi"],
+    "detectPaths": ["C:/Program Files/Kodi/kodi.exe"],
+    "size": "~75MB"
+  },
+  {
+    "id": "plex",
+    "name": "Plex",
+    "description": "Server e client multimediale per organizzare e trasmettere contenuti",
+    "downloadUrl": "https://www.plex.tv/media-server-downloads/?cat=computer&plat=windows",
+    "filename": "Plex-Media-Server-Setup.exe",
+    "detectRegistry": ["Plex Media Server"],
+    "detectPaths": ["C:/Program Files/Plex/Plex Media Server/Plex Media Server.exe"],
+    "size": "~100MB"
+  },
+  {
+    "id": "jellyfin",
+    "name": "Jellyfin",
+    "description": "Server multimediale open source e gratuito, alternativa a Plex",
+    "downloadUrl": "https://repo.jellyfin.org/files/server/windows/latest-stable/amd64/jellyfin_amd64.exe",
+    "filename": "jellyfin_amd64.exe",
+    "detectRegistry": ["Jellyfin Server"],
+    "detectPaths": ["C:/Program Files/Jellyfin/Server/jellyfin.exe"],
+    "size": "~120MB"
+  },
+  {
+    "id": "stremio",
+    "name": "Stremio",
+    "description": "Hub multimediale per guardare video con add-on personalizzabili",
+    "downloadUrl": "https://www.stremio.com/downloads",
+    "filename": "StremioSetup.exe",
+    "detectRegistry": ["Stremio"],
+    "detectPaths": ["C:/Users/%USERNAME%/AppData/Local/Programs/LNV/Stremio-4/stremio.exe"],
+    "size": "~65MB"
+  },
+  {
+    "id": "spotify",
+    "name": "Spotify",
+    "description": "Servizio di streaming musicale con milioni di brani",
+    "downloadUrl": "https://download.scdn.co/SpotifySetup.exe",
+    "filename": "SpotifySetup.exe",
+    "detectRegistry": ["Spotify"],
+    "detectPaths": ["C:/Users/%USERNAME%/AppData/Roaming/Spotify/Spotify.exe"],
+    "size": "~1MB (installer)"
+  },
+  {
+    "id": "itunes",
+    "name": "iTunes",
+    "description": "Lettore multimediale e negozio musicale di Apple",
+    "downloadUrl": "https://www.apple.com/itunes/download/win64",
+    "filename": "iTunes64Setup.exe",
+    "detectRegistry": ["iTunes"],
+    "detectPaths": ["C:/Program Files/iTunes/iTunes.exe"],
+    "size": "~200MB"
+  },
+  {
+    "id": "winamp",
+    "name": "Winamp",
+    "description": "Lettore musicale classico e iconico con supporto skin e plugin",
+    "downloadUrl": "https://www.winamp.com/download",
+    "filename": "WinampSetup.exe",
+    "detectRegistry": ["Winamp"],
+    "detectPaths": ["C:/Program Files/Winamp/winamp.exe"],
+    "size": "~15MB"
+  },
+  {
+    "id": "foobar2000",
+    "name": "foobar2000",
+    "description": "Lettore audio avanzato e personalizzabile per Windows",
+    "downloadUrl": "https://www.foobar2000.org/getfile/foobar2000-x64_v2.1.6.exe",
+    "filename": "foobar2000-x64.exe",
+    "detectRegistry": ["foobar2000"],
+    "detectPaths": ["C:/Program Files/foobar2000/foobar2000.exe"],
+    "size": "~8MB"
+  },
+  {
+    "id": "aimp",
+    "name": "AIMP",
+    "description": "Lettore musicale leggero con equalizzatore e convertitore integrato",
+    "downloadUrl": "https://www.aimp.ru/files/windows/builds/aimp_5.30.2530.exe",
+    "filename": "aimp_5.30.2530.exe",
+    "detectRegistry": ["AIMP"],
+    "detectPaths": ["C:/Program Files/AIMP/AIMP.exe"],
+    "size": "~20MB"
+  },
+  {
+    "id": "musicbee",
+    "name": "MusicBee",
+    "description": "Gestore e lettore musicale potente con interfaccia personalizzabile",
+    "downloadUrl": "https://www.getmusicbee.com/downloads/MusicBeeSetup_3_6.zip",
+    "filename": "MusicBeeSetup_3_6.zip",
+    "detectRegistry": ["MusicBee"],
+    "detectPaths": ["C:/Program Files/MusicBee/MusicBee.exe"],
+    "size": "~20MB"
+  },
+  {
+    "id": "audacity",
+    "name": "Audacity",
+    "description": "Editor audio open source per registrazione e modifica",
+    "downloadUrl": "https://github.com/audacity/audacity/releases/latest/download/audacity-win-3.7.1-64bit.exe",
+    "filename": "audacity-win-64bit.exe",
+    "detectRegistry": ["Audacity"],
+    "detectPaths": ["C:/Program Files/Audacity/Audacity.exe"],
+    "size": "~35MB"
+  },
+  {
+    "id": "reaper",
+    "name": "Reaper",
+    "description": "DAW professionale completa e leggera per produzione audio",
+    "downloadUrl": "https://www.reaper.fm/files/7.x/reaper724_x64-install.exe",
+    "filename": "reaper_x64-install.exe",
+    "detectRegistry": ["REAPER"],
+    "detectPaths": ["C:/Program Files/REAPER (x64)/reaper.exe"],
+    "size": "~15MB"
+  },
+  {
+    "id": "fl-studio",
+    "name": "FL Studio (trial)",
+    "description": "DAW professionale per produzione musicale e beat making",
+    "downloadUrl": "https://www.image-line.com/fl-studio-download/",
+    "filename": "flstudio_win64_setup.exe",
+    "detectRegistry": ["FL Studio"],
+    "detectPaths": ["C:/Program Files/Image-Line/FL Studio/FL64.exe"],
+    "size": "~900MB"
+  },
+  {
+    "id": "lmms",
+    "name": "LMMS",
+    "description": "DAW open source e gratuita per la creazione musicale",
+    "downloadUrl": "https://github.com/LMMS/lmms/releases/latest/download/lmms-1.2.2-win64.exe",
+    "filename": "lmms-win64.exe",
+    "detectRegistry": ["LMMS"],
+    "detectPaths": ["C:/Program Files/LMMS/lmms.exe"],
+    "size": "~50MB"
+  },
+  {
+    "id": "obs-studio",
+    "name": "OBS Studio",
+    "description": "Software open source per registrazione e streaming video in diretta",
+    "downloadUrl": "https://github.com/obsproject/obs-studio/releases/latest/download/OBS-Studio-31.0-Windows-Installer.exe",
+    "filename": "OBS-Studio-Windows-Installer.exe",
+    "detectRegistry": ["OBS Studio"],
+    "detectPaths": ["C:/Program Files/obs-studio/bin/64bit/obs64.exe"],
+    "size": "~120MB"
+  },
+  {
+    "id": "streamlabs",
+    "name": "Streamlabs",
+    "description": "Piattaforma di streaming tutto-in-uno basata su OBS",
+    "downloadUrl": "https://streamlabs.com/slobs/download",
+    "filename": "Streamlabs+OBS+Setup.exe",
+    "detectRegistry": ["Streamlabs Desktop"],
+    "detectPaths": ["C:/Program Files/Streamlabs OBS/Streamlabs OBS.exe"],
+    "size": "~280MB"
+  },
+  {
+    "id": "xsplit",
+    "name": "XSplit Broadcaster",
+    "description": "Software professionale per streaming live e registrazione",
+    "downloadUrl": "https://www.xsplit.com/download",
+    "filename": "XSplit_Broadcaster_Setup.exe",
+    "detectRegistry": ["XSplit Broadcaster"],
+    "detectPaths": ["C:/Program Files/XSplit/Broadcaster/XSplit.Core.exe"],
+    "size": "~200MB"
+  },
+  {
+    "id": "sharex",
+    "name": "ShareX",
+    "description": "Strumento open source per cattura schermo, GIF e condivisione",
+    "downloadUrl": "https://github.com/ShareX/ShareX/releases/latest/download/ShareX-16.1.0-setup.exe",
+    "filename": "ShareX-setup.exe",
+    "detectRegistry": ["ShareX"],
+    "detectPaths": ["C:/Program Files/ShareX/ShareX.exe"],
+    "size": "~10MB"
+  },
+  {
+    "id": "greenshot",
+    "name": "Greenshot",
+    "description": "Strumento leggero per cattura schermo con annotazioni",
+    "downloadUrl": "https://github.com/greenshot/greenshot/releases/latest/download/Greenshot-INSTALLER-1.2.10.6-RELEASE.exe",
+    "filename": "Greenshot-INSTALLER-RELEASE.exe",
+    "detectRegistry": ["Greenshot"],
+    "detectPaths": ["C:/Program Files/Greenshot/Greenshot.exe"],
+    "size": "~3MB"
+  },
+  {
+    "id": "lightshot",
+    "name": "Lightshot",
+    "description": "Strumento rapido per cattura schermo con condivisione cloud",
+    "downloadUrl": "https://app.prntscr.com/build/setup-lightshot.exe",
+    "filename": "setup-lightshot.exe",
+    "detectRegistry": ["Lightshot"],
+    "detectPaths": ["C:/Program Files/Skillbrains/lightshot/Lightshot.exe"],
+    "size": "~3MB"
+  },
+  {
+    "id": "snagit",
+    "name": "Snagit (trial)",
+    "description": "Strumento professionale di TechSmith per cattura e registrazione schermo",
+    "downloadUrl": "https://download.techsmith.com/snagit/releases/snagit.exe",
+    "filename": "snagit.exe",
+    "detectRegistry": ["Snagit"],
+    "detectPaths": ["C:/Program Files/TechSmith/Snagit/Snagit32.exe"],
+    "size": "~300MB"
+  },
+  {
+    "id": "screentogif",
+    "name": "ScreenToGif",
+    "description": "Registratore dello schermo in formato GIF con editor integrato",
+    "downloadUrl": "https://github.com/NickeManarin/ScreenToGif/releases/latest/download/ScreenToGif.Setup.exe",
+    "filename": "ScreenToGif.Setup.exe",
+    "detectRegistry": ["ScreenToGif"],
+    "detectPaths": ["C:/Program Files/ScreenToGif/ScreenToGif.exe"],
+    "size": "~4MB"
+  },
+  {
+    "id": "gimp",
+    "name": "GIMP",
+    "description": "Editor di immagini open source, alternativa gratuita a Photoshop",
+    "downloadUrl": "https://download.gimp.org/gimp/v2.10/windows/gimp-2.10.38-setup.exe",
+    "filename": "gimp-2.10.38-setup.exe",
+    "detectRegistry": ["GIMP"],
+    "detectPaths": ["C:/Program Files/GIMP 2/bin/gimp-2.10.exe"],
+    "size": "~300MB"
+  },
+  {
+    "id": "paint-net",
+    "name": "Paint.NET",
+    "description": "Editor di immagini gratuito e intuitivo per Windows",
+    "downloadUrl": "https://github.com/paintdotnet/release/releases/latest/download/paint.net.5.0.13.install.anycpu.web.zip",
+    "filename": "paint.net.install.zip",
+    "detectRegistry": ["paint.net"],
+    "detectPaths": ["C:/Program Files/paint.net/paintdotnet.exe"],
+    "size": "~12MB"
+  },
+  {
+    "id": "krita",
+    "name": "Krita",
+    "description": "Applicazione di pittura digitale open source per artisti",
+    "downloadUrl": "https://download.kde.org/stable/krita/5.2.6/krita-x64-5.2.6-setup.exe",
+    "filename": "krita-x64-5.2.6-setup.exe",
+    "detectRegistry": ["Krita"],
+    "detectPaths": ["C:/Program Files/Krita (x64)/bin/krita.exe"],
+    "size": "~145MB"
+  },
+  {
+    "id": "inkscape",
+    "name": "Inkscape",
+    "description": "Editor di grafica vettoriale open source, alternativa a Illustrator",
+    "downloadUrl": "https://inkscape.org/gallery/item/44616/inkscape-1.4_2024-10-11_86a8ad7-x64.exe",
+    "filename": "inkscape-1.4-x64.exe",
+    "detectRegistry": ["Inkscape"],
+    "detectPaths": ["C:/Program Files/Inkscape/bin/inkscape.exe"],
+    "size": "~120MB"
+  },
+  {
+    "id": "photopea",
+    "name": "Photopea (desktop)",
+    "description": "Editor di immagini avanzato basato su web, compatibile con PSD",
+    "downloadUrl": "https://www.photopea.com/",
+    "filename": "photopea-desktop.exe",
+    "detectRegistry": ["Photopea"],
+    "detectPaths": ["C:/Users/%USERNAME%/AppData/Local/Programs/Photopea/Photopea.exe"],
+    "size": "~5MB"
+  },
+  {
+    "id": "blender",
+    "name": "Blender",
+    "description": "Suite di creazione 3D open source per modellazione e animazione",
+    "downloadUrl": "https://download.blender.org/release/Blender4.3/blender-4.3.0-windows-x64.msi",
+    "filename": "blender-4.3.0-windows-x64.msi",
+    "detectRegistry": ["Blender"],
+    "detectPaths": ["C:/Program Files/Blender Foundation/Blender 4.3/blender.exe"],
+    "size": "~360MB"
+  },
+  {
+    "id": "davinci-resolve",
+    "name": "DaVinci Resolve",
+    "description": "Software professionale per montaggio video e color grading",
+    "downloadUrl": "https://www.blackmagicdesign.com/products/davinciresolve",
+    "filename": "DaVinci_Resolve_Windows.zip",
+    "detectRegistry": ["DaVinci Resolve"],
+    "detectPaths": ["C:/Program Files/Blackmagic Design/DaVinci Resolve/Resolve.exe"],
+    "size": "~2.5GB"
+  },
+  {
+    "id": "shotcut",
+    "name": "Shotcut",
+    "description": "Editor video open source multi-piattaforma e gratuito",
+    "downloadUrl": "https://github.com/mltframework/shotcut/releases/latest/download/shotcut-win64-241215.exe",
+    "filename": "shotcut-win64.exe",
+    "detectRegistry": ["Shotcut"],
+    "detectPaths": ["C:/Program Files/Shotcut/shotcut.exe"],
+    "size": "~100MB"
+  },
+  {
+    "id": "kdenlive",
+    "name": "Kdenlive",
+    "description": "Editor video open source di KDE con timeline multi-traccia",
+    "downloadUrl": "https://download.kde.org/stable/kdenlive/24.12/windows/kdenlive-24.12.0.exe",
+    "filename": "kdenlive-24.12.0.exe",
+    "detectRegistry": ["Kdenlive"],
+    "detectPaths": ["C:/Program Files/kdenlive/bin/kdenlive.exe"],
+    "size": "~200MB"
+  },
+  {
+    "id": "openshot",
+    "name": "OpenShot",
+    "description": "Editor video gratuito e facile da usare per principianti",
+    "downloadUrl": "https://github.com/OpenShot/openshot-qt/releases/latest/download/OpenShot-v3.3.1-x86_64.exe",
+    "filename": "OpenShot-v3.3.1-x86_64.exe",
+    "detectRegistry": ["OpenShot Video Editor"],
+    "detectPaths": ["C:/Program Files/OpenShot Video Editor/openshot-qt.exe"],
+    "size": "~200MB"
+  },
+  {
+    "id": "handbrake",
+    "name": "HandBrake",
+    "description": "Convertitore video open source con supporto per molti formati",
+    "downloadUrl": "https://github.com/HandBrake/HandBrake/releases/latest/download/HandBrake-1.9.1-x86_64-Win_GUI.exe",
+    "filename": "HandBrake-x86_64-Win_GUI.exe",
+    "detectRegistry": ["HandBrake"],
+    "detectPaths": ["C:/Program Files/HandBrake/HandBrake.exe"],
+    "size": "~25MB"
+  },
+  {
+    "id": "ffmpeg",
+    "name": "FFmpeg",
+    "description": "Framework a riga di comando per elaborazione audio e video",
+    "downloadUrl": "https://github.com/BtbN/FFmpeg-Builds/releases/latest/download/ffmpeg-master-latest-win64-gpl.zip",
+    "filename": "ffmpeg-master-latest-win64-gpl.zip",
+    "detectRegistry": [],
+    "detectPaths": ["C:/ffmpeg/bin/ffmpeg.exe"],
+    "size": "~140MB"
+  },
+  {
+    "id": "mediainfo",
+    "name": "MediaInfo",
+    "description": "Strumento per visualizzare informazioni tecniche su file multimediali",
+    "downloadUrl": "https://mediaarea.net/download/binary/mediainfo-gui/24.11/MediaInfo_GUI_24.11_Windows_x64.exe",
+    "filename": "MediaInfo_GUI_Windows_x64.exe",
+    "detectRegistry": ["MediaInfo"],
+    "detectPaths": ["C:/Program Files/MediaInfo/MediaInfo.exe"],
+    "size": "~8MB"
+  },
+  {
+    "id": "mkvtoolnix",
+    "name": "MKVToolNix",
+    "description": "Strumento per creare, modificare e analizzare file MKV",
+    "downloadUrl": "https://mkvtoolnix.download/windows/releases/88.0/MKVToolNix-88.0-setup.exe",
+    "filename": "MKVToolNix-setup.exe",
+    "detectRegistry": ["MKVToolNix"],
+    "detectPaths": ["C:/Program Files/MKVToolNix/mkvtoolnix-gui.exe"],
+    "size": "~40MB"
+  },
+  {
+    "id": "subtitle-edit",
+    "name": "Subtitle Edit",
+    "description": "Editor di sottotitoli open source con sincronizzazione e traduzione",
+    "downloadUrl": "https://github.com/SubtitleEdit/subtitleedit/releases/latest/download/SubtitleEdit-4.0.10-Setup.zip",
+    "filename": "SubtitleEdit-Setup.zip",
+    "detectRegistry": ["Subtitle Edit"],
+    "detectPaths": ["C:/Program Files/Subtitle Edit/SubtitleEdit.exe"],
+    "size": "~12MB"
+  },
+  {
+    "id": "imagemagick",
+    "name": "ImageMagick",
+    "description": "Suite a riga di comando per creare, modificare e convertire immagini",
+    "downloadUrl": "https://imagemagick.org/archive/binaries/ImageMagick-7.1.1-43-Q16-HDRI-x64-dll.exe",
+    "filename": "ImageMagick-Q16-HDRI-x64-dll.exe",
+    "detectRegistry": ["ImageMagick"],
+    "detectPaths": ["C:/Program Files/ImageMagick-7.1.1-Q16-HDRI/magick.exe"],
+    "size": "~30MB"
+  },
+  {
+    "id": "irfanview",
+    "name": "IrfanView",
+    "description": "Visualizzatore di immagini veloce e leggero con conversione batch",
+    "downloadUrl": "https://www.irfanview.info/files/iview466_x64_setup.exe",
+    "filename": "iview_x64_setup.exe",
+    "detectRegistry": ["IrfanView 64-bit"],
+    "detectPaths": ["C:/Program Files/IrfanView/i_view64.exe"],
+    "size": "~4MB"
+  },
+  {
+    "id": "faststone",
+    "name": "FastStone Image Viewer",
+    "description": "Visualizzatore di immagini con editor integrato e cattura schermo",
+    "downloadUrl": "https://www.faststone.org/FSIVDownload.htm",
+    "filename": "FSViewerSetup78.exe",
+    "detectRegistry": ["FastStone Image Viewer"],
+    "detectPaths": ["C:/Program Files/FastStone Image Viewer/FSViewer.exe"],
+    "size": "~8MB"
+  },
+  {
+    "id": "xnview",
+    "name": "XnView MP",
+    "description": "Visualizzatore e organizzatore di immagini con supporto 500+ formati",
+    "downloadUrl": "https://download.xnview.com/XnViewMP-win-x64.exe",
+    "filename": "XnViewMP-win-x64.exe",
+    "detectRegistry": ["XnView MP"],
+    "detectPaths": ["C:/Program Files/XnViewMP/xnviewmp.exe"],
+    "size": "~50MB"
+  },
+  {
+    "id": "darktable",
+    "name": "darktable",
+    "description": "Software open source per fotografia digitale e sviluppo RAW",
+    "downloadUrl": "https://github.com/darktable-org/darktable/releases/latest/download/darktable-4.8.1-win64.exe",
+    "filename": "darktable-win64.exe",
+    "detectRegistry": ["darktable"],
+    "detectPaths": ["C:/Program Files/darktable/bin/darktable.exe"],
+    "size": "~120MB"
+  },
+  {
+    "id": "rawtherapee",
+    "name": "RawTherapee",
+    "description": "Elaboratore di foto RAW open source e multi-piattaforma",
+    "downloadUrl": "https://github.com/Beep6581/RawTherapee/releases/latest/download/RawTherapee_5.11_win64.exe",
+    "filename": "RawTherapee_win64.exe",
+    "detectRegistry": ["RawTherapee"],
+    "detectPaths": ["C:/Program Files/RawTherapee/rawtherapee.exe"],
+    "size": "~75MB"
+  },
+  {
+    "id": "calibre",
+    "name": "Calibre",
+    "description": "Gestore di e-book completo con convertitore e lettore integrato",
+    "downloadUrl": "https://calibre-ebook.com/dist/win64",
+    "filename": "calibre-64bit-7.23.0.msi",
+    "detectRegistry": ["calibre 64bit"],
+    "detectPaths": ["C:/Program Files/Calibre2/calibre.exe"],
+    "size": "~175MB"
+  }
+]

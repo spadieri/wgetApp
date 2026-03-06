@@ -1,0 +1,502 @@
+[
+  {
+    "id": "google-chrome",
+    "name": "Google Chrome",
+    "description": "Browser web veloce e sicuro di Google",
+    "downloadUrl": "https://dl.google.com/chrome/install/latest/chrome_installer.exe",
+    "filename": "chrome_installer.exe",
+    "detectRegistry": ["Google Chrome"],
+    "detectPaths": ["C:/Program Files/Google/Chrome/Application/chrome.exe"],
+    "size": "~90MB"
+  },
+  {
+    "id": "mozilla-firefox",
+    "name": "Mozilla Firefox",
+    "description": "Browser open source orientato alla privacy di Mozilla",
+    "downloadUrl": "https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=it",
+    "filename": "Firefox_Setup.exe",
+    "detectRegistry": ["Mozilla Firefox"],
+    "detectPaths": ["C:/Program Files/Mozilla Firefox/firefox.exe"],
+    "size": "~55MB"
+  },
+  {
+    "id": "brave-browser",
+    "name": "Brave",
+    "description": "Browser veloce con blocco pubblicità e tracker integrato",
+    "downloadUrl": "https://laptop-updates.brave.com/latest/winx64",
+    "filename": "BraveBrowserSetup.exe",
+    "detectRegistry": ["Brave"],
+    "detectPaths": ["C:/Program Files/BraveSoftware/Brave-Browser/Application/brave.exe"],
+    "size": "~80MB"
+  },
+  {
+    "id": "opera-browser",
+    "name": "Opera",
+    "description": "Browser con VPN integrata e sidebar per social media",
+    "downloadUrl": "https://net.geo.opera.com/opera/stable/windows",
+    "filename": "OperaSetup.exe",
+    "detectRegistry": ["Opera Stable"],
+    "detectPaths": ["C:/Users/%USERNAME%/AppData/Local/Programs/Opera/opera.exe"],
+    "size": "~85MB"
+  },
+  {
+    "id": "vivaldi",
+    "name": "Vivaldi",
+    "description": "Browser altamente personalizzabile per utenti esperti",
+    "downloadUrl": "https://downloads.vivaldi.com/stable/Vivaldi.6.9.3447.54.x64.exe",
+    "filename": "Vivaldi_Setup.exe",
+    "detectRegistry": ["Vivaldi"],
+    "detectPaths": ["C:/Program Files/Vivaldi/Application/vivaldi.exe"],
+    "size": "~90MB"
+  },
+  {
+    "id": "microsoft-edge",
+    "name": "Microsoft Edge",
+    "description": "Browser moderno di Microsoft basato su Chromium",
+    "downloadUrl": "https://go.microsoft.com/fwlink/?linkid=2108834&Channel=Stable&language=it",
+    "filename": "MicrosoftEdgeSetup.exe",
+    "detectRegistry": ["Microsoft Edge"],
+    "detectPaths": ["C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe"],
+    "size": "~120MB"
+  },
+  {
+    "id": "tor-browser",
+    "name": "Tor Browser",
+    "description": "Browser per la navigazione anonima tramite rete Tor",
+    "downloadUrl": "https://www.torproject.org/dist/torbrowser/13.5.9/tor-browser-windows-x86_64-portable-13.5.9.exe",
+    "filename": "tor-browser-install.exe",
+    "detectRegistry": ["Tor Browser"],
+    "detectPaths": ["C:/Users/%USERNAME%/Desktop/Tor Browser/Browser/firefox.exe"],
+    "size": "~100MB"
+  },
+  {
+    "id": "chromium",
+    "name": "Chromium",
+    "description": "Browser open source alla base di Google Chrome",
+    "downloadUrl": "https://download-chromium.appspot.com/dl/Win_x64?type=snapshots",
+    "filename": "chrome-win.zip",
+    "detectRegistry": ["Chromium"],
+    "detectPaths": ["C:/Program Files/Chromium/Application/chrome.exe"],
+    "size": "~75MB"
+  },
+  {
+    "id": "waterfox",
+    "name": "Waterfox",
+    "description": "Fork di Firefox focalizzato su privacy e prestazioni",
+    "downloadUrl": "https://cdn1.waterfox.net/waterfox/releases/latest/windows",
+    "filename": "Waterfox_Setup.exe",
+    "detectRegistry": ["Waterfox"],
+    "detectPaths": ["C:/Program Files/Waterfox/waterfox.exe"],
+    "size": "~60MB"
+  },
+  {
+    "id": "librewolf",
+    "name": "LibreWolf",
+    "description": "Fork di Firefox con impostazioni di privacy avanzate",
+    "downloadUrl": "https://gitlab.com/api/v4/projects/44042130/packages/generic/librewolf/131.0-1/librewolf-131.0-1-windows-x86_64-setup.exe",
+    "filename": "librewolf-setup.exe",
+    "detectRegistry": ["LibreWolf"],
+    "detectPaths": ["C:/Program Files/LibreWolf/librewolf.exe"],
+    "size": "~55MB"
+  },
+  {
+    "id": "pale-moon",
+    "name": "Pale Moon",
+    "description": "Browser leggero basato su tecnologia Goanna",
+    "downloadUrl": "https://www.palemoon.org/download.php?mirror=eu&bits=64&type=installer",
+    "filename": "palemoon-setup.exe",
+    "detectRegistry": ["Pale Moon"],
+    "detectPaths": ["C:/Program Files/Pale Moon/palemoon.exe"],
+    "size": "~35MB"
+  },
+  {
+    "id": "maxthon",
+    "name": "Maxthon",
+    "description": "Browser con cloud integrato e strumenti avanzati",
+    "downloadUrl": "https://dl.maxthon.com/mx6/maxthon_setup.exe",
+    "filename": "maxthon_setup.exe",
+    "detectRegistry": ["Maxthon"],
+    "detectPaths": ["C:/Program Files (x86)/Maxthon/Bin/Maxthon.exe"],
+    "size": "~70MB"
+  },
+  {
+    "id": "midori",
+    "name": "Midori",
+    "description": "Browser leggero e veloce per navigazione essenziale",
+    "downloadUrl": "https://dl.astian.org/midori/windows/Midori_Setup.exe",
+    "filename": "Midori_Setup.exe",
+    "detectRegistry": ["Midori"],
+    "detectPaths": ["C:/Program Files/Midori/midori.exe"],
+    "size": "~60MB"
+  },
+  {
+    "id": "thunderbird",
+    "name": "Mozilla Thunderbird",
+    "description": "Client email open source di Mozilla con calendario integrato",
+    "downloadUrl": "https://download.mozilla.org/?product=thunderbird-latest-ssl&os=win64&lang=it",
+    "filename": "Thunderbird_Setup.exe",
+    "detectRegistry": ["Mozilla Thunderbird"],
+    "detectPaths": ["C:/Program Files/Mozilla Thunderbird/thunderbird.exe"],
+    "size": "~55MB"
+  },
+  {
+    "id": "mailspring",
+    "name": "Mailspring",
+    "description": "Client email moderno con interfaccia elegante",
+    "downloadUrl": "https://updates.getmailspring.com/download?platform=win32",
+    "filename": "Mailspring_Setup.exe",
+    "detectRegistry": ["Mailspring"],
+    "detectPaths": ["C:/Users/%USERNAME%/AppData/Local/Mailspring/mailspring.exe"],
+    "size": "~90MB"
+  },
+  {
+    "id": "em-client",
+    "name": "eM Client",
+    "description": "Client email completo con calendario, contatti e chat",
+    "downloadUrl": "https://www.emclient.com/dist/latest/setup.msi",
+    "filename": "emclient_setup.msi",
+    "detectRegistry": ["eM Client"],
+    "detectPaths": ["C:/Program Files (x86)/eM Client/MailClient.exe"],
+    "size": "~75MB"
+  },
+  {
+    "id": "postbox",
+    "name": "Postbox",
+    "description": "Client email professionale con gestione avanzata",
+    "downloadUrl": "https://www.postbox-inc.com/download/latest/win64",
+    "filename": "Postbox_Setup.exe",
+    "detectRegistry": ["Postbox"],
+    "detectPaths": ["C:/Program Files/Postbox/postbox.exe"],
+    "size": "~50MB"
+  },
+  {
+    "id": "filezilla",
+    "name": "FileZilla",
+    "description": "Client FTP/SFTP open source per trasferimento file",
+    "downloadUrl": "https://download.filezilla-project.org/client/FileZilla_3.67.1_win64_sponsored2-setup.exe",
+    "filename": "FileZilla_Setup.exe",
+    "detectRegistry": ["FileZilla Client"],
+    "detectPaths": ["C:/Program Files/FileZilla FTP Client/filezilla.exe"],
+    "size": "~15MB"
+  },
+  {
+    "id": "winscp",
+    "name": "WinSCP",
+    "description": "Client SFTP/SCP/FTP per trasferimento sicuro di file",
+    "downloadUrl": "https://winscp.net/download/WinSCP-6.3.5-Setup.exe",
+    "filename": "WinSCP-Setup.exe",
+    "detectRegistry": ["WinSCP"],
+    "detectPaths": ["C:/Program Files (x86)/WinSCP/WinSCP.exe"],
+    "size": "~12MB"
+  },
+  {
+    "id": "putty",
+    "name": "PuTTY",
+    "description": "Client SSH e Telnet leggero per connessioni remote",
+    "downloadUrl": "https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-0.81-installer.msi",
+    "filename": "putty-installer.msi",
+    "detectRegistry": ["PuTTY"],
+    "detectPaths": ["C:/Program Files/PuTTY/putty.exe"],
+    "size": "~4MB"
+  },
+  {
+    "id": "cyberduck",
+    "name": "Cyberduck",
+    "description": "Client per cloud storage e trasferimento file con interfaccia intuitiva",
+    "downloadUrl": "https://update.cyberduck.io/Cyberduck-Installer.exe",
+    "filename": "Cyberduck-Installer.exe",
+    "detectRegistry": ["Cyberduck"],
+    "detectPaths": ["C:/Program Files/Cyberduck/Cyberduck.exe"],
+    "size": "~55MB"
+  },
+  {
+    "id": "qbittorrent",
+    "name": "qBittorrent",
+    "description": "Client torrent open source leggero e senza pubblicità",
+    "downloadUrl": "https://sourceforge.net/projects/qbittorrent/files/latest/download",
+    "filename": "qbittorrent_setup.exe",
+    "detectRegistry": ["qBittorrent"],
+    "detectPaths": ["C:/Program Files/qBittorrent/qbittorrent.exe"],
+    "size": "~35MB"
+  },
+  {
+    "id": "utorrent",
+    "name": "uTorrent",
+    "description": "Client BitTorrent compatto e popolare",
+    "downloadUrl": "https://download-new.utorrent.com/endpoint/utorrent/os/windows/track/stable/",
+    "filename": "uTorrent.exe",
+    "detectRegistry": ["µTorrent"],
+    "detectPaths": ["C:/Users/%USERNAME%/AppData/Roaming/uTorrent/uTorrent.exe"],
+    "size": "~3MB"
+  },
+  {
+    "id": "deluge",
+    "name": "Deluge",
+    "description": "Client BitTorrent open source multipiattaforma",
+    "downloadUrl": "https://ftp.osuosl.org/pub/deluge/windows/?C=M&O=D",
+    "filename": "deluge-2.1.1-win64-setup.exe",
+    "detectRegistry": ["Deluge"],
+    "detectPaths": ["C:/Program Files/Deluge/deluge.exe"],
+    "size": "~65MB"
+  },
+  {
+    "id": "transmission",
+    "name": "Transmission",
+    "description": "Client BitTorrent minimalista e leggero",
+    "downloadUrl": "https://github.com/transmission/transmission/releases/latest/download/transmission-4.0.6-x64.msi",
+    "filename": "transmission-setup.msi",
+    "detectRegistry": ["Transmission"],
+    "detectPaths": ["C:/Program Files/Transmission/transmission-qt.exe"],
+    "size": "~15MB"
+  },
+  {
+    "id": "free-download-manager",
+    "name": "Free Download Manager",
+    "description": "Gestore download gratuito con supporto torrent e video",
+    "downloadUrl": "https://dn3.freedownloadmanager.org/6/latest/fdm_x64_setup.exe",
+    "filename": "fdm_x64_setup.exe",
+    "detectRegistry": ["Free Download Manager"],
+    "detectPaths": ["C:/Program Files/FreeDownloadManager/fdm.exe"],
+    "size": "~40MB"
+  },
+  {
+    "id": "jdownloader",
+    "name": "JDownloader 2",
+    "description": "Gestore download open source con supporto multi-hosting",
+    "downloadUrl": "https://mega.nz/file/LJ9FzK7b#t88t6DAF3LPs30hVjMDCGQB1YCYVAVwi-Bg7Ruil-TM",
+    "filename": "JDownloader2Setup.exe",
+    "detectRegistry": ["JDownloader 2"],
+    "detectPaths": ["C:/Program Files/JDownloader/JDownloader2.exe"],
+    "size": "~45MB"
+  },
+  {
+    "id": "internet-download-manager",
+    "name": "Internet Download Manager",
+    "description": "Acceleratore download con integrazione browser (versione di prova)",
+    "downloadUrl": "https://mirror2.internetdownloadmanager.com/idman642build2.exe",
+    "filename": "idman_setup.exe",
+    "detectRegistry": ["Internet Download Manager"],
+    "detectPaths": ["C:/Program Files (x86)/Internet Download Manager/IDMan.exe"],
+    "size": "~10MB"
+  },
+  {
+    "id": "aria2",
+    "name": "aria2",
+    "description": "Utilità da riga di comando per download multi-protocollo",
+    "downloadUrl": "https://github.com/aria2/aria2/releases/latest/download/aria2-1.37.0-win-64bit-build1.zip",
+    "filename": "aria2-win-64bit.zip",
+    "detectRegistry": [],
+    "detectPaths": ["C:/Program Files/aria2/aria2c.exe"],
+    "size": "~6MB"
+  },
+  {
+    "id": "bitvise-ssh-client",
+    "name": "Bitvise SSH Client",
+    "description": "Client SSH e SFTP gratuito con tunneling avanzato",
+    "downloadUrl": "https://dl.bitvise.com/BvSshClient-Inst.exe",
+    "filename": "BvSshClient-Inst.exe",
+    "detectRegistry": ["Bitvise SSH Client"],
+    "detectPaths": ["C:/Program Files (x86)/Bitvise SSH Client/BvSsh.exe"],
+    "size": "~25MB"
+  },
+  {
+    "id": "mobaxterm",
+    "name": "MobaXterm",
+    "description": "Terminale avanzato con client SSH, X11 e strumenti di rete",
+    "downloadUrl": "https://mobaxterm.mobatek.net/download-home-edition.html",
+    "filename": "MobaXterm_Installer.zip",
+    "detectRegistry": ["MobaXterm"],
+    "detectPaths": ["C:/Program Files (x86)/Mobatek/MobaXterm/MobaXterm.exe"],
+    "size": "~30MB"
+  },
+  {
+    "id": "mremoteng",
+    "name": "mRemoteNG",
+    "description": "Gestore connessioni remote multi-protocollo open source",
+    "downloadUrl": "https://github.com/mRemoteNG/mRemoteNG/releases/latest/download/mRemoteNG-Installer-1.77.3.1784-NB.msi",
+    "filename": "mRemoteNG-Installer.msi",
+    "detectRegistry": ["mRemoteNG"],
+    "detectPaths": ["C:/Program Files (x86)/mRemoteNG/mRemoteNG.exe"],
+    "size": "~25MB"
+  },
+  {
+    "id": "realvnc-viewer",
+    "name": "RealVNC Viewer",
+    "description": "Client VNC per controllo remoto del desktop",
+    "downloadUrl": "https://downloads.realvnc.com/download/file/viewer.files/VNC-Viewer-7.12.1-Windows-64bit.exe",
+    "filename": "VNC-Viewer-Windows.exe",
+    "detectRegistry": ["VNC Viewer"],
+    "detectPaths": ["C:/Program Files/RealVNC/VNC Viewer/vncviewer.exe"],
+    "size": "~20MB"
+  },
+  {
+    "id": "teamviewer",
+    "name": "TeamViewer",
+    "description": "Software per accesso remoto e supporto tecnico",
+    "downloadUrl": "https://download.teamviewer.com/download/TeamViewer_Setup_x64.exe",
+    "filename": "TeamViewer_Setup_x64.exe",
+    "detectRegistry": ["TeamViewer"],
+    "detectPaths": ["C:/Program Files/TeamViewer/TeamViewer.exe"],
+    "size": "~60MB"
+  },
+  {
+    "id": "anydesk",
+    "name": "AnyDesk",
+    "description": "Software per desktop remoto veloce e leggero",
+    "downloadUrl": "https://download.anydesk.com/AnyDesk.exe",
+    "filename": "AnyDesk.exe",
+    "detectRegistry": ["AnyDesk"],
+    "detectPaths": ["C:/Program Files (x86)/AnyDesk/AnyDesk.exe"],
+    "size": "~5MB"
+  },
+  {
+    "id": "parsec",
+    "name": "Parsec",
+    "description": "Desktop remoto a bassa latenza ideale per gaming",
+    "downloadUrl": "https://builds.parsec.app/package/parsec-windows.exe",
+    "filename": "parsec-windows.exe",
+    "detectRegistry": ["Parsec"],
+    "detectPaths": ["C:/Program Files/Parsec/parsecd.exe"],
+    "size": "~15MB"
+  },
+  {
+    "id": "wireshark",
+    "name": "Wireshark",
+    "description": "Analizzatore di protocolli di rete open source",
+    "downloadUrl": "https://2.na.dl.wireshark.org/win64/Wireshark-4.4.2-x64.exe",
+    "filename": "Wireshark-x64.exe",
+    "detectRegistry": ["Wireshark"],
+    "detectPaths": ["C:/Program Files/Wireshark/Wireshark.exe"],
+    "size": "~80MB"
+  },
+  {
+    "id": "fiddler",
+    "name": "Fiddler Classic",
+    "description": "Proxy di debug HTTP per analisi traffico web",
+    "downloadUrl": "https://telerik-fiddler.s3.amazonaws.com/fiddler/FiddlerSetup.exe",
+    "filename": "FiddlerSetup.exe",
+    "detectRegistry": ["Fiddler"],
+    "detectPaths": ["C:/Users/%USERNAME%/AppData/Local/Programs/Fiddler/Fiddler.exe"],
+    "size": "~10MB"
+  },
+  {
+    "id": "postman",
+    "name": "Postman",
+    "description": "Piattaforma per test e sviluppo di API",
+    "downloadUrl": "https://dl.pstmn.io/download/latest/win64",
+    "filename": "Postman-win64-Setup.exe",
+    "detectRegistry": ["Postman"],
+    "detectPaths": ["C:/Users/%USERNAME%/AppData/Local/Postman/Postman.exe"],
+    "size": "~150MB"
+  },
+  {
+    "id": "curl-windows",
+    "name": "cURL for Windows",
+    "description": "Strumento da riga di comando per trasferimento dati via URL",
+    "downloadUrl": "https://curl.se/windows/dl-8.11.0_1/curl-8.11.0_1-win64-mingw.zip",
+    "filename": "curl-win64-mingw.zip",
+    "detectRegistry": [],
+    "detectPaths": ["C:/Windows/System32/curl.exe"],
+    "size": "~5MB"
+  },
+  {
+    "id": "wget-gui",
+    "name": "WinWGet",
+    "description": "Interfaccia grafica per wget su Windows",
+    "downloadUrl": "https://sourceforge.net/projects/winwget/files/latest/download",
+    "filename": "WinWGet_Setup.exe",
+    "detectRegistry": ["WinWGet"],
+    "detectPaths": ["C:/Program Files (x86)/WinWGet/WinWGet.exe"],
+    "size": "~3MB"
+  },
+  {
+    "id": "netbalancer",
+    "name": "NetBalancer",
+    "description": "Strumento per monitoraggio e controllo traffico di rete",
+    "downloadUrl": "https://netbalancer.com/download/NetBalancerSetup.exe",
+    "filename": "NetBalancerSetup.exe",
+    "detectRegistry": ["NetBalancer"],
+    "detectPaths": ["C:/Program Files/NetBalancer/SeriousBit NetBalancer.exe"],
+    "size": "~10MB"
+  },
+  {
+    "id": "glasswire",
+    "name": "GlassWire",
+    "description": "Firewall e monitor di rete con interfaccia grafica",
+    "downloadUrl": "https://download.glasswire.com/GlassWireSetup.exe",
+    "filename": "GlassWireSetup.exe",
+    "detectRegistry": ["GlassWire"],
+    "detectPaths": ["C:/Program Files (x86)/GlassWire/GlassWire.exe"],
+    "size": "~50MB"
+  },
+  {
+    "id": "netlimiter",
+    "name": "NetLimiter",
+    "description": "Strumento per controllo e limitazione banda di rete (versione di prova)",
+    "downloadUrl": "https://www.netlimiter.com/download/netlimiter-5-setup.exe",
+    "filename": "netlimiter-5-setup.exe",
+    "detectRegistry": ["NetLimiter 5"],
+    "detectPaths": ["C:/Program Files/Locktime Software/NetLimiter/NLClientApp.exe"],
+    "size": "~12MB"
+  },
+  {
+    "id": "protonvpn",
+    "name": "ProtonVPN",
+    "description": "VPN gratuita e sicura di Proton con crittografia avanzata",
+    "downloadUrl": "https://protonvpn.com/download/ProtonVPN_v3.3.1.exe",
+    "filename": "ProtonVPN_Setup.exe",
+    "detectRegistry": ["Proton VPN"],
+    "detectPaths": ["C:/Program Files/Proton/VPN/ProtonVPN.exe"],
+    "size": "~60MB"
+  },
+  {
+    "id": "windscribe",
+    "name": "Windscribe",
+    "description": "VPN con piano gratuito generoso e blocco pubblicità",
+    "downloadUrl": "https://windscribe.com/install/desktop/windows",
+    "filename": "Windscribe_Setup.exe",
+    "detectRegistry": ["Windscribe"],
+    "detectPaths": ["C:/Program Files (x86)/Windscribe/Windscribe.exe"],
+    "size": "~25MB"
+  },
+  {
+    "id": "openvpn",
+    "name": "OpenVPN",
+    "description": "Client VPN open source per connessioni sicure",
+    "downloadUrl": "https://swupdate.openvpn.org/community/releases/OpenVPN-2.6.12-I001-amd64.msi",
+    "filename": "OpenVPN-amd64.msi",
+    "detectRegistry": ["OpenVPN"],
+    "detectPaths": ["C:/Program Files/OpenVPN/bin/openvpn.exe"],
+    "size": "~8MB"
+  },
+  {
+    "id": "wireguard",
+    "name": "WireGuard",
+    "description": "VPN moderna, veloce e sicura con crittografia all'avanguardia",
+    "downloadUrl": "https://download.wireguard.com/windows-client/wireguard-installer.exe",
+    "filename": "wireguard-installer.exe",
+    "detectRegistry": ["WireGuard"],
+    "detectPaths": ["C:/Program Files/WireGuard/wireguard.exe"],
+    "size": "~8MB"
+  },
+  {
+    "id": "cloudflare-warp",
+    "name": "Cloudflare WARP",
+    "description": "VPN gratuita di Cloudflare per navigazione veloce e sicura",
+    "downloadUrl": "https://install.appcenter.ms/orgs/cloudflare/apps/1.1.1.1-windows-1/distribution_groups/release",
+    "filename": "Cloudflare_WARP_Release-x64.msi",
+    "detectRegistry": ["Cloudflare WARP"],
+    "detectPaths": ["C:/Program Files/Cloudflare/Cloudflare WARP/warp-svc.exe"],
+    "size": "~100MB"
+  },
+  {
+    "id": "nordvpn",
+    "name": "NordVPN",
+    "description": "VPN premium con ampia rete di server globali (versione di prova)",
+    "downloadUrl": "https://downloads.nordcdn.com/apps/windows/NordVPN/latest/NordVPNSetup.exe",
+    "filename": "NordVPNSetup.exe",
+    "detectRegistry": ["NordVPN"],
+    "detectPaths": ["C:/Program Files/NordVPN/NordVPN.exe"],
+    "size": "~45MB"
+  }
+]
