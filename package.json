@@ -1,0 +1,19 @@
+{
+  "name": "wget-app",
+  "version": "1.0.0",
+  "description": "Software installer using wget",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^40.8.0"
+  },
+  "dependencies": {
+    "regedit": "^5.1.4"
+  }
+}
