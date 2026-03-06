@@ -1,6 +1,13 @@
 const { app, BrowserWindow, ipcMain } = require('electron');
 const path = require('path');
 
+function getWgetPath() {
+  if (app.isPackaged) {
+    return path.join(process.resourcesPath, 'wget.exe');
+  }
+  return path.join(__dirname, 'resources', 'wget.exe');
+}
+
 let mainWindow;
 
 function createWindow() {
