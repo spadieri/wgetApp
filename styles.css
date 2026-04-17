@@ -270,7 +270,7 @@ body {
 
 .icon-btn:hover {
   background: var(--bg-surface-hover);
-  border-color: var(--accent);
+  border-color: var(--accent-blue);
   color: var(--text-primary);
 }
 
@@ -282,8 +282,8 @@ body {
 .icon-btn.spinning {
   display: inline-block;
   animation: icon-spin 1s linear infinite;
-  color: var(--accent);
-  border-color: var(--accent);
+  color: var(--accent-blue);
+  border-color: var(--accent-blue);
 }
 
 @keyframes icon-spin {
@@ -292,9 +292,9 @@ body {
 }
 
 .update-badge {
-  background: var(--accent);
-  color: #0b1020;
-  border: 1px solid var(--accent);
+  background: var(--accent-blue);
+  color: #ffffff;
+  border: 1px solid var(--accent-blue);
   font-size: 12px;
   font-weight: 600;
   padding: 6px 12px;
@@ -312,7 +312,7 @@ body {
 
 .update-badge.downloading {
   background: rgba(137, 180, 250, 0.2);
-  color: var(--accent);
+  color: var(--accent-blue);
   cursor: progress;
   border-color: rgba(137, 180, 250, 0.4);
 }
@@ -364,7 +364,7 @@ body {
 
 .card-homepage:hover {
   background: var(--bg-surface-hover);
-  color: var(--accent);
+  color: var(--accent-blue);
   border-color: var(--border);
 }
 
