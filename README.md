@@ -37,6 +37,17 @@ npm run build:installer  # NSIS installer only
 npm run build:portable   # portable .exe only
 ```
 
+## Release process
+
+Releases are built and published automatically by **GitHub Actions** (see [.github/workflows/release.yml](.github/workflows/release.yml)). The workflow runs on `windows-latest`, builds both NSIS installer and portable `.exe`, and uploads them to GitHub Releases as a draft.
+
+```bash
+npm version patch        # or minor / major — creates commit + tag
+git push --follow-tags   # triggers the workflow
+```
+
+Then publish the draft from the [Releases page](https://github.com/spadieri/wgetApp/releases). The workflow can also be triggered manually via Actions → Release → Run workflow.
+
 ## Tech Stack
 
 - Electron
