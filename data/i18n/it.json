@@ -1,0 +1,13 @@
+{
+  "sidebar.title": "Categorie",
+  "search.placeholder": "Cerca software...",
+  "error.loadCategories": "Errore durante il caricamento delle categorie",
+  "error.loadData": "Errore nel caricamento dei dati",
+  "empty.title": "Nessun risultato",
+  "empty.description": "Nessun software trovato",
+  "empty.search": "Nessun software trovato per",
+  "toast.alreadyInstalled": "Già installato",
+  "toast.downloading": "Download...",
+  "toast.downloadComplete": "Download completato, avvio installazione...",
+  "toast.error": "Errore: "
+}

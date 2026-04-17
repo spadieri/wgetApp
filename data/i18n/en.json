@@ -1,0 +1,13 @@
+{
+  "sidebar.title": "Categories",
+  "search.placeholder": "Search software...",
+  "error.loadCategories": "Error loading categories",
+  "error.loadData": "Error loading data",
+  "empty.title": "No results",
+  "empty.description": "No software found",
+  "empty.search": "No software found for",
+  "toast.alreadyInstalled": "Already installed",
+  "toast.downloading": "Downloading...",
+  "toast.downloadComplete": "Download complete, launching installer...",
+  "toast.error": "Error: "
+}
