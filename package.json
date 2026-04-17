@@ -1,6 +1,6 @@
 {
   "name": "wget-app",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Software installer using wget",
   "main": "main.js",
   "scripts": {
