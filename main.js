@@ -208,16 +208,41 @@ function getRegistryInstalledNames() {
   return names;
 }
 
+// Cached list of MSIX/Appx package names (Start Menu apps, Store apps, Electron
+// apps using Squirrel-over-MSIX like Claude Desktop). Get-AppxPackage is slow
+// (~1-2s) so we cache for the session.
+let appxNamesCache = null;
+function getAppxInstalledNames() {
+  if (appxNamesCache !== null) return appxNamesCache;
+  try {
+    const output = execSync(
+      'powershell -NoProfile -Command "Get-AppxPackage | ForEach-Object { $_.Name }"',
+      { encoding: 'utf8', maxBuffer: 10 * 1024 * 1024, timeout: 20000 }
+    );
+    appxNamesCache = output
+      .split(/\r?\n/)
+      .map(s => s.trim().toLowerCase())
+      .filter(Boolean);
+  } catch (err) {
+    console.error('Get-AppxPackage failed:', err.message);
+    appxNamesCache = [];
+  }
+  return appxNamesCache;
+}
+
 ipcMain.handle('check-installed', async (_event, softwareList) => {
   const installed = {};
 
   try {
-    const registryNames = getRegistryInstalledNames();
+    const installedNames = [
+      ...getRegistryInstalledNames(),
+      ...getAppxInstalledNames()
+    ];
 
     for (const software of softwareList) {
-      // Check registry DisplayName match
+      // Check registry DisplayName or Appx package name match
       const regMatch = software.detectRegistry?.some(name =>
-        registryNames.some(regName => regName.includes(name.toLowerCase()))
+        installedNames.some(n => n.includes(name.toLowerCase()))
       ) || false;
 
       // Check file path existence
