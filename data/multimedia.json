@@ -4,6 +4,7 @@
     "name": "VLC media player",
     "description": "Lettore multimediale open source che riproduce qualsiasi formato",
     "downloadUrl": "https://get.videolan.org/vlc/3.0.21/win64/vlc-3.0.21-win64.exe",
+    "homepage": "https://www.videolan.org/vlc/",
     "filename": "vlc-3.0.21-win64.exe",
     "detectRegistry": [
       "VLC media player"
@@ -36,6 +37,7 @@
     "name": "PotPlayer",
     "description": "Lettore multimediale avanzato con accelerazione hardware DXVA",
     "downloadUrl": "https://t1.daumcdn.net/potplayer/PotPlayer/Version/Latest/PotPlayerSetup64.exe",
+    "homepage": "https://potplayer.daum.net",
     "filename": "PotPlayerSetup64.exe",
     "detectRegistry": [
       "PotPlayer 64 bit"
@@ -51,6 +53,7 @@
     "name": "KMPlayer",
     "description": "Lettore multimediale versatile con supporto 3D e 4K",
     "downloadUrl": "https://www.kmplayer.com/down/KMPlayer64X.exe",
+    "homepage": "https://www.kmplayer.com",
     "filename": "KMPlayer64X.exe",
     "detectRegistry": [
       "KMPlayer"
@@ -66,6 +69,7 @@
     "name": "GOM Player",
     "description": "Lettore multimediale con ricerca automatica di codec e sottotitoli",
     "downloadUrl": "https://www.gomlab.com/en/gomplayer-media-player",
+    "homepage": "https://www.gomlab.com/gomplayer-media-player/",
     "filename": "GOMPlayerGlobalSetup.exe",
     "detectRegistry": [
       "GOM Player"
@@ -81,6 +85,7 @@
     "name": "mpv",
     "description": "Lettore multimediale minimalista e ad alte prestazioni da riga di comando",
     "downloadUrl": "https://sourceforge.net/projects/mpv-player-windows/files/64bit/mpv-x86_64-20260301-git-05fac7f.7z/download",
+    "homepage": "https://mpv.io",
     "filename": "mpv-x86_64-20260301-git-05fac7f.7z",
     "detectRegistry": [],
     "detectPaths": [
@@ -94,6 +99,7 @@
     "name": "Kodi",
     "description": "Centro multimediale open source per organizzare e riprodurre contenuti",
     "downloadUrl": "https://mirrors.kodi.tv/releases/windows/win64/kodi-21.2-Omega-x64.exe",
+    "homepage": "https://kodi.tv",
     "filename": "kodi-21.2-Omega-x64.exe",
     "detectRegistry": [
       "Kodi"
@@ -109,6 +115,7 @@
     "name": "Plex",
     "description": "Server e client multimediale per organizzare e trasmettere contenuti",
     "downloadUrl": "https://www.plex.tv/media-server-downloads/?cat=computer&plat=windows",
+    "homepage": "https://www.plex.tv",
     "filename": "Plex-Media-Server-Setup.exe",
     "detectRegistry": [
       "Plex Media Server"
@@ -124,6 +131,7 @@
     "name": "Jellyfin",
     "description": "Server multimediale open source e gratuito, alternativa a Plex",
     "downloadUrl": "https://repo.jellyfin.org/files/server/windows/latest-stable/amd64/jellyfin_10.11.6_windows-x64.exe",
+    "homepage": "https://jellyfin.org",
     "filename": "jellyfin_10.11.6_windows-x64.exe",
     "detectRegistry": [
       "Jellyfin Server"
@@ -139,6 +147,7 @@
     "name": "Stremio",
     "description": "Hub multimediale per guardare video con add-on personalizzabili",
     "downloadUrl": "https://www.stremio.com/downloads",
+    "homepage": "https://www.stremio.com",
     "filename": "StremioSetup.exe",
     "detectRegistry": [
       "Stremio"
@@ -154,6 +163,7 @@
     "name": "Spotify",
     "description": "Servizio di streaming musicale con milioni di brani",
     "downloadUrl": "https://download.scdn.co/SpotifySetup.exe",
+    "homepage": "https://www.spotify.com",
     "filename": "SpotifySetup.exe",
     "detectRegistry": [
       "Spotify"
@@ -169,6 +179,7 @@
     "name": "iTunes",
     "description": "Lettore multimediale e negozio musicale di Apple",
     "downloadUrl": "https://www.apple.com/itunes/download/win64",
+    "homepage": "https://www.apple.com/itunes/",
     "filename": "iTunes64Setup.exe",
     "detectRegistry": [
       "iTunes"
@@ -184,6 +195,7 @@
     "name": "Winamp",
     "description": "Lettore musicale classico e iconico con supporto skin e plugin",
     "downloadUrl": "https://www.winamp.com/download",
+    "homepage": "https://www.winamp.com",
     "filename": "WinampSetup.exe",
     "detectRegistry": [
       "Winamp"
@@ -199,6 +211,7 @@
     "name": "foobar2000",
     "description": "Lettore audio avanzato e personalizzabile per Windows",
     "downloadUrl": "https://www.foobar2000.org/getfile/foobar2000-x64_v2.1.6.exe",
+    "homepage": "https://www.foobar2000.org",
     "filename": "foobar2000-x64.exe",
     "detectRegistry": [
       "foobar2000"
@@ -214,6 +227,7 @@
     "name": "AIMP",
     "description": "Lettore musicale leggero con equalizzatore e convertitore integrato",
     "downloadUrl": "https://www.aimp.ru/files/windows/builds/aimp_5.30.2530.exe",
+    "homepage": "https://www.aimp.ru",
     "filename": "aimp_5.30.2530.exe",
     "detectRegistry": [
       "AIMP"
@@ -229,6 +243,7 @@
     "name": "MusicBee",
     "description": "Gestore e lettore musicale potente con interfaccia personalizzabile",
     "downloadUrl": "https://www.getmusicbee.com/downloads/",
+    "homepage": "https://www.getmusicbee.com",
     "filename": "MusicBeeSetup_3_6.zip",
     "detectRegistry": [
       "MusicBee"
@@ -261,6 +276,7 @@
     "name": "Reaper",
     "description": "DAW professionale completa e leggera per produzione audio",
     "downloadUrl": "https://www.reaper.fm/files/7.x/reaper724_x64-install.exe",
+    "homepage": "https://www.reaper.fm",
     "filename": "reaper_x64-install.exe",
     "detectRegistry": [
       "REAPER"
@@ -276,6 +292,7 @@
     "name": "FL Studio (trial)",
     "description": "DAW professionale per produzione musicale e beat making",
     "downloadUrl": "https://www.image-line.com/fl-studio-download/",
+    "homepage": "https://www.image-line.com",
     "filename": "flstudio_win64_setup.exe",
     "detectRegistry": [
       "FL Studio"
@@ -325,6 +342,7 @@
     "name": "Streamlabs",
     "description": "Piattaforma di streaming tutto-in-uno basata su OBS",
     "downloadUrl": "https://streamlabs.com/slobs/download",
+    "homepage": "https://streamlabs.com",
     "filename": "Streamlabs+OBS+Setup.exe",
     "detectRegistry": [
       "Streamlabs Desktop"
@@ -340,6 +358,7 @@
     "name": "XSplit Broadcaster",
     "description": "Software professionale per streaming live e registrazione",
     "downloadUrl": "https://www.xsplit.com/download",
+    "homepage": "https://www.xsplit.com",
     "filename": "XSplit_Broadcaster_Setup.exe",
     "detectRegistry": [
       "XSplit Broadcaster"
@@ -351,44 +370,11 @@
     "description_en": "Professional software for live streaming and recording"
   },
   {
-    "id": "sharex",
-    "name": "ShareX",
-    "description": "Strumento open source per cattura schermo, GIF e condivisione",
-    "source": "github",
-    "repo": "ShareX/ShareX",
-    "assetPattern": "^ShareX-[\\d.]+-setup\\.exe$",
-    "filename": "sharex-setup.exe",
-    "detectRegistry": [
-      "ShareX"
-    ],
-    "detectPaths": [
-      "C:/Program Files/ShareX/ShareX.exe"
-    ],
-    "size": "~10MB",
-    "description_en": "Open source tool for screen capture, GIFs and sharing"
-  },
-  {
-    "id": "greenshot",
-    "name": "Greenshot",
-    "description": "Strumento leggero per cattura schermo con annotazioni",
-    "source": "github",
-    "repo": "greenshot/greenshot",
-    "assetPattern": "^Greenshot-INSTALLER-.+-RELEASE\\.exe$",
-    "filename": "greenshot-setup.exe",
-    "detectRegistry": [
-      "Greenshot"
-    ],
-    "detectPaths": [
-      "C:/Program Files/Greenshot/Greenshot.exe"
-    ],
-    "size": "~3MB",
-    "description_en": "Lightweight screen capture tool with annotations"
-  },
-  {
     "id": "lightshot",
     "name": "Lightshot",
     "description": "Strumento rapido per cattura schermo con condivisione cloud",
     "downloadUrl": "https://app.prntscr.com/build/setup-lightshot.exe",
+    "homepage": "https://app.prntscr.com",
     "filename": "setup-lightshot.exe",
     "detectRegistry": [
       "Lightshot"
@@ -404,6 +390,7 @@
     "name": "Snagit (trial)",
     "description": "Strumento professionale di TechSmith per cattura e registrazione schermo",
     "downloadUrl": "https://download.techsmith.com/snagit/releases/snagit.exe",
+    "homepage": "https://www.techsmith.com/snagit",
     "filename": "snagit.exe",
     "detectRegistry": [
       "Snagit"
@@ -436,6 +423,7 @@
     "name": "GIMP",
     "description": "Editor di immagini open source, alternativa gratuita a Photoshop",
     "downloadUrl": "https://download.gimp.org/gimp/v2.10/windows/gimp-2.10.38-setup.exe",
+    "homepage": "https://www.gimp.org",
     "filename": "gimp-2.10.38-setup.exe",
     "detectRegistry": [
       "GIMP"
@@ -468,6 +456,7 @@
     "name": "Krita",
     "description": "Applicazione di pittura digitale open source per artisti",
     "downloadUrl": "https://download.kde.org/stable/krita/5.2.6/krita-x64-5.2.6-setup.exe",
+    "homepage": "https://krita.org",
     "filename": "krita-x64-5.2.6-setup.exe",
     "detectRegistry": [
       "Krita"
@@ -483,6 +472,7 @@
     "name": "Inkscape",
     "description": "Editor di grafica vettoriale open source, alternativa a Illustrator",
     "downloadUrl": "https://inkscape.org/gallery/item/56341/inkscape-1.4.2_2025-05-13_f4327f4-x64.exe",
+    "homepage": "https://inkscape.org",
     "filename": "inkscape-1.4.2_2025-05-13_f4327f4-x64.exe",
     "detectRegistry": [
       "Inkscape"
@@ -513,6 +503,7 @@
     "name": "Blender",
     "description": "Suite di creazione 3D open source per modellazione e animazione",
     "downloadUrl": "https://download.blender.org/release/Blender4.3/blender-4.3.0-windows-x64.msi",
+    "homepage": "https://www.blender.org",
     "filename": "blender-4.3.0-windows-x64.msi",
     "detectRegistry": [
       "Blender"
@@ -528,6 +519,7 @@
     "name": "DaVinci Resolve",
     "description": "Software professionale per montaggio video e color grading",
     "downloadUrl": "https://www.blackmagicdesign.com/products/davinciresolve",
+    "homepage": "https://www.blackmagicdesign.com/products/davinciresolve",
     "filename": "DaVinci_Resolve_Windows.zip",
     "detectRegistry": [
       "DaVinci Resolve"
@@ -560,6 +552,7 @@
     "name": "Kdenlive",
     "description": "Editor video open source di KDE con timeline multi-traccia",
     "downloadUrl": "https://download.kde.org/stable/kdenlive/24.12/windows/kdenlive-24.12.0.exe",
+    "homepage": "https://kdenlive.org",
     "filename": "kdenlive-24.12.0.exe",
     "detectRegistry": [
       "Kdenlive"
@@ -624,6 +617,7 @@
     "name": "MediaInfo",
     "description": "Strumento per visualizzare informazioni tecniche su file multimediali",
     "downloadUrl": "https://mediaarea.net/download/binary/mediainfo-gui/24.11/MediaInfo_GUI_24.11_Windows_x64.exe",
+    "homepage": "https://mediaarea.net/MediaInfo",
     "filename": "MediaInfo_GUI_Windows_x64.exe",
     "detectRegistry": [
       "MediaInfo"
@@ -639,6 +633,7 @@
     "name": "MKVToolNix",
     "description": "Strumento per creare, modificare e analizzare file MKV",
     "downloadUrl": "https://mkvtoolnix.download/windows/releases/97.0/mkvtoolnix-64-bit-97.0-setup.exe",
+    "homepage": "https://mkvtoolnix.download",
     "filename": "mkvtoolnix-64-bit-97.0-setup.exe",
     "detectRegistry": [
       "MKVToolNix"
@@ -671,6 +666,7 @@
     "name": "ImageMagick",
     "description": "Suite a riga di comando per creare, modificare e convertire immagini",
     "downloadUrl": "https://imagemagick.org/archive/binaries/ImageMagick-7.1.2-15-Q16-HDRI-x64-dll.exe",
+    "homepage": "https://imagemagick.org",
     "filename": "ImageMagick-7.1.2-15-Q16-HDRI-x64-dll.exe",
     "detectRegistry": [
       "ImageMagick"
@@ -686,6 +682,7 @@
     "name": "IrfanView",
     "description": "Visualizzatore di immagini veloce e leggero con conversione batch",
     "downloadUrl": "https://www.irfanview.info/files/iview466_x64_setup.exe",
+    "homepage": "https://www.irfanview.com",
     "filename": "iview_x64_setup.exe",
     "detectRegistry": [
       "IrfanView 64-bit"
@@ -701,6 +698,7 @@
     "name": "FastStone Image Viewer",
     "description": "Visualizzatore di immagini con editor integrato e cattura schermo",
     "downloadUrl": "https://www.faststone.org/FSIVDownload.htm",
+    "homepage": "https://www.faststone.org",
     "filename": "FSViewerSetup78.exe",
     "detectRegistry": [
       "FastStone Image Viewer"
@@ -716,6 +714,7 @@
     "name": "XnView MP",
     "description": "Visualizzatore e organizzatore di immagini con supporto 500+ formati",
     "downloadUrl": "https://download.xnview.com/XnViewMP-win-x64.exe",
+    "homepage": "https://www.xnview.com",
     "filename": "XnViewMP-win-x64.exe",
     "detectRegistry": [
       "XnView MP"
@@ -765,6 +764,7 @@
     "name": "Calibre",
     "description": "Gestore di e-book completo con convertitore e lettore integrato",
     "downloadUrl": "https://calibre-ebook.com/dist/win64",
+    "homepage": "https://calibre-ebook.com",
     "filename": "calibre-64bit-7.23.0.msi",
     "detectRegistry": [
       "calibre 64bit"

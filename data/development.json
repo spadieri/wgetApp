@@ -4,6 +4,7 @@
     "name": "Visual Studio Code",
     "description": "Editor di codice sorgente leggero e potente di Microsoft",
     "downloadUrl": "https://code.visualstudio.com/sha/download?build=stable&os=win32-x64",
+    "homepage": "https://code.visualstudio.com",
     "filename": "VSCodeSetup-x64.exe",
     "detectRegistry": [
       "Microsoft Visual Studio Code"
@@ -19,6 +20,7 @@
     "name": "Sublime Text",
     "description": "Editor di testo sofisticato per codice e markup",
     "downloadUrl": "https://www.sublimetext.com/download_thanks?target=win-x64",
+    "homepage": "https://www.sublimetext.com",
     "filename": "SublimeTextSetup-x64.exe",
     "detectRegistry": [
       "Sublime Text"
@@ -68,6 +70,7 @@
     "name": "IntelliJ IDEA Community",
     "description": "IDE Java gratuito e open source di JetBrains",
     "downloadUrl": "https://download.jetbrains.com/idea/ideaIC-2024.3.exe",
+    "homepage": "https://www.jetbrains.com/idea/",
     "filename": "ideaIC-2024.3.exe",
     "detectRegistry": [
       "IntelliJ IDEA Community Edition"
@@ -83,6 +86,7 @@
     "name": "PyCharm Community",
     "description": "IDE Python gratuito e open source di JetBrains",
     "downloadUrl": "https://download.jetbrains.com/python/pycharm-community-2024.3.exe",
+    "homepage": "https://www.jetbrains.com/pycharm/",
     "filename": "pycharm-community-2024.3.exe",
     "detectRegistry": [
       "JetBrains PyCharm Community Edition"
@@ -98,6 +102,7 @@
     "name": "Eclipse IDE",
     "description": "IDE open source per sviluppatori Java e multi-linguaggio",
     "downloadUrl": "https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2024-12/R/eclipse-inst-jre-win64.exe",
+    "homepage": "https://www.eclipse.org",
     "filename": "eclipse-inst-jre-win64.exe",
     "detectRegistry": [
       "Eclipse IDE"
@@ -130,6 +135,7 @@
     "name": "Android Studio",
     "description": "IDE ufficiale di Google per lo sviluppo di app Android",
     "downloadUrl": "https://redirector.gvt1.com/edgedl/android/studio/install/2024.2.1.12/android-studio-2024.2.1.12-windows.exe",
+    "homepage": "https://developer.android.com/studio",
     "filename": "android-studio-windows.exe",
     "detectRegistry": [
       "Android Studio"
@@ -162,6 +168,7 @@
     "name": "TortoiseGit",
     "description": "Interfaccia grafica per Git integrata in Windows Explorer",
     "downloadUrl": "https://download.tortoisegit.org/tgit/2.16.0.0/TortoiseGit-2.16.0.0-64bit.msi",
+    "homepage": "https://tortoisegit.org",
     "filename": "TortoiseGit-64bit.msi",
     "detectRegistry": [
       "TortoiseGit"
@@ -177,6 +184,7 @@
     "name": "GitHub Desktop",
     "description": "Client desktop ufficiale per GitHub con interfaccia semplice",
     "downloadUrl": "https://central.github.com/deployments/desktop/desktop/latest/win32",
+    "homepage": "https://desktop.github.com",
     "filename": "GitHubDesktopSetup-x64.exe",
     "detectRegistry": [
       "GitHub Desktop"
@@ -192,6 +200,7 @@
     "name": "Sourcetree",
     "description": "Client Git gratuito con interfaccia visiva di Atlassian",
     "downloadUrl": "https://product-downloads.atlassian.com/software/sourcetree/windows/ga/SourceTreeSetup-3.4.21.exe",
+    "homepage": "https://www.sourcetreeapp.com",
     "filename": "SourceTreeSetup.exe",
     "detectRegistry": [
       "Sourcetree"
@@ -207,6 +216,7 @@
     "name": "GitKraken",
     "description": "Client Git multi-piattaforma con interfaccia grafica avanzata",
     "downloadUrl": "https://www.gitkraken.com/download/windows64",
+    "homepage": "https://www.gitkraken.com",
     "filename": "GitKrakenSetup.exe",
     "detectRegistry": [
       "GitKraken"
@@ -222,6 +232,7 @@
     "name": "Node.js LTS",
     "description": "Runtime JavaScript lato server basato su V8 (versione LTS)",
     "downloadUrl": "https://nodejs.org/dist/v22.12.0/node-v22.12.0-x64.msi",
+    "homepage": "https://nodejs.org",
     "filename": "node-v22-x64.msi",
     "detectRegistry": [
       "Node.js"
@@ -237,6 +248,7 @@
     "name": "Python",
     "description": "Linguaggio di programmazione versatile e di alto livello",
     "downloadUrl": "https://www.python.org/ftp/python/3.13.1/python-3.13.1-amd64.exe",
+    "homepage": "https://www.python.org",
     "filename": "python-3.13.1-amd64.exe",
     "detectRegistry": [
       "Python 3"
@@ -270,6 +282,7 @@
     "name": "Go",
     "description": "Linguaggio di programmazione compilato e concorrente di Google",
     "downloadUrl": "https://go.dev/dl/go1.23.4.windows-amd64.msi",
+    "homepage": "https://go.dev",
     "filename": "go1.23.4.windows-amd64.msi",
     "detectRegistry": [
       "Go Programming Language"
@@ -285,6 +298,7 @@
     "name": "Rust (rustup)",
     "description": "Linguaggio di programmazione per prestazioni e sicurezza della memoria",
     "downloadUrl": "https://static.rust-lang.org/rustup/dist/x86_64-pc-windows-msvc/rustup-init.exe",
+    "homepage": "https://www.rust-lang.org",
     "filename": "rustup-init.exe",
     "detectRegistry": [
       "Rustup"
@@ -300,6 +314,7 @@
     "name": "PHP",
     "description": "Linguaggio di scripting lato server per lo sviluppo web",
     "downloadUrl": "https://windows.php.net/downloads/releases/php-8.4.16-Win32-vs17-x64.zip",
+    "homepage": "https://www.php.net",
     "filename": "php-8.4.16-Win32-vs17-x64.zip",
     "detectRegistry": [],
     "detectPaths": [
@@ -330,6 +345,7 @@
     "name": ".NET SDK",
     "description": "Kit di sviluppo per applicazioni .NET di Microsoft",
     "downloadUrl": "https://builds.dotnet.microsoft.com/dotnet/Sdk/9.0.201/dotnet-sdk-9.0.201-win-x64.exe",
+    "homepage": "https://dotnet.microsoft.com",
     "filename": "dotnet-sdk-9.0.201-win-x64.exe",
     "detectRegistry": [
       "Microsoft .NET SDK"
@@ -345,6 +361,7 @@
     "name": "XAMPP",
     "description": "Distribuzione Apache con PHP, MySQL e Perl per sviluppo web locale",
     "downloadUrl": "https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/8.2.12/xampp-windows-x64-8.2.12-0-VS16-installer.exe/download",
+    "homepage": "https://www.apachefriends.org",
     "filename": "xampp-windows-x64-installer.exe",
     "detectRegistry": [
       "XAMPP"
@@ -360,6 +377,7 @@
     "name": "WampServer",
     "description": "Ambiente di sviluppo web Windows con Apache, MySQL e PHP",
     "downloadUrl": "https://sourceforge.net/projects/wampserver/files/WampServer%203/WampServer%203.0.0/wampserver3.4.0_x64.exe/download",
+    "homepage": "https://www.wampserver.com",
     "filename": "wampserver3_x64.exe",
     "detectRegistry": [
       "WampServer"
@@ -375,6 +393,7 @@
     "name": "Docker Desktop",
     "description": "Piattaforma per creare ed eseguire container su Windows",
     "downloadUrl": "https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe",
+    "homepage": "https://www.docker.com/products/docker-desktop/",
     "filename": "DockerDesktopInstaller.exe",
     "detectRegistry": [
       "Docker Desktop"
@@ -390,6 +409,7 @@
     "name": "Vagrant",
     "description": "Strumento per la creazione e gestione di ambienti virtuali di sviluppo",
     "downloadUrl": "https://releases.hashicorp.com/vagrant/2.4.3/vagrant_2.4.3_windows_amd64.msi",
+    "homepage": "https://www.vagrantup.com",
     "filename": "vagrant_windows_amd64.msi",
     "detectRegistry": [
       "Vagrant"
@@ -405,6 +425,7 @@
     "name": "VirtualBox",
     "description": "Software di virtualizzazione gratuito e open source di Oracle",
     "downloadUrl": "https://download.virtualbox.org/virtualbox/7.1.4/VirtualBox-7.1.4-165100-Win.exe",
+    "homepage": "https://www.virtualbox.org",
     "filename": "VirtualBox-Win.exe",
     "detectRegistry": [
       "Oracle VM VirtualBox"
@@ -486,6 +507,7 @@
     "name": "Cygwin",
     "description": "Ambiente Unix-like e strumenti a riga di comando per Windows",
     "downloadUrl": "https://www.cygwin.com/setup-x86_64.exe",
+    "homepage": "https://www.cygwin.com",
     "filename": "setup-x86_64.exe",
     "detectRegistry": [
       "Cygwin"
@@ -535,6 +557,7 @@
     "name": "Hyper",
     "description": "Terminale moderno basato su Electron con temi e plugin",
     "downloadUrl": "https://releases.hyper.is/download/win",
+    "homepage": "https://hyper.is",
     "filename": "Hyper-Setup.exe",
     "detectRegistry": [
       "Hyper"
@@ -582,6 +605,7 @@
     "name": "WSL (Windows Subsystem for Linux)",
     "description": "Sottosistema Windows per eseguire distribuzioni Linux nativamente",
     "downloadUrl": "https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi",
+    "homepage": "https://learn.microsoft.com/windows/wsl/",
     "filename": "wsl_update_x64.msi",
     "detectRegistry": [
       "Windows Subsystem for Linux"
@@ -614,6 +638,7 @@
     "name": "Postman",
     "description": "Piattaforma completa per lo sviluppo e il test di API",
     "downloadUrl": "https://dl.pstmn.io/download/latest/win64",
+    "homepage": "https://www.postman.com",
     "filename": "Postman-win64-Setup.exe",
     "detectRegistry": [
       "Postman"
@@ -629,6 +654,7 @@
     "name": "DBeaver",
     "description": "Client di database universale gratuito e open source",
     "downloadUrl": "https://dbeaver.io/files/dbeaver-ce-latest-x86_64-setup.exe",
+    "homepage": "https://dbeaver.io",
     "filename": "dbeaver-ce-x86_64-setup.exe",
     "detectRegistry": [
       "DBeaver Community"
@@ -644,6 +670,7 @@
     "name": "HeidiSQL",
     "description": "Client leggero per MySQL, MariaDB, PostgreSQL e SQL Server",
     "downloadUrl": "https://www.heidisql.com/installers/HeidiSQL_12.8.0.6908_Setup.exe",
+    "homepage": "https://www.heidisql.com",
     "filename": "HeidiSQL_Setup.exe",
     "detectRegistry": [
       "HeidiSQL"
@@ -659,6 +686,7 @@
     "name": "MySQL Workbench",
     "description": "Strumento visivo per la progettazione e amministrazione di database MySQL",
     "downloadUrl": "https://dev.mysql.com/get/Downloads/MySQLGUITools/mysql-workbench-community-8.0.40-winx64.msi",
+    "homepage": "https://www.mysql.com/products/workbench/",
     "filename": "mysql-workbench-community-winx64.msi",
     "detectRegistry": [
       "MySQL Workbench"
@@ -674,6 +702,7 @@
     "name": "pgAdmin",
     "description": "Strumento di gestione e amministrazione per PostgreSQL",
     "downloadUrl": "https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v8.14/windows/pgadmin4-8.14-x64.exe",
+    "homepage": "https://www.pgadmin.org",
     "filename": "pgadmin4-x64.exe",
     "detectRegistry": [
       "pgAdmin 4"
@@ -689,6 +718,7 @@
     "name": "MongoDB Compass",
     "description": "Interfaccia grafica ufficiale per MongoDB",
     "downloadUrl": "https://downloads.mongodb.com/compass/mongodb-compass-1.44.7-win32-x64.exe",
+    "homepage": "https://www.mongodb.com/products/compass",
     "filename": "mongodb-compass-win32-x64.exe",
     "detectRegistry": [
       "MongoDB Compass"
@@ -721,6 +751,7 @@
     "name": "Fiddler Classic",
     "description": "Proxy di debug per il traffico HTTP/HTTPS di Telerik",
     "downloadUrl": "https://telerik-fiddler.s3.amazonaws.com/fiddler/FiddlerSetup.exe",
+    "homepage": "https://www.telerik.com/fiddler",
     "filename": "FiddlerSetup.exe",
     "detectRegistry": [
       "Fiddler"
@@ -736,6 +767,7 @@
     "name": "Charles Proxy",
     "description": "Proxy HTTP per monitorare e intercettare il traffico di rete",
     "downloadUrl": "https://www.charlesproxy.com/assets/release/4.6.7/charles-proxy-4.6.7-win64.msi",
+    "homepage": "https://www.charlesproxy.com",
     "filename": "charles-proxy-win64.msi",
     "detectRegistry": [
       "Charles"
@@ -751,6 +783,7 @@
     "name": "Wireshark",
     "description": "Analizzatore di protocolli di rete open source",
     "downloadUrl": "https://2.na.dl.wireshark.org/win64/Wireshark-4.6.4-x64.exe",
+    "homepage": "https://www.wireshark.org",
     "filename": "Wireshark-x64.exe",
     "detectRegistry": [
       "Wireshark"
@@ -766,6 +799,7 @@
     "name": "Beyond Compare",
     "description": "Strumento professionale per confronto e unione di file e cartelle",
     "downloadUrl": "https://www.scootersoftware.com/files/BCompare-5.2.0.31950.exe",
+    "homepage": "https://www.scootersoftware.com",
     "filename": "BCompare-x64.exe",
     "detectRegistry": [
       "Beyond Compare"

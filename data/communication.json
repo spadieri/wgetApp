@@ -4,6 +4,7 @@
     "name": "Discord",
     "description": "Chat vocale e testuale per gaming e community",
     "downloadUrl": "https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x64",
+    "homepage": "https://discord.com",
     "filename": "DiscordSetup.exe",
     "detectRegistry": [
       "Discord"
@@ -19,6 +20,7 @@
     "name": "Telegram Desktop",
     "description": "Messaggistica veloce e sicura basata su cloud",
     "downloadUrl": "https://telegram.org/dl/desktop/win64",
+    "homepage": "https://telegram.org",
     "filename": "tsetup-x64.exe",
     "detectRegistry": [
       "Telegram Desktop"
@@ -34,6 +36,7 @@
     "name": "WhatsApp Desktop",
     "description": "Client desktop per la messaggistica WhatsApp",
     "downloadUrl": "https://web.whatsapp.com/desktop/windows/release/x64/WhatsAppSetup.exe",
+    "homepage": "https://www.whatsapp.com",
     "filename": "WhatsAppSetup.exe",
     "detectRegistry": [
       "WhatsApp"
@@ -49,6 +52,7 @@
     "name": "Signal Desktop",
     "description": "Messaggistica crittografata end-to-end per la privacy",
     "downloadUrl": "https://updates.signal.org/desktop/signal-desktop-win-7.34.0.exe",
+    "homepage": "https://signal.org",
     "filename": "signal-desktop-win.exe",
     "detectRegistry": [
       "Signal"
@@ -64,6 +68,7 @@
     "name": "Slack",
     "description": "Piattaforma di comunicazione per team e aziende",
     "downloadUrl": "https://slack.com/ssb/download-win64-msi",
+    "homepage": "https://slack.com",
     "filename": "SlackSetup.msi",
     "detectRegistry": [
       "Slack"
@@ -79,6 +84,7 @@
     "name": "Microsoft Teams",
     "description": "Piattaforma di collaborazione e videoconferenza Microsoft",
     "downloadUrl": "https://go.microsoft.com/fwlink/?linkid=2196106&clcid=0x409&culture=en-us&country=us",
+    "homepage": "https://www.microsoft.com/microsoft-teams/",
     "filename": "MSTeamsSetup.exe",
     "detectRegistry": [
       "Microsoft Teams"
@@ -94,6 +100,7 @@
     "name": "Zoom",
     "description": "Videoconferenze e riunioni online per lavoro e studio",
     "downloadUrl": "https://zoom.us/client/latest/ZoomInstallerFull.exe?archType=x64",
+    "homepage": "https://zoom.us",
     "filename": "ZoomInstallerFull.exe",
     "detectRegistry": [
       "Zoom"
@@ -120,6 +127,7 @@
     "name": "Skype",
     "description": "Chiamate vocali, video e messaggistica istantanea",
     "downloadUrl": "https://go.skype.com/windows.desktop.download",
+    "homepage": "https://www.skype.com",
     "filename": "Skype-Setup.exe",
     "detectRegistry": [
       "Skype"
@@ -135,6 +143,7 @@
     "name": "Viber",
     "description": "Messaggistica e chiamate gratuite con crittografia end-to-end",
     "downloadUrl": "https://download.cdn.viber.com/desktop/windows/ViberSetup.exe",
+    "homepage": "https://www.viber.com",
     "filename": "ViberSetup.exe",
     "detectRegistry": [
       "Viber"
@@ -150,6 +159,7 @@
     "name": "LINE",
     "description": "App di messaggistica popolare in Asia con sticker e giochi",
     "downloadUrl": "https://desktop.line-scdn.net/win/new/LineInst.exe",
+    "homepage": "https://line.me",
     "filename": "LineInst.exe",
     "detectRegistry": [
       "LINE"
@@ -165,6 +175,7 @@
     "name": "WeChat",
     "description": "App di messaggistica e social media cinese multi-funzionale",
     "downloadUrl": "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe",
+    "homepage": "https://www.wechat.com",
     "filename": "WeChatSetup.exe",
     "detectRegistry": [
       "WeChat"
@@ -180,6 +191,7 @@
     "name": "Element (Matrix)",
     "description": "Client di messaggistica decentralizzato basato su protocollo Matrix",
     "downloadUrl": "https://packages.riot.im/desktop/install/win32/x64/Element%20Setup.exe",
+    "homepage": "https://element.io",
     "filename": "Element Setup.exe",
     "detectRegistry": [
       "Element"
@@ -229,6 +241,7 @@
     "name": "TeamSpeak",
     "description": "Comunicazione vocale professionale per gaming e community",
     "downloadUrl": "https://files.teamspeak-services.com/pre_releases/client/5.0.0-beta77/teamspeak-client.msi",
+    "homepage": "https://teamspeak.com",
     "filename": "teamspeak-client.msi",
     "detectRegistry": [
       "TeamSpeak"
@@ -244,6 +257,7 @@
     "name": "Ventrilo",
     "description": "Software di comunicazione vocale classico per gaming",
     "downloadUrl": "https://www.ventrilo.com/dlprod.php?id=403",
+    "homepage": "https://www.ventrilo.com",
     "filename": "Ventrilo-4.1.2-Windows-x64.exe",
     "detectRegistry": [
       "Ventrilo Client"
@@ -259,6 +273,7 @@
     "name": "Guilded",
     "description": "Piattaforma di chat per community di gaming con strumenti avanzati",
     "downloadUrl": "https://www.guilded.gg/downloads/app/win32/ia32",
+    "homepage": "https://www.guilded.gg",
     "filename": "Guilded-Setup.exe",
     "detectRegistry": [
       "Guilded"
@@ -308,6 +323,7 @@
     "name": "Rambox",
     "description": "Workspace aggregatore per app di messaggistica e email",
     "downloadUrl": "https://rambox.app/api/download?os=windows&package=exe",
+    "homepage": "https://rambox.app",
     "filename": "Rambox-Setup.exe",
     "detectRegistry": [
       "Rambox"
@@ -317,23 +333,6 @@
     ],
     "size": "~100MB",
     "description_en": "Workspace aggregator for messaging and email apps"
-  },
-  {
-    "id": "ferdi",
-    "name": "Ferdi",
-    "description": "Aggregatore di servizi di messaggistica fork di Franz",
-    "source": "github",
-    "repo": "ferdium/ferdium-app",
-    "assetPattern": "^Ferdium-win-AutoSetup-[\\d.]+-x64\\.exe$",
-    "filename": "ferdi-setup.exe",
-    "detectRegistry": [
-      "Ferdi"
-    ],
-    "detectPaths": [
-      "C:/Users/Pd85/AppData/Local/Programs/ferdi/Ferdi.exe"
-    ],
-    "size": "~85MB",
-    "description_en": "Messaging service aggregator, fork of Franz"
   },
   {
     "id": "ferdium",
@@ -357,6 +356,7 @@
     "name": "Beeper",
     "description": "App universale che unifica tutte le piattaforme di messaggistica",
     "downloadUrl": "https://download.beeper.com/windows/appinstaller/x64",
+    "homepage": "https://www.beeper.com",
     "filename": "Beeper-Setup.exe",
     "detectRegistry": [
       "Beeper"
@@ -372,6 +372,7 @@
     "name": "Pidgin",
     "description": "Client di messaggistica multi-protocollo open source",
     "downloadUrl": "https://sourceforge.net/projects/pidgin/files/Pidgin/2.14.13/pidgin-2.14.13-offline.exe/download",
+    "homepage": "https://pidgin.im",
     "filename": "pidgin-2.14.13-offline.exe",
     "detectRegistry": [
       "Pidgin"
@@ -387,6 +388,7 @@
     "name": "Miranda IM",
     "description": "Client di messaggistica istantanea leggero e modulare",
     "downloadUrl": "https://www.miranda-ng.org/distr/stable/miranda-ng-v0.96.6_x64.exe",
+    "homepage": "https://www.miranda-ng.org",
     "filename": "miranda-ng-v0.96.6_x64.exe",
     "detectRegistry": [
       "Miranda NG"
@@ -419,6 +421,7 @@
     "name": "mIRC",
     "description": "Client IRC classico per Windows con scripting integrato",
     "downloadUrl": "https://www.mirc.com/get.php",
+    "homepage": "https://www.mirc.com",
     "filename": "mirc.exe",
     "detectRegistry": [
       "mIRC"
@@ -434,6 +437,7 @@
     "name": "Mozilla Thunderbird",
     "description": "Client email open source con calendario e gestione contatti",
     "downloadUrl": "https://download.mozilla.org/?product=thunderbird-latest&os=win64&lang=it",
+    "homepage": "https://www.thunderbird.net",
     "filename": "Thunderbird Setup.exe",
     "detectRegistry": [
       "Mozilla Thunderbird"
@@ -449,6 +453,7 @@
     "name": "Mailspring",
     "description": "Client email moderno e veloce con interfaccia elegante",
     "downloadUrl": "https://updates.getmailspring.com/download?platform=win32",
+    "homepage": "https://getmailspring.com",
     "filename": "Mailspring-Setup.exe",
     "detectRegistry": [
       "Mailspring"
@@ -464,6 +469,7 @@
     "name": "eM Client",
     "description": "Client email completo con calendario, contatti e chat",
     "downloadUrl": "https://www.emclient.com/dist/latest/setup.msi",
+    "homepage": "https://www.emclient.com",
     "filename": "setup.msi",
     "detectRegistry": [
       "eM Client"
@@ -479,6 +485,7 @@
     "name": "BlueMail",
     "description": "Client email gratuito con supporto multi-account",
     "downloadUrl": "https://bluemail.me/desktop/direct/",
+    "homepage": "https://bluemail.me",
     "filename": "BlueMail-Desktop-Installer.exe",
     "detectRegistry": [
       "BlueMail"
@@ -494,6 +501,7 @@
     "name": "Spark Mail",
     "description": "Client email intelligente con inbox prioritaria e collaborazione",
     "downloadUrl": "https://downloads.sparkmailapp.com/Spark3/win/dist/3.12.0.63910/Spark.exe",
+    "homepage": "https://sparkmailapp.com",
     "filename": "Spark.exe",
     "detectRegistry": [
       "Spark"
@@ -509,6 +517,7 @@
     "name": "ProtonMail Bridge",
     "description": "Bridge per usare ProtonMail con client email desktop",
     "downloadUrl": "https://proton.me/download/bridge/Bridge-Installer.exe",
+    "homepage": "https://proton.me/mail/bridge",
     "filename": "Bridge-Installer.exe",
     "detectRegistry": [
       "Proton Mail Bridge"
@@ -524,6 +533,7 @@
     "name": "Tutanota Desktop",
     "description": "Client email crittografato per comunicazioni sicure e private",
     "downloadUrl": "https://app.tuta.com/desktop/tutanota-desktop-win.exe",
+    "homepage": "https://tuta.com",
     "filename": "tutanota-desktop-win.exe",
     "detectRegistry": [
       "Tutanota Desktop"
@@ -539,6 +549,7 @@
     "name": "Notion",
     "description": "Workspace all-in-one per note, wiki, database e gestione progetti",
     "downloadUrl": "https://www.notion.so/desktop/windows/download",
+    "homepage": "https://www.notion.so",
     "filename": "Notion-Setup.exe",
     "detectRegistry": [
       "Notion"
@@ -637,6 +648,7 @@
     "name": "Evernote",
     "description": "App di note e organizzazione con ricerca potente e web clipper",
     "downloadUrl": "https://evernote.com/download",
+    "homepage": "https://evernote.com",
     "filename": "Evernote-Setup.exe",
     "detectRegistry": [
       "Evernote"
@@ -652,6 +664,7 @@
     "name": "Todoist",
     "description": "Gestore di attività e to-do list con progetti e priorità",
     "downloadUrl": "https://todoist.com/windows_app",
+    "homepage": "https://todoist.com",
     "filename": "Todoist-Setup.exe",
     "detectRegistry": [
       "Todoist"
@@ -667,6 +680,7 @@
     "name": "TickTick",
     "description": "App di gestione attività con timer Pomodoro e calendario",
     "downloadUrl": "https://ticktick.com/static/getApp/download?type=win",
+    "homepage": "https://ticktick.com",
     "filename": "TickTick-Setup.exe",
     "detectRegistry": [
       "TickTick"
@@ -715,6 +729,7 @@
     "name": "Monday.com",
     "description": "Sistema operativo di lavoro per gestione team e progetti",
     "downloadUrl": "https://monday.com/desktop-app/monday-win-latest.exe",
+    "homepage": "https://monday.com",
     "filename": "monday-win-latest.exe",
     "detectRegistry": [],
     "detectPaths": [],
@@ -726,6 +741,7 @@
     "name": "Mattermost",
     "description": "Piattaforma di messaggistica open source per team aziendali",
     "downloadUrl": "https://releases.mattermost.com/desktop/5.9.0/mattermost-desktop-setup-5.9.0-win.exe",
+    "homepage": "https://mattermost.com",
     "filename": "mattermost-desktop-setup.exe",
     "detectRegistry": [
       "Mattermost"

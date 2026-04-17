@@ -4,6 +4,7 @@
     "name": "7-Zip",
     "description": "Compressore e estrattore di archivi open source",
     "downloadUrl": "https://www.7-zip.org/a/7z2408-x64.exe",
+    "homepage": "https://www.7-zip.org",
     "filename": "7z2408-x64.exe",
     "detectRegistry": [
       "7-Zip"
@@ -19,6 +20,7 @@
     "name": "WinRAR",
     "description": "Gestore di archivi con supporto RAR nativo",
     "downloadUrl": "https://www.win-rar.com/fileadmin/winrar-versions/winrar/winrar-x64-701.exe",
+    "homepage": "https://www.win-rar.com",
     "filename": "winrar-x64-701.exe",
     "detectRegistry": [
       "WinRAR archiver"
@@ -51,6 +53,7 @@
     "name": "Bandizip",
     "description": "Archiviatore veloce con supporto multiformato",
     "downloadUrl": "https://dl.bandisoft.com/bandizip.std/BANDIZIP-SETUP-STD-X64.EXE",
+    "homepage": "https://www.bandisoft.com/bandizip/",
     "filename": "BANDIZIP-SETUP-STD-X64.EXE",
     "detectRegistry": [
       "Bandizip"
@@ -83,6 +86,7 @@
     "name": "Everything",
     "description": "Motore di ricerca file istantaneo per Windows",
     "downloadUrl": "https://www.voidtools.com/Everything-1.4.1.1026.x64-Setup.exe",
+    "homepage": "https://www.voidtools.com",
     "filename": "Everything-1.4.1.1026.x64-Setup.exe",
     "detectRegistry": [
       "Everything"
@@ -98,6 +102,7 @@
     "name": "Listary",
     "description": "Utilità di ricerca e avvio rapido per Windows",
     "downloadUrl": "https://www.listary.com/download/Listary.exe",
+    "homepage": "https://www.listary.com",
     "filename": "Listary.exe",
     "detectRegistry": [
       "Listary"
@@ -147,6 +152,7 @@
     "name": "AutoHotkey",
     "description": "Linguaggio di scripting per automazione desktop",
     "downloadUrl": "https://www.autohotkey.com/download/ahk-v2.exe",
+    "homepage": "https://www.autohotkey.com",
     "filename": "ahk-v2.exe",
     "detectRegistry": [
       "AutoHotkey"
@@ -230,6 +236,7 @@
     "name": "TreeSize Free",
     "description": "Analizzatore spazio disco con visualizzazione ad albero",
     "downloadUrl": "https://downloads.jam-software.de/treesize_free/TreeSizeFreeSetup.exe",
+    "homepage": "https://www.jam-software.com/treesize_free",
     "filename": "TreeSizeFreeSetup.exe",
     "detectRegistry": [
       "TreeSize Free"
@@ -262,6 +269,7 @@
     "name": "Bulk Rename Utility",
     "description": "Rinominatore di file in massa potente e gratuito",
     "downloadUrl": "https://www.bulkrenameutility.co.uk/Downloads_v344/BRU_setup.exe",
+    "homepage": "https://www.bulkrenameutility.co.uk",
     "filename": "BRU_setup.exe",
     "detectRegistry": [
       "Bulk Rename Utility"
@@ -277,6 +285,7 @@
     "name": "Advanced Renamer",
     "description": "Strumento avanzato per rinominare file in batch",
     "downloadUrl": "https://www.advancedrenamer.com/down/win/advanced_renamer_setup_4_20.exe",
+    "homepage": "https://www.advancedrenamer.com",
     "filename": "advanced_renamer_setup_4_20.exe",
     "detectRegistry": [
       "Advanced Renamer"
@@ -292,6 +301,7 @@
     "name": "Revo Uninstaller",
     "description": "Disinstallatore avanzato con pulizia residui",
     "downloadUrl": "https://download.revouninstaller.com/download/revosetup.exe",
+    "homepage": "https://www.revouninstaller.com",
     "filename": "revosetup.exe",
     "detectRegistry": [
       "Revo Uninstaller"
@@ -307,6 +317,7 @@
     "name": "IObit Uninstaller",
     "description": "Disinstallatore con rimozione completa dei programmi",
     "downloadUrl": "https://cdn.iobit.com/dl/iobituninstaller.exe",
+    "homepage": "https://www.iobit.com/en/advanceduninstaller.php",
     "filename": "iobituninstaller.exe",
     "detectRegistry": [
       "IObit Uninstaller"
@@ -322,6 +333,7 @@
     "name": "Geek Uninstaller",
     "description": "Disinstallatore leggero e portatile",
     "downloadUrl": "https://geekuninstaller.com/geek.zip",
+    "homepage": "https://geekuninstaller.com",
     "filename": "geek.zip",
     "detectRegistry": [
       "Geek Uninstaller"
@@ -337,6 +349,7 @@
     "name": "CCleaner",
     "description": "Strumento di pulizia e ottimizzazione del sistema",
     "downloadUrl": "https://download.ccleaner.com/ccsetup625.exe",
+    "homepage": "https://www.ccleaner.com",
     "filename": "ccsetup625.exe",
     "detectRegistry": [
       "CCleaner"
@@ -352,6 +365,7 @@
     "name": "BleachBit",
     "description": "Pulitore di sistema open source per liberare spazio",
     "downloadUrl": "https://www.bleachbit.org/download/file/t?file=BleachBit-4.6.2-setup.exe",
+    "homepage": "https://www.bleachbit.org",
     "filename": "BleachBit-4.6.2-setup.exe",
     "detectRegistry": [
       "BleachBit"
@@ -367,6 +381,7 @@
     "name": "Glary Utilities",
     "description": "Suite completa di ottimizzazione e manutenzione sistema",
     "downloadUrl": "https://download.glarysoft.com/gu5setup.exe",
+    "homepage": "https://www.glarysoft.com/glary-utilities/",
     "filename": "gu5setup.exe",
     "detectRegistry": [
       "Glary Utilities"
@@ -382,6 +397,7 @@
     "name": "Wise Disk Cleaner",
     "description": "Pulitore disco con deframmentazione integrata",
     "downloadUrl": "https://downloads.wisecleaner.com/soft/WDCFree.exe",
+    "homepage": "https://www.wisecleaner.com/wise-disk-cleaner.html",
     "filename": "WDCFree.exe",
     "detectRegistry": [
       "Wise Disk Cleaner"
@@ -397,6 +413,7 @@
     "name": "Recuva",
     "description": "Strumento di recupero file cancellati",
     "downloadUrl": "https://download.ccleaner.com/rcsetup153.exe",
+    "homepage": "https://www.ccleaner.com/recuva",
     "filename": "rcsetup153.exe",
     "detectRegistry": [
       "Recuva"
@@ -412,6 +429,7 @@
     "name": "TestDisk",
     "description": "Strumento di recupero dati e riparazione partizioni",
     "downloadUrl": "https://www.cgsecurity.org/Download_and_donate.php/testdisk-7.2.win64.zip",
+    "homepage": "https://www.cgsecurity.org/wiki/TestDisk",
     "filename": "testdisk-7.2.win64.zip",
     "detectRegistry": [
       "TestDisk"
@@ -427,6 +445,7 @@
     "name": "EaseUS Partition Master",
     "description": "Gestore partizioni disco con interfaccia grafica",
     "downloadUrl": "https://down.easeus.com/product/epm_free",
+    "homepage": "https://www.easeus.com/partition-manager/",
     "filename": "epm_free_setup.exe",
     "detectRegistry": [
       "EaseUS Partition Master"
@@ -442,6 +461,7 @@
     "name": "MiniTool Partition Wizard",
     "description": "Gestore partizioni gratuito con funzioni avanzate",
     "downloadUrl": "https://cdn2.minitool.com/?p=pw&e=pw-free",
+    "homepage": "https://www.partitionwizard.com",
     "filename": "pw-free-online.exe",
     "detectRegistry": [
       "MiniTool Partition Wizard"
@@ -508,6 +528,7 @@
     "name": "UltraISO (Trial)",
     "description": "Editor e creatore di immagini ISO professionale",
     "downloadUrl": "https://www.ultraiso.com/uiso9_pe.exe",
+    "homepage": "https://www.ultraiso.com",
     "filename": "uiso9_pe.exe",
     "detectRegistry": [
       "UltraISO"
@@ -523,6 +544,7 @@
     "name": "PowerISO (Trial)",
     "description": "Strumento completo per gestione immagini disco",
     "downloadUrl": "https://www.poweriso.com/PowerISO8.exe",
+    "homepage": "https://www.poweriso.com",
     "filename": "PowerISO8.exe",
     "detectRegistry": [
       "PowerISO"
@@ -538,6 +560,7 @@
     "name": "ImgBurn",
     "description": "Masterizzatore di immagini disco leggero e versatile",
     "downloadUrl": "https://download.imgburn.com/SetupImgBurn_2.5.8.0.exe",
+    "homepage": "https://www.imgburn.com",
     "filename": "SetupImgBurn_2.5.8.0.exe",
     "detectRegistry": [
       "ImgBurn"
@@ -553,6 +576,7 @@
     "name": "Virtual CloneDrive",
     "description": "Lettore virtuale di immagini disco gratuito",
     "downloadUrl": "https://www.elby.ch/download/SetupVCD.exe",
+    "homepage": "https://www.redfox.bz/virtual-clonedrive.html",
     "filename": "SetupVCD.exe",
     "detectRegistry": [
       "Virtual CloneDrive"
@@ -585,6 +609,7 @@
     "name": "QuickHash GUI",
     "description": "Strumento di hashing file con interfaccia grafica",
     "downloadUrl": "https://www.quickhash-gui.org/download/quickhash-v3.3.4-win64-setup.exe",
+    "homepage": "https://www.quickhash-gui.org",
     "filename": "quickhash-v3.3.4-win64-setup.exe",
     "detectRegistry": [
       "QuickHash GUI"
@@ -600,6 +625,7 @@
     "name": "Sysinternals Suite",
     "description": "Raccolta completa di utilità di sistema Microsoft",
     "downloadUrl": "https://download.sysinternals.com/files/SysinternalsSuite.zip",
+    "homepage": "https://learn.microsoft.com/sysinternals/",
     "filename": "SysinternalsSuite.zip",
     "detectRegistry": [
       "Sysinternals Suite"
@@ -615,6 +641,7 @@
     "name": "Process Explorer",
     "description": "Gestore processi avanzato di Microsoft Sysinternals",
     "downloadUrl": "https://download.sysinternals.com/files/ProcessExplorer.zip",
+    "homepage": "https://learn.microsoft.com/sysinternals/downloads/process-explorer",
     "filename": "ProcessExplorer.zip",
     "detectRegistry": [
       "Process Explorer"
@@ -630,6 +657,7 @@
     "name": "Autoruns",
     "description": "Gestore completo dei programmi di avvio automatico",
     "downloadUrl": "https://download.sysinternals.com/files/Autoruns.zip",
+    "homepage": "https://learn.microsoft.com/sysinternals/downloads/autoruns",
     "filename": "Autoruns.zip",
     "detectRegistry": [
       "Autoruns"
@@ -696,6 +724,7 @@
     "name": "Wallpaper Engine",
     "description": "Sfondi animati e interattivi per il desktop (Steam)",
     "downloadUrl": "https://store.steampowered.com/app/431960/Wallpaper_Engine/",
+    "homepage": "https://www.wallpaperengine.io",
     "filename": "steam-redirect",
     "detectRegistry": [
       "Wallpaper Engine"
@@ -711,6 +740,7 @@
     "name": "f.lux",
     "description": "Regolatore automatico della temperatura colore dello schermo",
     "downloadUrl": "https://justgetflux.com/flux-setup.exe",
+    "homepage": "https://justgetflux.com",
     "filename": "flux-setup.exe",
     "detectRegistry": [
       "f.lux"
@@ -726,6 +756,7 @@
     "name": "EarTrumpet",
     "description": "Controllo volume avanzato per singole applicazioni",
     "downloadUrl": "https://apps.microsoft.com/detail/9NBLGGH516XP",
+    "homepage": "https://eartrumpet.app",
     "filename": "ms-store-redirect",
     "detectRegistry": [
       "EarTrumpet"
@@ -741,6 +772,7 @@
     "name": "Files App",
     "description": "File manager moderno con interfaccia a schede per Windows",
     "downloadUrl": "https://apps.microsoft.com/detail/9NGHP3DX8HDX",
+    "homepage": "https://files.community",
     "filename": "ms-store-redirect",
     "detectRegistry": [
       "Files"
@@ -756,6 +788,7 @@
     "name": "Directory Opus (Trial)",
     "description": "File manager professionale con doppio pannello",
     "downloadUrl": "https://www.gpsoft.com.au/files/Opus13/DOpusInstall.exe",
+    "homepage": "https://www.gpsoft.com.au",
     "filename": "DOpusInstall.exe",
     "detectRegistry": [
       "Directory Opus"
@@ -771,6 +804,7 @@
     "name": "TeraCopy",
     "description": "Copia file veloce con verifica e ripresa trasferimenti",
     "downloadUrl": "https://www.codesector.com/files/teracopy.exe",
+    "homepage": "https://www.codesector.com/teracopy",
     "filename": "teracopy.exe",
     "detectRegistry": [
       "TeraCopy"

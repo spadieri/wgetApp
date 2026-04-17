@@ -4,6 +4,7 @@
     "name": "Ollama",
     "description": "Runtime per LLM locali via CLI",
     "downloadUrl": "https://ollama.com/download/OllamaSetup.exe",
+    "homepage": "https://ollama.com",
     "filename": "OllamaSetup.exe",
     "detectRegistry": [
       "Ollama"
@@ -19,6 +20,7 @@
     "name": "LM Studio",
     "description": "App desktop per scaricare ed eseguire LLM locali",
     "downloadUrl": "https://lmstudio.ai/download/latest/win32/x64",
+    "homepage": "https://lmstudio.ai",
     "filename": "lmstudio-setup.exe",
     "detectRegistry": [
       "LM Studio"
@@ -68,6 +70,7 @@
     "name": "AnythingLLM",
     "description": "Chatbot AI all-in-one con supporto RAG sui tuoi documenti",
     "downloadUrl": "https://cdn.anythingllm.com/latest/AnythingLLMDesktop.exe",
+    "homepage": "https://anythingllm.com",
     "filename": "AnythingLLMDesktop.exe",
     "detectRegistry": [
       "AnythingLLM"
@@ -117,6 +120,7 @@
     "name": "Claude Desktop",
     "description": "App desktop ufficiale di Claude AI di Anthropic",
     "downloadUrl": "https://claude.ai/api/desktop/win32/x64/setup/latest/redirect",
+    "homepage": "https://claude.ai",
     "filename": "claude-setup.exe",
     "detectRegistry": [
       "Claude"
@@ -132,6 +136,7 @@
     "name": "Cursor",
     "description": "Editor di codice AI-first basato su VS Code",
     "downloadUrl": "https://api2.cursor.sh/updates/download/golden/win32-x64-user/cursor/3.1",
+    "homepage": "https://www.cursor.com",
     "filename": "cursor-setup.exe",
     "detectRegistry": [
       "Cursor"
@@ -232,6 +237,7 @@
     "name": "ComfyUI Desktop",
     "description": "Interfaccia visuale a nodi per Stable Diffusion",
     "downloadUrl": "https://download.comfy.org/windows/nsis/x64",
+    "homepage": "https://www.comfy.org",
     "filename": "comfyui-desktop-setup.exe",
     "detectRegistry": [
       "ComfyUI"

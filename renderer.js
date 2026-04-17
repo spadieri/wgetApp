@@ -40,6 +40,8 @@ const sidebarNav = document.getElementById('sidebar-nav');
 const categoryTitle = document.getElementById('category-title');
 const cardsGrid = document.getElementById('cards-grid');
 const searchInput = document.getElementById('search');
+const updateBadge = document.getElementById('update-badge');
+const openDownloadsBtn = document.getElementById('open-downloads');
 
 // ============================================================
 // Initialization
@@ -62,6 +64,8 @@ async function init() {
     setupProgressListener();
     setupSearchHandler();
     setupLangToggle();
+    setupUpdateBadge();
+    setupDownloadsButton();
   } catch (err) {
     console.error('Failed to initialize app:', err);
     showToast(t('error.loadCategories'), 'error');
@@ -175,14 +179,26 @@ async function selectCategory(categoryId) {
 function renderCards() {
   cardsGrid.innerHTML = '';
 
-  const data = softwareData[currentCategory] || [];
   const searchTerm = searchInput.value.trim().toLowerCase();
+  const isCrossSearch = searchTerm.length > 0;
 
-  const filtered = searchTerm
-    ? data.filter(sw => sw.name.toLowerCase().includes(searchTerm))
-    : data;
+  // Build list of { sw, cat } — cat is null when not in cross-search mode
+  let items = [];
+  if (isCrossSearch) {
+    for (const cat of categories) {
+      const list = softwareData[cat.id] || [];
+      for (const sw of list) {
+        if (sw.name.toLowerCase().includes(searchTerm)) {
+          items.push({ sw, cat });
+        }
+      }
+    }
+  } else {
+    const list = softwareData[currentCategory] || [];
+    items = list.map(sw => ({ sw, cat: null }));
+  }
 
-  if (filtered.length === 0) {
+  if (items.length === 0) {
     const emptyDiv = document.createElement('div');
     emptyDiv.className = 'empty-state';
     emptyDiv.innerHTML = `
@@ -194,71 +210,99 @@ function renderCards() {
     return;
   }
 
-  filtered.forEach(sw => {
-    const isInstalled = installedStatus[sw.id] === true;
+  items.forEach(({ sw, cat }) => cardsGrid.appendChild(createCardElement(sw, cat)));
+}
 
-    const card = document.createElement('div');
-    card.className = 'card';
-    card.dataset.id = sw.id;
-    card.dataset.name = sw.name;
+function createCardElement(sw, cat) {
+  const isInstalled = installedStatus[sw.id] === true;
 
-    if (isInstalled) {
-      card.classList.add('installed');
-    }
+  const card = document.createElement('div');
+  card.className = 'card';
+  card.dataset.id = sw.id;
+  card.dataset.name = sw.name;
+  if (isInstalled) card.classList.add('installed');
 
-    // Card header
-    const header = document.createElement('div');
-    header.className = 'card-header';
+  // Card header
+  const header = document.createElement('div');
+  header.className = 'card-header';
 
-    const nameSpan = document.createElement('span');
-    nameSpan.className = 'card-name';
-    nameSpan.textContent = sw.name;
-    header.appendChild(nameSpan);
+  const nameSpan = document.createElement('span');
+  nameSpan.className = 'card-name';
+  nameSpan.textContent = sw.name;
+  header.appendChild(nameSpan);
 
-    if (isInstalled) {
-      const badge = document.createElement('span');
-      badge.className = 'installed-badge';
-      header.appendChild(badge);
-    }
+  if (isInstalled) {
+    const badge = document.createElement('span');
+    badge.className = 'installed-badge';
+    header.appendChild(badge);
+  }
 
-    // Description
-    const desc = document.createElement('p');
-    desc.className = 'card-description';
-    desc.textContent = currentLang === 'en' ? (sw.description_en || sw.description) : sw.description;
+  // Category chip (only shown in cross-category search)
+  if (cat) {
+    const chip = document.createElement('span');
+    chip.className = 'category-chip';
+    chip.textContent = currentLang === 'en' ? (cat.name_en || cat.name) : cat.name;
+    header.appendChild(chip);
+  }
 
-    // Footer
-    const footer = document.createElement('div');
-    footer.className = 'card-footer';
+  // Description
+  const desc = document.createElement('p');
+  desc.className = 'card-description';
+  desc.textContent = currentLang === 'en' ? (sw.description_en || sw.description) : sw.description;
 
-    const sizeSpan = document.createElement('span');
-    sizeSpan.className = 'card-size';
-    sizeSpan.textContent = sw.size || '';
-    footer.appendChild(sizeSpan);
+  // Footer
+  const footer = document.createElement('div');
+  footer.className = 'card-footer';
 
-    const progressText = document.createElement('span');
-    progressText.className = 'progress-text';
-    progressText.style.display = 'none';
-    footer.appendChild(progressText);
+  const sizeSpan = document.createElement('span');
+  sizeSpan.className = 'card-size';
+  sizeSpan.textContent = sw.size || '';
+  footer.appendChild(sizeSpan);
 
-    // Progress bar
-    const progressContainer = document.createElement('div');
-    progressContainer.className = 'progress-bar-container';
+  const progressText = document.createElement('span');
+  progressText.className = 'progress-text';
+  progressText.style.display = 'none';
+  footer.appendChild(progressText);
 
-    const progressBar = document.createElement('div');
-    progressBar.className = 'progress-bar';
-    progressContainer.appendChild(progressBar);
+  const homepageUrl = getHomepageUrl(sw);
+  if (homepageUrl) {
+    const link = document.createElement('button');
+    link.className = 'card-homepage';
+    link.type = 'button';
+    link.innerHTML = `&#127760; <span class="card-homepage-label"></span>`;
+    link.querySelector('.card-homepage-label').textContent = t('card.projectLabel');
+    link.title = t('card.projectLink');
+    link.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (window.electronAPI && window.electronAPI.openExternal) {
+        window.electronAPI.openExternal(homepageUrl);
+      }
+    });
+    footer.appendChild(link);
+  }
 
-    // Assemble card
-    card.appendChild(header);
-    card.appendChild(desc);
-    card.appendChild(footer);
-    card.appendChild(progressContainer);
+  // Progress bar
+  const progressContainer = document.createElement('div');
+  progressContainer.className = 'progress-bar-container';
 
-    // Click handler
-    card.addEventListener('click', () => handleDownload(sw, card));
+  const progressBar = document.createElement('div');
+  progressBar.className = 'progress-bar';
+  progressContainer.appendChild(progressBar);
 
-    cardsGrid.appendChild(card);
-  });
+  card.appendChild(header);
+  card.appendChild(desc);
+  card.appendChild(footer);
+  card.appendChild(progressContainer);
+
+  card.addEventListener('click', () => handleDownload(sw, card));
+
+  return card;
+}
+
+function getHomepageUrl(sw) {
+  if (sw.homepage) return sw.homepage;
+  if (sw.source === 'github' && sw.repo) return `https://github.com/${sw.repo}`;
+  return null;
 }
 
 // ============================================================
@@ -356,43 +400,130 @@ function setupProgressListener() {
 // ============================================================
 
 function setupSearchHandler() {
+  let debounce;
   searchInput.addEventListener('input', () => {
-    const searchTerm = searchInput.value.trim().toLowerCase();
-    const cards = cardsGrid.querySelectorAll('.card');
-
-    // If renderCards was called (e.g., after category switch), cards reflect current data.
-    // For live filtering, hide/show existing cards by name.
-    if (cards.length === 0 && searchTerm) {
-      // No cards rendered yet, do a full re-render
-      renderCards();
-      return;
-    }
-
-    let visibleCount = 0;
-
-    cards.forEach(card => {
-      const name = (card.dataset.name || '').toLowerCase();
-      if (!searchTerm || name.includes(searchTerm)) {
-        card.style.display = '';
-        visibleCount++;
-      } else {
-        card.style.display = 'none';
+    clearTimeout(debounce);
+    debounce = setTimeout(async () => {
+      const term = searchInput.value.trim();
+      if (term.length > 0) {
+        // Cross-category search: ensure all category data is loaded
+        await ensureAllCategoriesLoaded();
       }
-    });
+      renderCards();
+    }, 120);
+  });
+}
 
-    // Handle empty state
-    const existingEmpty = cardsGrid.querySelector('.empty-state');
-    if (visibleCount === 0 && !existingEmpty) {
-      const emptyDiv = document.createElement('div');
-      emptyDiv.className = 'empty-state';
-      emptyDiv.innerHTML = `
-        <div class="empty-state-icon">\u{1F50D}</div>
-        <div class="empty-state-title">${t('empty.title')}</div>
-        <div class="empty-state-description">${t('empty.search')} "${escapeHtml(searchTerm)}".</div>
-      `;
-      cardsGrid.appendChild(emptyDiv);
-    } else if (visibleCount > 0 && existingEmpty) {
-      existingEmpty.remove();
+let allCategoriesLoadPromise = null;
+function ensureAllCategoriesLoaded() {
+  if (!allCategoriesLoadPromise) {
+    allCategoriesLoadPromise = Promise.all(
+      categories.map(async (cat) => {
+        if (softwareData[cat.id]) return;
+        try {
+          const res = await fetch(`data/${cat.id}.json`);
+          softwareData[cat.id] = await res.json();
+        } catch (err) {
+          console.error(`Failed to load ${cat.id}.json:`, err);
+          softwareData[cat.id] = [];
+        }
+      })
+    ).then(() => refreshInstalledStatusForAll());
+  }
+  return allCategoriesLoadPromise;
+}
+
+async function refreshInstalledStatusForAll() {
+  const all = [];
+  for (const list of Object.values(softwareData)) {
+    if (Array.isArray(list)) all.push(...list);
+  }
+  if (!all.length) return;
+  try {
+    if (window.electronAPI && window.electronAPI.checkInstalled) {
+      const results = await window.electronAPI.checkInstalled(all);
+      if (results) Object.assign(installedStatus, results);
+    }
+  } catch (err) {
+    console.error('Failed to refresh installed status:', err);
+  }
+}
+
+// ============================================================
+// Update Badge (auto-update UI in header)
+// ============================================================
+
+let updateStateCache = { flavor: null };
+
+function setupUpdateBadge() {
+  if (!window.electronAPI || !window.electronAPI.updates) return;
+
+  const api = window.electronAPI.updates;
+
+  api.onState((state) => {
+    updateStateCache = state;
+    renderUpdateBadge();
+  });
+
+  updateBadge.addEventListener('click', () => handleUpdateBadgeClick());
+
+  api.getState().then((state) => {
+    updateStateCache = state;
+    renderUpdateBadge();
+  }).catch(() => {});
+}
+
+function renderUpdateBadge() {
+  const state = updateStateCache;
+  if (!state || !state.flavor) {
+    updateBadge.hidden = true;
+    return;
+  }
+
+  updateBadge.hidden = false;
+  updateBadge.classList.remove('downloading', 'ready');
+
+  if (state.downloaded) {
+    updateBadge.classList.add('ready');
+    updateBadge.textContent = t('update.ready').replace('{version}', state.version || '');
+    updateBadge.disabled = false;
+  } else if (state.downloading) {
+    updateBadge.classList.add('downloading');
+    updateBadge.textContent = t('update.downloading').replace('{percent}', String(state.progress || 0));
+    updateBadge.disabled = true;
+  } else {
+    updateBadge.textContent = t('update.available').replace('{version}', state.version || '');
+    updateBadge.disabled = false;
+  }
+}
+
+async function handleUpdateBadgeClick() {
+  const state = updateStateCache;
+  if (!state || !state.flavor) return;
+  const api = window.electronAPI && window.electronAPI.updates;
+  if (!api) return;
+
+  if (state.flavor === 'portable') {
+    api.openReleasePage();
+    return;
+  }
+
+  if (state.downloaded) {
+    api.quitAndInstall();
+  } else if (!state.downloading) {
+    api.startDownload();
+  }
+}
+
+// ============================================================
+// Open downloads folder button
+// ============================================================
+
+function setupDownloadsButton() {
+  if (!openDownloadsBtn) return;
+  openDownloadsBtn.addEventListener('click', () => {
+    if (window.electronAPI && window.electronAPI.openDownloadsFolder) {
+      window.electronAPI.openDownloadsFolder();
     }
   });
 }
@@ -423,6 +554,10 @@ async function switchLang(lang) {
         currentLang === 'en' ? (cat.name_en || cat.name) : cat.name;
     }
     renderCards();
+  }
+  renderUpdateBadge();
+  if (openDownloadsBtn) {
+    openDownloadsBtn.title = t('tooltip.openDownloads');
   }
 }
 

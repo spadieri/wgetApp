@@ -4,6 +4,7 @@
     "name": "LibreOffice",
     "description": "Suite office completa open source alternativa a Microsoft Office",
     "downloadUrl": "https://download.documentfoundation.org/libreoffice/stable/25.8.5/win/x86_64/LibreOffice_25.8.5_Win_x86-64.msi",
+    "homepage": "https://www.libreoffice.org",
     "filename": "LibreOffice_Win_x86-64.msi",
     "detectRegistry": [
       "LibreOffice"
@@ -36,6 +37,7 @@
     "name": "FreeOffice",
     "description": "Suite office gratuita di SoftMaker con alta compatibilità MS Office",
     "downloadUrl": "https://www.freeoffice.com/download.php?id=430982",
+    "homepage": "https://www.freeoffice.com",
     "filename": "FreeOffice2024.exe",
     "detectRegistry": [
       "SoftMaker FreeOffice"
@@ -51,6 +53,7 @@
     "name": "WPS Office",
     "description": "Suite office gratuita leggera con interfaccia simile a MS Office",
     "downloadUrl": "https://www.wps.com/office/windows/",
+    "homepage": "https://www.wps.com",
     "filename": "WPSOffice_Setup.exe",
     "detectRegistry": [
       "WPS Office"
@@ -92,6 +95,7 @@
     "name": "Apache OpenOffice",
     "description": "Suite office open source storica con writer, calc e impress",
     "downloadUrl": "https://sourceforge.net/projects/openofficeorg.mirror/files/4.1.15/binaries/it/Apache_OpenOffice_4.1.15_Win_x86_install_it.exe/download",
+    "homepage": "https://www.openoffice.org",
     "filename": "Apache_OpenOffice_Win_x86_install.exe",
     "detectRegistry": [
       "OpenOffice"
@@ -107,6 +111,7 @@
     "name": "Calligra Suite",
     "description": "Suite office KDE con Words, Sheets, Stage e strumenti creativi",
     "downloadUrl": "https://calligra.org/download/",
+    "homepage": "https://calligra.org",
     "filename": "calligra-setup.exe",
     "detectRegistry": [
       "Calligra"
@@ -122,6 +127,7 @@
     "name": "AbiWord",
     "description": "Word processor open source leggero e veloce",
     "downloadUrl": "https://sourceforge.net/projects/abiword/",
+    "homepage": "https://www.abisource.com",
     "filename": "abiword-setup-3.0.5.exe",
     "detectRegistry": [
       "AbiWord"
@@ -137,6 +143,7 @@
     "name": "SumatraPDF",
     "description": "Lettore PDF ultraleggero e veloce con supporto multi-formato",
     "downloadUrl": "https://www.sumatrapdfreader.org/dl/rel/3.5.2/SumatraPDF-3.5.2-64-install.exe",
+    "homepage": "https://www.sumatrapdfreader.org",
     "filename": "SumatraPDF-3.5.2-64-install.exe",
     "detectRegistry": [
       "SumatraPDF"
@@ -152,6 +159,7 @@
     "name": "Adobe Acrobat Reader",
     "description": "Lettore PDF standard con annotazioni e firma digitale",
     "downloadUrl": "https://get.adobe.com/reader/",
+    "homepage": "https://www.adobe.com/acrobat/pdf-reader.html",
     "filename": "AcroRdrDC_Setup.exe",
     "detectRegistry": [
       "Adobe Acrobat Reader DC"
@@ -167,6 +175,7 @@
     "name": "Foxit PDF Reader",
     "description": "Lettore PDF veloce con funzionalità di annotazione avanzate",
     "downloadUrl": "https://www.foxit.com/pdf-reader/",
+    "homepage": "https://www.foxit.com/pdf-reader/",
     "filename": "FoxitPDFReader-Setup.exe",
     "detectRegistry": [
       "Foxit PDF Reader"
@@ -182,6 +191,7 @@
     "name": "PDF-XChange Editor",
     "description": "Editor PDF ricco di funzionalità con OCR e annotazioni",
     "downloadUrl": "https://www.tracker-software.com/product/downloads/PDFXE-latest-x64.exe",
+    "homepage": "https://www.tracker-software.com",
     "filename": "PDFXE-latest-x64.exe",
     "detectRegistry": [
       "PDF-XChange Editor"
@@ -197,6 +207,7 @@
     "name": "Nitro PDF Pro (Trial)",
     "description": "Editor PDF professionale con conversione e firma digitale",
     "downloadUrl": "https://www.gonitro.com/documentation/product-downloads",
+    "homepage": "https://www.gonitro.com",
     "filename": "nitro_pro_setup.exe",
     "detectRegistry": [
       "Nitro Pro"
@@ -212,6 +223,7 @@
     "name": "Okular",
     "description": "Visualizzatore di documenti KDE multi-formato open source",
     "downloadUrl": "https://apps.kde.org/okular/",
+    "homepage": "https://okular.kde.org",
     "filename": "okular-setup.exe",
     "detectRegistry": [
       "Okular"
@@ -227,6 +239,7 @@
     "name": "Calibre",
     "description": "Gestore di e-book completo con conversione tra formati",
     "downloadUrl": "https://calibre-ebook.com/dist/win64",
+    "homepage": "https://calibre-ebook.com",
     "filename": "calibre-64bit.msi",
     "detectRegistry": [
       "calibre 64bit"
@@ -242,6 +255,7 @@
     "name": "Zotero",
     "description": "Gestore di bibliografia e citazioni per ricerca accademica",
     "downloadUrl": "https://www.zotero.org/download/client/dl?channel=release&platform=win-x64",
+    "homepage": "https://www.zotero.org",
     "filename": "Zotero-Setup.exe",
     "detectRegistry": [
       "Zotero"
@@ -257,6 +271,7 @@
     "name": "Mendeley Reference Manager",
     "description": "Gestore di riferimenti bibliografici con lettore PDF integrato",
     "downloadUrl": "https://www.mendeley.com/download-reference-manager/windows",
+    "homepage": "https://www.mendeley.com",
     "filename": "Mendeley-Reference-Manager-Setup.exe",
     "detectRegistry": [
       "Mendeley Reference Manager"
@@ -289,6 +304,7 @@
     "name": "MiKTeX (LaTeX)",
     "description": "Distribuzione LaTeX per Windows con gestore pacchetti automatico",
     "downloadUrl": "https://miktex.org/download/ctan/systems/win32/miktex/setup/windows-x64/basic-miktex-24.1-x64.exe",
+    "homepage": "https://miktex.org",
     "filename": "basic-miktex-x64.exe",
     "detectRegistry": [
       "MiKTeX"
@@ -332,6 +348,7 @@
     "name": "Typora (Trial)",
     "description": "Editor Markdown elegante con anteprima in tempo reale WYSIWYG",
     "downloadUrl": "https://download.typora.io/windows/typora-setup-x64.exe",
+    "homepage": "https://typora.io",
     "filename": "typora-setup-x64.exe",
     "detectRegistry": [
       "Typora"
@@ -364,6 +381,7 @@
     "name": "Ghostwriter",
     "description": "Editor Markdown minimalista e senza distrazioni per scrittori",
     "downloadUrl": "https://ghostwriter.kde.org/download/",
+    "homepage": "https://ghostwriter.kde.org",
     "filename": "ghostwriter-setup.exe",
     "detectRegistry": [
       "ghostwriter"
@@ -396,6 +414,7 @@
     "name": "Notion",
     "description": "Workspace all-in-one per documenti, wiki, database e progetti",
     "downloadUrl": "https://www.notion.so/desktop/windows/download",
+    "homepage": "https://www.notion.so",
     "filename": "Notion-Setup.exe",
     "detectRegistry": [
       "Notion"
@@ -445,6 +464,7 @@
     "name": "Scrivener (Trial)",
     "description": "Software di scrittura professionale per autori e sceneggiatori",
     "downloadUrl": "https://www.literatureandlatte.com/scrivener/download",
+    "homepage": "https://www.literatureandlatte.com/scrivener/",
     "filename": "Scrivener-installer.exe",
     "detectRegistry": [
       "Scrivener 3"
@@ -460,6 +480,7 @@
     "name": "yEd Graph Editor",
     "description": "Editor di grafi e diagrammi gratuito con layout automatico",
     "downloadUrl": "https://www.yworks.com/resources/yed/demo/yEd-3.25.1_with-JRE23_64-bit_setup.exe",
+    "homepage": "https://www.yworks.com/products/yed",
     "filename": "yEd-with-JRE-setup.exe",
     "detectRegistry": [
       "yEd"
@@ -525,6 +546,7 @@
     "name": "Pencil Project",
     "description": "Strumento di prototipazione e wireframing open source",
     "downloadUrl": "https://pencil.evolus.vn/dl/V3.1.1.ga/Pencil-3.1.1.ga.exe",
+    "homepage": "https://pencil.evolus.vn",
     "filename": "Pencil-3.1.1.ga.exe",
     "detectRegistry": [
       "Pencil"
@@ -540,6 +562,7 @@
     "name": "Balsamiq Wireframes (Trial)",
     "description": "Strumento di wireframing rapido con stile sketch a mano",
     "downloadUrl": "https://balsamiq.com/wireframes/desktop/",
+    "homepage": "https://balsamiq.com",
     "filename": "Balsamiq_Wireframes_Setup.exe",
     "detectRegistry": [
       "Balsamiq Wireframes"
@@ -555,6 +578,7 @@
     "name": "XMind",
     "description": "Software di mappe mentali professionale con template e temi",
     "downloadUrl": "https://xmind.com/download",
+    "homepage": "https://xmind.com",
     "filename": "XMind-Setup.exe",
     "detectRegistry": [
       "XMind"
@@ -570,6 +594,7 @@
     "name": "FreeMind",
     "description": "Software di mappe mentali open source e gratuito scritto in Java",
     "downloadUrl": "https://sourceforge.net/projects/freemind/files/freemind/1.0.1/FreeMind-Windows-Installer-1.0.1-max.exe/download",
+    "homepage": "https://freemind.sourceforge.net",
     "filename": "FreeMind-Windows-Installer.exe",
     "detectRegistry": [
       "FreeMind"
@@ -613,6 +638,7 @@
     "name": "ProjectLibre",
     "description": "Software di gestione progetti open source alternativa a MS Project",
     "downloadUrl": "https://sourceforge.net/projects/projectlibre/files/ProjectLibre/1.9.3/projectlibre-1.9.3.exe/download",
+    "homepage": "https://www.projectlibre.com",
     "filename": "projectlibre-1.9.3.exe",
     "detectRegistry": [
       "ProjectLibre"
@@ -628,6 +654,7 @@
     "name": "Toggl Track",
     "description": "App di time tracking semplice per freelancer e team",
     "downloadUrl": "https://toggl.com/track/toggl-desktop/",
+    "homepage": "https://toggl.com/track/",
     "filename": "TogglTrack-Setup.exe",
     "detectRegistry": [
       "Toggl Track"
@@ -643,6 +670,7 @@
     "name": "Clockify",
     "description": "App di time tracking gratuita per team con report dettagliati",
     "downloadUrl": "https://clockify.me/apps",
+    "homepage": "https://clockify.me",
     "filename": "ClockifySetup.exe",
     "detectRegistry": [
       "Clockify"
@@ -658,6 +686,7 @@
     "name": "RescueTime",
     "description": "Monitoraggio automatico del tempo e produttività al computer",
     "downloadUrl": "https://www.rescuetime.com/installers/RescueTimeInstaller.exe",
+    "homepage": "https://www.rescuetime.com",
     "filename": "RescueTimeInstaller.exe",
     "detectRegistry": [
       "RescueTime"
@@ -673,6 +702,7 @@
     "name": "Cold Turkey",
     "description": "Blocca siti web e app per migliorare concentrazione e produttività",
     "downloadUrl": "https://getcoldturkey.com/files/ColdTurkeyInstaller.exe",
+    "homepage": "https://getcoldturkey.com",
     "filename": "ColdTurkeyInstaller.exe",
     "detectRegistry": [
       "Cold Turkey Blocker"

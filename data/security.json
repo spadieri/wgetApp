@@ -4,6 +4,7 @@
     "name": "Malwarebytes",
     "description": "Anti-malware avanzato con protezione in tempo reale",
     "downloadUrl": "https://downloads.malwarebytes.com/file/mb-windows",
+    "homepage": "https://www.malwarebytes.com",
     "filename": "MBSetup.exe",
     "detectRegistry": [
       "Malwarebytes"
@@ -19,6 +20,7 @@
     "name": "Avast Free Antivirus",
     "description": "Antivirus gratuito con protezione completa",
     "downloadUrl": "https://www.avast.com/download-thank-you.php?product=FAV-ONLINE&locale=en-us",
+    "homepage": "https://www.avast.com",
     "filename": "avast_free_antivirus_setup_online.exe",
     "detectRegistry": [
       "Avast Antivirus"
@@ -34,6 +36,7 @@
     "name": "AVG Free Antivirus",
     "description": "Antivirus gratuito con protezione essenziale",
     "downloadUrl": "https://www.avg.com/download-thank-you.php?product=FAV-ONLINE&locale=en-us",
+    "homepage": "https://www.avg.com",
     "filename": "avg_antivirus_free_setup.exe",
     "detectRegistry": [
       "AVG Antivirus"
@@ -49,6 +52,7 @@
     "name": "Avira Free Security",
     "description": "Antivirus gratuito leggero con VPN integrata",
     "downloadUrl": "https://install.avira-update.com/package/antivirus/win/en-us/avira_antivirus_en-us.exe",
+    "homepage": "https://www.avira.com",
     "filename": "avira_antivirus_en-us.exe",
     "detectRegistry": [
       "Avira"
@@ -64,6 +68,7 @@
     "name": "Kaspersky Free",
     "description": "Antivirus gratuito con motore di scansione premiato",
     "downloadUrl": "https://www.kaspersky.com/downloads/free-antivirus",
+    "homepage": "https://www.kaspersky.com",
     "filename": "kaspersky-free-setup.exe",
     "detectRegistry": [
       "Kaspersky Free"
@@ -79,6 +84,7 @@
     "name": "Bitdefender Antivirus Free",
     "description": "Antivirus gratuito con protezione automatica",
     "downloadUrl": "https://www.bitdefender.com/solutions/free.html",
+    "homepage": "https://www.bitdefender.com",
     "filename": "bitdefender_online.exe",
     "detectRegistry": [
       "Bitdefender Antivirus Free"
@@ -94,6 +100,7 @@
     "name": "Windows Defender",
     "description": "Antivirus integrato in Windows con protezione nativa",
     "downloadUrl": "https://www.microsoft.com/it-it/windows/comprehensive-security",
+    "homepage": "https://www.microsoft.com/windows/comprehensive-security",
     "filename": "built-in",
     "detectRegistry": [
       "Windows Security"
@@ -109,6 +116,7 @@
     "name": "Comodo Free Antivirus",
     "description": "Antivirus gratuito con sandbox e HIPS",
     "downloadUrl": "https://www.comodo.com/home/download/download.php?prod=antivirus",
+    "homepage": "https://www.comodo.com",
     "filename": "cissetup_x64.exe",
     "detectRegistry": [
       "COMODO Internet Security"
@@ -124,6 +132,7 @@
     "name": "ZoneAlarm Free Firewall",
     "description": "Firewall gratuito con protezione di rete avanzata",
     "downloadUrl": "https://www.zonealarm.com/software/free-firewall",
+    "homepage": "https://www.zonealarm.com",
     "filename": "zaSetupWeb.exe",
     "detectRegistry": [
       "ZoneAlarm Free Firewall"
@@ -139,6 +148,7 @@
     "name": "GlassWire",
     "description": "Monitor di rete e firewall con interfaccia visuale",
     "downloadUrl": "https://download.glasswire.com/GlassWireSetup.exe",
+    "homepage": "https://www.glasswire.com",
     "filename": "GlassWireSetup.exe",
     "detectRegistry": [
       "GlassWire"
@@ -154,6 +164,7 @@
     "name": "KeePass",
     "description": "Gestore password open source con database locale",
     "downloadUrl": "https://sourceforge.net/projects/keepass/files/KeePass%202.x/2.57.1/KeePass-2.57.1-Setup.exe/download",
+    "homepage": "https://keepass.info",
     "filename": "KeePass-2.57.1-Setup.exe",
     "detectRegistry": [
       "KeePass Password Safe"
@@ -186,6 +197,7 @@
     "name": "Bitwarden",
     "description": "Gestore password open source con sincronizzazione cloud",
     "downloadUrl": "https://vault.bitwarden.com/download/?app=desktop&platform=windows",
+    "homepage": "https://bitwarden.com",
     "filename": "Bitwarden-Installer.exe",
     "detectRegistry": [
       "Bitwarden"
@@ -201,6 +213,7 @@
     "name": "1Password (Trial)",
     "description": "Gestore password premium con condivisione sicura",
     "downloadUrl": "https://downloads.1password.com/win/1PasswordSetup-latest.exe",
+    "homepage": "https://1password.com",
     "filename": "1PasswordSetup-latest.exe",
     "detectRegistry": [
       "1Password"
@@ -216,6 +229,7 @@
     "name": "LastPass",
     "description": "Gestore password con compilazione automatica moduli",
     "downloadUrl": "https://download.cloud.lastpass.com/windows_installer/LastPassInstaller.exe",
+    "homepage": "https://www.lastpass.com",
     "filename": "LastPassInstaller.exe",
     "detectRegistry": [
       "LastPass"
@@ -231,6 +245,7 @@
     "name": "Dashlane",
     "description": "Gestore password con monitoraggio del dark web",
     "downloadUrl": "https://www.dashlane.com/directdownload",
+    "homepage": "https://www.dashlane.com",
     "filename": "DashlaneInstaller.exe",
     "detectRegistry": [
       "Dashlane"
@@ -246,6 +261,7 @@
     "name": "NordPass",
     "description": "Gestore password sicuro del team NordVPN",
     "downloadUrl": "https://downloads.npass.app/windows/NordPassSetup.exe",
+    "homepage": "https://nordpass.com",
     "filename": "NordPassSetup.exe",
     "detectRegistry": [
       "NordPass"
@@ -295,6 +311,7 @@
     "name": "AxCrypt",
     "description": "Crittografia file semplice con integrazione shell",
     "downloadUrl": "https://www.axcrypt.net/download/AxCrypt-Setup.exe",
+    "homepage": "https://www.axcrypt.net",
     "filename": "AxCrypt-Setup.exe",
     "detectRegistry": [
       "AxCrypt"
@@ -310,6 +327,7 @@
     "name": "Gpg4win",
     "description": "Suite di crittografia e firma digitale GnuPG per Windows",
     "downloadUrl": "https://files.gpg4win.org/gpg4win-4.3.1.exe",
+    "homepage": "https://www.gpg4win.org",
     "filename": "gpg4win-4.3.1.exe",
     "detectRegistry": [
       "Gpg4win"
@@ -325,6 +343,7 @@
     "name": "Kleopatra",
     "description": "Gestore certificati e interfaccia grafica per GnuPG",
     "downloadUrl": "https://files.gpg4win.org/gpg4win-4.3.1.exe",
+    "homepage": "https://www.openpgp.org/software/kleopatra/",
     "filename": "gpg4win-4.3.1.exe",
     "detectRegistry": [
       "Gpg4win"
@@ -357,6 +376,7 @@
     "name": "WireGuard",
     "description": "VPN moderna e veloce con crittografia avanzata",
     "downloadUrl": "https://download.wireguard.com/windows-client/wireguard-installer.exe",
+    "homepage": "https://www.wireguard.com",
     "filename": "wireguard-installer.exe",
     "detectRegistry": [
       "WireGuard"
@@ -372,6 +392,7 @@
     "name": "OpenVPN",
     "description": "Client VPN open source con supporto protocollo OpenVPN",
     "downloadUrl": "https://swupdate.openvpn.org/community/releases/OpenVPN-2.6.12-I001-amd64.msi",
+    "homepage": "https://openvpn.net",
     "filename": "OpenVPN-2.6.12-I001-amd64.msi",
     "detectRegistry": [
       "OpenVPN"
@@ -387,6 +408,7 @@
     "name": "ProtonVPN",
     "description": "VPN sicura e gratuita con sede in Svizzera",
     "downloadUrl": "https://protonvpn.com/download-windows",
+    "homepage": "https://protonvpn.com",
     "filename": "ProtonVPN_win_setup.exe",
     "detectRegistry": [
       "Proton VPN"
@@ -402,6 +424,7 @@
     "name": "Windscribe",
     "description": "VPN gratuita con 10GB mensili e blocco pubblicità",
     "downloadUrl": "https://windscribe.com/install/desktop/windows",
+    "homepage": "https://windscribe.com",
     "filename": "Windscribe_setup.exe",
     "detectRegistry": [
       "Windscribe"
@@ -417,6 +440,7 @@
     "name": "TunnelBear",
     "description": "VPN semplice e intuitiva con interfaccia amichevole",
     "downloadUrl": "https://www.tunnelbear.com/apps/windows/",
+    "homepage": "https://www.tunnelbear.com",
     "filename": "TunnelBear-Installer.exe",
     "detectRegistry": [
       "TunnelBear"
@@ -432,6 +456,7 @@
     "name": "NordVPN (Trial)",
     "description": "VPN premium veloce con doppia crittografia",
     "downloadUrl": "https://downloads.nordcdn.com/apps/windows/NordVPN/latest/NordVPNSetup.exe",
+    "homepage": "https://nordvpn.com",
     "filename": "NordVPNSetup.exe",
     "detectRegistry": [
       "NordVPN"
@@ -447,6 +472,7 @@
     "name": "ExpressVPN (Trial)",
     "description": "VPN premium con server in 105 paesi",
     "downloadUrl": "https://www.expressvpn.com/vpn-download/vpn-windows",
+    "homepage": "https://www.expressvpn.com",
     "filename": "expressvpn_windows_setup.exe",
     "detectRegistry": [
       "ExpressVPN"
@@ -462,6 +488,7 @@
     "name": "Tor Browser",
     "description": "Browser anonimo basato su Firefox con rete Tor",
     "downloadUrl": "https://www.torproject.org/dist/torbrowser/15.0.7/tor-browser-windows-x86_64-portable-15.0.7.exe",
+    "homepage": "https://www.torproject.org",
     "filename": "tor-browser-windows-x86_64-portable-15.0.7.exe",
     "detectRegistry": [
       "Tor Browser"
@@ -477,6 +504,7 @@
     "name": "Tails",
     "description": "Sistema operativo live anonimo basato su Tor",
     "downloadUrl": "https://tails.net/install/download/",
+    "homepage": "https://tails.net",
     "filename": "tails-redirect",
     "detectRegistry": [
       "Tails"
@@ -490,6 +518,7 @@
     "name": "BleachBit",
     "description": "Pulizia sicura di file e tracce di navigazione",
     "downloadUrl": "https://www.bleachbit.org/download/file/t?file=BleachBit-4.6.2-setup.exe",
+    "homepage": "https://www.bleachbit.org",
     "filename": "BleachBit-4.6.2-setup.exe",
     "detectRegistry": [
       "BleachBit"
@@ -505,6 +534,7 @@
     "name": "Eraser",
     "description": "Cancellazione sicura e definitiva di file e cartelle",
     "downloadUrl": "https://sourceforge.net/projects/eraser/files/Eraser%206/6.2/Eraser%206.2.0.2993.exe/download",
+    "homepage": "https://eraser.heidi.ie",
     "filename": "Eraser_6.2.0.2993.exe",
     "detectRegistry": [
       "Eraser"
@@ -520,6 +550,7 @@
     "name": "File Shredder",
     "description": "Distruttore di file con algoritmi di sovrascrittura multipli",
     "downloadUrl": "https://www.fileshredder.org/files/file_shredder_setup.exe",
+    "homepage": "https://www.fileshredder.org",
     "filename": "file_shredder_setup.exe",
     "detectRegistry": [
       "File Shredder"
@@ -535,6 +566,7 @@
     "name": "USB Safeguard",
     "description": "Crittografia e protezione per unità USB",
     "downloadUrl": "http://usbsafeguard.altervista.org/download.html",
+    "homepage": "http://usbsafeguard.altervista.org",
     "filename": "usbsafeguard.exe",
     "detectRegistry": [
       "USB Safeguard"
@@ -548,6 +580,7 @@
     "name": "Folder Lock (Trial)",
     "description": "Protezione e crittografia cartelle con password",
     "downloadUrl": "https://www.newsoftwares.net/download/flsetup.exe",
+    "homepage": "https://www.newsoftwares.net/folderlock/",
     "filename": "flsetup.exe",
     "detectRegistry": [
       "Folder Lock"
@@ -563,6 +596,7 @@
     "name": "NetLimiter (Trial)",
     "description": "Controllo e limitazione del traffico di rete per applicazione",
     "downloadUrl": "https://www.netlimiter.com/download",
+    "homepage": "https://www.netlimiter.com",
     "filename": "NetLimiter-5-Setup.exe",
     "detectRegistry": [
       "NetLimiter"
@@ -578,6 +612,7 @@
     "name": "Wireshark",
     "description": "Analizzatore di protocolli di rete professionale",
     "downloadUrl": "https://2.na.dl.wireshark.org/win64/Wireshark-4.4.3-x64.exe",
+    "homepage": "https://www.wireshark.org",
     "filename": "Wireshark-4.4.3-x64.exe",
     "detectRegistry": [
       "Wireshark"
@@ -593,6 +628,7 @@
     "name": "Nmap",
     "description": "Scanner di rete e auditing di sicurezza",
     "downloadUrl": "https://nmap.org/dist/nmap-7.95-setup.exe",
+    "homepage": "https://nmap.org",
     "filename": "nmap-7.95-setup.exe",
     "detectRegistry": [
       "Nmap"
@@ -625,6 +661,7 @@
     "name": "Advanced IP Scanner",
     "description": "Scanner di rete con accesso remoto e Wake-on-LAN",
     "downloadUrl": "https://download.advanced-ip-scanner.com/download/files/Advanced_IP_Scanner_2.5.4594.1.exe",
+    "homepage": "https://www.advanced-ip-scanner.com",
     "filename": "Advanced_IP_Scanner_2.5.4594.1.exe",
     "detectRegistry": [
       "Advanced IP Scanner"
@@ -640,6 +677,7 @@
     "name": "Zenmap",
     "description": "Interfaccia grafica ufficiale per Nmap",
     "downloadUrl": "https://nmap.org/dist/nmap-7.95-setup.exe",
+    "homepage": "https://nmap.org/zenmap/",
     "filename": "nmap-7.95-setup.exe",
     "detectRegistry": [
       "Nmap"
@@ -672,6 +710,7 @@
     "name": "Comodo Sandbox",
     "description": "Ambiente virtualizzato per eseguire applicazioni sospette",
     "downloadUrl": "https://www.comodo.com/home/download/download.php?prod=antivirus",
+    "homepage": "https://www.comodo.com",
     "filename": "cissetup_x64.exe",
     "detectRegistry": [
       "COMODO Internet Security"
@@ -687,6 +726,7 @@
     "name": "HitmanPro (Trial)",
     "description": "Scanner anti-malware con tecnologia cloud a doppio motore",
     "downloadUrl": "https://dl.surfright.nl/HitmanPro_x64.exe",
+    "homepage": "https://www.hitmanpro.com",
     "filename": "HitmanPro_x64.exe",
     "detectRegistry": [
       "HitmanPro"
@@ -702,6 +742,7 @@
     "name": "SUPERAntiSpyware",
     "description": "Rimozione spyware, adware e malware",
     "downloadUrl": "https://www.superantispyware.com/downloadfile.html?productid=SUPERANTISPYWAREFREE",
+    "homepage": "https://www.superantispyware.com",
     "filename": "SUPERAntiSpyware.exe",
     "detectRegistry": [
       "SUPERAntiSpyware"
@@ -717,6 +758,7 @@
     "name": "AdwCleaner",
     "description": "Rimozione rapida di adware e programmi indesiderati",
     "downloadUrl": "https://adwcleaner.malwarebytes.com/adwcleaner?channel=release",
+    "homepage": "https://www.malwarebytes.com/adwcleaner",
     "filename": "adwcleaner.exe",
     "detectRegistry": [
       "AdwCleaner"
@@ -732,6 +774,7 @@
     "name": "RogueKiller",
     "description": "Anti-malware specializzato in rootkit e processi nascosti",
     "downloadUrl": "https://download.adlice.com/RogueKiller/RogueKiller64.exe",
+    "homepage": "https://www.adlice.com/roguekiller/",
     "filename": "RogueKiller64.exe",
     "detectRegistry": [
       "RogueKiller"
@@ -747,6 +790,7 @@
     "name": "CrowdInspect",
     "description": "Ispettore processi con analisi VirusTotal integrata",
     "downloadUrl": "https://www.crowdstrike.com/en-us/resources/community-tools/crowdinspect-tool/",
+    "homepage": "https://www.crowdstrike.com/resources/community-tools/crowdinspect-tool/",
     "filename": "CrowdInspect.zip",
     "detectRegistry": [
       "CrowdInspect"

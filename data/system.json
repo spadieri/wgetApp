@@ -4,6 +4,7 @@
     "name": "CPU-Z",
     "description": "Strumento di informazioni dettagliate su CPU, scheda madre e RAM",
     "downloadUrl": "https://download.cpuid.com/cpu-z/cpu-z_2.12-en.exe",
+    "homepage": "https://www.cpuid.com/softwares/cpu-z.html",
     "filename": "cpu-z_2.12-en.exe",
     "detectRegistry": [
       "CPUID CPU-Z"
@@ -19,6 +20,7 @@
     "name": "GPU-Z",
     "description": "Utilità di informazioni dettagliate sulla scheda grafica",
     "downloadUrl": "https://www.techpowerup.com/download/techpowerup-gpu-z/",
+    "homepage": "https://www.techpowerup.com/gpuz/",
     "filename": "GPU-Z.exe",
     "detectRegistry": [
       "GPU-Z"
@@ -34,6 +36,7 @@
     "name": "HWMonitor",
     "description": "Monitor di temperature, voltaggi e velocità ventole del PC",
     "downloadUrl": "https://download.cpuid.com/hwmonitor/hwmonitor_1.54.exe",
+    "homepage": "https://www.cpuid.com/softwares/hwmonitor.html",
     "filename": "hwmonitor_1.54.exe",
     "detectRegistry": [
       "CPUID HWMonitor"
@@ -49,6 +52,7 @@
     "name": "HWiNFO",
     "description": "Diagnostica hardware completa con monitoraggio sensori in tempo reale",
     "downloadUrl": "https://sourceforge.net/projects/hwinfo/files/Windows_Installer/hwi64_826.exe/download",
+    "homepage": "https://www.hwinfo.com",
     "filename": "hwi64_826.exe",
     "detectRegistry": [
       "HWiNFO64"
@@ -64,6 +68,7 @@
     "name": "Speccy",
     "description": "Riepilogo rapido delle specifiche hardware del computer",
     "downloadUrl": "https://www.ccleaner.com/speccy/download/standard",
+    "homepage": "https://www.ccleaner.com/speccy",
     "filename": "spsetup.exe",
     "detectRegistry": [
       "Speccy"
@@ -79,6 +84,7 @@
     "name": "AIDA64 Extreme (Trial)",
     "description": "Suite completa di diagnostica e benchmark hardware professionale",
     "downloadUrl": "https://www.aida64.com/downloads",
+    "homepage": "https://www.aida64.com",
     "filename": "aida64extreme.exe",
     "detectRegistry": [
       "AIDA64 Extreme"
@@ -94,6 +100,7 @@
     "name": "Core Temp",
     "description": "Monitor compatto delle temperature dei core della CPU",
     "downloadUrl": "https://www.alcpu.com/CoreTemp/php/download.php?id=2",
+    "homepage": "https://www.alcpu.com/CoreTemp/",
     "filename": "Core-Temp-setup.exe",
     "detectRegistry": [
       "Core Temp"
@@ -109,6 +116,7 @@
     "name": "MSI Afterburner",
     "description": "Overclocking GPU e monitoraggio prestazioni con OSD in-game",
     "downloadUrl": "https://www.msi.com/Landing/afterburner/graphics-cards",
+    "homepage": "https://www.msi.com/Landing/afterburner/graphics-cards",
     "filename": "MSIAfterburnerSetup.zip",
     "detectRegistry": [
       "MSI Afterburner"
@@ -124,6 +132,7 @@
     "name": "NZXT CAM",
     "description": "Monitoraggio PC e controllo illuminazione/ventole NZXT",
     "downloadUrl": "https://nzxt-app.nzxt.com/NZXT-CAM-Setup.exe",
+    "homepage": "https://www.nzxt.com/camapp",
     "filename": "NZXT-CAM-Setup.exe",
     "detectRegistry": [
       "NZXT CAM"
@@ -139,6 +148,7 @@
     "name": "Open Hardware Monitor",
     "description": "Monitor hardware open source per temperature, voltaggi e ventole",
     "downloadUrl": "https://openhardwaremonitor.org/files/openhardwaremonitor-v0.9.6.zip",
+    "homepage": "https://openhardwaremonitor.org",
     "filename": "openhardwaremonitor-v0.9.6.zip",
     "detectRegistry": [
       "Open Hardware Monitor"
@@ -154,6 +164,7 @@
     "name": "CrystalDiskInfo",
     "description": "Monitor della salute dei dischi HDD/SSD con dati S.M.A.R.T.",
     "downloadUrl": "https://sourceforge.net/projects/crystaldiskinfo/files/9.4.4/CrystalDiskInfo9_4_4.exe/download",
+    "homepage": "https://crystalmark.info/en/software/crystaldiskinfo/",
     "filename": "CrystalDiskInfo9_4_4.exe",
     "detectRegistry": [
       "CrystalDiskInfo"
@@ -169,6 +180,7 @@
     "name": "CrystalDiskMark",
     "description": "Benchmark delle prestazioni di lettura/scrittura dei dischi",
     "downloadUrl": "https://sourceforge.net/projects/crystaldiskmark/files/8.0.5/CrystalDiskMark8_0_5.exe/download",
+    "homepage": "https://crystalmark.info/en/software/crystaldiskmark/",
     "filename": "CrystalDiskMark8_0_5.exe",
     "detectRegistry": [
       "CrystalDiskMark"
@@ -184,6 +196,7 @@
     "name": "HD Tune (Trial)",
     "description": "Strumento di benchmark e diagnostica per dischi rigidi e SSD",
     "downloadUrl": "https://www.hdtune.com/download.html",
+    "homepage": "https://www.hdtune.com",
     "filename": "HDTune_Pro_trial.exe",
     "detectRegistry": [
       "HD Tune Pro"
@@ -199,6 +212,7 @@
     "name": "Samsung Magician",
     "description": "Gestione e ottimizzazione degli SSD Samsung con benchmark",
     "downloadUrl": "https://download.semiconductor.samsung.com/resources/software-resources/Samsung_Magician_Installer_Official_8.1.0.800.exe",
+    "homepage": "https://semiconductor.samsung.com/consumer-storage/support/tools/",
     "filename": "Samsung_Magician_Installer_Official_8.1.0.800.exe",
     "detectRegistry": [
       "Samsung Magician"
@@ -214,6 +228,7 @@
     "name": "WD Dashboard",
     "description": "Monitoraggio e gestione degli SSD Western Digital",
     "downloadUrl": "https://wddashboarddownloads.wdc.com/wdDashboard/DashboardSetup.exe",
+    "homepage": "https://www.westerndigital.com/support/downloads/wd-dashboard",
     "filename": "DashboardSetup.exe",
     "detectRegistry": [
       "WD Dashboard"
@@ -229,6 +244,7 @@
     "name": "Intel SSD Toolbox",
     "description": "Strumento di gestione e ottimizzazione per SSD Intel",
     "downloadUrl": "https://www.intel.com/content/www/us/en/download/19543/intel-memory-and-storage-tool-gui.html",
+    "homepage": "https://www.intel.com/content/www/us/en/support/articles/000057558/memory-and-storage.html",
     "filename": "Intel_MAS_Setup.exe",
     "detectRegistry": [
       "Intel SSD Toolbox"
@@ -244,6 +260,7 @@
     "name": "AS SSD Benchmark",
     "description": "Benchmark specifico per SSD con test di copia e compressione",
     "downloadUrl": "https://www.alex-is.de/progs/AS%20SSD%20Benchmark.zip",
+    "homepage": "https://www.alex-is.de",
     "filename": "AS SSD Benchmark.zip",
     "detectRegistry": [],
     "detectPaths": [
@@ -257,6 +274,7 @@
     "name": "ATTO Disk Benchmark",
     "description": "Benchmark professionale per misurare prestazioni di storage",
     "downloadUrl": "https://www.atto.com/products/software/",
+    "homepage": "https://www.atto.com/disk-benchmark/",
     "filename": "ATTODiskBenchmark_Setup.exe",
     "detectRegistry": [
       "ATTO Disk Benchmark"
@@ -272,6 +290,7 @@
     "name": "FurMark",
     "description": "Stress test per schede grafiche con monitoraggio temperature",
     "downloadUrl": "https://www.geeks3d.com/dl/get/815",
+    "homepage": "https://www.geeks3d.com/furmark/",
     "filename": "FurMark_2.3.0_Setup.exe",
     "detectRegistry": [
       "FurMark"
@@ -287,6 +306,7 @@
     "name": "3DMark (Trial)",
     "description": "Suite di benchmark 3D professionale per GPU e CPU gaming",
     "downloadUrl": "https://benchmarks.ul.com/3dmark",
+    "homepage": "https://benchmarks.ul.com/3dmark",
     "filename": "3DMark-setup.exe",
     "detectRegistry": [
       "3DMark"
@@ -302,6 +322,7 @@
     "name": "Cinebench",
     "description": "Benchmark CPU basato su rendering 3D Cinema 4D di Maxon",
     "downloadUrl": "https://www.maxon.net/en/cinebench",
+    "homepage": "https://www.maxon.net/cinebench",
     "filename": "CinebenchR24-setup.exe",
     "detectRegistry": [
       "Cinebench"
@@ -317,6 +338,7 @@
     "name": "Geekbench (Trial)",
     "description": "Benchmark multi-piattaforma per CPU e GPU con punteggio comparativo",
     "downloadUrl": "https://www.geekbench.com/download/windows/",
+    "homepage": "https://www.geekbench.com",
     "filename": "Geekbench-6-Setup.exe",
     "detectRegistry": [
       "Geekbench 6"
@@ -332,6 +354,7 @@
     "name": "Prime95",
     "description": "Stress test CPU per verifica stabilità overclock e ricerca numeri primi",
     "downloadUrl": "https://download.mersenne.ca/gimps/v30/30.19/p95v3019b20.win64.zip",
+    "homepage": "https://www.mersenne.org",
     "filename": "p95v3019b20.win64.zip",
     "detectRegistry": [],
     "detectPaths": [
@@ -356,6 +379,7 @@
     "name": "Driver Booster",
     "description": "Aggiornamento automatico driver con backup e ripristino",
     "downloadUrl": "https://cdn.iobit.com/dl/driver_booster_setup.exe",
+    "homepage": "https://www.iobit.com/en/driver-booster.php",
     "filename": "driver_booster_setup.exe",
     "detectRegistry": [
       "Driver Booster"
@@ -371,6 +395,7 @@
     "name": "Snappy Driver Installer",
     "description": "Installer di driver offline open source con ampia libreria",
     "downloadUrl": "https://sourceforge.net/projects/snappy-driver-installer-origin/files/latest/download",
+    "homepage": "https://sdi-tool.org",
     "filename": "SDIO_latest.zip",
     "detectRegistry": [],
     "detectPaths": [
@@ -384,6 +409,7 @@
     "name": "Driver Easy (Trial)",
     "description": "Scansione e aggiornamento automatico dei driver con interfaccia semplice",
     "downloadUrl": "https://www.drivereasy.com/DriverEasy_Setup.exe",
+    "homepage": "https://www.drivereasy.com",
     "filename": "DriverEasy_Setup.exe",
     "detectRegistry": [
       "Driver Easy"
@@ -399,6 +425,7 @@
     "name": "DDU (Display Driver Uninstaller)",
     "description": "Rimozione completa dei driver grafici per installazione pulita",
     "downloadUrl": "https://www.wagnardsoft.com/DDU/download/DDU%20v18.0.7.8.exe",
+    "homepage": "https://www.wagnardsoft.com",
     "filename": "DDU v18.0.7.8.exe",
     "detectRegistry": [],
     "detectPaths": [
@@ -412,6 +439,7 @@
     "name": "NVCleanstall",
     "description": "Installazione pulita driver NVIDIA senza bloatware e telemetria",
     "downloadUrl": "https://www.techpowerup.com/download/techpowerup-nvcleanstall/",
+    "homepage": "https://www.techpowerup.com/nvcleanstall/",
     "filename": "NVCleanstall_1.16.0.exe",
     "detectRegistry": [
       "NVCleanstall"
@@ -427,6 +455,7 @@
     "name": "Windows Update MiniTool",
     "description": "Gestione avanzata degli aggiornamenti Windows con controllo manuale",
     "downloadUrl": "https://www.majorgeeks.com/files/details/windows_update_minitool.html",
+    "homepage": "https://www.majorgeeks.com/files/details/windows_update_minitool.html",
     "filename": "wumt_x64.exe",
     "detectRegistry": [],
     "detectPaths": [
@@ -440,6 +469,7 @@
     "name": "WSUS Offline Update",
     "description": "Scarica e installa aggiornamenti Windows offline senza connessione",
     "downloadUrl": "https://download.wsusoffline.net/wsusoffline120.zip",
+    "homepage": "https://download.wsusoffline.net",
     "filename": "wsusoffline120.zip",
     "detectRegistry": [],
     "detectPaths": [
@@ -453,6 +483,7 @@
     "name": "Chocolatey",
     "description": "Gestore di pacchetti per Windows da riga di comando",
     "downloadUrl": "https://community.chocolatey.org/install.ps1",
+    "homepage": "https://chocolatey.org",
     "filename": "install.ps1",
     "detectRegistry": [
       "Chocolatey"
@@ -481,6 +512,7 @@
     "name": "Scoop",
     "description": "Gestore di pacchetti per Windows con installazione nella cartella utente",
     "downloadUrl": "https://get.scoop.sh",
+    "homepage": "https://scoop.sh",
     "filename": "install.ps1",
     "detectRegistry": [],
     "detectPaths": [
@@ -505,6 +537,7 @@
     "name": "Revo Uninstaller",
     "description": "Disinstallazione completa dei programmi con pulizia residui",
     "downloadUrl": "https://download.revouninstaller.com/download/revosetup.exe",
+    "homepage": "https://www.revouninstaller.com",
     "filename": "revosetup.exe",
     "detectRegistry": [
       "Revo Uninstaller"
@@ -520,6 +553,7 @@
     "name": "IObit Advanced SystemCare (Trial)",
     "description": "Suite di ottimizzazione e pulizia sistema con protezione privacy",
     "downloadUrl": "https://www.iobit.com/downloadcenter.php?product=advanced-systemcare-free-new",
+    "homepage": "https://www.iobit.com/en/advancedsystemcareper.php",
     "filename": "asc-setup.exe",
     "detectRegistry": [
       "Advanced SystemCare"
@@ -535,6 +569,7 @@
     "name": "Wise Care 365",
     "description": "Utilità di pulizia e ottimizzazione del sistema Windows",
     "downloadUrl": "https://downloads.wisecleaner.com/soft/WiseCare365_7.3.5.722.exe",
+    "homepage": "https://www.wisecleaner.com/wise-care-365.html",
     "filename": "WiseCare365_7.3.5.722.exe",
     "detectRegistry": [
       "Wise Care 365"
@@ -550,6 +585,7 @@
     "name": "Auslogics Disk Defrag",
     "description": "Deframmentazione veloce dei dischi con ottimizzazione posizionamento file",
     "downloadUrl": "https://www.auslogics.com/en/software/disk-defrag/after-download/",
+    "homepage": "https://www.auslogics.com/en/software/disk-defrag/",
     "filename": "disk-defrag-setup.exe",
     "detectRegistry": [
       "Auslogics Disk Defrag"
@@ -565,6 +601,7 @@
     "name": "O&O Defrag (Trial)",
     "description": "Deframmentazione professionale con pianificazione e ottimizzazione SSD",
     "downloadUrl": "https://www.oo-software.com/en/download/current/oodefragpro",
+    "homepage": "https://www.oo-software.com/en/products/oodefrag",
     "filename": "OODefrag.exe",
     "detectRegistry": [
       "O&O Defrag"
@@ -580,6 +617,7 @@
     "name": "Defraggler",
     "description": "Deframmentazione di singoli file o interi dischi di Piriform",
     "downloadUrl": "https://www.ccleaner.com/defraggler/download/standard",
+    "homepage": "https://www.ccleaner.com/defraggler",
     "filename": "dfsetup.exe",
     "detectRegistry": [
       "Defraggler"
@@ -595,6 +633,7 @@
     "name": "UltraDefrag",
     "description": "Deframmentazione open source potente con modalità boot-time",
     "downloadUrl": "https://sourceforge.net/projects/ultradefrag/files/stable-release/7.1.4/ultradefrag-7.1.4.bin.amd64.exe/download",
+    "homepage": "https://sourceforge.net/projects/ultradefrag/",
     "filename": "ultradefrag-7.1.4.bin.amd64.exe",
     "detectRegistry": [
       "UltraDefrag"
@@ -610,6 +649,7 @@
     "name": "Macrium Reflect (Trial)",
     "description": "Backup e clonazione di dischi con immagini incrementali e differenziali",
     "downloadUrl": "https://updates.macrium.com/reflect/v8/ReflectDLHF.exe",
+    "homepage": "https://www.macrium.com",
     "filename": "ReflectDLHF.exe",
     "detectRegistry": [
       "Macrium Reflect"
@@ -625,6 +665,7 @@
     "name": "EaseUS Todo Backup",
     "description": "Backup del sistema, file e disco con ripristino rapido",
     "downloadUrl": "https://down.easeus.com/product/tb_free",
+    "homepage": "https://www.easeus.com/backup-software/",
     "filename": "tb_free.exe",
     "detectRegistry": [
       "EaseUS Todo Backup"
@@ -640,6 +681,7 @@
     "name": "Veeam Agent for Windows",
     "description": "Backup professionale gratuito con ripristino bare-metal",
     "downloadUrl": "https://www.veeam.com/windows-endpoint-server-backup-free.html",
+    "homepage": "https://www.veeam.com/windows-endpoint-server-backup-free.html",
     "filename": "VeeamAgentWindows.exe",
     "detectRegistry": [
       "Veeam Agent for Microsoft Windows"
@@ -655,6 +697,7 @@
     "name": "Acronis True Image (Trial)",
     "description": "Backup completo con protezione cyber e sincronizzazione cloud",
     "downloadUrl": "https://www.acronis.com/en-us/products/true-image/",
+    "homepage": "https://www.acronis.com",
     "filename": "AcronisTrueImage_Setup.exe",
     "detectRegistry": [
       "Acronis True Image"
@@ -670,6 +713,7 @@
     "name": "Clonezilla",
     "description": "Clonazione e imaging di dischi open source da boot USB/CD",
     "downloadUrl": "https://sourceforge.net/projects/clonezilla/files/clonezilla_live_stable/3.1.3-16/clonezilla-live-3.1.3-16-amd64.zip/download",
+    "homepage": "https://clonezilla.org",
     "filename": "clonezilla-live-3.1.3-16-amd64.zip",
     "detectRegistry": [],
     "detectPaths": [],
@@ -696,6 +740,7 @@
     "name": "NTLite (Trial)",
     "description": "Personalizzazione e ottimizzazione delle immagini di installazione Windows",
     "downloadUrl": "https://www.ntlite.com/download/",
+    "homepage": "https://www.ntlite.com",
     "filename": "NTLite_setup_x64.exe",
     "detectRegistry": [
       "NTLite"

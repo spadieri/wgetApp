@@ -4,6 +4,7 @@
     "name": "Google Chrome",
     "description": "Browser web veloce e sicuro di Google",
     "downloadUrl": "https://dl.google.com/chrome/install/latest/chrome_installer.exe",
+    "homepage": "https://www.google.com/chrome/",
     "filename": "chrome_installer.exe",
     "detectRegistry": [
       "Google Chrome"
@@ -19,6 +20,7 @@
     "name": "Mozilla Firefox",
     "description": "Browser open source orientato alla privacy di Mozilla",
     "downloadUrl": "https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=it",
+    "homepage": "https://www.mozilla.org/firefox/",
     "filename": "Firefox_Setup.exe",
     "detectRegistry": [
       "Mozilla Firefox"
@@ -34,6 +36,7 @@
     "name": "Brave",
     "description": "Browser veloce con blocco pubblicità e tracker integrato",
     "downloadUrl": "https://laptop-updates.brave.com/latest/winx64",
+    "homepage": "https://brave.com",
     "filename": "BraveBrowserSetup.exe",
     "detectRegistry": [
       "Brave"
@@ -49,6 +52,7 @@
     "name": "Opera",
     "description": "Browser con VPN integrata e sidebar per social media",
     "downloadUrl": "https://net.geo.opera.com/opera/stable/windows",
+    "homepage": "https://www.opera.com",
     "filename": "OperaSetup.exe",
     "detectRegistry": [
       "Opera Stable"
@@ -64,6 +68,7 @@
     "name": "Vivaldi",
     "description": "Browser altamente personalizzabile per utenti esperti",
     "downloadUrl": "https://downloads.vivaldi.com/stable/Vivaldi.6.9.3447.54.x64.exe",
+    "homepage": "https://vivaldi.com",
     "filename": "Vivaldi_Setup.exe",
     "detectRegistry": [
       "Vivaldi"
@@ -79,6 +84,7 @@
     "name": "Microsoft Edge",
     "description": "Browser moderno di Microsoft basato su Chromium",
     "downloadUrl": "https://go.microsoft.com/fwlink/?linkid=2108834&Channel=Stable&language=it",
+    "homepage": "https://www.microsoft.com/edge",
     "filename": "MicrosoftEdgeSetup.exe",
     "detectRegistry": [
       "Microsoft Edge"
@@ -94,6 +100,7 @@
     "name": "Tor Browser",
     "description": "Browser per la navigazione anonima tramite rete Tor",
     "downloadUrl": "https://www.torproject.org/dist/torbrowser/15.0.7/tor-browser-windows-x86_64-portable-15.0.7.exe",
+    "homepage": "https://www.torproject.org",
     "filename": "tor-browser-install.exe",
     "detectRegistry": [
       "Tor Browser"
@@ -109,6 +116,7 @@
     "name": "Chromium",
     "description": "Browser open source alla base di Google Chrome",
     "downloadUrl": "https://download-chromium.appspot.com/dl/Win_x64?type=snapshots",
+    "homepage": "https://www.chromium.org/chromium-projects/",
     "filename": "chrome-win.zip",
     "detectRegistry": [
       "Chromium"
@@ -124,6 +132,7 @@
     "name": "Waterfox",
     "description": "Fork di Firefox focalizzato su privacy e prestazioni",
     "downloadUrl": "https://cdn.waterfox.com/waterfox/releases/6.6.9/WINNT_x86_64/Waterfox%20Setup%206.6.9.exe",
+    "homepage": "https://www.waterfox.net",
     "filename": "Waterfox_Setup.exe",
     "detectRegistry": [
       "Waterfox"
@@ -139,6 +148,7 @@
     "name": "LibreWolf",
     "description": "Fork di Firefox con impostazioni di privacy avanzate",
     "downloadUrl": "https://gitlab.com/api/v4/projects/44042130/packages/generic/librewolf/131.0-1/librewolf-131.0-1-windows-x86_64-setup.exe",
+    "homepage": "https://librewolf.net",
     "filename": "librewolf-setup.exe",
     "detectRegistry": [
       "LibreWolf"
@@ -154,6 +164,7 @@
     "name": "Pale Moon",
     "description": "Browser leggero basato su tecnologia Goanna",
     "downloadUrl": "https://www.palemoon.org/download.php?mirror=eu&bits=64&type=installer",
+    "homepage": "https://www.palemoon.org",
     "filename": "palemoon-setup.exe",
     "detectRegistry": [
       "Pale Moon"
@@ -169,6 +180,7 @@
     "name": "Maxthon",
     "description": "Browser con cloud integrato e strumenti avanzati",
     "downloadUrl": "https://dl.maxthon.com/mx6/maxthon_setup.exe",
+    "homepage": "https://www.maxthon.com",
     "filename": "maxthon_setup.exe",
     "detectRegistry": [
       "Maxthon"
@@ -201,6 +213,7 @@
     "name": "Mozilla Thunderbird",
     "description": "Client email open source di Mozilla con calendario integrato",
     "downloadUrl": "https://download.mozilla.org/?product=thunderbird-latest-ssl&os=win64&lang=it",
+    "homepage": "https://www.thunderbird.net",
     "filename": "Thunderbird_Setup.exe",
     "detectRegistry": [
       "Mozilla Thunderbird"
@@ -216,6 +229,7 @@
     "name": "Mailspring",
     "description": "Client email moderno con interfaccia elegante",
     "downloadUrl": "https://updates.getmailspring.com/download?platform=win32",
+    "homepage": "https://getmailspring.com",
     "filename": "Mailspring_Setup.exe",
     "detectRegistry": [
       "Mailspring"
@@ -231,6 +245,7 @@
     "name": "eM Client",
     "description": "Client email completo con calendario, contatti e chat",
     "downloadUrl": "https://www.emclient.com/dist/latest/setup.msi",
+    "homepage": "https://www.emclient.com",
     "filename": "emclient_setup.msi",
     "detectRegistry": [
       "eM Client"
@@ -246,6 +261,7 @@
     "name": "Postbox",
     "description": "Client email professionale con gestione avanzata",
     "downloadUrl": "https://www.postbox-inc.com/download/latest/win64",
+    "homepage": "https://www.postbox-inc.com",
     "filename": "Postbox_Setup.exe",
     "detectRegistry": [
       "Postbox"
@@ -261,6 +277,7 @@
     "name": "FileZilla",
     "description": "Client FTP/SFTP open source per trasferimento file",
     "downloadUrl": "https://download.filezilla-project.org/client/FileZilla_3.67.1_win64_sponsored2-setup.exe",
+    "homepage": "https://filezilla-project.org",
     "filename": "FileZilla_Setup.exe",
     "detectRegistry": [
       "FileZilla Client"
@@ -276,6 +293,7 @@
     "name": "WinSCP",
     "description": "Client SFTP/SCP/FTP per trasferimento sicuro di file",
     "downloadUrl": "https://winscp.net/download/WinSCP-6.3.5-Setup.exe",
+    "homepage": "https://winscp.net",
     "filename": "WinSCP-Setup.exe",
     "detectRegistry": [
       "WinSCP"
@@ -291,6 +309,7 @@
     "name": "PuTTY",
     "description": "Client SSH e Telnet leggero per connessioni remote",
     "downloadUrl": "https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-0.83-installer.msi",
+    "homepage": "https://www.chiark.greenend.org.uk/~sgtatham/putty/",
     "filename": "putty-installer.msi",
     "detectRegistry": [
       "PuTTY"
@@ -306,6 +325,7 @@
     "name": "Cyberduck",
     "description": "Client per cloud storage e trasferimento file con interfaccia intuitiva",
     "downloadUrl": "https://update.cyberduck.io/windows/Cyberduck-Installer-9.4.1.44384.exe",
+    "homepage": "https://cyberduck.io",
     "filename": "Cyberduck-Installer.exe",
     "detectRegistry": [
       "Cyberduck"
@@ -321,6 +341,7 @@
     "name": "qBittorrent",
     "description": "Client torrent open source leggero e senza pubblicità",
     "downloadUrl": "https://sourceforge.net/projects/qbittorrent/files/latest/download",
+    "homepage": "https://www.qbittorrent.org",
     "filename": "qbittorrent_setup.exe",
     "detectRegistry": [
       "qBittorrent"
@@ -336,6 +357,7 @@
     "name": "uTorrent",
     "description": "Client BitTorrent compatto e popolare",
     "downloadUrl": "https://download-new.utorrent.com/endpoint/utorrent/os/windows/track/stable/",
+    "homepage": "https://www.utorrent.com",
     "filename": "uTorrent.exe",
     "detectRegistry": [
       "µTorrent"
@@ -351,6 +373,7 @@
     "name": "Deluge",
     "description": "Client BitTorrent open source multipiattaforma",
     "downloadUrl": "https://ftp.osuosl.org/pub/deluge/windows/?C=M&O=D",
+    "homepage": "https://deluge-torrent.org",
     "filename": "deluge-2.1.1-win64-setup.exe",
     "detectRegistry": [
       "Deluge"
@@ -383,6 +406,7 @@
     "name": "Free Download Manager",
     "description": "Gestore download gratuito con supporto torrent e video",
     "downloadUrl": "https://dn3.freedownloadmanager.org/6/latest/fdm_x64_setup.exe",
+    "homepage": "https://www.freedownloadmanager.org",
     "filename": "fdm_x64_setup.exe",
     "detectRegistry": [
       "Free Download Manager"
@@ -398,6 +422,7 @@
     "name": "JDownloader 2",
     "description": "Gestore download open source con supporto multi-hosting",
     "downloadUrl": "https://mega.nz/file/LJ9FzK7b#t88t6DAF3LPs30hVjMDCGQB1YCYVAVwi-Bg7Ruil-TM",
+    "homepage": "https://jdownloader.org",
     "filename": "JDownloader2Setup.exe",
     "detectRegistry": [
       "JDownloader 2"
@@ -413,6 +438,7 @@
     "name": "Internet Download Manager",
     "description": "Acceleratore download con integrazione browser (versione di prova)",
     "downloadUrl": "https://mirror2.internetdownloadmanager.com/idman642build2.exe",
+    "homepage": "https://www.internetdownloadmanager.com",
     "filename": "idman_setup.exe",
     "detectRegistry": [
       "Internet Download Manager"
@@ -443,6 +469,7 @@
     "name": "Bitvise SSH Client",
     "description": "Client SSH e SFTP gratuito con tunneling avanzato",
     "downloadUrl": "https://dl.bitvise.com/BvSshClient-Inst.exe",
+    "homepage": "https://www.bitvise.com",
     "filename": "BvSshClient-Inst.exe",
     "detectRegistry": [
       "Bitvise SSH Client"
@@ -458,6 +485,7 @@
     "name": "MobaXterm",
     "description": "Terminale avanzato con client SSH, X11 e strumenti di rete",
     "downloadUrl": "https://mobaxterm.mobatek.net/download-home-edition.html",
+    "homepage": "https://mobaxterm.mobatek.net",
     "filename": "MobaXterm_Installer.zip",
     "detectRegistry": [
       "MobaXterm"
@@ -490,6 +518,7 @@
     "name": "RealVNC Viewer",
     "description": "Client VNC per controllo remoto del desktop",
     "downloadUrl": "https://downloads.realvnc.com/download/file/viewer.files/VNC-Viewer-7.12.1-Windows-64bit.exe",
+    "homepage": "https://www.realvnc.com",
     "filename": "VNC-Viewer-Windows.exe",
     "detectRegistry": [
       "VNC Viewer"
@@ -505,6 +534,7 @@
     "name": "TeamViewer",
     "description": "Software per accesso remoto e supporto tecnico",
     "downloadUrl": "https://download.teamviewer.com/download/TeamViewer_Setup_x64.exe",
+    "homepage": "https://www.teamviewer.com",
     "filename": "TeamViewer_Setup_x64.exe",
     "detectRegistry": [
       "TeamViewer"
@@ -520,6 +550,7 @@
     "name": "AnyDesk",
     "description": "Software per desktop remoto veloce e leggero",
     "downloadUrl": "https://download.anydesk.com/AnyDesk.exe",
+    "homepage": "https://anydesk.com",
     "filename": "AnyDesk.exe",
     "detectRegistry": [
       "AnyDesk"
@@ -535,6 +566,7 @@
     "name": "Parsec",
     "description": "Desktop remoto a bassa latenza ideale per gaming",
     "downloadUrl": "https://builds.parsec.app/package/parsec-windows.exe",
+    "homepage": "https://parsec.app",
     "filename": "parsec-windows.exe",
     "detectRegistry": [
       "Parsec"
@@ -550,6 +582,7 @@
     "name": "Wireshark",
     "description": "Analizzatore di protocolli di rete open source",
     "downloadUrl": "https://2.na.dl.wireshark.org/win64/Wireshark-4.6.4-x64.exe",
+    "homepage": "https://www.wireshark.org",
     "filename": "Wireshark-x64.exe",
     "detectRegistry": [
       "Wireshark"
@@ -565,6 +598,7 @@
     "name": "Fiddler Classic",
     "description": "Proxy di debug HTTP per analisi traffico web",
     "downloadUrl": "https://telerik-fiddler.s3.amazonaws.com/fiddler/FiddlerSetup.exe",
+    "homepage": "https://www.telerik.com/fiddler",
     "filename": "FiddlerSetup.exe",
     "detectRegistry": [
       "Fiddler"
@@ -580,6 +614,7 @@
     "name": "Postman",
     "description": "Piattaforma per test e sviluppo di API",
     "downloadUrl": "https://dl.pstmn.io/download/latest/win64",
+    "homepage": "https://www.postman.com",
     "filename": "Postman-win64-Setup.exe",
     "detectRegistry": [
       "Postman"
@@ -595,6 +630,7 @@
     "name": "cURL for Windows",
     "description": "Strumento da riga di comando per trasferimento dati via URL",
     "downloadUrl": "https://curl.se/windows/dl-8.11.0_1/curl-8.11.0_1-win64-mingw.zip",
+    "homepage": "https://curl.se/windows/",
     "filename": "curl-win64-mingw.zip",
     "detectRegistry": [],
     "detectPaths": [
@@ -608,6 +644,7 @@
     "name": "WinWGet",
     "description": "Interfaccia grafica per wget su Windows",
     "downloadUrl": "https://sourceforge.net/projects/winwget/files/latest/download",
+    "homepage": "https://sourceforge.net/projects/winwget/",
     "filename": "WinWGet_Setup.exe",
     "detectRegistry": [
       "WinWGet"
@@ -623,6 +660,7 @@
     "name": "NetBalancer",
     "description": "Strumento per monitoraggio e controllo traffico di rete",
     "downloadUrl": "https://netbalancer.com/downloads/NetBalancerSetup.exe",
+    "homepage": "https://netbalancer.com",
     "filename": "NetBalancerSetup.exe",
     "detectRegistry": [
       "NetBalancer"
@@ -638,6 +676,7 @@
     "name": "GlassWire",
     "description": "Firewall e monitor di rete con interfaccia grafica",
     "downloadUrl": "https://download.glasswire.com/GlassWireSetup.exe",
+    "homepage": "https://www.glasswire.com",
     "filename": "GlassWireSetup.exe",
     "detectRegistry": [
       "GlassWire"
@@ -653,6 +692,7 @@
     "name": "NetLimiter",
     "description": "Strumento per controllo e limitazione banda di rete (versione di prova)",
     "downloadUrl": "https://download.netlimiter.com/nl/netlimiter-5.3.26.0.exe",
+    "homepage": "https://www.netlimiter.com",
     "filename": "netlimiter-5-setup.exe",
     "detectRegistry": [
       "NetLimiter 5"
@@ -668,6 +708,7 @@
     "name": "ProtonVPN",
     "description": "VPN gratuita e sicura di Proton con crittografia avanzata",
     "downloadUrl": "https://protonvpn.com/download/ProtonVPN_v3.3.1.exe",
+    "homepage": "https://protonvpn.com",
     "filename": "ProtonVPN_Setup.exe",
     "detectRegistry": [
       "Proton VPN"
@@ -683,6 +724,7 @@
     "name": "Windscribe",
     "description": "VPN con piano gratuito generoso e blocco pubblicità",
     "downloadUrl": "https://windscribe.com/install/desktop/windows",
+    "homepage": "https://windscribe.com",
     "filename": "Windscribe_Setup.exe",
     "detectRegistry": [
       "Windscribe"
@@ -698,6 +740,7 @@
     "name": "OpenVPN",
     "description": "Client VPN open source per connessioni sicure",
     "downloadUrl": "https://swupdate.openvpn.org/community/releases/OpenVPN-2.6.12-I001-amd64.msi",
+    "homepage": "https://openvpn.net",
     "filename": "OpenVPN-amd64.msi",
     "detectRegistry": [
       "OpenVPN"
@@ -713,6 +756,7 @@
     "name": "WireGuard",
     "description": "VPN moderna, veloce e sicura con crittografia all'avanguardia",
     "downloadUrl": "https://download.wireguard.com/windows-client/wireguard-installer.exe",
+    "homepage": "https://www.wireguard.com",
     "filename": "wireguard-installer.exe",
     "detectRegistry": [
       "WireGuard"
@@ -728,6 +772,7 @@
     "name": "Cloudflare WARP",
     "description": "VPN gratuita di Cloudflare per navigazione veloce e sicura",
     "downloadUrl": "https://install.appcenter.ms/orgs/cloudflare/apps/1.1.1.1-windows-1/distribution_groups/release",
+    "homepage": "https://one.one.one.one",
     "filename": "Cloudflare_WARP_Release-x64.msi",
     "detectRegistry": [
       "Cloudflare WARP"
@@ -743,6 +788,7 @@
     "name": "NordVPN",
     "description": "VPN premium con ampia rete di server globali (versione di prova)",
     "downloadUrl": "https://downloads.nordcdn.com/apps/windows/NordVPN/latest/NordVPNSetup.exe",
+    "homepage": "https://nordvpn.com",
     "filename": "NordVPNSetup.exe",
     "detectRegistry": [
       "NordVPN"

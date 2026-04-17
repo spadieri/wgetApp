@@ -46,8 +46,24 @@ app.on('window-all-closed', () => {
 });
 
 // ============================================================
-// Auto-update: electron-updater for NSIS install, manual check for portable
+// Auto-update: event-driven header badge (no modal dialogs)
+// NSIS flavor: download + install in-app. Portable flavor: external link.
 // ============================================================
+
+const updateState = {
+  flavor: null,       // 'nsis' | 'portable' | null
+  version: null,      // '1.3.1'
+  htmlUrl: null,      // release page (portable only)
+  downloading: false, // true while autoUpdater is downloading
+  progress: 0,        // 0..100
+  downloaded: false   // true when ready to install
+};
+
+function sendUpdateState() {
+  if (mainWindow && !mainWindow.isDestroyed()) {
+    mainWindow.webContents.send('update:state', updateState);
+  }
+}
 
 function isPortable() {
   return !!process.env.PORTABLE_EXECUTABLE_DIR;
@@ -76,7 +92,7 @@ function checkForUpdatesPortable() {
     `https://api.github.com/repos/${GITHUB_REPO}/releases/latest`,
     { headers: { 'User-Agent': 'WgetApp-Updater', 'Accept': 'application/vnd.github+json' } },
     (res) => {
-      if (res.statusCode !== 200) return;
+      if (res.statusCode !== 200) { res.resume(); return; }
       let data = '';
       res.on('data', (chunk) => (data += chunk));
       res.on('end', () => {
@@ -85,19 +101,10 @@ function checkForUpdatesPortable() {
           if (!release.tag_name) return;
           if (!isNewerVersion(release.tag_name, app.getVersion())) return;
 
-          dialog.showMessageBox(mainWindow, {
-            type: 'info',
-            title: 'Aggiornamento disponibile',
-            message: `È disponibile una nuova versione: ${release.tag_name}`,
-            detail: `Stai usando la v${app.getVersion()}. Scaricala dal sito.`,
-            buttons: ['Apri pagina download', 'Più tardi'],
-            defaultId: 0,
-            cancelId: 1
-          }).then((result) => {
-            if (result.response === 0) {
-              shell.openExternal(release.html_url);
-            }
-          });
+          updateState.flavor = 'portable';
+          updateState.version = release.tag_name.replace(/^v/, '');
+          updateState.htmlUrl = release.html_url;
+          sendUpdateState();
         } catch (err) {
           console.error('Update check failed:', err);
         }
@@ -109,33 +116,64 @@ function checkForUpdatesPortable() {
 }
 
 function setupNsisAutoUpdater() {
-  autoUpdater.autoDownload = true;
+  autoUpdater.autoDownload = false;
   autoUpdater.autoInstallOnAppQuit = true;
 
+  autoUpdater.on('update-available', (info) => {
+    updateState.flavor = 'nsis';
+    updateState.version = info.version;
+    sendUpdateState();
+  });
+
+  autoUpdater.on('download-progress', (p) => {
+    updateState.progress = Math.round(p.percent || 0);
+    sendUpdateState();
+  });
+
   autoUpdater.on('update-downloaded', (info) => {
-    dialog.showMessageBox(mainWindow, {
-      type: 'info',
-      title: 'Aggiornamento pronto',
-      message: `Versione ${info.version} scaricata.`,
-      detail: 'Vuoi riavviare e installare ora?',
-      buttons: ['Riavvia ora', 'Al prossimo avvio'],
-      defaultId: 0,
-      cancelId: 1
-    }).then((result) => {
-      if (result.response === 0) {
-        autoUpdater.quitAndInstall();
-      }
-    });
+    updateState.downloading = false;
+    updateState.downloaded = true;
+    updateState.progress = 100;
+    updateState.version = info.version;
+    sendUpdateState();
   });
 
   autoUpdater.on('error', (err) => {
     console.error('Auto-updater error:', err);
+    updateState.downloading = false;
+    sendUpdateState();
   });
 
   autoUpdater.checkForUpdates().catch((err) => {
     console.error('checkForUpdates failed:', err);
   });
 }
+
+ipcMain.handle('update:get-state', () => updateState);
+
+ipcMain.handle('update:start-download', async () => {
+  if (updateState.flavor !== 'nsis') return;
+  if (updateState.downloading || updateState.downloaded) return;
+  updateState.downloading = true;
+  updateState.progress = 0;
+  sendUpdateState();
+  try {
+    await autoUpdater.downloadUpdate();
+  } catch (err) {
+    console.error('downloadUpdate failed:', err);
+    updateState.downloading = false;
+    sendUpdateState();
+  }
+});
+
+ipcMain.handle('update:quit-and-install', () => {
+  if (!updateState.downloaded) return;
+  autoUpdater.quitAndInstall();
+});
+
+ipcMain.handle('update:open-external', () => {
+  if (updateState.htmlUrl) shell.openExternal(updateState.htmlUrl);
+});
 
 // ============================================================
 // Task 6: Registry Detection - Check which software is installed
@@ -322,4 +360,18 @@ ipcMain.handle('download-software', async (_event, software) => {
 
 ipcMain.handle('get-downloads-path', () => {
   return path.join(app.getPath('downloads'), 'WgetApp');
+});
+
+ipcMain.handle('open-downloads-folder', () => {
+  const downloadsPath = path.join(app.getPath('downloads'), 'WgetApp');
+  if (!fs.existsSync(downloadsPath)) {
+    fs.mkdirSync(downloadsPath, { recursive: true });
+  }
+  shell.openPath(downloadsPath);
+});
+
+ipcMain.handle('open-external', (_event, url) => {
+  if (typeof url === 'string' && /^https?:\/\//i.test(url)) {
+    shell.openExternal(url);
+  }
 });

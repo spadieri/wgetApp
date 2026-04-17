@@ -9,5 +9,11 @@
   "toast.alreadyInstalled": "Già installato",
   "toast.downloading": "Download...",
   "toast.downloadComplete": "Download completato, avvio installazione...",
-  "toast.error": "Errore: "
+  "toast.error": "Errore: ",
+  "update.available": "Aggiorna a v{version}",
+  "update.downloading": "Scaricamento {percent}%",
+  "update.ready": "Riavvia e installa v{version}",
+  "tooltip.openDownloads": "Apri cartella download",
+  "card.projectLink": "Apri pagina progetto",
+  "card.projectLabel": "Link al sito"
 }
