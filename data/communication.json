@@ -194,8 +194,10 @@
     "id": "jitsi-meet",
     "name": "Jitsi Meet",
     "description": "Videoconferenze open source gratuite senza registrazione",
-    "downloadUrl": "https://github.com/jitsi/jitsi-meet-electron/releases/latest/download/jitsi-meet.exe",
-    "filename": "jitsi-meet.exe",
+    "source": "github",
+    "repo": "jitsi/jitsi-meet-electron",
+    "assetPattern": "^jitsi-meet\\.exe$",
+    "filename": "jitsi-meet-setup.exe",
     "detectRegistry": [
       "Jitsi Meet"
     ],
@@ -209,8 +211,10 @@
     "id": "mumble",
     "name": "Mumble",
     "description": "Software di chat vocale open source a bassa latenza per gaming",
-    "downloadUrl": "https://github.com/mumble-voip/mumble/releases/latest/download/mumble_client-1.5.857.x64.exe",
-    "filename": "mumble_client-1.5.857.x64.exe",
+    "source": "github",
+    "repo": "mumble-voip/mumble",
+    "assetPattern": "^mumble_client-[\\d.]+\\.x64\\.exe$",
+    "filename": "mumble-setup.exe",
     "detectRegistry": [
       "Mumble"
     ],
@@ -269,8 +273,10 @@
     "id": "revolt",
     "name": "Revolt",
     "description": "Piattaforma di chat open source alternativa a Discord",
-    "downloadUrl": "https://github.com/revoltchat/desktop/releases/latest/download/Revolt-Setup-1.0.8.exe",
-    "filename": "Revolt-Setup-1.0.8.exe",
+    "source": "github",
+    "repo": "revoltchat/desktop",
+    "assetPattern": "^Revolt-Setup-[\\d.]+\\.exe$",
+    "filename": "revolt-setup.exe",
     "detectRegistry": [
       "Revolt"
     ],
@@ -284,8 +290,10 @@
     "id": "franz",
     "name": "Franz",
     "description": "Aggregatore di servizi di messaggistica in un'unica app",
-    "downloadUrl": "https://github.com/meetfranz/franz/releases/latest/download/Franz-Setup-5.11.0.exe",
-    "filename": "Franz-Setup-5.11.0.exe",
+    "source": "github",
+    "repo": "meetfranz/franz",
+    "assetPattern": "^Franz-Setup-[\\d.]+\\.exe$",
+    "filename": "franz-setup.exe",
     "detectRegistry": [
       "Franz"
     ],
@@ -314,8 +322,10 @@
     "id": "ferdi",
     "name": "Ferdi",
     "description": "Aggregatore di servizi di messaggistica fork di Franz",
-    "downloadUrl": "https://github.com/ferdium/ferdium-app/releases/latest/download/Ferdium-win-AutoSetup-7.1.1-x64.exe",
-    "filename": "Ferdium-win-AutoSetup-7.1.1-x64.exe",
+    "source": "github",
+    "repo": "ferdium/ferdium-app",
+    "assetPattern": "^Ferdium-win-AutoSetup-[\\d.]+-x64\\.exe$",
+    "filename": "ferdi-setup.exe",
     "detectRegistry": [
       "Ferdi"
     ],
@@ -329,8 +339,10 @@
     "id": "ferdium",
     "name": "Ferdium",
     "description": "Aggregatore di messaggistica open source, successore di Ferdi",
-    "downloadUrl": "https://github.com/ferdium/ferdium-app/releases/latest/download/Ferdium-win-AutoSetup-7.1.1-x64.exe",
-    "filename": "Ferdium-win-AutoSetup-7.1.1-x64.exe",
+    "source": "github",
+    "repo": "ferdium/ferdium-app",
+    "assetPattern": "^Ferdium-win-AutoSetup-[\\d.]+-x64\\.exe$",
+    "filename": "ferdium-setup.exe",
     "detectRegistry": [
       "Ferdium"
     ],
@@ -389,8 +401,10 @@
     "id": "hexchat",
     "name": "HexChat",
     "description": "Client IRC gratuito e open source per Windows",
-    "downloadUrl": "https://github.com/hexchat/hexchat/releases/download/v2.16.2/HexChat.2.16.2.x64.exe",
-    "filename": "HexChat.2.16.2.x64.exe",
+    "source": "github",
+    "repo": "hexchat/hexchat",
+    "assetPattern": "^HexChat\\.[\\d.]+\\.x64\\.exe$",
+    "filename": "hexchat-setup.exe",
     "detectRegistry": [
       "HexChat"
     ],
@@ -539,8 +553,10 @@
     "id": "obsidian",
     "name": "Obsidian",
     "description": "App per appunti basata su Markdown con collegamenti tra note",
-    "downloadUrl": "https://github.com/obsidianmd/obsidian-releases/releases/latest/download/Obsidian-1.12.4.exe",
-    "filename": "Obsidian-1.12.4.exe",
+    "source": "github",
+    "repo": "obsidianmd/obsidian-releases",
+    "assetPattern": "^Obsidian-[\\d.]+\\.exe$",
+    "filename": "obsidian-setup.exe",
     "detectRegistry": [
       "Obsidian"
     ],
@@ -554,8 +570,10 @@
     "id": "joplin",
     "name": "Joplin",
     "description": "App di note-taking open source con sincronizzazione e crittografia",
-    "downloadUrl": "https://github.com/laurent22/joplin/releases/latest/download/Joplin-Setup-3.5.13.exe",
-    "filename": "Joplin-Setup-3.5.13.exe",
+    "source": "github",
+    "repo": "laurent22/joplin",
+    "assetPattern": "^Joplin-Setup-[\\d.]+\\.exe$",
+    "filename": "joplin-setup.exe",
     "detectRegistry": [
       "Joplin"
     ],
@@ -569,8 +587,10 @@
     "id": "standard-notes",
     "name": "Standard Notes",
     "description": "App di note crittografate end-to-end semplice e sicura",
-    "downloadUrl": "https://github.com/standardnotes/app/releases/download/%40standardnotes%2Fdesktop%403.201.19/standard-notes-3.201.19-win-x64.exe",
-    "filename": "standard-notes-3.201.19-win-x64.exe",
+    "source": "github",
+    "repo": "standardnotes/app",
+    "assetPattern": "^standard-notes-[\\d.]+-win-x64\\.exe$",
+    "filename": "standard-notes-setup.exe",
     "detectRegistry": [
       "Standard Notes"
     ],
@@ -584,8 +604,10 @@
     "id": "simplenote",
     "name": "Simplenote",
     "description": "App di note minimalista e gratuita con sincronizzazione cloud",
-    "downloadUrl": "https://github.com/Automattic/simplenote-electron/releases/latest/download/Simplenote-win-2.24.0-x64.exe",
-    "filename": "Simplenote-win-2.24.0-x64.exe",
+    "source": "github",
+    "repo": "Automattic/simplenote-electron",
+    "assetPattern": "^Simplenote-win-[\\d.]+-x64\\.exe$",
+    "filename": "simplenote-setup.exe",
     "detectRegistry": [
       "Simplenote"
     ],
@@ -718,8 +740,10 @@
     "id": "rocketchat",
     "name": "Rocket.Chat",
     "description": "Piattaforma di comunicazione open source self-hosted per team",
-    "downloadUrl": "https://github.com/RocketChat/Rocket.Chat.Electron/releases/latest/download/rocketchat-4.12.0-win-x64.exe",
-    "filename": "rocketchat-4.12.0-win-x64.exe",
+    "source": "github",
+    "repo": "RocketChat/Rocket.Chat.Electron",
+    "assetPattern": "^rocketchat-[\\d.]+-win-x64\\.exe$",
+    "filename": "rocketchat-setup.exe",
     "detectRegistry": [
       "Rocket.Chat"
     ],

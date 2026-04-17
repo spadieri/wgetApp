@@ -680,8 +680,10 @@
     "id": "dismpp",
     "name": "DISM++",
     "description": "Strumento GUI per gestione immagini Windows, pulizia e ottimizzazione",
-    "downloadUrl": "https://github.com/Chuyu-Team/Dism-Multi-language/releases/download/v10.1.1002.2/Dism++10.1.1002.1B.zip",
-    "filename": "Dism++10.1.1002.1B.zip",
+    "source": "github",
+    "repo": "Chuyu-Team/Dism-Multi-language",
+    "assetPattern": "^Dism\\+\\+[\\d.]+[A-Za-z]?\\.zip$",
+    "filename": "dismpp.zip",
     "detectRegistry": [],
     "detectPaths": [
       "C:/Program Files/Dism++/Dism++x64.exe"

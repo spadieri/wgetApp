@@ -198,6 +198,70 @@ ipcMain.handle('check-installed', async (_event, softwareList) => {
 });
 
 // ============================================================
+// Download URL resolver - supports GitHub API (auto-latest) or static URL
+// ============================================================
+
+const urlCache = new Map();
+const URL_CACHE_TTL_MS = 60 * 60 * 1000;
+
+function fetchJson(url) {
+  return new Promise((resolve, reject) => {
+    const req = https.get(
+      url,
+      {
+        headers: {
+          'User-Agent': 'WgetApp',
+          'Accept': 'application/vnd.github+json'
+        }
+      },
+      (res) => {
+        if (res.statusCode !== 200) {
+          res.resume();
+          reject(new Error(`HTTP ${res.statusCode} ${url}`));
+          return;
+        }
+        let data = '';
+        res.on('data', (chunk) => (data += chunk));
+        res.on('end', () => {
+          try { resolve(JSON.parse(data)); }
+          catch (err) { reject(err); }
+        });
+      }
+    );
+    req.on('error', reject);
+    req.setTimeout(10000, () => req.destroy(new Error('GitHub API timeout')));
+  });
+}
+
+async function resolveDownloadUrl(software) {
+  if (software.source !== 'github') {
+    return software.downloadUrl;
+  }
+
+  const cached = urlCache.get(software.id);
+  if (cached && cached.expiresAt > Date.now()) {
+    return cached.url;
+  }
+
+  const release = await fetchJson(
+    `https://api.github.com/repos/${software.repo}/releases/latest`
+  );
+  const pattern = new RegExp(software.assetPattern);
+  const asset = (release.assets || []).find((a) => pattern.test(a.name));
+  if (!asset) {
+    throw new Error(
+      `No asset matches /${software.assetPattern}/ in ${software.repo}@${release.tag_name}`
+    );
+  }
+
+  urlCache.set(software.id, {
+    url: asset.browser_download_url,
+    expiresAt: Date.now() + URL_CACHE_TTL_MS
+  });
+  return asset.browser_download_url;
+}
+
+// ============================================================
 // Task 7: Download Engine - wget download + auto-launch installer
 // ============================================================
 
@@ -211,9 +275,11 @@ ipcMain.handle('download-software', async (_event, software) => {
   const outputPath = path.join(downloadsPath, software.filename);
   const wgetPath = getWgetPath();
 
+  const downloadUrl = await resolveDownloadUrl(software);
+
   return new Promise((resolve, reject) => {
     const args = [
-      software.downloadUrl,
+      downloadUrl,
       '-O', outputPath,
       '--no-check-certificate',
       '-q', '--show-progress'

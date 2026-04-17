@@ -1,0 +1,313 @@
+[
+  {
+    "id": "ollama",
+    "name": "Ollama",
+    "description": "Runtime per LLM locali via CLI",
+    "downloadUrl": "https://ollama.com/download/OllamaSetup.exe",
+    "filename": "OllamaSetup.exe",
+    "detectRegistry": [
+      "Ollama"
+    ],
+    "detectPaths": [
+      "C:/Users/%USERNAME%/AppData/Local/Programs/Ollama/ollama.exe"
+    ],
+    "size": "~700MB",
+    "description_en": "Runtime for local LLMs via CLI"
+  },
+  {
+    "id": "lmstudio",
+    "name": "LM Studio",
+    "description": "App desktop per scaricare ed eseguire LLM locali",
+    "downloadUrl": "https://lmstudio.ai/download/latest/win32/x64",
+    "filename": "lmstudio-setup.exe",
+    "detectRegistry": [
+      "LM Studio"
+    ],
+    "detectPaths": [
+      "C:/Users/%USERNAME%/AppData/Local/LM-Studio/LM Studio.exe"
+    ],
+    "size": "~500MB",
+    "description_en": "Desktop app to download and run local LLMs"
+  },
+  {
+    "id": "jan",
+    "name": "Jan",
+    "description": "Assistente AI locale, 100% offline",
+    "source": "github",
+    "repo": "janhq/jan",
+    "assetPattern": "^Jan_[\\d.]+_x64-setup\\.exe$",
+    "filename": "jan-setup.exe",
+    "detectRegistry": [
+      "Jan"
+    ],
+    "detectPaths": [
+      "C:/Users/%USERNAME%/AppData/Local/Programs/jan/Jan.exe"
+    ],
+    "size": "~250MB",
+    "description_en": "Local AI assistant, 100% offline"
+  },
+  {
+    "id": "gpt4all",
+    "name": "GPT4All",
+    "description": "App desktop open source per LLM locali",
+    "source": "github",
+    "repo": "nomic-ai/gpt4all",
+    "assetPattern": "^gpt4all-installer-win64-v[\\d.]+\\.exe$",
+    "filename": "gpt4all-setup.exe",
+    "detectRegistry": [
+      "GPT4All"
+    ],
+    "detectPaths": [
+      "C:/Users/%USERNAME%/AppData/Local/nomic.ai/GPT4All/bin/chat.exe"
+    ],
+    "size": "~350MB",
+    "description_en": "Open source desktop app for local LLMs"
+  },
+  {
+    "id": "anythingllm",
+    "name": "AnythingLLM",
+    "description": "Chatbot AI all-in-one con supporto RAG sui tuoi documenti",
+    "downloadUrl": "https://cdn.anythingllm.com/latest/AnythingLLMDesktop.exe",
+    "filename": "AnythingLLMDesktop.exe",
+    "detectRegistry": [
+      "AnythingLLM"
+    ],
+    "detectPaths": [
+      "C:/Users/%USERNAME%/AppData/Local/Programs/AnythingLLM/AnythingLLM.exe"
+    ],
+    "size": "~375MB",
+    "description_en": "All-in-one AI chatbot with RAG support for your documents"
+  },
+  {
+    "id": "koboldcpp",
+    "name": "KoboldCpp",
+    "description": "Runtime inference per LLM GGUF, eseguibile singolo",
+    "source": "github",
+    "repo": "LostRuins/koboldcpp",
+    "assetPattern": "^koboldcpp\\.exe$",
+    "filename": "koboldcpp.exe",
+    "detectRegistry": [
+      "KoboldCpp"
+    ],
+    "detectPaths": [
+      "C:/Users/%USERNAME%/AppData/Local/Programs/KoboldCpp/koboldcpp.exe"
+    ],
+    "size": "~500MB",
+    "description_en": "LLM GGUF inference runtime, single executable"
+  },
+  {
+    "id": "cortex",
+    "name": "Cortex",
+    "description": "Runtime CLI locale per LLM di Jan",
+    "source": "github",
+    "repo": "janhq/cortex.cpp",
+    "assetPattern": "^cortex-[\\d.]+-windows-amd64-local-installer\\.exe$",
+    "filename": "cortex-setup.exe",
+    "detectRegistry": [
+      "Cortex"
+    ],
+    "detectPaths": [
+      "C:/Users/%USERNAME%/AppData/Local/cortexcpp/cortex.exe"
+    ],
+    "size": "~1GB",
+    "description_en": "Local CLI runtime for LLMs by Jan"
+  },
+  {
+    "id": "claude-desktop",
+    "name": "Claude Desktop",
+    "description": "App desktop ufficiale di Claude AI di Anthropic",
+    "downloadUrl": "https://claude.ai/api/desktop/win32/x64/setup/latest/redirect",
+    "filename": "claude-setup.exe",
+    "detectRegistry": [
+      "Claude"
+    ],
+    "detectPaths": [
+      "C:/Users/%USERNAME%/AppData/Local/AnthropicClaude/claude.exe"
+    ],
+    "size": "~150MB",
+    "description_en": "Anthropic's official Claude AI desktop app"
+  },
+  {
+    "id": "cursor",
+    "name": "Cursor",
+    "description": "Editor di codice AI-first basato su VS Code",
+    "downloadUrl": "https://api2.cursor.sh/updates/download/golden/win32-x64-user/cursor/3.1",
+    "filename": "cursor-setup.exe",
+    "detectRegistry": [
+      "Cursor"
+    ],
+    "detectPaths": [
+      "C:/Users/%USERNAME%/AppData/Local/Programs/cursor/Cursor.exe"
+    ],
+    "size": "~180MB",
+    "description_en": "AI-first code editor based on VS Code"
+  },
+  {
+    "id": "void",
+    "name": "Void",
+    "description": "Editor AI open source, alternativa a Cursor",
+    "source": "github",
+    "repo": "voideditor/binaries",
+    "assetPattern": "^VoidSetup-x64-[\\d.]+\\.exe$",
+    "filename": "void-setup.exe",
+    "detectRegistry": [
+      "Void"
+    ],
+    "detectPaths": [
+      "C:/Users/%USERNAME%/AppData/Local/Programs/Void/Void.exe"
+    ],
+    "size": "~120MB",
+    "description_en": "Open source AI editor, alternative to Cursor"
+  },
+  {
+    "id": "zed",
+    "name": "Zed",
+    "description": "Editor di codice veloce con funzioni AI integrate",
+    "source": "github",
+    "repo": "zed-industries/zed",
+    "assetPattern": "^Zed-x86_64\\.exe$",
+    "filename": "zed-setup.exe",
+    "detectRegistry": [
+      "Zed"
+    ],
+    "detectPaths": [
+      "C:/Users/%USERNAME%/AppData/Local/Zed/Zed.exe"
+    ],
+    "size": "~160MB",
+    "description_en": "Fast code editor with built-in AI features"
+  },
+  {
+    "id": "pinokio",
+    "name": "Pinokio",
+    "description": "Browser AI per installare ed eseguire app di intelligenza artificiale con un clic",
+    "source": "github",
+    "repo": "pinokiocomputer/pinokio",
+    "assetPattern": "^Pinokio\\.exe$",
+    "filename": "Pinokio.exe",
+    "detectRegistry": [
+      "Pinokio"
+    ],
+    "detectPaths": [
+      "C:/Users/%USERNAME%/AppData/Local/Programs/Pinokio/Pinokio.exe"
+    ],
+    "size": "~120MB",
+    "description_en": "AI browser to install and run AI apps with one click"
+  },
+  {
+    "id": "stability-matrix",
+    "name": "Stability Matrix",
+    "description": "Gestore multi-pacchetto per Stable Diffusion e UI generative",
+    "source": "github",
+    "repo": "LykosAI/StabilityMatrix",
+    "assetPattern": "^StabilityMatrix-win-x64\\.zip$",
+    "filename": "stability-matrix-win.zip",
+    "detectRegistry": [
+      "Stability Matrix"
+    ],
+    "detectPaths": [
+      "C:/Users/%USERNAME%/AppData/Roaming/StabilityMatrix/StabilityMatrix.exe"
+    ],
+    "size": "~90MB",
+    "description_en": "Multi-package manager for Stable Diffusion and generative UIs"
+  },
+  {
+    "id": "upscayl",
+    "name": "Upscayl",
+    "description": "Upscaler immagini AI open source gratuito",
+    "source": "github",
+    "repo": "upscayl/upscayl",
+    "assetPattern": "^upscayl-[\\d.]+-win\\.exe$",
+    "filename": "upscayl-setup.exe",
+    "detectRegistry": [
+      "Upscayl"
+    ],
+    "detectPaths": [
+      "C:/Users/%USERNAME%/AppData/Local/Programs/upscayl/Upscayl.exe"
+    ],
+    "size": "~200MB",
+    "description_en": "Free open source AI image upscaler"
+  },
+  {
+    "id": "comfyui-desktop",
+    "name": "ComfyUI Desktop",
+    "description": "Interfaccia visuale a nodi per Stable Diffusion",
+    "downloadUrl": "https://download.comfy.org/windows/nsis/x64",
+    "filename": "comfyui-desktop-setup.exe",
+    "detectRegistry": [
+      "ComfyUI"
+    ],
+    "detectPaths": [
+      "C:/Users/%USERNAME%/AppData/Local/Programs/@comfyorgcomfyui-electron/ComfyUI.exe"
+    ],
+    "size": "~2GB",
+    "description_en": "Node-based visual interface for Stable Diffusion"
+  },
+  {
+    "id": "vibe",
+    "name": "Vibe",
+    "description": "Trascrizione audio/video offline con Whisper",
+    "source": "github",
+    "repo": "thewh1teagle/vibe",
+    "assetPattern": "^vibe_[\\d.]+_x64-setup\\.exe$",
+    "filename": "vibe-setup.exe",
+    "detectRegistry": [
+      "Vibe"
+    ],
+    "detectPaths": [
+      "C:/Users/%USERNAME%/AppData/Local/Programs/Vibe/vibe.exe"
+    ],
+    "size": "~100MB",
+    "description_en": "Offline audio/video transcription with Whisper"
+  },
+  {
+    "id": "whisper-desktop",
+    "name": "Whisper Desktop",
+    "description": "Trascrizione vocale con Whisper accelerata da GPU",
+    "source": "github",
+    "repo": "Const-me/Whisper",
+    "assetPattern": "^WhisperDesktop\\.zip$",
+    "filename": "WhisperDesktop.zip",
+    "detectRegistry": [
+      "Whisper Desktop"
+    ],
+    "detectPaths": [
+      "C:/Program Files/WhisperDesktop/WhisperDesktop.exe"
+    ],
+    "size": "~3MB",
+    "description_en": "GPU-accelerated Whisper speech transcription"
+  },
+  {
+    "id": "reor",
+    "name": "Reor",
+    "description": "Note-taking AI locale con grafo semantico e RAG",
+    "source": "github",
+    "repo": "reorproject/reor",
+    "assetPattern": "^Reor_[\\d.]+\\.exe$",
+    "filename": "reor-setup.exe",
+    "detectRegistry": [
+      "Reor"
+    ],
+    "detectPaths": [
+      "C:/Users/%USERNAME%/AppData/Local/Programs/reor-project/Reor.exe"
+    ],
+    "size": "~180MB",
+    "description_en": "Local AI note-taking with semantic graph and RAG"
+  },
+  {
+    "id": "goose",
+    "name": "Goose",
+    "description": "Agente AI desktop open source di Block",
+    "source": "github",
+    "repo": "block/goose",
+    "assetPattern": "^Goose-win32-x64\\.zip$",
+    "filename": "goose-win32-x64.zip",
+    "detectRegistry": [
+      "Goose"
+    ],
+    "detectPaths": [
+      "C:/Users/%USERNAME%/AppData/Local/Programs/Goose/Goose.exe"
+    ],
+    "size": "~200MB",
+    "description_en": "Open source desktop AI agent by Block"
+  }
+]

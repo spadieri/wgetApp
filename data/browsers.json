@@ -183,8 +183,10 @@
     "id": "midori",
     "name": "Midori",
     "description": "Browser leggero e veloce per navigazione essenziale",
-    "downloadUrl": "https://github.com/goastian/midori-desktop/releases/download/v11.4.3/midori-11.4.3.win64.installer.exe",
-    "filename": "Midori_Setup.exe",
+    "source": "github",
+    "repo": "goastian/midori-desktop",
+    "assetPattern": "^midori-.+\\.win64\\.installer\\.exe$",
+    "filename": "midori-setup.exe",
     "detectRegistry": [
       "Midori"
     ],
@@ -363,7 +365,9 @@
     "id": "transmission",
     "name": "Transmission",
     "description": "Client BitTorrent minimalista e leggero",
-    "downloadUrl": "https://github.com/transmission/transmission/releases/latest/download/transmission-4.1.1-x64.msi",
+    "source": "github",
+    "repo": "transmission/transmission",
+    "assetPattern": "^transmission-[\\d.]+-x64\\.msi$",
     "filename": "transmission-setup.msi",
     "detectRegistry": [
       "Transmission"
@@ -423,7 +427,9 @@
     "id": "aria2",
     "name": "aria2",
     "description": "Utilità da riga di comando per download multi-protocollo",
-    "downloadUrl": "https://github.com/aria2/aria2/releases/latest/download/aria2-1.37.0-win-64bit-build1.zip",
+    "source": "github",
+    "repo": "aria2/aria2",
+    "assetPattern": "^aria2-[\\d.]+-win-64bit-build[\\d]+\\.zip$",
     "filename": "aria2-win-64bit.zip",
     "detectRegistry": [],
     "detectPaths": [
@@ -466,8 +472,10 @@
     "id": "mremoteng",
     "name": "mRemoteNG",
     "description": "Gestore connessioni remote multi-protocollo open source",
-    "downloadUrl": "https://github.com/mRemoteNG/mRemoteNG/releases/download/v1.76.20/mRemoteNG-Installer-1.76.20.24615.msi",
-    "filename": "mRemoteNG-Installer.msi",
+    "source": "github",
+    "repo": "mRemoteNG/mRemoteNG",
+    "assetPattern": "^mRemoteNG-Installer-[\\d.]+\\.msi$",
+    "filename": "mremoteng-setup.msi",
     "detectRegistry": [
       "mRemoteNG"
     ],

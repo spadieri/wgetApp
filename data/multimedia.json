@@ -18,8 +18,10 @@
     "id": "mpc-hc",
     "name": "Media Player Classic",
     "description": "Lettore multimediale leggero e classico per Windows",
-    "downloadUrl": "https://github.com/clsid2/mpc-hc/releases/download/2.6.3/MPC-HC.2.6.3.x64.exe",
-    "filename": "MPC-HC.2.6.3.x64.exe",
+    "source": "github",
+    "repo": "clsid2/mpc-hc",
+    "assetPattern": "^MPC-HC\\.[\\d.]+\\.x64\\.exe$",
+    "filename": "mpc-hc-setup.exe",
     "detectRegistry": [
       "MPC-HC"
     ],
@@ -241,8 +243,10 @@
     "id": "audacity",
     "name": "Audacity",
     "description": "Editor audio open source per registrazione e modifica",
-    "downloadUrl": "https://github.com/audacity/audacity/releases/download/Audacity-3.7.7/audacity-win-3.7.7-64bit.exe",
-    "filename": "audacity-win-3.7.7-64bit.exe",
+    "source": "github",
+    "repo": "audacity/audacity",
+    "assetPattern": "^audacity-win-[\\d.]+-64bit\\.exe$",
+    "filename": "audacity-setup.exe",
     "detectRegistry": [
       "Audacity"
     ],
@@ -286,8 +290,10 @@
     "id": "lmms",
     "name": "LMMS",
     "description": "DAW open source e gratuita per la creazione musicale",
-    "downloadUrl": "https://github.com/LMMS/lmms/releases/latest/download/lmms-1.2.2-win64.exe",
-    "filename": "lmms-win64.exe",
+    "source": "github",
+    "repo": "LMMS/lmms",
+    "assetPattern": "^lmms-[\\d.]+-win64\\.exe$",
+    "filename": "lmms-setup.exe",
     "detectRegistry": [
       "LMMS"
     ],
@@ -301,8 +307,10 @@
     "id": "obs-studio",
     "name": "OBS Studio",
     "description": "Software open source per registrazione e streaming video in diretta",
-    "downloadUrl": "https://github.com/obsproject/obs-studio/releases/download/32.0.4/OBS-Studio-32.0.4-Windows-x64-Installer.exe",
-    "filename": "OBS-Studio-32.0.4-Windows-x64-Installer.exe",
+    "source": "github",
+    "repo": "obsproject/obs-studio",
+    "assetPattern": "^OBS-Studio-.+-Windows-x64-Installer\\.exe$",
+    "filename": "obs-studio-setup.exe",
     "detectRegistry": [
       "OBS Studio"
     ],
@@ -346,8 +354,10 @@
     "id": "sharex",
     "name": "ShareX",
     "description": "Strumento open source per cattura schermo, GIF e condivisione",
-    "downloadUrl": "https://github.com/ShareX/ShareX/releases/download/v19.0.2/ShareX-19.0.2-setup.exe",
-    "filename": "ShareX-19.0.2-setup.exe",
+    "source": "github",
+    "repo": "ShareX/ShareX",
+    "assetPattern": "^ShareX-[\\d.]+-setup\\.exe$",
+    "filename": "sharex-setup.exe",
     "detectRegistry": [
       "ShareX"
     ],
@@ -361,8 +371,10 @@
     "id": "greenshot",
     "name": "Greenshot",
     "description": "Strumento leggero per cattura schermo con annotazioni",
-    "downloadUrl": "https://github.com/greenshot/greenshot/releases/download/v1.3.312/Greenshot-INSTALLER-1.3.312-RELEASE.exe",
-    "filename": "Greenshot-INSTALLER-1.3.312-RELEASE.exe",
+    "source": "github",
+    "repo": "greenshot/greenshot",
+    "assetPattern": "^Greenshot-INSTALLER-.+-RELEASE\\.exe$",
+    "filename": "greenshot-setup.exe",
     "detectRegistry": [
       "Greenshot"
     ],
@@ -406,8 +418,10 @@
     "id": "screentogif",
     "name": "ScreenToGif",
     "description": "Registratore dello schermo in formato GIF con editor integrato",
-    "downloadUrl": "https://github.com/NickeManarin/ScreenToGif/releases/download/2.42.1/ScreenToGif.2.42.1.Light.Setup.x64.msi",
-    "filename": "ScreenToGif.2.42.1.Light.Setup.x64.msi",
+    "source": "github",
+    "repo": "NickeManarin/ScreenToGif",
+    "assetPattern": "^ScreenToGif\\.[\\d.]+\\.Light\\.Setup\\.x64\\.msi$",
+    "filename": "screentogif-setup.msi",
     "detectRegistry": [
       "ScreenToGif"
     ],
@@ -436,8 +450,10 @@
     "id": "paint-net",
     "name": "Paint.NET",
     "description": "Editor di immagini gratuito e intuitivo per Windows",
-    "downloadUrl": "https://github.com/paintdotnet/release/releases/download/v5.1.11/paint.net.5.1.11.install.anycpu.web.zip",
-    "filename": "paint.net.5.1.11.install.anycpu.web.zip",
+    "source": "github",
+    "repo": "paintdotnet/release",
+    "assetPattern": "^paint\\.net\\.[\\d.]+\\.install\\.anycpu\\.web\\.zip$",
+    "filename": "paint-net-setup.zip",
     "detectRegistry": [
       "paint.net"
     ],
@@ -526,8 +542,10 @@
     "id": "shotcut",
     "name": "Shotcut",
     "description": "Editor video open source multi-piattaforma e gratuito",
-    "downloadUrl": "https://github.com/mltframework/shotcut/releases/download/v26.2.26/shotcut-win64-26.2.26.exe",
-    "filename": "shotcut-win64-26.2.26.exe",
+    "source": "github",
+    "repo": "mltframework/shotcut",
+    "assetPattern": "^shotcut-win64-[\\d.]+\\.exe$",
+    "filename": "shotcut-setup.exe",
     "detectRegistry": [
       "Shotcut"
     ],
@@ -556,8 +574,10 @@
     "id": "openshot",
     "name": "OpenShot",
     "description": "Editor video gratuito e facile da usare per principianti",
-    "downloadUrl": "https://github.com/OpenShot/openshot-qt/releases/download/v3.4.0/OpenShot-v3.4.0-x86_64.exe",
-    "filename": "OpenShot-v3.4.0-x86_64.exe",
+    "source": "github",
+    "repo": "OpenShot/openshot-qt",
+    "assetPattern": "^OpenShot-v[\\d.]+-x86_64\\.exe$",
+    "filename": "openshot-setup.exe",
     "detectRegistry": [
       "OpenShot Video Editor"
     ],
@@ -571,8 +591,10 @@
     "id": "handbrake",
     "name": "HandBrake",
     "description": "Convertitore video open source con supporto per molti formati",
-    "downloadUrl": "https://github.com/HandBrake/HandBrake/releases/download/1.10.2/HandBrake-1.10.2-x86_64-Win_GUI.exe",
-    "filename": "HandBrake-1.10.2-x86_64-Win_GUI.exe",
+    "source": "github",
+    "repo": "HandBrake/HandBrake",
+    "assetPattern": "^HandBrake-[\\d.]+-x86_64-Win_GUI\\.exe$",
+    "filename": "handbrake-setup.exe",
     "detectRegistry": [
       "HandBrake"
     ],
@@ -586,8 +608,10 @@
     "id": "ffmpeg",
     "name": "FFmpeg",
     "description": "Framework a riga di comando per elaborazione audio e video",
-    "downloadUrl": "https://github.com/BtbN/FFmpeg-Builds/releases/latest/download/ffmpeg-master-latest-win64-gpl.zip",
-    "filename": "ffmpeg-master-latest-win64-gpl.zip",
+    "source": "github",
+    "repo": "BtbN/FFmpeg-Builds",
+    "assetPattern": "^ffmpeg-master-latest-win64-gpl\\.zip$",
+    "filename": "ffmpeg.zip",
     "detectRegistry": [],
     "detectPaths": [
       "C:/ffmpeg/bin/ffmpeg.exe"
@@ -629,8 +653,10 @@
     "id": "subtitle-edit",
     "name": "Subtitle Edit",
     "description": "Editor di sottotitoli open source con sincronizzazione e traduzione",
-    "downloadUrl": "https://github.com/SubtitleEdit/subtitleedit/releases/download/4.0.15/SubtitleEdit-4.0.15-Setup.zip",
-    "filename": "SubtitleEdit-4.0.15-Setup.zip",
+    "source": "github",
+    "repo": "SubtitleEdit/subtitleedit",
+    "assetPattern": "^SubtitleEdit-[\\d.]+-Setup\\.zip$",
+    "filename": "subtitle-edit-setup.zip",
     "detectRegistry": [
       "Subtitle Edit"
     ],
@@ -704,8 +730,10 @@
     "id": "darktable",
     "name": "darktable",
     "description": "Software open source per fotografia digitale e sviluppo RAW",
-    "downloadUrl": "https://github.com/darktable-org/darktable/releases/download/release-5.4.1/darktable-5.4.1-win64.exe",
-    "filename": "darktable-5.4.1-win64.exe",
+    "source": "github",
+    "repo": "darktable-org/darktable",
+    "assetPattern": "^darktable-[\\d.]+-win64\\.exe$",
+    "filename": "darktable-setup.exe",
     "detectRegistry": [
       "darktable"
     ],
@@ -719,8 +747,10 @@
     "id": "rawtherapee",
     "name": "RawTherapee",
     "description": "Elaboratore di foto RAW open source e multi-piattaforma",
-    "downloadUrl": "https://github.com/Beep6581/RawTherapee/releases/download/5.12/RawTherapee_5.12_win64_release.exe",
-    "filename": "RawTherapee_5.12_win64_release.exe",
+    "source": "github",
+    "repo": "Beep6581/RawTherapee",
+    "assetPattern": "^RawTherapee_[\\d.]+_win64_release\\.exe$",
+    "filename": "rawtherapee-setup.exe",
     "detectRegistry": [
       "RawTherapee"
     ],

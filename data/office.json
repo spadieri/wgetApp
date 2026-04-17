@@ -18,8 +18,10 @@
     "id": "onlyoffice",
     "name": "OnlyOffice Desktop",
     "description": "Suite office gratuita compatibile con formati Microsoft Office",
-    "downloadUrl": "https://github.com/ONLYOFFICE/DesktopEditors/releases/download/v9.3.1/DesktopEditors_x64.exe",
-    "filename": "DesktopEditors_x64.exe",
+    "source": "github",
+    "repo": "ONLYOFFICE/DesktopEditors",
+    "assetPattern": "^DesktopEditors_x64\\.exe$",
+    "filename": "onlyoffice-setup.exe",
     "detectRegistry": [
       "ONLYOFFICE Desktop Editors"
     ],
@@ -269,8 +271,10 @@
     "id": "jabref",
     "name": "JabRef",
     "description": "Gestore di riferimenti bibliografici BibTeX open source",
-    "downloadUrl": "https://github.com/JabRef/jabref/releases/latest/download/JabRef-5.15-portable_windows.zip",
-    "filename": "JabRef-portable_windows.zip",
+    "source": "github",
+    "repo": "JabRef/jabref",
+    "assetPattern": "^JabRef-[\\d.]+-portable_windows\\.zip$",
+    "filename": "jabref-portable.zip",
     "detectRegistry": [
       "JabRef"
     ],
@@ -299,8 +303,10 @@
     "id": "texstudio",
     "name": "TeXstudio",
     "description": "Editor LaTeX integrato con anteprima, completamento automatico e correttore",
-    "downloadUrl": "https://github.com/texstudio-org/texstudio/releases/download/4.9.2/texstudio-4.9.2-win-qt6-signed.exe",
-    "filename": "texstudio-win-qt6.exe",
+    "source": "github",
+    "repo": "texstudio-org/texstudio",
+    "assetPattern": "^texstudio-.+-win-qt6-signed\\.exe$",
+    "filename": "texstudio-setup.exe",
     "detectRegistry": [
       "TeXstudio"
     ],
@@ -340,7 +346,9 @@
     "id": "marktext",
     "name": "Mark Text",
     "description": "Editor Markdown open source semplice e elegante",
-    "downloadUrl": "https://github.com/marktext/marktext/releases/latest/download/marktext-setup.exe",
+    "source": "github",
+    "repo": "marktext/marktext",
+    "assetPattern": "^marktext-setup\\.exe$",
     "filename": "marktext-setup.exe",
     "detectRegistry": [
       "Mark Text"
@@ -370,8 +378,10 @@
     "id": "obsidian-office",
     "name": "Obsidian",
     "description": "App per appunti e knowledge base basata su Markdown con plugin",
-    "downloadUrl": "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.12.4/Obsidian-1.12.4.exe",
-    "filename": "Obsidian.exe",
+    "source": "github",
+    "repo": "obsidianmd/obsidian-releases",
+    "assetPattern": "^Obsidian-[\\d.]+\\.exe$",
+    "filename": "obsidian-setup.exe",
     "detectRegistry": [
       "Obsidian"
     ],
@@ -400,8 +410,10 @@
     "id": "logseq",
     "name": "Logseq",
     "description": "App di knowledge management open source basata su blocchi e grafi",
-    "downloadUrl": "https://github.com/logseq/logseq/releases/download/0.10.15/Logseq-win-x64-0.10.15.exe",
-    "filename": "Logseq-win-x64.exe",
+    "source": "github",
+    "repo": "logseq/logseq",
+    "assetPattern": "^Logseq-win-x64-[\\d.]+\\.exe$",
+    "filename": "logseq-setup.exe",
     "detectRegistry": [
       "Logseq"
     ],
@@ -415,8 +427,10 @@
     "id": "zettlr",
     "name": "Zettlr",
     "description": "Editor Markdown per ricerca accademica con citazioni e Zettelkasten",
-    "downloadUrl": "https://github.com/Zettlr/Zettlr/releases/download/v4.2.0/Zettlr-4.2.0-x64.exe",
-    "filename": "Zettlr-Setup.exe",
+    "source": "github",
+    "repo": "Zettlr/Zettlr",
+    "assetPattern": "^Zettlr-[\\d.]+-x64\\.exe$",
+    "filename": "zettlr-setup.exe",
     "detectRegistry": [
       "Zettlr"
     ],
@@ -460,8 +474,10 @@
     "id": "drawio",
     "name": "draw.io Desktop",
     "description": "Editor di diagrammi e schemi gratuito e open source",
-    "downloadUrl": "https://github.com/jgraph/drawio-desktop/releases/download/v29.5.2/draw.io-29.5.2-windows-installer.exe",
-    "filename": "draw.io-windows-installer.exe",
+    "source": "github",
+    "repo": "jgraph/drawio-desktop",
+    "assetPattern": "^draw\\.io-[\\d.]+-windows-installer\\.exe$",
+    "filename": "drawio-setup.exe",
     "detectRegistry": [
       "draw.io"
     ],
@@ -579,8 +595,10 @@
     "id": "ganttproject",
     "name": "GanttProject",
     "description": "Software di gestione progetti con diagrammi di Gantt open source",
-    "downloadUrl": "https://github.com/bardsoftware/ganttproject/releases/download/ganttproject-3.3.3316/ganttproject-3.3.3316.exe",
-    "filename": "ganttproject-3.3.3309.exe",
+    "source": "github",
+    "repo": "bardsoftware/ganttproject",
+    "assetPattern": "^ganttproject-[\\d.]+\\.exe$",
+    "filename": "ganttproject-setup.exe",
     "detectRegistry": [
       "GanttProject"
     ],
@@ -695,8 +713,10 @@
     "id": "anki",
     "name": "Anki",
     "description": "Software di flashcard con ripetizione spaziata per memorizzazione",
-    "downloadUrl": "https://github.com/ankitects/anki/releases/download/25.09/anki-launcher-25.09-windows.exe",
-    "filename": "anki-windows-qt6.exe",
+    "source": "github",
+    "repo": "ankitects/anki",
+    "assetPattern": "^anki-launcher-.+-windows\\.exe$",
+    "filename": "anki-setup.exe",
     "detectRegistry": [
       "Anki"
     ],

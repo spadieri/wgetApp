@@ -12,7 +12,8 @@ const ICON_MAP = {
   'shield': '\u{1F6E1}\uFE0F',
   'message-circle': '\u{1F4AC}',
   'file-text': '\u{1F4C4}',
-  'cpu': '\u2699\uFE0F'
+  'cpu': '\u2699\uFE0F',
+  'brain': '\u{1F9E0}'
 };
 
 // ----- State -----

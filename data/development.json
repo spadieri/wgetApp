@@ -33,8 +33,10 @@
     "id": "notepadplusplus",
     "name": "Notepad++",
     "description": "Editor di testo e codice sorgente gratuito con supporto plugin",
-    "downloadUrl": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.9.2/npp.8.9.2.Installer.x64.exe",
-    "filename": "npp.8.9.2.Installer.x64.exe",
+    "source": "github",
+    "repo": "notepad-plus-plus/notepad-plus-plus",
+    "assetPattern": "^npp\\..+\\.Installer\\.x64\\.exe$",
+    "filename": "notepad-plus-plus-setup.exe",
     "detectRegistry": [
       "Notepad++"
     ],
@@ -48,8 +50,10 @@
     "id": "atom",
     "name": "Atom",
     "description": "Editor di testo hackerabile del 21° secolo di GitHub (archiviato)",
-    "downloadUrl": "https://github.com/atom/atom/releases/latest/download/AtomSetup-x64.exe",
-    "filename": "AtomSetup-x64.exe",
+    "source": "github",
+    "repo": "atom/atom",
+    "assetPattern": "^AtomSetup-x64\\.exe$",
+    "filename": "atom-setup.exe",
     "detectRegistry": [
       "Atom"
     ],
@@ -108,8 +112,10 @@
     "id": "netbeans",
     "name": "Apache NetBeans",
     "description": "IDE open source per Java, PHP, C++ e altri linguaggi",
-    "downloadUrl": "https://github.com/codelerity/netbeans-packages/releases/download/v29-build1/Apache-NetBeans-29.exe",
-    "filename": "Apache-NetBeans-29.exe",
+    "source": "github",
+    "repo": "codelerity/netbeans-packages",
+    "assetPattern": "^Apache-NetBeans-[\\d.]+\\.exe$",
+    "filename": "netbeans-setup.exe",
     "detectRegistry": [
       "Apache NetBeans IDE"
     ],
@@ -138,8 +144,10 @@
     "id": "git",
     "name": "Git",
     "description": "Sistema di controllo versione distribuito open source",
-    "downloadUrl": "https://github.com/git-for-windows/git/releases/download/v2.53.0.windows.1/Git-2.53.0-64-bit.exe",
-    "filename": "Git-64-bit.exe",
+    "source": "github",
+    "repo": "git-for-windows/git",
+    "assetPattern": "^Git-[\\d.]+-64-bit\\.exe$",
+    "filename": "git-setup.exe",
     "detectRegistry": [
       "Git"
     ],
@@ -244,8 +252,10 @@
     "id": "ruby",
     "name": "Ruby",
     "description": "Linguaggio di programmazione dinamico orientato agli oggetti",
-    "downloadUrl": "https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-4.0.1-1/rubyinstaller-devkit-4.0.1-1-x64.exe",
-    "filename": "rubyinstaller-devkit-4.0.1-1-x64.exe",
+    "source": "github",
+    "repo": "oneclick/rubyinstaller2",
+    "assetPattern": "^rubyinstaller-devkit-[\\d.-]+-x64\\.exe$",
+    "filename": "ruby-setup.exe",
     "detectRegistry": [
       "Ruby"
     ],
@@ -302,8 +312,10 @@
     "id": "java-jdk",
     "name": "Java JDK",
     "description": "Kit di sviluppo Java (Eclipse Temurin OpenJDK)",
-    "downloadUrl": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jdk_x64_windows_hotspot_21.0.10_7.msi",
-    "filename": "OpenJDK21U-jdk_x64_windows_hotspot_21.0.10_7.msi",
+    "source": "github",
+    "repo": "adoptium/temurin21-binaries",
+    "assetPattern": "^OpenJDK21U-jdk_x64_windows_hotspot_[\\d._]+\\.msi$",
+    "filename": "java-jdk-setup.msi",
     "detectRegistry": [
       "Eclipse Temurin JDK"
     ],
@@ -407,8 +419,10 @@
     "id": "podman-desktop",
     "name": "Podman Desktop",
     "description": "Strumento open source per gestire container senza daemon",
-    "downloadUrl": "https://github.com/podman-desktop/podman-desktop/releases/download/v1.25.1/podman-desktop-1.25.1-setup-x64.exe",
-    "filename": "podman-desktop-1.25.1-setup-x64.exe",
+    "source": "github",
+    "repo": "podman-desktop/podman-desktop",
+    "assetPattern": "^podman-desktop-[\\d.]+-setup-x64\\.exe$",
+    "filename": "podman-desktop-setup.exe",
     "detectRegistry": [
       "Podman Desktop"
     ],
@@ -422,8 +436,10 @@
     "id": "cmake",
     "name": "CMake",
     "description": "Sistema di build multi-piattaforma open source",
-    "downloadUrl": "https://github.com/Kitware/CMake/releases/download/v4.2.3/cmake-4.2.3-windows-x86_64.msi",
-    "filename": "cmake-windows-x86_64.msi",
+    "source": "github",
+    "repo": "Kitware/CMake",
+    "assetPattern": "^cmake-[\\d.]+-windows-x86_64\\.msi$",
+    "filename": "cmake-setup.msi",
     "detectRegistry": [
       "CMake"
     ],
@@ -437,8 +453,10 @@
     "id": "mingw",
     "name": "MinGW-w64",
     "description": "Port di GCC per Windows per compilare programmi C/C++",
-    "downloadUrl": "https://github.com/niXman/mingw-builds-binaries/releases/download/15.2.0-rt_v13-rev1/x86_64-15.2.0-release-posix-seh-ucrt-rt_v13-rev1.7z",
-    "filename": "x86_64-mingw-posix-seh.7z",
+    "source": "github",
+    "repo": "niXman/mingw-builds-binaries",
+    "assetPattern": "^x86_64-.+-release-posix-seh-ucrt-rt_v[\\d.]+-rev[\\d]+\\.7z$",
+    "filename": "mingw.7z",
     "detectRegistry": [],
     "detectPaths": [
       "C:/mingw64/bin/gcc.exe"
@@ -450,8 +468,10 @@
     "id": "msys2",
     "name": "MSYS2",
     "description": "Ambiente Unix-like per Windows con gestore di pacchetti pacman",
-    "downloadUrl": "https://github.com/msys2/msys2-installer/releases/latest/download/msys2-x86_64-latest.exe",
-    "filename": "msys2-x86_64-latest.exe",
+    "source": "github",
+    "repo": "msys2/msys2-installer",
+    "assetPattern": "^msys2-x86_64-latest\\.exe$",
+    "filename": "msys2-setup.exe",
     "detectRegistry": [
       "MSYS2"
     ],
@@ -480,8 +500,10 @@
     "id": "windows-terminal",
     "name": "Windows Terminal",
     "description": "Terminale moderno di Microsoft con schede e personalizzazione",
-    "downloadUrl": "https://github.com/microsoft/terminal/releases/download/v1.24.10621.0/Microsoft.WindowsTerminal_1.24.10621.0_8wekyb3d8bbwe.msixbundle",
-    "filename": "Microsoft.WindowsTerminal_1.24.10621.0_8wekyb3d8bbwe.msixbundle",
+    "source": "github",
+    "repo": "microsoft/terminal",
+    "assetPattern": "^Microsoft\\.WindowsTerminal_[\\d.]+_8wekyb3d8bbwe\\.msixbundle$",
+    "filename": "windows-terminal.msixbundle",
     "detectRegistry": [
       "Windows Terminal"
     ],
@@ -495,8 +517,10 @@
     "id": "alacritty",
     "name": "Alacritty",
     "description": "Emulatore di terminale accelerato tramite GPU, veloce e minimale",
-    "downloadUrl": "https://github.com/alacritty/alacritty/releases/download/v0.16.1/Alacritty-v0.16.1-installer.msi",
-    "filename": "Alacritty-v0.16.1-installer.msi",
+    "source": "github",
+    "repo": "alacritty/alacritty",
+    "assetPattern": "^Alacritty-v[\\d.]+-installer\\.msi$",
+    "filename": "alacritty-setup.msi",
     "detectRegistry": [
       "Alacritty"
     ],
@@ -525,8 +549,10 @@
     "id": "conemu",
     "name": "ConEmu",
     "description": "Emulatore di console avanzato per Windows con schede",
-    "downloadUrl": "https://github.com/Maximus5/ConEmu/releases/download/v23.07.24/ConEmuSetup.230724.exe",
-    "filename": "ConEmuSetup.exe",
+    "source": "github",
+    "repo": "Maximus5/ConEmu",
+    "assetPattern": "^ConEmuSetup\\.[\\d]+\\.exe$",
+    "filename": "conemu-setup.exe",
     "detectRegistry": [
       "ConEmu"
     ],
@@ -540,7 +566,9 @@
     "id": "cmder",
     "name": "Cmder",
     "description": "Emulatore di console portatile per Windows basato su ConEmu",
-    "downloadUrl": "https://github.com/cmderdev/cmder/releases/latest/download/cmder.zip",
+    "source": "github",
+    "repo": "cmderdev/cmder",
+    "assetPattern": "^cmder\\.zip$",
     "filename": "cmder.zip",
     "detectRegistry": [],
     "detectPaths": [
@@ -568,8 +596,10 @@
     "id": "insomnia",
     "name": "Insomnia",
     "description": "Client REST e GraphQL per testare e debuggare API",
-    "downloadUrl": "https://github.com/Kong/insomnia/releases/download/core%4012.4.0/Insomnia.Core-12.4.0.exe",
-    "filename": "Insomnia.Core-12.4.0.exe",
+    "source": "github",
+    "repo": "Kong/insomnia",
+    "assetPattern": "^Insomnia\\.Core-[\\d.]+\\.exe$",
+    "filename": "insomnia-setup.exe",
     "detectRegistry": [
       "Insomnia"
     ],
@@ -673,8 +703,10 @@
     "id": "redis-desktop-manager",
     "name": "RedisInsight",
     "description": "Interfaccia grafica ufficiale gratuita per gestire server Redis",
-    "downloadUrl": "https://github.com/redis/RedisInsight/releases/download/3.2.0/Redis-Insight-win-installer.exe",
-    "filename": "Redis-Insight-win-installer.exe",
+    "source": "github",
+    "repo": "redis/RedisInsight",
+    "assetPattern": "^Redis-Insight-win-installer\\.exe$",
+    "filename": "redisinsight-setup.exe",
     "detectRegistry": [
       "RedisInsight"
     ],

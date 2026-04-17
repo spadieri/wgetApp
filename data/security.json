@@ -168,8 +168,10 @@
     "id": "keepassxc",
     "name": "KeePassXC",
     "description": "Gestore password cross-platform basato su KeePass",
-    "downloadUrl": "https://github.com/keepassxreboot/keepassxc/releases/latest/download/KeePassXC-2.7.11-Win64.msi",
-    "filename": "KeePassXC-2.7.11-Win64.msi",
+    "source": "github",
+    "repo": "keepassxreboot/keepassxc",
+    "assetPattern": "^KeePassXC-[\\d.]+-Win64\\.msi$",
+    "filename": "keepassxc-setup.msi",
     "detectRegistry": [
       "KeePassXC"
     ],
@@ -258,8 +260,10 @@
     "id": "veracrypt",
     "name": "VeraCrypt",
     "description": "Crittografia disco e volumi virtuali cifrati",
-    "downloadUrl": "https://github.com/veracrypt/VeraCrypt/releases/latest/download/VeraCrypt.Setup.1.26.24.exe",
-    "filename": "VeraCrypt.Setup.1.26.24.exe",
+    "source": "github",
+    "repo": "veracrypt/VeraCrypt",
+    "assetPattern": "^VeraCrypt\\.Setup\\.[\\d.]+\\.exe$",
+    "filename": "veracrypt-setup.exe",
     "detectRegistry": [
       "VeraCrypt"
     ],
@@ -273,8 +277,10 @@
     "id": "cryptomator",
     "name": "Cryptomator",
     "description": "Crittografia trasparente per file nel cloud",
-    "downloadUrl": "https://github.com/cryptomator/cryptomator/releases/latest/download/Cryptomator-1.18.1-x64.exe",
-    "filename": "Cryptomator-1.18.1-x64.exe",
+    "source": "github",
+    "repo": "cryptomator/cryptomator",
+    "assetPattern": "^Cryptomator-[\\d.]+-x64\\.exe$",
+    "filename": "cryptomator-setup.exe",
     "detectRegistry": [
       "Cryptomator"
     ],
@@ -333,8 +339,10 @@
     "id": "openssh",
     "name": "OpenSSH",
     "description": "Client e server SSH sicuro per connessioni remote",
-    "downloadUrl": "https://github.com/PowerShell/Win32-OpenSSH/releases/download/10.0.0.0p2-Preview/OpenSSH-Win64-v10.0.0.0.msi",
-    "filename": "OpenSSH-Win64-v10.0.0.0.msi",
+    "source": "github",
+    "repo": "PowerShell/Win32-OpenSSH",
+    "assetPattern": "^OpenSSH-Win64-v[\\d.]+\\.msi$",
+    "filename": "openssh-setup.msi",
     "detectRegistry": [
       "OpenSSH"
     ],
@@ -599,8 +607,10 @@
     "id": "angryipscanner",
     "name": "Angry IP Scanner",
     "description": "Scanner di rete veloce e leggero",
-    "downloadUrl": "https://github.com/angryip/ipscan/releases/latest/download/ipscan-3.9.3-setup.exe",
-    "filename": "ipscan-3.9.3-setup.exe",
+    "source": "github",
+    "repo": "angryip/ipscan",
+    "assetPattern": "^ipscan-[\\d.]+-setup\\.exe$",
+    "filename": "angryipscanner-setup.exe",
     "detectRegistry": [
       "Angry IP Scanner"
     ],
@@ -644,8 +654,10 @@
     "id": "sandboxie-plus",
     "name": "Sandboxie-Plus",
     "description": "Sandbox per eseguire programmi in ambiente isolato",
-    "downloadUrl": "https://github.com/sandboxie-plus/Sandboxie/releases/download/v1.17.2/Sandboxie-Plus-x64-v1.17.2.exe",
-    "filename": "Sandboxie-Plus-x64-v1.17.2.exe",
+    "source": "github",
+    "repo": "sandboxie-plus/Sandboxie",
+    "assetPattern": "^Sandboxie-Plus-x64-v[\\d.]+\\.exe$",
+    "filename": "sandboxie-plus-setup.exe",
     "detectRegistry": [
       "Sandboxie-Plus"
     ],

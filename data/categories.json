@@ -6,5 +6,6 @@
   { "id": "security", "name": "Sicurezza", "name_en": "Security", "icon": "shield" },
   { "id": "communication", "name": "Comunicazione", "name_en": "Communication", "icon": "message-circle" },
   { "id": "office", "name": "Office & Produttività", "name_en": "Office & Productivity", "icon": "file-text" },
-  { "id": "system", "name": "Sistema", "name_en": "System", "icon": "cpu" }
+  { "id": "system", "name": "Sistema", "name_en": "System", "icon": "cpu" },
+  { "id": "ai", "name": "AI & Strumenti IA", "name_en": "AI Tools", "icon": "brain" }
 ]
