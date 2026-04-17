@@ -1,10 +1,13 @@
 {
   "name": "wget-app",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Software installer using wget",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-builder",
+    "build:installer": "electron-builder --win nsis",
+    "build:portable": "electron-builder --win portable"
   },
   "keywords": [],
   "author": "",
@@ -12,9 +15,71 @@
   "type": "commonjs",
   "devDependencies": {
     "electron": "^40.8.0",
+    "electron-builder": "^25.1.8",
     "serve": "^14.2.6"
   },
   "dependencies": {
+    "electron-updater": "^6.8.3",
     "regedit": "^5.1.4"
+  },
+  "build": {
+    "appId": "com.pierodisa.wgetapp",
+    "productName": "WgetApp",
+    "copyright": "Copyright © 2026 Piero D'Isa",
+    "directories": {
+      "output": "dist",
+      "buildResources": "build"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "renderer.js",
+      "index.html",
+      "styles.css",
+      "data/**/*",
+      "package.json",
+      "!**/*.md",
+      "!docs/**/*",
+      "!.claude/**/*"
+    ],
+    "extraResources": [
+      {
+        "from": "resources/wget.exe",
+        "to": "wget.exe"
+      }
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "artifactName": "${productName}-${version}-${arch}-${target}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "WgetApp"
+    },
+    "portable": {
+      "artifactName": "${productName}-${version}-portable.${ext}"
+    },
+    "publish": {
+      "provider": "github",
+      "owner": "spadieri",
+      "repo": "wgetApp"
+    }
   }
 }

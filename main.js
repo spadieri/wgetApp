@@ -1,7 +1,11 @@
-const { app, BrowserWindow, ipcMain, shell } = require('electron');
+const { app, BrowserWindow, ipcMain, shell, dialog } = require('electron');
 const path = require('path');
 const fs = require('fs');
+const https = require('https');
 const { spawn, execSync } = require('child_process');
+const { autoUpdater } = require('electron-updater');
+
+const GITHUB_REPO = 'spadieri/wgetApp';
 
 function getWgetPath() {
   if (app.isPackaged) {
@@ -30,11 +34,108 @@ function createWindow() {
   mainWindow.loadFile('index.html');
 }
 
-app.whenReady().then(createWindow);
+app.whenReady().then(() => {
+  createWindow();
+  if (app.isPackaged) {
+    setTimeout(checkForUpdates, 3000);
+  }
+});
 
 app.on('window-all-closed', () => {
   app.quit();
 });
+
+// ============================================================
+// Auto-update: electron-updater for NSIS install, manual check for portable
+// ============================================================
+
+function isPortable() {
+  return !!process.env.PORTABLE_EXECUTABLE_DIR;
+}
+
+function isNewerVersion(remote, current) {
+  const r = remote.replace(/^v/, '').split('.').map(n => parseInt(n, 10) || 0);
+  const c = current.split('.').map(n => parseInt(n, 10) || 0);
+  for (let i = 0; i < 3; i++) {
+    if ((r[i] || 0) > (c[i] || 0)) return true;
+    if ((r[i] || 0) < (c[i] || 0)) return false;
+  }
+  return false;
+}
+
+function checkForUpdates() {
+  if (isPortable()) {
+    checkForUpdatesPortable();
+  } else {
+    setupNsisAutoUpdater();
+  }
+}
+
+function checkForUpdatesPortable() {
+  const req = https.get(
+    `https://api.github.com/repos/${GITHUB_REPO}/releases/latest`,
+    { headers: { 'User-Agent': 'WgetApp-Updater', 'Accept': 'application/vnd.github+json' } },
+    (res) => {
+      if (res.statusCode !== 200) return;
+      let data = '';
+      res.on('data', (chunk) => (data += chunk));
+      res.on('end', () => {
+        try {
+          const release = JSON.parse(data);
+          if (!release.tag_name) return;
+          if (!isNewerVersion(release.tag_name, app.getVersion())) return;
+
+          dialog.showMessageBox(mainWindow, {
+            type: 'info',
+            title: 'Aggiornamento disponibile',
+            message: `È disponibile una nuova versione: ${release.tag_name}`,
+            detail: `Stai usando la v${app.getVersion()}. Scaricala dal sito.`,
+            buttons: ['Apri pagina download', 'Più tardi'],
+            defaultId: 0,
+            cancelId: 1
+          }).then((result) => {
+            if (result.response === 0) {
+              shell.openExternal(release.html_url);
+            }
+          });
+        } catch (err) {
+          console.error('Update check failed:', err);
+        }
+      });
+    }
+  );
+  req.on('error', (err) => console.error('Update check error:', err));
+  req.setTimeout(5000, () => req.destroy());
+}
+
+function setupNsisAutoUpdater() {
+  autoUpdater.autoDownload = true;
+  autoUpdater.autoInstallOnAppQuit = true;
+
+  autoUpdater.on('update-downloaded', (info) => {
+    dialog.showMessageBox(mainWindow, {
+      type: 'info',
+      title: 'Aggiornamento pronto',
+      message: `Versione ${info.version} scaricata.`,
+      detail: 'Vuoi riavviare e installare ora?',
+      buttons: ['Riavvia ora', 'Al prossimo avvio'],
+      defaultId: 0,
+      cancelId: 1
+    }).then((result) => {
+      if (result.response === 0) {
+        autoUpdater.quitAndInstall();
+      }
+    });
+  });
+
+  autoUpdater.on('error', (err) => {
+    console.error('Auto-updater error:', err);
+  });
+
+  autoUpdater.checkForUpdates().catch((err) => {
+    console.error('checkForUpdates failed:', err);
+  });
+}
 
 // ============================================================
 // Task 6: Registry Detection - Check which software is installed
