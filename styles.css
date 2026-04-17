@@ -241,6 +241,48 @@ body {
   z-index: 1;
 }
 
+/* ----- Header Controls & Language Toggle ----- */
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.lang-btn {
+  background: none;
+  border: 1px solid transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  font-weight: 600;
+  font-family: var(--font-family);
+  transition: color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.lang-btn:hover {
+  color: var(--text-primary);
+}
+
+.lang-btn.active {
+  color: var(--accent-blue);
+  border-color: var(--accent-blue);
+}
+
+.lang-divider {
+  color: var(--text-muted);
+  font-size: 12px;
+  user-select: none;
+}
+
 /* ----- Cards Grid ----- */
 #cards-grid {
   display: grid;
