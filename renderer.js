@@ -303,7 +303,7 @@ async function handleDownload(software, card) {
         progressBar.classList.add('complete');
       }
     } else {
-      throw new Error('electronAPI non disponibile');
+      throw new Error('electronAPI not available');
     }
   } catch (err) {
     console.error('Download failed:', err);
