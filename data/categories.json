@@ -1,10 +1,10 @@
 [
-  { "id": "browsers", "name": "Browser & Internet", "icon": "globe" },
-  { "id": "development", "name": "Sviluppo", "icon": "code" },
-  { "id": "multimedia", "name": "Multimedia", "icon": "film" },
-  { "id": "utilities", "name": "Utilità", "icon": "tool" },
-  { "id": "security", "name": "Sicurezza", "icon": "shield" },
-  { "id": "communication", "name": "Comunicazione", "icon": "message-circle" },
-  { "id": "office", "name": "Office & Produttività", "icon": "file-text" },
-  { "id": "system", "name": "Sistema", "icon": "cpu" }
+  { "id": "browsers", "name": "Browser & Internet", "name_en": "Browsers & Internet", "icon": "globe" },
+  { "id": "development", "name": "Sviluppo", "name_en": "Development", "icon": "code" },
+  { "id": "multimedia", "name": "Multimedia", "name_en": "Multimedia", "icon": "film" },
+  { "id": "utilities", "name": "Utilità", "name_en": "Utilities", "icon": "tool" },
+  { "id": "security", "name": "Sicurezza", "name_en": "Security", "icon": "shield" },
+  { "id": "communication", "name": "Comunicazione", "name_en": "Communication", "icon": "message-circle" },
+  { "id": "office", "name": "Office & Produttività", "name_en": "Office & Productivity", "icon": "file-text" },
+  { "id": "system", "name": "Sistema", "name_en": "System", "icon": "cpu" }
 ]
