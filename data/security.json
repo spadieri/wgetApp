@@ -5,9 +5,14 @@
     "description": "Anti-malware avanzato con protezione in tempo reale",
     "downloadUrl": "https://downloads.malwarebytes.com/file/mb-windows",
     "filename": "MBSetup.exe",
-    "detectRegistry": ["Malwarebytes"],
-    "detectPaths": ["C:/Program Files/Malwarebytes/Anti-Malware/mbam.exe"],
-    "size": "~280MB"
+    "detectRegistry": [
+      "Malwarebytes"
+    ],
+    "detectPaths": [
+      "C:/Program Files/Malwarebytes/Anti-Malware/mbam.exe"
+    ],
+    "size": "~280MB",
+    "description_en": "Advanced anti-malware with real-time protection"
   },
   {
     "id": "avast-free",
@@ -15,9 +20,14 @@
     "description": "Antivirus gratuito con protezione completa",
     "downloadUrl": "https://www.avast.com/download-thank-you.php?product=FAV-ONLINE&locale=en-us",
     "filename": "avast_free_antivirus_setup_online.exe",
-    "detectRegistry": ["Avast Antivirus"],
-    "detectPaths": ["C:/Program Files/AVAST Software/Avast/AvastUI.exe"],
-    "size": "~0.3MB"
+    "detectRegistry": [
+      "Avast Antivirus"
+    ],
+    "detectPaths": [
+      "C:/Program Files/AVAST Software/Avast/AvastUI.exe"
+    ],
+    "size": "~0.3MB",
+    "description_en": "Free antivirus with comprehensive protection"
   },
   {
     "id": "avg-free",
@@ -25,9 +35,14 @@
     "description": "Antivirus gratuito con protezione essenziale",
     "downloadUrl": "https://www.avg.com/download-thank-you.php?product=FAV-ONLINE&locale=en-us",
     "filename": "avg_antivirus_free_setup.exe",
-    "detectRegistry": ["AVG Antivirus"],
-    "detectPaths": ["C:/Program Files/AVG/Antivirus/AVGUI.exe"],
-    "size": "~0.3MB"
+    "detectRegistry": [
+      "AVG Antivirus"
+    ],
+    "detectPaths": [
+      "C:/Program Files/AVG/Antivirus/AVGUI.exe"
+    ],
+    "size": "~0.3MB",
+    "description_en": "Free antivirus with essential protection"
   },
   {
     "id": "avira-free",
@@ -35,9 +50,14 @@
     "description": "Antivirus gratuito leggero con VPN integrata",
     "downloadUrl": "https://install.avira-update.com/package/antivirus/win/en-us/avira_antivirus_en-us.exe",
     "filename": "avira_antivirus_en-us.exe",
-    "detectRegistry": ["Avira"],
-    "detectPaths": ["C:/Program Files (x86)/Avira/Antivirus/avscan.exe"],
-    "size": "~5MB"
+    "detectRegistry": [
+      "Avira"
+    ],
+    "detectPaths": [
+      "C:/Program Files (x86)/Avira/Antivirus/avscan.exe"
+    ],
+    "size": "~5MB",
+    "description_en": "Lightweight free antivirus with built-in VPN"
   },
   {
     "id": "kaspersky-free",
@@ -45,9 +65,14 @@
     "description": "Antivirus gratuito con motore di scansione premiato",
     "downloadUrl": "https://www.kaspersky.com/downloads/free-antivirus",
     "filename": "kaspersky-free-setup.exe",
-    "detectRegistry": ["Kaspersky Free"],
-    "detectPaths": ["C:/Program Files (x86)/Kaspersky Lab/Kaspersky Free/avpui.exe"],
-    "size": "~2MB"
+    "detectRegistry": [
+      "Kaspersky Free"
+    ],
+    "detectPaths": [
+      "C:/Program Files (x86)/Kaspersky Lab/Kaspersky Free/avpui.exe"
+    ],
+    "size": "~2MB",
+    "description_en": "Free antivirus with award-winning scanning engine"
   },
   {
     "id": "bitdefender-free",
@@ -55,9 +80,14 @@
     "description": "Antivirus gratuito con protezione automatica",
     "downloadUrl": "https://www.bitdefender.com/solutions/free.html",
     "filename": "bitdefender_online.exe",
-    "detectRegistry": ["Bitdefender Antivirus Free"],
-    "detectPaths": ["C:/Program Files/Bitdefender/Bitdefender Security/bdagent.exe"],
-    "size": "~12MB"
+    "detectRegistry": [
+      "Bitdefender Antivirus Free"
+    ],
+    "detectPaths": [
+      "C:/Program Files/Bitdefender/Bitdefender Security/bdagent.exe"
+    ],
+    "size": "~12MB",
+    "description_en": "Free antivirus with automatic protection"
   },
   {
     "id": "windows-defender",
@@ -65,9 +95,14 @@
     "description": "Antivirus integrato in Windows con protezione nativa",
     "downloadUrl": "https://www.microsoft.com/it-it/windows/comprehensive-security",
     "filename": "built-in",
-    "detectRegistry": ["Windows Security"],
-    "detectPaths": ["C:/Program Files/Windows Defender/MsMpEng.exe"],
-    "size": "Integrato"
+    "detectRegistry": [
+      "Windows Security"
+    ],
+    "detectPaths": [
+      "C:/Program Files/Windows Defender/MsMpEng.exe"
+    ],
+    "size": "Integrato",
+    "description_en": "Windows built-in antivirus with native protection"
   },
   {
     "id": "comodo-antivirus",
@@ -75,9 +110,14 @@
     "description": "Antivirus gratuito con sandbox e HIPS",
     "downloadUrl": "https://www.comodo.com/home/download/download.php?prod=antivirus",
     "filename": "cissetup_x64.exe",
-    "detectRegistry": ["COMODO Internet Security"],
-    "detectPaths": ["C:/Program Files/COMODO/COMODO Internet Security/cis.exe"],
-    "size": "~250MB"
+    "detectRegistry": [
+      "COMODO Internet Security"
+    ],
+    "detectPaths": [
+      "C:/Program Files/COMODO/COMODO Internet Security/cis.exe"
+    ],
+    "size": "~250MB",
+    "description_en": "Free antivirus with sandbox and HIPS"
   },
   {
     "id": "zonealarm",
@@ -85,9 +125,14 @@
     "description": "Firewall gratuito con protezione di rete avanzata",
     "downloadUrl": "https://www.zonealarm.com/software/free-firewall",
     "filename": "zaSetupWeb.exe",
-    "detectRegistry": ["ZoneAlarm Free Firewall"],
-    "detectPaths": ["C:/Program Files (x86)/CheckPoint/ZoneAlarm/zatray.exe"],
-    "size": "~4MB"
+    "detectRegistry": [
+      "ZoneAlarm Free Firewall"
+    ],
+    "detectPaths": [
+      "C:/Program Files (x86)/CheckPoint/ZoneAlarm/zatray.exe"
+    ],
+    "size": "~4MB",
+    "description_en": "Free firewall with advanced network protection"
   },
   {
     "id": "glasswire",
@@ -95,9 +140,14 @@
     "description": "Monitor di rete e firewall con interfaccia visuale",
     "downloadUrl": "https://download.glasswire.com/GlassWireSetup.exe",
     "filename": "GlassWireSetup.exe",
-    "detectRegistry": ["GlassWire"],
-    "detectPaths": ["C:/Program Files (x86)/GlassWire/GlassWire.exe"],
-    "size": "~50MB"
+    "detectRegistry": [
+      "GlassWire"
+    ],
+    "detectPaths": [
+      "C:/Program Files (x86)/GlassWire/GlassWire.exe"
+    ],
+    "size": "~50MB",
+    "description_en": "Network monitor and firewall with visual interface"
   },
   {
     "id": "keepass",
@@ -105,9 +155,14 @@
     "description": "Gestore password open source con database locale",
     "downloadUrl": "https://sourceforge.net/projects/keepass/files/KeePass%202.x/2.57.1/KeePass-2.57.1-Setup.exe/download",
     "filename": "KeePass-2.57.1-Setup.exe",
-    "detectRegistry": ["KeePass Password Safe"],
-    "detectPaths": ["C:/Program Files/KeePass Password Safe 2/KeePass.exe"],
-    "size": "~4MB"
+    "detectRegistry": [
+      "KeePass Password Safe"
+    ],
+    "detectPaths": [
+      "C:/Program Files/KeePass Password Safe 2/KeePass.exe"
+    ],
+    "size": "~4MB",
+    "description_en": "Open source password manager with local database"
   },
   {
     "id": "keepassxc",
@@ -115,9 +170,14 @@
     "description": "Gestore password cross-platform basato su KeePass",
     "downloadUrl": "https://github.com/keepassxreboot/keepassxc/releases/latest/download/KeePassXC-2.7.11-Win64.msi",
     "filename": "KeePassXC-2.7.11-Win64.msi",
-    "detectRegistry": ["KeePassXC"],
-    "detectPaths": ["C:/Program Files/KeePassXC/KeePassXC.exe"],
-    "size": "~35MB"
+    "detectRegistry": [
+      "KeePassXC"
+    ],
+    "detectPaths": [
+      "C:/Program Files/KeePassXC/KeePassXC.exe"
+    ],
+    "size": "~35MB",
+    "description_en": "Cross-platform password manager based on KeePass"
   },
   {
     "id": "bitwarden",
@@ -125,9 +185,14 @@
     "description": "Gestore password open source con sincronizzazione cloud",
     "downloadUrl": "https://vault.bitwarden.com/download/?app=desktop&platform=windows",
     "filename": "Bitwarden-Installer.exe",
-    "detectRegistry": ["Bitwarden"],
-    "detectPaths": ["C:/Program Files/Bitwarden/Bitwarden.exe"],
-    "size": "~120MB"
+    "detectRegistry": [
+      "Bitwarden"
+    ],
+    "detectPaths": [
+      "C:/Program Files/Bitwarden/Bitwarden.exe"
+    ],
+    "size": "~120MB",
+    "description_en": "Open source password manager with cloud sync"
   },
   {
     "id": "1password",
@@ -135,9 +200,14 @@
     "description": "Gestore password premium con condivisione sicura",
     "downloadUrl": "https://downloads.1password.com/win/1PasswordSetup-latest.exe",
     "filename": "1PasswordSetup-latest.exe",
-    "detectRegistry": ["1Password"],
-    "detectPaths": ["C:/Program Files/1Password/app/1Password.exe"],
-    "size": "~170MB"
+    "detectRegistry": [
+      "1Password"
+    ],
+    "detectPaths": [
+      "C:/Program Files/1Password/app/1Password.exe"
+    ],
+    "size": "~170MB",
+    "description_en": "Premium password manager with secure sharing"
   },
   {
     "id": "lastpass",
@@ -145,9 +215,14 @@
     "description": "Gestore password con compilazione automatica moduli",
     "downloadUrl": "https://download.cloud.lastpass.com/windows_installer/LastPassInstaller.exe",
     "filename": "LastPassInstaller.exe",
-    "detectRegistry": ["LastPass"],
-    "detectPaths": ["C:/Program Files (x86)/LastPass/LastPass.exe"],
-    "size": "~55MB"
+    "detectRegistry": [
+      "LastPass"
+    ],
+    "detectPaths": [
+      "C:/Program Files (x86)/LastPass/LastPass.exe"
+    ],
+    "size": "~55MB",
+    "description_en": "Password manager with automatic form filling"
   },
   {
     "id": "dashlane",
@@ -155,9 +230,14 @@
     "description": "Gestore password con monitoraggio del dark web",
     "downloadUrl": "https://www.dashlane.com/directdownload",
     "filename": "DashlaneInstaller.exe",
-    "detectRegistry": ["Dashlane"],
-    "detectPaths": ["C:/Program Files/Dashlane/Dashlane.exe"],
-    "size": "~3MB"
+    "detectRegistry": [
+      "Dashlane"
+    ],
+    "detectPaths": [
+      "C:/Program Files/Dashlane/Dashlane.exe"
+    ],
+    "size": "~3MB",
+    "description_en": "Password manager with dark web monitoring"
   },
   {
     "id": "nordpass",
@@ -165,9 +245,14 @@
     "description": "Gestore password sicuro del team NordVPN",
     "downloadUrl": "https://downloads.npass.app/windows/NordPassSetup.exe",
     "filename": "NordPassSetup.exe",
-    "detectRegistry": ["NordPass"],
-    "detectPaths": ["C:/Program Files/NordPass/NordPass.exe"],
-    "size": "~80MB"
+    "detectRegistry": [
+      "NordPass"
+    ],
+    "detectPaths": [
+      "C:/Program Files/NordPass/NordPass.exe"
+    ],
+    "size": "~80MB",
+    "description_en": "Secure password manager from the NordVPN team"
   },
   {
     "id": "veracrypt",
@@ -175,9 +260,14 @@
     "description": "Crittografia disco e volumi virtuali cifrati",
     "downloadUrl": "https://github.com/veracrypt/VeraCrypt/releases/latest/download/VeraCrypt.Setup.1.26.24.exe",
     "filename": "VeraCrypt.Setup.1.26.24.exe",
-    "detectRegistry": ["VeraCrypt"],
-    "detectPaths": ["C:/Program Files/VeraCrypt/VeraCrypt.exe"],
-    "size": "~35MB"
+    "detectRegistry": [
+      "VeraCrypt"
+    ],
+    "detectPaths": [
+      "C:/Program Files/VeraCrypt/VeraCrypt.exe"
+    ],
+    "size": "~35MB",
+    "description_en": "Disk encryption and encrypted virtual volumes"
   },
   {
     "id": "cryptomator",
@@ -185,9 +275,14 @@
     "description": "Crittografia trasparente per file nel cloud",
     "downloadUrl": "https://github.com/cryptomator/cryptomator/releases/latest/download/Cryptomator-1.18.1-x64.exe",
     "filename": "Cryptomator-1.18.1-x64.exe",
-    "detectRegistry": ["Cryptomator"],
-    "detectPaths": ["C:/Program Files/Cryptomator/Cryptomator.exe"],
-    "size": "~60MB"
+    "detectRegistry": [
+      "Cryptomator"
+    ],
+    "detectPaths": [
+      "C:/Program Files/Cryptomator/Cryptomator.exe"
+    ],
+    "size": "~60MB",
+    "description_en": "Transparent encryption for cloud files"
   },
   {
     "id": "axcrypt",
@@ -195,9 +290,14 @@
     "description": "Crittografia file semplice con integrazione shell",
     "downloadUrl": "https://www.axcrypt.net/download/AxCrypt-Setup.exe",
     "filename": "AxCrypt-Setup.exe",
-    "detectRegistry": ["AxCrypt"],
-    "detectPaths": ["C:/Program Files/Axantum/AxCrypt/AxCrypt.exe"],
-    "size": "~8MB"
+    "detectRegistry": [
+      "AxCrypt"
+    ],
+    "detectPaths": [
+      "C:/Program Files/Axantum/AxCrypt/AxCrypt.exe"
+    ],
+    "size": "~8MB",
+    "description_en": "Simple file encryption with shell integration"
   },
   {
     "id": "gpg4win",
@@ -205,9 +305,14 @@
     "description": "Suite di crittografia e firma digitale GnuPG per Windows",
     "downloadUrl": "https://files.gpg4win.org/gpg4win-4.3.1.exe",
     "filename": "gpg4win-4.3.1.exe",
-    "detectRegistry": ["Gpg4win"],
-    "detectPaths": ["C:/Program Files (x86)/Gpg4win/bin/gpg.exe"],
-    "size": "~30MB"
+    "detectRegistry": [
+      "Gpg4win"
+    ],
+    "detectPaths": [
+      "C:/Program Files (x86)/Gpg4win/bin/gpg.exe"
+    ],
+    "size": "~30MB",
+    "description_en": "GnuPG encryption and digital signature suite for Windows"
   },
   {
     "id": "kleopatra",
@@ -215,9 +320,14 @@
     "description": "Gestore certificati e interfaccia grafica per GnuPG",
     "downloadUrl": "https://files.gpg4win.org/gpg4win-4.3.1.exe",
     "filename": "gpg4win-4.3.1.exe",
-    "detectRegistry": ["Gpg4win"],
-    "detectPaths": ["C:/Program Files (x86)/Gpg4win/bin/kleopatra.exe"],
-    "size": "~30MB"
+    "detectRegistry": [
+      "Gpg4win"
+    ],
+    "detectPaths": [
+      "C:/Program Files (x86)/Gpg4win/bin/kleopatra.exe"
+    ],
+    "size": "~30MB",
+    "description_en": "Certificate manager and graphical interface for GnuPG"
   },
   {
     "id": "openssh",
@@ -225,9 +335,14 @@
     "description": "Client e server SSH sicuro per connessioni remote",
     "downloadUrl": "https://github.com/PowerShell/Win32-OpenSSH/releases/download/10.0.0.0p2-Preview/OpenSSH-Win64-v10.0.0.0.msi",
     "filename": "OpenSSH-Win64-v10.0.0.0.msi",
-    "detectRegistry": ["OpenSSH"],
-    "detectPaths": ["C:/Windows/System32/OpenSSH/ssh.exe"],
-    "size": "~5MB"
+    "detectRegistry": [
+      "OpenSSH"
+    ],
+    "detectPaths": [
+      "C:/Windows/System32/OpenSSH/ssh.exe"
+    ],
+    "size": "~5MB",
+    "description_en": "Secure SSH client and server for remote connections"
   },
   {
     "id": "wireguard",
@@ -235,9 +350,14 @@
     "description": "VPN moderna e veloce con crittografia avanzata",
     "downloadUrl": "https://download.wireguard.com/windows-client/wireguard-installer.exe",
     "filename": "wireguard-installer.exe",
-    "detectRegistry": ["WireGuard"],
-    "detectPaths": ["C:/Program Files/WireGuard/wireguard.exe"],
-    "size": "~8MB"
+    "detectRegistry": [
+      "WireGuard"
+    ],
+    "detectPaths": [
+      "C:/Program Files/WireGuard/wireguard.exe"
+    ],
+    "size": "~8MB",
+    "description_en": "Modern and fast VPN with advanced encryption"
   },
   {
     "id": "openvpn",
@@ -245,9 +365,14 @@
     "description": "Client VPN open source con supporto protocollo OpenVPN",
     "downloadUrl": "https://swupdate.openvpn.org/community/releases/OpenVPN-2.6.12-I001-amd64.msi",
     "filename": "OpenVPN-2.6.12-I001-amd64.msi",
-    "detectRegistry": ["OpenVPN"],
-    "detectPaths": ["C:/Program Files/OpenVPN/bin/openvpn.exe"],
-    "size": "~5MB"
+    "detectRegistry": [
+      "OpenVPN"
+    ],
+    "detectPaths": [
+      "C:/Program Files/OpenVPN/bin/openvpn.exe"
+    ],
+    "size": "~5MB",
+    "description_en": "Open source VPN client with OpenVPN protocol support"
   },
   {
     "id": "protonvpn",
@@ -255,9 +380,14 @@
     "description": "VPN sicura e gratuita con sede in Svizzera",
     "downloadUrl": "https://protonvpn.com/download-windows",
     "filename": "ProtonVPN_win_setup.exe",
-    "detectRegistry": ["Proton VPN"],
-    "detectPaths": ["C:/Program Files/Proton/VPN/ProtonVPN.exe"],
-    "size": "~60MB"
+    "detectRegistry": [
+      "Proton VPN"
+    ],
+    "detectPaths": [
+      "C:/Program Files/Proton/VPN/ProtonVPN.exe"
+    ],
+    "size": "~60MB",
+    "description_en": "Secure and free VPN based in Switzerland"
   },
   {
     "id": "windscribe",
@@ -265,9 +395,14 @@
     "description": "VPN gratuita con 10GB mensili e blocco pubblicità",
     "downloadUrl": "https://windscribe.com/install/desktop/windows",
     "filename": "Windscribe_setup.exe",
-    "detectRegistry": ["Windscribe"],
-    "detectPaths": ["C:/Program Files/Windscribe/Windscribe.exe"],
-    "size": "~25MB"
+    "detectRegistry": [
+      "Windscribe"
+    ],
+    "detectPaths": [
+      "C:/Program Files/Windscribe/Windscribe.exe"
+    ],
+    "size": "~25MB",
+    "description_en": "Free VPN with 10GB monthly and ad blocking"
   },
   {
     "id": "tunnelbear",
@@ -275,9 +410,14 @@
     "description": "VPN semplice e intuitiva con interfaccia amichevole",
     "downloadUrl": "https://www.tunnelbear.com/apps/windows/",
     "filename": "TunnelBear-Installer.exe",
-    "detectRegistry": ["TunnelBear"],
-    "detectPaths": ["C:/Program Files (x86)/TunnelBear/TunnelBear.exe"],
-    "size": "~55MB"
+    "detectRegistry": [
+      "TunnelBear"
+    ],
+    "detectPaths": [
+      "C:/Program Files (x86)/TunnelBear/TunnelBear.exe"
+    ],
+    "size": "~55MB",
+    "description_en": "Simple and intuitive VPN with friendly interface"
   },
   {
     "id": "nordvpn",
@@ -285,9 +425,14 @@
     "description": "VPN premium veloce con doppia crittografia",
     "downloadUrl": "https://downloads.nordcdn.com/apps/windows/NordVPN/latest/NordVPNSetup.exe",
     "filename": "NordVPNSetup.exe",
-    "detectRegistry": ["NordVPN"],
-    "detectPaths": ["C:/Program Files/NordVPN/NordVPN.exe"],
-    "size": "~30MB"
+    "detectRegistry": [
+      "NordVPN"
+    ],
+    "detectPaths": [
+      "C:/Program Files/NordVPN/NordVPN.exe"
+    ],
+    "size": "~30MB",
+    "description_en": "Fast premium VPN with double encryption"
   },
   {
     "id": "expressvpn",
@@ -295,9 +440,14 @@
     "description": "VPN premium con server in 105 paesi",
     "downloadUrl": "https://www.expressvpn.com/vpn-download/vpn-windows",
     "filename": "expressvpn_windows_setup.exe",
-    "detectRegistry": ["ExpressVPN"],
-    "detectPaths": ["C:/Program Files (x86)/ExpressVPN/expressvpn-ui/ExpressVPN.exe"],
-    "size": "~35MB"
+    "detectRegistry": [
+      "ExpressVPN"
+    ],
+    "detectPaths": [
+      "C:/Program Files (x86)/ExpressVPN/expressvpn-ui/ExpressVPN.exe"
+    ],
+    "size": "~35MB",
+    "description_en": "Premium VPN with servers in 105 countries"
   },
   {
     "id": "torbrowser",
@@ -305,9 +455,14 @@
     "description": "Browser anonimo basato su Firefox con rete Tor",
     "downloadUrl": "https://www.torproject.org/dist/torbrowser/15.0.7/tor-browser-windows-x86_64-portable-15.0.7.exe",
     "filename": "tor-browser-windows-x86_64-portable-15.0.7.exe",
-    "detectRegistry": ["Tor Browser"],
-    "detectPaths": ["C:/Users/%USERNAME%/Desktop/Tor Browser/Browser/firefox.exe"],
-    "size": "~100MB"
+    "detectRegistry": [
+      "Tor Browser"
+    ],
+    "detectPaths": [
+      "C:/Users/%USERNAME%/Desktop/Tor Browser/Browser/firefox.exe"
+    ],
+    "size": "~100MB",
+    "description_en": "Anonymous browser based on Firefox with Tor network"
   },
   {
     "id": "tails",
@@ -315,9 +470,12 @@
     "description": "Sistema operativo live anonimo basato su Tor",
     "downloadUrl": "https://tails.net/install/download/",
     "filename": "tails-redirect",
-    "detectRegistry": ["Tails"],
+    "detectRegistry": [
+      "Tails"
+    ],
     "detectPaths": [],
-    "size": "~1.3GB"
+    "size": "~1.3GB",
+    "description_en": "Anonymous live operating system based on Tor"
   },
   {
     "id": "bleachbit-sec",
@@ -325,9 +483,14 @@
     "description": "Pulizia sicura di file e tracce di navigazione",
     "downloadUrl": "https://www.bleachbit.org/download/file/t?file=BleachBit-4.6.2-setup.exe",
     "filename": "BleachBit-4.6.2-setup.exe",
-    "detectRegistry": ["BleachBit"],
-    "detectPaths": ["C:/Program Files (x86)/BleachBit/bleachbit.exe"],
-    "size": "~15MB"
+    "detectRegistry": [
+      "BleachBit"
+    ],
+    "detectPaths": [
+      "C:/Program Files (x86)/BleachBit/bleachbit.exe"
+    ],
+    "size": "~15MB",
+    "description_en": "Secure cleanup of files and browsing traces"
   },
   {
     "id": "eraser",
@@ -335,9 +498,14 @@
     "description": "Cancellazione sicura e definitiva di file e cartelle",
     "downloadUrl": "https://sourceforge.net/projects/eraser/files/Eraser%206/6.2/Eraser%206.2.0.2993.exe/download",
     "filename": "Eraser_6.2.0.2993.exe",
-    "detectRegistry": ["Eraser"],
-    "detectPaths": ["C:/Program Files/Eraser/Eraser.exe"],
-    "size": "~9MB"
+    "detectRegistry": [
+      "Eraser"
+    ],
+    "detectPaths": [
+      "C:/Program Files/Eraser/Eraser.exe"
+    ],
+    "size": "~9MB",
+    "description_en": "Secure and permanent file and folder deletion"
   },
   {
     "id": "fileshredder",
@@ -345,9 +513,14 @@
     "description": "Distruttore di file con algoritmi di sovrascrittura multipli",
     "downloadUrl": "https://www.fileshredder.org/files/file_shredder_setup.exe",
     "filename": "file_shredder_setup.exe",
-    "detectRegistry": ["File Shredder"],
-    "detectPaths": ["C:/Program Files/File Shredder/FileShredder.exe"],
-    "size": "~2MB"
+    "detectRegistry": [
+      "File Shredder"
+    ],
+    "detectPaths": [
+      "C:/Program Files/File Shredder/FileShredder.exe"
+    ],
+    "size": "~2MB",
+    "description_en": "File shredder with multiple overwrite algorithms"
   },
   {
     "id": "usbsafeguard",
@@ -355,9 +528,12 @@
     "description": "Crittografia e protezione per unità USB",
     "downloadUrl": "http://usbsafeguard.altervista.org/download.html",
     "filename": "usbsafeguard.exe",
-    "detectRegistry": ["USB Safeguard"],
+    "detectRegistry": [
+      "USB Safeguard"
+    ],
     "detectPaths": [],
-    "size": "~1MB"
+    "size": "~1MB",
+    "description_en": "Encryption and protection for USB drives"
   },
   {
     "id": "folderlock",
@@ -365,9 +541,14 @@
     "description": "Protezione e crittografia cartelle con password",
     "downloadUrl": "https://www.newsoftwares.net/download/flsetup.exe",
     "filename": "flsetup.exe",
-    "detectRegistry": ["Folder Lock"],
-    "detectPaths": ["C:/Program Files/Folder Lock/FolderLock.exe"],
-    "size": "~12MB"
+    "detectRegistry": [
+      "Folder Lock"
+    ],
+    "detectPaths": [
+      "C:/Program Files/Folder Lock/FolderLock.exe"
+    ],
+    "size": "~12MB",
+    "description_en": "Folder protection and encryption with password"
   },
   {
     "id": "netlimiter",
@@ -375,9 +556,14 @@
     "description": "Controllo e limitazione del traffico di rete per applicazione",
     "downloadUrl": "https://www.netlimiter.com/download",
     "filename": "NetLimiter-5-Setup.exe",
-    "detectRegistry": ["NetLimiter"],
-    "detectPaths": ["C:/Program Files/Locktime Software/NetLimiter/NLClientApp.exe"],
-    "size": "~10MB"
+    "detectRegistry": [
+      "NetLimiter"
+    ],
+    "detectPaths": [
+      "C:/Program Files/Locktime Software/NetLimiter/NLClientApp.exe"
+    ],
+    "size": "~10MB",
+    "description_en": "Per-application network traffic control and limiting"
   },
   {
     "id": "wireshark",
@@ -385,9 +571,14 @@
     "description": "Analizzatore di protocolli di rete professionale",
     "downloadUrl": "https://2.na.dl.wireshark.org/win64/Wireshark-4.4.3-x64.exe",
     "filename": "Wireshark-4.4.3-x64.exe",
-    "detectRegistry": ["Wireshark"],
-    "detectPaths": ["C:/Program Files/Wireshark/Wireshark.exe"],
-    "size": "~85MB"
+    "detectRegistry": [
+      "Wireshark"
+    ],
+    "detectPaths": [
+      "C:/Program Files/Wireshark/Wireshark.exe"
+    ],
+    "size": "~85MB",
+    "description_en": "Professional network protocol analyzer"
   },
   {
     "id": "nmap",
@@ -395,9 +586,14 @@
     "description": "Scanner di rete e auditing di sicurezza",
     "downloadUrl": "https://nmap.org/dist/nmap-7.95-setup.exe",
     "filename": "nmap-7.95-setup.exe",
-    "detectRegistry": ["Nmap"],
-    "detectPaths": ["C:/Program Files (x86)/Nmap/nmap.exe"],
-    "size": "~30MB"
+    "detectRegistry": [
+      "Nmap"
+    ],
+    "detectPaths": [
+      "C:/Program Files (x86)/Nmap/nmap.exe"
+    ],
+    "size": "~30MB",
+    "description_en": "Network scanner and security auditing tool"
   },
   {
     "id": "angryipscanner",
@@ -405,9 +601,14 @@
     "description": "Scanner di rete veloce e leggero",
     "downloadUrl": "https://github.com/angryip/ipscan/releases/latest/download/ipscan-3.9.3-setup.exe",
     "filename": "ipscan-3.9.3-setup.exe",
-    "detectRegistry": ["Angry IP Scanner"],
-    "detectPaths": ["C:/Program Files/Angry IP Scanner/ipscan.exe"],
-    "size": "~3MB"
+    "detectRegistry": [
+      "Angry IP Scanner"
+    ],
+    "detectPaths": [
+      "C:/Program Files/Angry IP Scanner/ipscan.exe"
+    ],
+    "size": "~3MB",
+    "description_en": "Fast and lightweight network scanner"
   },
   {
     "id": "advancedipscanner",
@@ -415,9 +616,14 @@
     "description": "Scanner di rete con accesso remoto e Wake-on-LAN",
     "downloadUrl": "https://download.advanced-ip-scanner.com/download/files/Advanced_IP_Scanner_2.5.4594.1.exe",
     "filename": "Advanced_IP_Scanner_2.5.4594.1.exe",
-    "detectRegistry": ["Advanced IP Scanner"],
-    "detectPaths": ["C:/Program Files (x86)/Advanced IP Scanner/advanced_ip_scanner.exe"],
-    "size": "~17MB"
+    "detectRegistry": [
+      "Advanced IP Scanner"
+    ],
+    "detectPaths": [
+      "C:/Program Files (x86)/Advanced IP Scanner/advanced_ip_scanner.exe"
+    ],
+    "size": "~17MB",
+    "description_en": "Network scanner with remote access and Wake-on-LAN"
   },
   {
     "id": "zenmap",
@@ -425,9 +631,14 @@
     "description": "Interfaccia grafica ufficiale per Nmap",
     "downloadUrl": "https://nmap.org/dist/nmap-7.95-setup.exe",
     "filename": "nmap-7.95-setup.exe",
-    "detectRegistry": ["Nmap"],
-    "detectPaths": ["C:/Program Files (x86)/Nmap/zenmap.exe"],
-    "size": "~30MB"
+    "detectRegistry": [
+      "Nmap"
+    ],
+    "detectPaths": [
+      "C:/Program Files (x86)/Nmap/zenmap.exe"
+    ],
+    "size": "~30MB",
+    "description_en": "Official graphical interface for Nmap"
   },
   {
     "id": "sandboxie-plus",
@@ -435,9 +646,14 @@
     "description": "Sandbox per eseguire programmi in ambiente isolato",
     "downloadUrl": "https://github.com/sandboxie-plus/Sandboxie/releases/download/v1.17.2/Sandboxie-Plus-x64-v1.17.2.exe",
     "filename": "Sandboxie-Plus-x64-v1.17.2.exe",
-    "detectRegistry": ["Sandboxie-Plus"],
-    "detectPaths": ["C:/Program Files/Sandboxie-Plus/SandMan.exe"],
-    "size": "~20MB"
+    "detectRegistry": [
+      "Sandboxie-Plus"
+    ],
+    "detectPaths": [
+      "C:/Program Files/Sandboxie-Plus/SandMan.exe"
+    ],
+    "size": "~20MB",
+    "description_en": "Sandbox for running programs in isolated environment"
   },
   {
     "id": "comodo-sandbox",
@@ -445,9 +661,14 @@
     "description": "Ambiente virtualizzato per eseguire applicazioni sospette",
     "downloadUrl": "https://www.comodo.com/home/download/download.php?prod=antivirus",
     "filename": "cissetup_x64.exe",
-    "detectRegistry": ["COMODO Internet Security"],
-    "detectPaths": ["C:/Program Files/COMODO/COMODO Internet Security/virtkiosk.exe"],
-    "size": "~250MB"
+    "detectRegistry": [
+      "COMODO Internet Security"
+    ],
+    "detectPaths": [
+      "C:/Program Files/COMODO/COMODO Internet Security/virtkiosk.exe"
+    ],
+    "size": "~250MB",
+    "description_en": "Virtualized environment for running suspicious applications"
   },
   {
     "id": "hitmanpro",
@@ -455,9 +676,14 @@
     "description": "Scanner anti-malware con tecnologia cloud a doppio motore",
     "downloadUrl": "https://dl.surfright.nl/HitmanPro_x64.exe",
     "filename": "HitmanPro_x64.exe",
-    "detectRegistry": ["HitmanPro"],
-    "detectPaths": ["C:/Program Files/HitmanPro/HitmanPro.exe"],
-    "size": "~12MB"
+    "detectRegistry": [
+      "HitmanPro"
+    ],
+    "detectPaths": [
+      "C:/Program Files/HitmanPro/HitmanPro.exe"
+    ],
+    "size": "~12MB",
+    "description_en": "Anti-malware scanner with dual-engine cloud technology"
   },
   {
     "id": "superantispyware",
@@ -465,9 +691,14 @@
     "description": "Rimozione spyware, adware e malware",
     "downloadUrl": "https://www.superantispyware.com/downloadfile.html?productid=SUPERANTISPYWAREFREE",
     "filename": "SUPERAntiSpyware.exe",
-    "detectRegistry": ["SUPERAntiSpyware"],
-    "detectPaths": ["C:/Program Files/SUPERAntiSpyware/SUPERAntiSpyware.exe"],
-    "size": "~30MB"
+    "detectRegistry": [
+      "SUPERAntiSpyware"
+    ],
+    "detectPaths": [
+      "C:/Program Files/SUPERAntiSpyware/SUPERAntiSpyware.exe"
+    ],
+    "size": "~30MB",
+    "description_en": "Spyware, adware and malware removal"
   },
   {
     "id": "adwcleaner",
@@ -475,9 +706,14 @@
     "description": "Rimozione rapida di adware e programmi indesiderati",
     "downloadUrl": "https://adwcleaner.malwarebytes.com/adwcleaner?channel=release",
     "filename": "adwcleaner.exe",
-    "detectRegistry": ["AdwCleaner"],
-    "detectPaths": ["C:/AdwCleaner/adwcleaner.exe"],
-    "size": "~8MB"
+    "detectRegistry": [
+      "AdwCleaner"
+    ],
+    "detectPaths": [
+      "C:/AdwCleaner/adwcleaner.exe"
+    ],
+    "size": "~8MB",
+    "description_en": "Quick removal of adware and unwanted programs"
   },
   {
     "id": "roguekiller",
@@ -485,9 +721,14 @@
     "description": "Anti-malware specializzato in rootkit e processi nascosti",
     "downloadUrl": "https://download.adlice.com/RogueKiller/RogueKiller64.exe",
     "filename": "RogueKiller64.exe",
-    "detectRegistry": ["RogueKiller"],
-    "detectPaths": ["C:/Program Files/RogueKiller/RogueKiller64.exe"],
-    "size": "~45MB"
+    "detectRegistry": [
+      "RogueKiller"
+    ],
+    "detectPaths": [
+      "C:/Program Files/RogueKiller/RogueKiller64.exe"
+    ],
+    "size": "~45MB",
+    "description_en": "Anti-malware specialized in rootkits and hidden processes"
   },
   {
     "id": "crowdinspect",
@@ -495,8 +736,13 @@
     "description": "Ispettore processi con analisi VirusTotal integrata",
     "downloadUrl": "https://www.crowdstrike.com/en-us/resources/community-tools/crowdinspect-tool/",
     "filename": "CrowdInspect.zip",
-    "detectRegistry": ["CrowdInspect"],
-    "detectPaths": ["C:/CrowdInspect/CrowdInspect64.exe"],
-    "size": "~2MB"
+    "detectRegistry": [
+      "CrowdInspect"
+    ],
+    "detectPaths": [
+      "C:/CrowdInspect/CrowdInspect64.exe"
+    ],
+    "size": "~2MB",
+    "description_en": "Process inspector with integrated VirusTotal analysis"
   }
 ]

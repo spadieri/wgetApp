@@ -5,9 +5,14 @@
     "description": "Strumento di informazioni dettagliate su CPU, scheda madre e RAM",
     "downloadUrl": "https://download.cpuid.com/cpu-z/cpu-z_2.12-en.exe",
     "filename": "cpu-z_2.12-en.exe",
-    "detectRegistry": ["CPUID CPU-Z"],
-    "detectPaths": ["C:/Program Files/CPUID/CPU-Z/cpuz_x64.exe"],
-    "size": "~5MB"
+    "detectRegistry": [
+      "CPUID CPU-Z"
+    ],
+    "detectPaths": [
+      "C:/Program Files/CPUID/CPU-Z/cpuz_x64.exe"
+    ],
+    "size": "~5MB",
+    "description_en": "Detailed CPU, motherboard and RAM information tool"
   },
   {
     "id": "gpu-z",
@@ -15,9 +20,14 @@
     "description": "Utilità di informazioni dettagliate sulla scheda grafica",
     "downloadUrl": "https://www.techpowerup.com/download/techpowerup-gpu-z/",
     "filename": "GPU-Z.exe",
-    "detectRegistry": ["GPU-Z"],
-    "detectPaths": ["C:/Program Files (x86)/GPU-Z/GPU-Z.exe"],
-    "size": "~10MB"
+    "detectRegistry": [
+      "GPU-Z"
+    ],
+    "detectPaths": [
+      "C:/Program Files (x86)/GPU-Z/GPU-Z.exe"
+    ],
+    "size": "~10MB",
+    "description_en": "Detailed graphics card information utility"
   },
   {
     "id": "hwmonitor",
@@ -25,9 +35,14 @@
     "description": "Monitor di temperature, voltaggi e velocità ventole del PC",
     "downloadUrl": "https://download.cpuid.com/hwmonitor/hwmonitor_1.54.exe",
     "filename": "hwmonitor_1.54.exe",
-    "detectRegistry": ["CPUID HWMonitor"],
-    "detectPaths": ["C:/Program Files/CPUID/HWMonitor/HWMonitor_x64.exe"],
-    "size": "~5MB"
+    "detectRegistry": [
+      "CPUID HWMonitor"
+    ],
+    "detectPaths": [
+      "C:/Program Files/CPUID/HWMonitor/HWMonitor_x64.exe"
+    ],
+    "size": "~5MB",
+    "description_en": "PC temperature, voltage and fan speed monitor"
   },
   {
     "id": "hwinfo",
@@ -35,9 +50,14 @@
     "description": "Diagnostica hardware completa con monitoraggio sensori in tempo reale",
     "downloadUrl": "https://sourceforge.net/projects/hwinfo/files/Windows_Installer/hwi64_826.exe/download",
     "filename": "hwi64_826.exe",
-    "detectRegistry": ["HWiNFO64"],
-    "detectPaths": ["C:/Program Files/HWiNFO64/HWiNFO64.exe"],
-    "size": "~10MB"
+    "detectRegistry": [
+      "HWiNFO64"
+    ],
+    "detectPaths": [
+      "C:/Program Files/HWiNFO64/HWiNFO64.exe"
+    ],
+    "size": "~10MB",
+    "description_en": "Comprehensive hardware diagnostics with real-time sensor monitoring"
   },
   {
     "id": "speccy",
@@ -45,9 +65,14 @@
     "description": "Riepilogo rapido delle specifiche hardware del computer",
     "downloadUrl": "https://www.ccleaner.com/speccy/download/standard",
     "filename": "spsetup.exe",
-    "detectRegistry": ["Speccy"],
-    "detectPaths": ["C:/Program Files/Speccy/Speccy64.exe"],
-    "size": "~10MB"
+    "detectRegistry": [
+      "Speccy"
+    ],
+    "detectPaths": [
+      "C:/Program Files/Speccy/Speccy64.exe"
+    ],
+    "size": "~10MB",
+    "description_en": "Quick summary of computer hardware specifications"
   },
   {
     "id": "aida64",
@@ -55,9 +80,14 @@
     "description": "Suite completa di diagnostica e benchmark hardware professionale",
     "downloadUrl": "https://www.aida64.com/downloads",
     "filename": "aida64extreme.exe",
-    "detectRegistry": ["AIDA64 Extreme"],
-    "detectPaths": ["C:/Program Files (x86)/FinalWire/AIDA64 Extreme/aida64.exe"],
-    "size": "~50MB"
+    "detectRegistry": [
+      "AIDA64 Extreme"
+    ],
+    "detectPaths": [
+      "C:/Program Files (x86)/FinalWire/AIDA64 Extreme/aida64.exe"
+    ],
+    "size": "~50MB",
+    "description_en": "Professional hardware diagnostics and benchmark suite"
   },
   {
     "id": "core-temp",
@@ -65,9 +95,14 @@
     "description": "Monitor compatto delle temperature dei core della CPU",
     "downloadUrl": "https://www.alcpu.com/CoreTemp/php/download.php?id=2",
     "filename": "Core-Temp-setup.exe",
-    "detectRegistry": ["Core Temp"],
-    "detectPaths": ["C:/Program Files/Core Temp/Core Temp.exe"],
-    "size": "~5MB"
+    "detectRegistry": [
+      "Core Temp"
+    ],
+    "detectPaths": [
+      "C:/Program Files/Core Temp/Core Temp.exe"
+    ],
+    "size": "~5MB",
+    "description_en": "Compact CPU core temperature monitor"
   },
   {
     "id": "msi-afterburner",
@@ -75,9 +110,14 @@
     "description": "Overclocking GPU e monitoraggio prestazioni con OSD in-game",
     "downloadUrl": "https://www.msi.com/Landing/afterburner/graphics-cards",
     "filename": "MSIAfterburnerSetup.zip",
-    "detectRegistry": ["MSI Afterburner"],
-    "detectPaths": ["C:/Program Files (x86)/MSI Afterburner/MSIAfterburner.exe"],
-    "size": "~55MB"
+    "detectRegistry": [
+      "MSI Afterburner"
+    ],
+    "detectPaths": [
+      "C:/Program Files (x86)/MSI Afterburner/MSIAfterburner.exe"
+    ],
+    "size": "~55MB",
+    "description_en": "GPU overclocking and performance monitoring with in-game OSD"
   },
   {
     "id": "nzxt-cam",
@@ -85,9 +125,14 @@
     "description": "Monitoraggio PC e controllo illuminazione/ventole NZXT",
     "downloadUrl": "https://nzxt-app.nzxt.com/NZXT-CAM-Setup.exe",
     "filename": "NZXT-CAM-Setup.exe",
-    "detectRegistry": ["NZXT CAM"],
-    "detectPaths": ["C:/Users/Pd85/AppData/Local/NZXT_CAM/NZXT CAM.exe"],
-    "size": "~350MB"
+    "detectRegistry": [
+      "NZXT CAM"
+    ],
+    "detectPaths": [
+      "C:/Users/Pd85/AppData/Local/NZXT_CAM/NZXT CAM.exe"
+    ],
+    "size": "~350MB",
+    "description_en": "PC monitoring and NZXT lighting/fan control"
   },
   {
     "id": "open-hardware-monitor",
@@ -95,9 +140,14 @@
     "description": "Monitor hardware open source per temperature, voltaggi e ventole",
     "downloadUrl": "https://openhardwaremonitor.org/files/openhardwaremonitor-v0.9.6.zip",
     "filename": "openhardwaremonitor-v0.9.6.zip",
-    "detectRegistry": ["Open Hardware Monitor"],
-    "detectPaths": ["C:/Program Files/OpenHardwareMonitor/OpenHardwareMonitor.exe"],
-    "size": "~2MB"
+    "detectRegistry": [
+      "Open Hardware Monitor"
+    ],
+    "detectPaths": [
+      "C:/Program Files/OpenHardwareMonitor/OpenHardwareMonitor.exe"
+    ],
+    "size": "~2MB",
+    "description_en": "Open source hardware monitor for temperatures, voltages and fans"
   },
   {
     "id": "crystaldiskinfo",
@@ -105,9 +155,14 @@
     "description": "Monitor della salute dei dischi HDD/SSD con dati S.M.A.R.T.",
     "downloadUrl": "https://sourceforge.net/projects/crystaldiskinfo/files/9.4.4/CrystalDiskInfo9_4_4.exe/download",
     "filename": "CrystalDiskInfo9_4_4.exe",
-    "detectRegistry": ["CrystalDiskInfo"],
-    "detectPaths": ["C:/Program Files/CrystalDiskInfo/DiskInfo64.exe"],
-    "size": "~8MB"
+    "detectRegistry": [
+      "CrystalDiskInfo"
+    ],
+    "detectPaths": [
+      "C:/Program Files/CrystalDiskInfo/DiskInfo64.exe"
+    ],
+    "size": "~8MB",
+    "description_en": "HDD/SSD health monitor with S.M.A.R.T. data"
   },
   {
     "id": "crystaldiskmark",
@@ -115,9 +170,14 @@
     "description": "Benchmark delle prestazioni di lettura/scrittura dei dischi",
     "downloadUrl": "https://sourceforge.net/projects/crystaldiskmark/files/8.0.5/CrystalDiskMark8_0_5.exe/download",
     "filename": "CrystalDiskMark8_0_5.exe",
-    "detectRegistry": ["CrystalDiskMark"],
-    "detectPaths": ["C:/Program Files/CrystalDiskMark8/DiskMark64.exe"],
-    "size": "~5MB"
+    "detectRegistry": [
+      "CrystalDiskMark"
+    ],
+    "detectPaths": [
+      "C:/Program Files/CrystalDiskMark8/DiskMark64.exe"
+    ],
+    "size": "~5MB",
+    "description_en": "Disk read/write performance benchmark"
   },
   {
     "id": "hd-tune",
@@ -125,9 +185,14 @@
     "description": "Strumento di benchmark e diagnostica per dischi rigidi e SSD",
     "downloadUrl": "https://www.hdtune.com/download.html",
     "filename": "HDTune_Pro_trial.exe",
-    "detectRegistry": ["HD Tune Pro"],
-    "detectPaths": ["C:/Program Files (x86)/HD Tune Pro/HDTunePro.exe"],
-    "size": "~3MB"
+    "detectRegistry": [
+      "HD Tune Pro"
+    ],
+    "detectPaths": [
+      "C:/Program Files (x86)/HD Tune Pro/HDTunePro.exe"
+    ],
+    "size": "~3MB",
+    "description_en": "Benchmark and diagnostic tool for HDDs and SSDs"
   },
   {
     "id": "samsung-magician",
@@ -135,9 +200,14 @@
     "description": "Gestione e ottimizzazione degli SSD Samsung con benchmark",
     "downloadUrl": "https://download.semiconductor.samsung.com/resources/software-resources/Samsung_Magician_Installer_Official_8.1.0.800.exe",
     "filename": "Samsung_Magician_Installer_Official_8.1.0.800.exe",
-    "detectRegistry": ["Samsung Magician"],
-    "detectPaths": ["C:/Program Files (x86)/Samsung/Samsung Magician/SamsungMagician.exe"],
-    "size": "~50MB"
+    "detectRegistry": [
+      "Samsung Magician"
+    ],
+    "detectPaths": [
+      "C:/Program Files (x86)/Samsung/Samsung Magician/SamsungMagician.exe"
+    ],
+    "size": "~50MB",
+    "description_en": "Samsung SSD management and optimization with benchmark"
   },
   {
     "id": "wd-dashboard",
@@ -145,9 +215,14 @@
     "description": "Monitoraggio e gestione degli SSD Western Digital",
     "downloadUrl": "https://wddashboarddownloads.wdc.com/wdDashboard/DashboardSetup.exe",
     "filename": "DashboardSetup.exe",
-    "detectRegistry": ["WD Dashboard"],
-    "detectPaths": ["C:/Program Files (x86)/Western Digital/WD Dashboard/WDDashboard.exe"],
-    "size": "~400MB"
+    "detectRegistry": [
+      "WD Dashboard"
+    ],
+    "detectPaths": [
+      "C:/Program Files (x86)/Western Digital/WD Dashboard/WDDashboard.exe"
+    ],
+    "size": "~400MB",
+    "description_en": "Western Digital SSD monitoring and management"
   },
   {
     "id": "intel-ssd-toolbox",
@@ -155,9 +230,14 @@
     "description": "Strumento di gestione e ottimizzazione per SSD Intel",
     "downloadUrl": "https://www.intel.com/content/www/us/en/download/19543/intel-memory-and-storage-tool-gui.html",
     "filename": "Intel_MAS_Setup.exe",
-    "detectRegistry": ["Intel SSD Toolbox"],
-    "detectPaths": ["C:/Program Files/Intel/Intel SSD Toolbox/Intel SSD Toolbox.exe"],
-    "size": "~40MB"
+    "detectRegistry": [
+      "Intel SSD Toolbox"
+    ],
+    "detectPaths": [
+      "C:/Program Files/Intel/Intel SSD Toolbox/Intel SSD Toolbox.exe"
+    ],
+    "size": "~40MB",
+    "description_en": "Management and optimization tool for Intel SSDs"
   },
   {
     "id": "as-ssd-benchmark",
@@ -166,8 +246,11 @@
     "downloadUrl": "https://www.alex-is.de/progs/AS%20SSD%20Benchmark.zip",
     "filename": "AS SSD Benchmark.zip",
     "detectRegistry": [],
-    "detectPaths": ["C:/Program Files/AS SSD Benchmark/AS SSD Benchmark.exe"],
-    "size": "~1MB"
+    "detectPaths": [
+      "C:/Program Files/AS SSD Benchmark/AS SSD Benchmark.exe"
+    ],
+    "size": "~1MB",
+    "description_en": "SSD-specific benchmark with copy and compression tests"
   },
   {
     "id": "atto-disk-benchmark",
@@ -175,9 +258,14 @@
     "description": "Benchmark professionale per misurare prestazioni di storage",
     "downloadUrl": "https://www.atto.com/products/software/",
     "filename": "ATTODiskBenchmark_Setup.exe",
-    "detectRegistry": ["ATTO Disk Benchmark"],
-    "detectPaths": ["C:/Program Files (x86)/ATTO/ATTO Disk Benchmark/ATTODiskBenchmark.exe"],
-    "size": "~15MB"
+    "detectRegistry": [
+      "ATTO Disk Benchmark"
+    ],
+    "detectPaths": [
+      "C:/Program Files (x86)/ATTO/ATTO Disk Benchmark/ATTODiskBenchmark.exe"
+    ],
+    "size": "~15MB",
+    "description_en": "Professional benchmark for measuring storage performance"
   },
   {
     "id": "furmark",
@@ -185,9 +273,14 @@
     "description": "Stress test per schede grafiche con monitoraggio temperature",
     "downloadUrl": "https://www.geeks3d.com/dl/get/815",
     "filename": "FurMark_2.3.0_Setup.exe",
-    "detectRegistry": ["FurMark"],
-    "detectPaths": ["C:/Program Files (x86)/Geeks3D/FurMark 2/FurMark_GUI.exe"],
-    "size": "~30MB"
+    "detectRegistry": [
+      "FurMark"
+    ],
+    "detectPaths": [
+      "C:/Program Files (x86)/Geeks3D/FurMark 2/FurMark_GUI.exe"
+    ],
+    "size": "~30MB",
+    "description_en": "GPU stress test with temperature monitoring"
   },
   {
     "id": "3dmark",
@@ -195,9 +288,14 @@
     "description": "Suite di benchmark 3D professionale per GPU e CPU gaming",
     "downloadUrl": "https://benchmarks.ul.com/3dmark",
     "filename": "3DMark-setup.exe",
-    "detectRegistry": ["3DMark"],
-    "detectPaths": ["C:/Program Files/UL/3DMark/3DMark.exe"],
-    "size": "~5GB"
+    "detectRegistry": [
+      "3DMark"
+    ],
+    "detectPaths": [
+      "C:/Program Files/UL/3DMark/3DMark.exe"
+    ],
+    "size": "~5GB",
+    "description_en": "Professional 3D benchmark suite for gaming GPU and CPU"
   },
   {
     "id": "cinebench",
@@ -205,9 +303,14 @@
     "description": "Benchmark CPU basato su rendering 3D Cinema 4D di Maxon",
     "downloadUrl": "https://www.maxon.net/en/cinebench",
     "filename": "CinebenchR24-setup.exe",
-    "detectRegistry": ["Cinebench"],
-    "detectPaths": ["C:/Program Files/Maxon Cinebench/Cinebench.exe"],
-    "size": "~700MB"
+    "detectRegistry": [
+      "Cinebench"
+    ],
+    "detectPaths": [
+      "C:/Program Files/Maxon Cinebench/Cinebench.exe"
+    ],
+    "size": "~700MB",
+    "description_en": "CPU benchmark based on Cinema 4D 3D rendering by Maxon"
   },
   {
     "id": "geekbench",
@@ -215,9 +318,14 @@
     "description": "Benchmark multi-piattaforma per CPU e GPU con punteggio comparativo",
     "downloadUrl": "https://www.geekbench.com/download/windows/",
     "filename": "Geekbench-6-Setup.exe",
-    "detectRegistry": ["Geekbench 6"],
-    "detectPaths": ["C:/Program Files/Geekbench 6/geekbench6.exe"],
-    "size": "~120MB"
+    "detectRegistry": [
+      "Geekbench 6"
+    ],
+    "detectPaths": [
+      "C:/Program Files/Geekbench 6/geekbench6.exe"
+    ],
+    "size": "~120MB",
+    "description_en": "Cross-platform CPU and GPU benchmark with comparative score"
   },
   {
     "id": "prime95",
@@ -226,8 +334,11 @@
     "downloadUrl": "https://download.mersenne.ca/gimps/v30/30.19/p95v3019b20.win64.zip",
     "filename": "p95v3019b20.win64.zip",
     "detectRegistry": [],
-    "detectPaths": ["C:/Program Files/Prime95/prime95.exe"],
-    "size": "~25MB"
+    "detectPaths": [
+      "C:/Program Files/Prime95/prime95.exe"
+    ],
+    "size": "~25MB",
+    "description_en": "CPU stress test for overclocking stability and prime number search"
   },
   {
     "id": "memtest86",
@@ -237,7 +348,8 @@
     "filename": "",
     "detectRegistry": [],
     "detectPaths": [],
-    "size": "Web App"
+    "size": "Web App",
+    "description_en": "Complete RAM diagnostic test from USB boot"
   },
   {
     "id": "driver-booster",
@@ -245,9 +357,14 @@
     "description": "Aggiornamento automatico driver con backup e ripristino",
     "downloadUrl": "https://cdn.iobit.com/dl/driver_booster_setup.exe",
     "filename": "driver_booster_setup.exe",
-    "detectRegistry": ["Driver Booster"],
-    "detectPaths": ["C:/Program Files (x86)/IObit/Driver Booster/DriverBooster.exe"],
-    "size": "~30MB"
+    "detectRegistry": [
+      "Driver Booster"
+    ],
+    "detectPaths": [
+      "C:/Program Files (x86)/IObit/Driver Booster/DriverBooster.exe"
+    ],
+    "size": "~30MB",
+    "description_en": "Automatic driver updater with backup and restore"
   },
   {
     "id": "snappy-driver-installer",
@@ -256,8 +373,11 @@
     "downloadUrl": "https://sourceforge.net/projects/snappy-driver-installer-origin/files/latest/download",
     "filename": "SDIO_latest.zip",
     "detectRegistry": [],
-    "detectPaths": ["C:/Program Files/Snappy Driver Installer/SDI_x64_R2309.exe"],
-    "size": "~30MB"
+    "detectPaths": [
+      "C:/Program Files/Snappy Driver Installer/SDI_x64_R2309.exe"
+    ],
+    "size": "~30MB",
+    "description_en": "Open source offline driver installer with large library"
   },
   {
     "id": "driver-easy",
@@ -265,9 +385,14 @@
     "description": "Scansione e aggiornamento automatico dei driver con interfaccia semplice",
     "downloadUrl": "https://www.drivereasy.com/DriverEasy_Setup.exe",
     "filename": "DriverEasy_Setup.exe",
-    "detectRegistry": ["Driver Easy"],
-    "detectPaths": ["C:/Program Files/Easeware/DriverEasy/DriverEasy.exe"],
-    "size": "~5MB"
+    "detectRegistry": [
+      "Driver Easy"
+    ],
+    "detectPaths": [
+      "C:/Program Files/Easeware/DriverEasy/DriverEasy.exe"
+    ],
+    "size": "~5MB",
+    "description_en": "Automatic driver scanning and update with simple interface"
   },
   {
     "id": "ddu",
@@ -276,8 +401,11 @@
     "downloadUrl": "https://www.wagnardsoft.com/DDU/download/DDU%20v18.0.7.8.exe",
     "filename": "DDU v18.0.7.8.exe",
     "detectRegistry": [],
-    "detectPaths": ["C:/Program Files/Display Driver Uninstaller/Display Driver Uninstaller.exe"],
-    "size": "~10MB"
+    "detectPaths": [
+      "C:/Program Files/Display Driver Uninstaller/Display Driver Uninstaller.exe"
+    ],
+    "size": "~10MB",
+    "description_en": "Complete graphics driver removal for clean installation"
   },
   {
     "id": "nvcleanstall",
@@ -285,9 +413,14 @@
     "description": "Installazione pulita driver NVIDIA senza bloatware e telemetria",
     "downloadUrl": "https://www.techpowerup.com/download/techpowerup-nvcleanstall/",
     "filename": "NVCleanstall_1.16.0.exe",
-    "detectRegistry": ["NVCleanstall"],
-    "detectPaths": ["C:/Program Files/NVCleanstall/NVCleanstall.exe"],
-    "size": "~5MB"
+    "detectRegistry": [
+      "NVCleanstall"
+    ],
+    "detectPaths": [
+      "C:/Program Files/NVCleanstall/NVCleanstall.exe"
+    ],
+    "size": "~5MB",
+    "description_en": "Clean NVIDIA driver installation without bloatware and telemetry"
   },
   {
     "id": "wumt",
@@ -296,8 +429,11 @@
     "downloadUrl": "https://www.majorgeeks.com/files/details/windows_update_minitool.html",
     "filename": "wumt_x64.exe",
     "detectRegistry": [],
-    "detectPaths": ["C:/Program Files/WUMT/wumt_x64.exe"],
-    "size": "~3MB"
+    "detectPaths": [
+      "C:/Program Files/WUMT/wumt_x64.exe"
+    ],
+    "size": "~3MB",
+    "description_en": "Advanced Windows update management with manual control"
   },
   {
     "id": "wsus-offline",
@@ -306,8 +442,11 @@
     "downloadUrl": "https://download.wsusoffline.net/wsusoffline120.zip",
     "filename": "wsusoffline120.zip",
     "detectRegistry": [],
-    "detectPaths": ["C:/wsusoffline/UpdateGenerator.exe"],
-    "size": "~5MB"
+    "detectPaths": [
+      "C:/wsusoffline/UpdateGenerator.exe"
+    ],
+    "size": "~5MB",
+    "description_en": "Download and install Windows updates offline without connection"
   },
   {
     "id": "chocolatey",
@@ -315,9 +454,14 @@
     "description": "Gestore di pacchetti per Windows da riga di comando",
     "downloadUrl": "https://community.chocolatey.org/install.ps1",
     "filename": "install.ps1",
-    "detectRegistry": ["Chocolatey"],
-    "detectPaths": ["C:/ProgramData/chocolatey/choco.exe"],
-    "size": "~5MB"
+    "detectRegistry": [
+      "Chocolatey"
+    ],
+    "detectPaths": [
+      "C:/ProgramData/chocolatey/choco.exe"
+    ],
+    "size": "~5MB",
+    "description_en": "Windows command-line package manager"
   },
   {
     "id": "winget",
@@ -326,8 +470,11 @@
     "downloadUrl": "https://aka.ms/getwinget",
     "filename": "",
     "detectRegistry": [],
-    "detectPaths": ["C:/Users/Pd85/AppData/Local/Microsoft/WindowsApps/winget.exe"],
-    "size": "Web App"
+    "detectPaths": [
+      "C:/Users/Pd85/AppData/Local/Microsoft/WindowsApps/winget.exe"
+    ],
+    "size": "Web App",
+    "description_en": "Microsoft's official package manager built into Windows"
   },
   {
     "id": "scoop",
@@ -336,8 +483,11 @@
     "downloadUrl": "https://get.scoop.sh",
     "filename": "install.ps1",
     "detectRegistry": [],
-    "detectPaths": ["C:/Users/Pd85/scoop/apps/scoop/current/bin/scoop.ps1"],
-    "size": "~2MB"
+    "detectPaths": [
+      "C:/Users/Pd85/scoop/apps/scoop/current/bin/scoop.ps1"
+    ],
+    "size": "~2MB",
+    "description_en": "Windows package manager with installation in user folder"
   },
   {
     "id": "ninite",
@@ -347,7 +497,8 @@
     "filename": "",
     "detectRegistry": [],
     "detectPaths": [],
-    "size": "Web App"
+    "size": "Web App",
+    "description_en": "Automatic installation and update of multiple apps in batch"
   },
   {
     "id": "revo-uninstaller",
@@ -355,9 +506,14 @@
     "description": "Disinstallazione completa dei programmi con pulizia residui",
     "downloadUrl": "https://download.revouninstaller.com/download/revosetup.exe",
     "filename": "revosetup.exe",
-    "detectRegistry": ["Revo Uninstaller"],
-    "detectPaths": ["C:/Program Files/VS Revo Group/Revo Uninstaller/Revouninstaller.exe"],
-    "size": "~15MB"
+    "detectRegistry": [
+      "Revo Uninstaller"
+    ],
+    "detectPaths": [
+      "C:/Program Files/VS Revo Group/Revo Uninstaller/Revouninstaller.exe"
+    ],
+    "size": "~15MB",
+    "description_en": "Complete program uninstaller with residue cleanup"
   },
   {
     "id": "iobit-systemcare",
@@ -365,9 +521,14 @@
     "description": "Suite di ottimizzazione e pulizia sistema con protezione privacy",
     "downloadUrl": "https://www.iobit.com/downloadcenter.php?product=advanced-systemcare-free-new",
     "filename": "asc-setup.exe",
-    "detectRegistry": ["Advanced SystemCare"],
-    "detectPaths": ["C:/Program Files (x86)/IObit/Advanced SystemCare/ASC.exe"],
-    "size": "~50MB"
+    "detectRegistry": [
+      "Advanced SystemCare"
+    ],
+    "detectPaths": [
+      "C:/Program Files (x86)/IObit/Advanced SystemCare/ASC.exe"
+    ],
+    "size": "~50MB",
+    "description_en": "System optimization and cleaning suite with privacy protection"
   },
   {
     "id": "wise-care-365",
@@ -375,9 +536,14 @@
     "description": "Utilità di pulizia e ottimizzazione del sistema Windows",
     "downloadUrl": "https://downloads.wisecleaner.com/soft/WiseCare365_7.3.5.722.exe",
     "filename": "WiseCare365_7.3.5.722.exe",
-    "detectRegistry": ["Wise Care 365"],
-    "detectPaths": ["C:/Program Files (x86)/Wise/Wise Care 365/WiseCare365.exe"],
-    "size": "~15MB"
+    "detectRegistry": [
+      "Wise Care 365"
+    ],
+    "detectPaths": [
+      "C:/Program Files (x86)/Wise/Wise Care 365/WiseCare365.exe"
+    ],
+    "size": "~15MB",
+    "description_en": "Windows system cleaning and optimization utility"
   },
   {
     "id": "auslogics-disk-defrag",
@@ -385,9 +551,14 @@
     "description": "Deframmentazione veloce dei dischi con ottimizzazione posizionamento file",
     "downloadUrl": "https://www.auslogics.com/en/software/disk-defrag/after-download/",
     "filename": "disk-defrag-setup.exe",
-    "detectRegistry": ["Auslogics Disk Defrag"],
-    "detectPaths": ["C:/Program Files (x86)/Auslogics/Auslogics Disk Defrag/DiskDefrag.exe"],
-    "size": "~15MB"
+    "detectRegistry": [
+      "Auslogics Disk Defrag"
+    ],
+    "detectPaths": [
+      "C:/Program Files (x86)/Auslogics/Auslogics Disk Defrag/DiskDefrag.exe"
+    ],
+    "size": "~15MB",
+    "description_en": "Fast disk defragmentation with file placement optimization"
   },
   {
     "id": "oo-defrag",
@@ -395,9 +566,14 @@
     "description": "Deframmentazione professionale con pianificazione e ottimizzazione SSD",
     "downloadUrl": "https://www.oo-software.com/en/download/current/oodefragpro",
     "filename": "OODefrag.exe",
-    "detectRegistry": ["O&O Defrag"],
-    "detectPaths": ["C:/Program Files/OO Software/Defrag/oodefrag.exe"],
-    "size": "~30MB"
+    "detectRegistry": [
+      "O&O Defrag"
+    ],
+    "detectPaths": [
+      "C:/Program Files/OO Software/Defrag/oodefrag.exe"
+    ],
+    "size": "~30MB",
+    "description_en": "Professional defragmentation with scheduling and SSD optimization"
   },
   {
     "id": "defraggler",
@@ -405,9 +581,14 @@
     "description": "Deframmentazione di singoli file o interi dischi di Piriform",
     "downloadUrl": "https://www.ccleaner.com/defraggler/download/standard",
     "filename": "dfsetup.exe",
-    "detectRegistry": ["Defraggler"],
-    "detectPaths": ["C:/Program Files/Defraggler/Defraggler64.exe"],
-    "size": "~5MB"
+    "detectRegistry": [
+      "Defraggler"
+    ],
+    "detectPaths": [
+      "C:/Program Files/Defraggler/Defraggler64.exe"
+    ],
+    "size": "~5MB",
+    "description_en": "Single file or entire disk defragmentation by Piriform"
   },
   {
     "id": "ultradefrag",
@@ -415,9 +596,14 @@
     "description": "Deframmentazione open source potente con modalità boot-time",
     "downloadUrl": "https://sourceforge.net/projects/ultradefrag/files/stable-release/7.1.4/ultradefrag-7.1.4.bin.amd64.exe/download",
     "filename": "ultradefrag-7.1.4.bin.amd64.exe",
-    "detectRegistry": ["UltraDefrag"],
-    "detectPaths": ["C:/Program Files/UltraDefrag/udefrag.exe"],
-    "size": "~10MB"
+    "detectRegistry": [
+      "UltraDefrag"
+    ],
+    "detectPaths": [
+      "C:/Program Files/UltraDefrag/udefrag.exe"
+    ],
+    "size": "~10MB",
+    "description_en": "Powerful open source defragmentation with boot-time mode"
   },
   {
     "id": "macrium-reflect",
@@ -425,9 +611,14 @@
     "description": "Backup e clonazione di dischi con immagini incrementali e differenziali",
     "downloadUrl": "https://updates.macrium.com/reflect/v8/ReflectDLHF.exe",
     "filename": "ReflectDLHF.exe",
-    "detectRegistry": ["Macrium Reflect"],
-    "detectPaths": ["C:/Program Files/Macrium/Reflect/Reflect.exe"],
-    "size": "~1GB"
+    "detectRegistry": [
+      "Macrium Reflect"
+    ],
+    "detectPaths": [
+      "C:/Program Files/Macrium/Reflect/Reflect.exe"
+    ],
+    "size": "~1GB",
+    "description_en": "Disk backup and cloning with incremental and differential images"
   },
   {
     "id": "easeus-todo-backup",
@@ -435,9 +626,14 @@
     "description": "Backup del sistema, file e disco con ripristino rapido",
     "downloadUrl": "https://down.easeus.com/product/tb_free",
     "filename": "tb_free.exe",
-    "detectRegistry": ["EaseUS Todo Backup"],
-    "detectPaths": ["C:/Program Files (x86)/EaseUS/Todo Backup/bin/TbService.exe"],
-    "size": "~200MB"
+    "detectRegistry": [
+      "EaseUS Todo Backup"
+    ],
+    "detectPaths": [
+      "C:/Program Files (x86)/EaseUS/Todo Backup/bin/TbService.exe"
+    ],
+    "size": "~200MB",
+    "description_en": "System, file and disk backup with fast restore"
   },
   {
     "id": "veeam-agent",
@@ -445,9 +641,14 @@
     "description": "Backup professionale gratuito con ripristino bare-metal",
     "downloadUrl": "https://www.veeam.com/windows-endpoint-server-backup-free.html",
     "filename": "VeeamAgentWindows.exe",
-    "detectRegistry": ["Veeam Agent for Microsoft Windows"],
-    "detectPaths": ["C:/Program Files/Veeam/Endpoint Backup/Veeam.EndPoint.Manager.exe"],
-    "size": "~250MB"
+    "detectRegistry": [
+      "Veeam Agent for Microsoft Windows"
+    ],
+    "detectPaths": [
+      "C:/Program Files/Veeam/Endpoint Backup/Veeam.EndPoint.Manager.exe"
+    ],
+    "size": "~250MB",
+    "description_en": "Free professional backup with bare-metal restore"
   },
   {
     "id": "acronis",
@@ -455,9 +656,14 @@
     "description": "Backup completo con protezione cyber e sincronizzazione cloud",
     "downloadUrl": "https://www.acronis.com/en-us/products/true-image/",
     "filename": "AcronisTrueImage_Setup.exe",
-    "detectRegistry": ["Acronis True Image"],
-    "detectPaths": ["C:/Program Files (x86)/Acronis/TrueImageHome/TrueImage.exe"],
-    "size": "~800MB"
+    "detectRegistry": [
+      "Acronis True Image"
+    ],
+    "detectPaths": [
+      "C:/Program Files (x86)/Acronis/TrueImageHome/TrueImage.exe"
+    ],
+    "size": "~800MB",
+    "description_en": "Complete backup with cyber protection and cloud sync"
   },
   {
     "id": "clonezilla",
@@ -467,7 +673,8 @@
     "filename": "clonezilla-live-3.1.3-16-amd64.zip",
     "detectRegistry": [],
     "detectPaths": [],
-    "size": "~400MB"
+    "size": "~400MB",
+    "description_en": "Open source disk cloning and imaging from USB/CD boot"
   },
   {
     "id": "dismpp",
@@ -476,8 +683,11 @@
     "downloadUrl": "https://github.com/Chuyu-Team/Dism-Multi-language/releases/download/v10.1.1002.2/Dism++10.1.1002.1B.zip",
     "filename": "Dism++10.1.1002.1B.zip",
     "detectRegistry": [],
-    "detectPaths": ["C:/Program Files/Dism++/Dism++x64.exe"],
-    "size": "~5MB"
+    "detectPaths": [
+      "C:/Program Files/Dism++/Dism++x64.exe"
+    ],
+    "size": "~5MB",
+    "description_en": "GUI tool for Windows image management, cleanup and optimization"
   },
   {
     "id": "ntlite",
@@ -485,9 +695,14 @@
     "description": "Personalizzazione e ottimizzazione delle immagini di installazione Windows",
     "downloadUrl": "https://www.ntlite.com/download/",
     "filename": "NTLite_setup_x64.exe",
-    "detectRegistry": ["NTLite"],
-    "detectPaths": ["C:/Program Files/NTLite/NTLite.exe"],
-    "size": "~25MB"
+    "detectRegistry": [
+      "NTLite"
+    ],
+    "detectPaths": [
+      "C:/Program Files/NTLite/NTLite.exe"
+    ],
+    "size": "~25MB",
+    "description_en": "Windows installation image customization and optimization"
   },
   {
     "id": "chris-titus-winutil",
@@ -497,6 +712,7 @@
     "filename": "",
     "detectRegistry": [],
     "detectPaths": [],
-    "size": "Web App"
+    "size": "Web App",
+    "description_en": "PowerShell script for Windows optimization, tweaking and app installation"
   }
 ]

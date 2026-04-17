@@ -5,9 +5,14 @@
     "description": "Suite office completa open source alternativa a Microsoft Office",
     "downloadUrl": "https://download.documentfoundation.org/libreoffice/stable/25.8.5/win/x86_64/LibreOffice_25.8.5_Win_x86-64.msi",
     "filename": "LibreOffice_Win_x86-64.msi",
-    "detectRegistry": ["LibreOffice"],
-    "detectPaths": ["C:/Program Files/LibreOffice/program/soffice.exe"],
-    "size": "~350MB"
+    "detectRegistry": [
+      "LibreOffice"
+    ],
+    "detectPaths": [
+      "C:/Program Files/LibreOffice/program/soffice.exe"
+    ],
+    "size": "~350MB",
+    "description_en": "Complete open source office suite, alternative to Microsoft Office"
   },
   {
     "id": "onlyoffice",
@@ -15,9 +20,14 @@
     "description": "Suite office gratuita compatibile con formati Microsoft Office",
     "downloadUrl": "https://github.com/ONLYOFFICE/DesktopEditors/releases/download/v9.3.1/DesktopEditors_x64.exe",
     "filename": "DesktopEditors_x64.exe",
-    "detectRegistry": ["ONLYOFFICE Desktop Editors"],
-    "detectPaths": ["C:/Program Files/ONLYOFFICE/DesktopEditors/DesktopEditors.exe"],
-    "size": "~280MB"
+    "detectRegistry": [
+      "ONLYOFFICE Desktop Editors"
+    ],
+    "detectPaths": [
+      "C:/Program Files/ONLYOFFICE/DesktopEditors/DesktopEditors.exe"
+    ],
+    "size": "~280MB",
+    "description_en": "Free office suite compatible with Microsoft Office formats"
   },
   {
     "id": "freeoffice",
@@ -25,9 +35,14 @@
     "description": "Suite office gratuita di SoftMaker con alta compatibilità MS Office",
     "downloadUrl": "https://www.freeoffice.com/download.php?id=430982",
     "filename": "FreeOffice2024.exe",
-    "detectRegistry": ["SoftMaker FreeOffice"],
-    "detectPaths": ["C:/Program Files/SoftMaker/FreeOffice/TextMaker.exe"],
-    "size": "~200MB"
+    "detectRegistry": [
+      "SoftMaker FreeOffice"
+    ],
+    "detectPaths": [
+      "C:/Program Files/SoftMaker/FreeOffice/TextMaker.exe"
+    ],
+    "size": "~200MB",
+    "description_en": "Free office suite by SoftMaker with high MS Office compatibility"
   },
   {
     "id": "wps-office",
@@ -35,9 +50,14 @@
     "description": "Suite office gratuita leggera con interfaccia simile a MS Office",
     "downloadUrl": "https://www.wps.com/office/windows/",
     "filename": "WPSOffice_Setup.exe",
-    "detectRegistry": ["WPS Office"],
-    "detectPaths": ["C:/Users/Pd85/AppData/Local/Kingsoft/WPS Office/ksolaunch.exe"],
-    "size": "~200MB"
+    "detectRegistry": [
+      "WPS Office"
+    ],
+    "detectPaths": [
+      "C:/Users/Pd85/AppData/Local/Kingsoft/WPS Office/ksolaunch.exe"
+    ],
+    "size": "~200MB",
+    "description_en": "Free lightweight office suite with MS Office-like interface"
   },
   {
     "id": "google-docs",
@@ -47,7 +67,8 @@
     "filename": "",
     "detectRegistry": [],
     "detectPaths": [],
-    "size": "Web App"
+    "size": "Web App",
+    "description_en": "Free online document suite integrated with Google Drive"
   },
   {
     "id": "microsoft-office",
@@ -55,9 +76,14 @@
     "description": "Suite office professionale con Word, Excel, PowerPoint e Outlook",
     "downloadUrl": "https://www.office.com/",
     "filename": "",
-    "detectRegistry": ["Microsoft Office"],
-    "detectPaths": ["C:/Program Files/Microsoft Office/root/Office16/WINWORD.EXE"],
-    "size": "Web App"
+    "detectRegistry": [
+      "Microsoft Office"
+    ],
+    "detectPaths": [
+      "C:/Program Files/Microsoft Office/root/Office16/WINWORD.EXE"
+    ],
+    "size": "Web App",
+    "description_en": "Professional office suite with Word, Excel, PowerPoint and Outlook"
   },
   {
     "id": "openoffice",
@@ -65,9 +91,14 @@
     "description": "Suite office open source storica con writer, calc e impress",
     "downloadUrl": "https://sourceforge.net/projects/openofficeorg.mirror/files/4.1.15/binaries/it/Apache_OpenOffice_4.1.15_Win_x86_install_it.exe/download",
     "filename": "Apache_OpenOffice_Win_x86_install.exe",
-    "detectRegistry": ["OpenOffice"],
-    "detectPaths": ["C:/Program Files (x86)/OpenOffice 4/program/soffice.exe"],
-    "size": "~150MB"
+    "detectRegistry": [
+      "OpenOffice"
+    ],
+    "detectPaths": [
+      "C:/Program Files (x86)/OpenOffice 4/program/soffice.exe"
+    ],
+    "size": "~150MB",
+    "description_en": "Historic open source office suite with Writer, Calc and Impress"
   },
   {
     "id": "calligra",
@@ -75,9 +106,14 @@
     "description": "Suite office KDE con Words, Sheets, Stage e strumenti creativi",
     "downloadUrl": "https://calligra.org/download/",
     "filename": "calligra-setup.exe",
-    "detectRegistry": ["Calligra"],
-    "detectPaths": ["C:/Program Files/Calligra/bin/calligrawords.exe"],
-    "size": "~200MB"
+    "detectRegistry": [
+      "Calligra"
+    ],
+    "detectPaths": [
+      "C:/Program Files/Calligra/bin/calligrawords.exe"
+    ],
+    "size": "~200MB",
+    "description_en": "KDE office suite with Words, Sheets, Stage and creative tools"
   },
   {
     "id": "abiword",
@@ -85,9 +121,14 @@
     "description": "Word processor open source leggero e veloce",
     "downloadUrl": "https://sourceforge.net/projects/abiword/",
     "filename": "abiword-setup-3.0.5.exe",
-    "detectRegistry": ["AbiWord"],
-    "detectPaths": ["C:/Program Files (x86)/AbiWord/bin/AbiWord.exe"],
-    "size": "~10MB"
+    "detectRegistry": [
+      "AbiWord"
+    ],
+    "detectPaths": [
+      "C:/Program Files (x86)/AbiWord/bin/AbiWord.exe"
+    ],
+    "size": "~10MB",
+    "description_en": "Lightweight and fast open source word processor"
   },
   {
     "id": "sumatrapdf",
@@ -95,9 +136,14 @@
     "description": "Lettore PDF ultraleggero e veloce con supporto multi-formato",
     "downloadUrl": "https://www.sumatrapdfreader.org/dl/rel/3.5.2/SumatraPDF-3.5.2-64-install.exe",
     "filename": "SumatraPDF-3.5.2-64-install.exe",
-    "detectRegistry": ["SumatraPDF"],
-    "detectPaths": ["C:/Program Files/SumatraPDF/SumatraPDF.exe"],
-    "size": "~12MB"
+    "detectRegistry": [
+      "SumatraPDF"
+    ],
+    "detectPaths": [
+      "C:/Program Files/SumatraPDF/SumatraPDF.exe"
+    ],
+    "size": "~12MB",
+    "description_en": "Ultra-lightweight and fast PDF reader with multi-format support"
   },
   {
     "id": "acrobat-reader",
@@ -105,9 +151,14 @@
     "description": "Lettore PDF standard con annotazioni e firma digitale",
     "downloadUrl": "https://get.adobe.com/reader/",
     "filename": "AcroRdrDC_Setup.exe",
-    "detectRegistry": ["Adobe Acrobat Reader DC"],
-    "detectPaths": ["C:/Program Files/Adobe/Acrobat DC/Acrobat/Acrobat.exe"],
-    "size": "~250MB"
+    "detectRegistry": [
+      "Adobe Acrobat Reader DC"
+    ],
+    "detectPaths": [
+      "C:/Program Files/Adobe/Acrobat DC/Acrobat/Acrobat.exe"
+    ],
+    "size": "~250MB",
+    "description_en": "Standard PDF reader with annotations and digital signatures"
   },
   {
     "id": "foxit-reader",
@@ -115,9 +166,14 @@
     "description": "Lettore PDF veloce con funzionalità di annotazione avanzate",
     "downloadUrl": "https://www.foxit.com/pdf-reader/",
     "filename": "FoxitPDFReader-Setup.exe",
-    "detectRegistry": ["Foxit PDF Reader"],
-    "detectPaths": ["C:/Program Files (x86)/Foxit Software/Foxit PDF Reader/FoxitPDFReader.exe"],
-    "size": "~110MB"
+    "detectRegistry": [
+      "Foxit PDF Reader"
+    ],
+    "detectPaths": [
+      "C:/Program Files (x86)/Foxit Software/Foxit PDF Reader/FoxitPDFReader.exe"
+    ],
+    "size": "~110MB",
+    "description_en": "Fast PDF reader with advanced annotation features"
   },
   {
     "id": "pdf-xchange",
@@ -125,9 +181,14 @@
     "description": "Editor PDF ricco di funzionalità con OCR e annotazioni",
     "downloadUrl": "https://www.tracker-software.com/product/downloads/PDFXE-latest-x64.exe",
     "filename": "PDFXE-latest-x64.exe",
-    "detectRegistry": ["PDF-XChange Editor"],
-    "detectPaths": ["C:/Program Files/Tracker Software/PDF Editor/PDFXEdit.exe"],
-    "size": "~160MB"
+    "detectRegistry": [
+      "PDF-XChange Editor"
+    ],
+    "detectPaths": [
+      "C:/Program Files/Tracker Software/PDF Editor/PDFXEdit.exe"
+    ],
+    "size": "~160MB",
+    "description_en": "Feature-rich PDF editor with OCR and annotations"
   },
   {
     "id": "nitro-pdf",
@@ -135,9 +196,14 @@
     "description": "Editor PDF professionale con conversione e firma digitale",
     "downloadUrl": "https://www.gonitro.com/documentation/product-downloads",
     "filename": "nitro_pro_setup.exe",
-    "detectRegistry": ["Nitro Pro"],
-    "detectPaths": ["C:/Program Files/Nitro/Pro/NitroPDF.exe"],
-    "size": "~500MB"
+    "detectRegistry": [
+      "Nitro Pro"
+    ],
+    "detectPaths": [
+      "C:/Program Files/Nitro/Pro/NitroPDF.exe"
+    ],
+    "size": "~500MB",
+    "description_en": "Professional PDF editor with conversion and digital signatures"
   },
   {
     "id": "okular",
@@ -145,9 +211,14 @@
     "description": "Visualizzatore di documenti KDE multi-formato open source",
     "downloadUrl": "https://apps.kde.org/okular/",
     "filename": "okular-setup.exe",
-    "detectRegistry": ["Okular"],
-    "detectPaths": ["C:/Program Files/KDE/bin/okular.exe"],
-    "size": "~80MB"
+    "detectRegistry": [
+      "Okular"
+    ],
+    "detectPaths": [
+      "C:/Program Files/KDE/bin/okular.exe"
+    ],
+    "size": "~80MB",
+    "description_en": "KDE multi-format document viewer, open source"
   },
   {
     "id": "calibre",
@@ -155,9 +226,14 @@
     "description": "Gestore di e-book completo con conversione tra formati",
     "downloadUrl": "https://calibre-ebook.com/dist/win64",
     "filename": "calibre-64bit.msi",
-    "detectRegistry": ["calibre 64bit"],
-    "detectPaths": ["C:/Program Files/Calibre2/calibre.exe"],
-    "size": "~160MB"
+    "detectRegistry": [
+      "calibre 64bit"
+    ],
+    "detectPaths": [
+      "C:/Program Files/Calibre2/calibre.exe"
+    ],
+    "size": "~160MB",
+    "description_en": "Complete e-book manager with format conversion"
   },
   {
     "id": "zotero",
@@ -165,9 +241,14 @@
     "description": "Gestore di bibliografia e citazioni per ricerca accademica",
     "downloadUrl": "https://www.zotero.org/download/client/dl?channel=release&platform=win-x64",
     "filename": "Zotero-Setup.exe",
-    "detectRegistry": ["Zotero"],
-    "detectPaths": ["C:/Program Files/Zotero/zotero.exe"],
-    "size": "~60MB"
+    "detectRegistry": [
+      "Zotero"
+    ],
+    "detectPaths": [
+      "C:/Program Files/Zotero/zotero.exe"
+    ],
+    "size": "~60MB",
+    "description_en": "Bibliography and citation manager for academic research"
   },
   {
     "id": "mendeley",
@@ -175,9 +256,14 @@
     "description": "Gestore di riferimenti bibliografici con lettore PDF integrato",
     "downloadUrl": "https://www.mendeley.com/download-reference-manager/windows",
     "filename": "Mendeley-Reference-Manager-Setup.exe",
-    "detectRegistry": ["Mendeley Reference Manager"],
-    "detectPaths": ["C:/Users/Pd85/AppData/Local/Programs/Mendeley Reference Manager/Mendeley Reference Manager.exe"],
-    "size": "~100MB"
+    "detectRegistry": [
+      "Mendeley Reference Manager"
+    ],
+    "detectPaths": [
+      "C:/Users/Pd85/AppData/Local/Programs/Mendeley Reference Manager/Mendeley Reference Manager.exe"
+    ],
+    "size": "~100MB",
+    "description_en": "Reference manager with integrated PDF reader"
   },
   {
     "id": "jabref",
@@ -185,9 +271,14 @@
     "description": "Gestore di riferimenti bibliografici BibTeX open source",
     "downloadUrl": "https://github.com/JabRef/jabref/releases/latest/download/JabRef-5.15-portable_windows.zip",
     "filename": "JabRef-portable_windows.zip",
-    "detectRegistry": ["JabRef"],
-    "detectPaths": ["C:/Program Files/JabRef/JabRef.exe"],
-    "size": "~80MB"
+    "detectRegistry": [
+      "JabRef"
+    ],
+    "detectPaths": [
+      "C:/Program Files/JabRef/JabRef.exe"
+    ],
+    "size": "~80MB",
+    "description_en": "Open source BibTeX bibliography reference manager"
   },
   {
     "id": "miktex",
@@ -195,9 +286,14 @@
     "description": "Distribuzione LaTeX per Windows con gestore pacchetti automatico",
     "downloadUrl": "https://miktex.org/download/ctan/systems/win32/miktex/setup/windows-x64/basic-miktex-24.1-x64.exe",
     "filename": "basic-miktex-x64.exe",
-    "detectRegistry": ["MiKTeX"],
-    "detectPaths": ["C:/Program Files/MiKTeX/miktex/bin/x64/miktex.exe"],
-    "size": "~240MB"
+    "detectRegistry": [
+      "MiKTeX"
+    ],
+    "detectPaths": [
+      "C:/Program Files/MiKTeX/miktex/bin/x64/miktex.exe"
+    ],
+    "size": "~240MB",
+    "description_en": "LaTeX distribution for Windows with automatic package manager"
   },
   {
     "id": "texstudio",
@@ -205,9 +301,14 @@
     "description": "Editor LaTeX integrato con anteprima, completamento automatico e correttore",
     "downloadUrl": "https://github.com/texstudio-org/texstudio/releases/download/4.9.2/texstudio-4.9.2-win-qt6-signed.exe",
     "filename": "texstudio-win-qt6.exe",
-    "detectRegistry": ["TeXstudio"],
-    "detectPaths": ["C:/Program Files/TeXstudio/texstudio.exe"],
-    "size": "~100MB"
+    "detectRegistry": [
+      "TeXstudio"
+    ],
+    "detectPaths": [
+      "C:/Program Files/TeXstudio/texstudio.exe"
+    ],
+    "size": "~100MB",
+    "description_en": "Integrated LaTeX editor with preview, autocomplete and spell checker"
   },
   {
     "id": "overleaf",
@@ -217,7 +318,8 @@
     "filename": "",
     "detectRegistry": [],
     "detectPaths": [],
-    "size": "Web App"
+    "size": "Web App",
+    "description_en": "Online collaborative LaTeX editor with real-time compilation"
   },
   {
     "id": "typora",
@@ -225,9 +327,14 @@
     "description": "Editor Markdown elegante con anteprima in tempo reale WYSIWYG",
     "downloadUrl": "https://download.typora.io/windows/typora-setup-x64.exe",
     "filename": "typora-setup-x64.exe",
-    "detectRegistry": ["Typora"],
-    "detectPaths": ["C:/Program Files/Typora/Typora.exe"],
-    "size": "~70MB"
+    "detectRegistry": [
+      "Typora"
+    ],
+    "detectPaths": [
+      "C:/Program Files/Typora/Typora.exe"
+    ],
+    "size": "~70MB",
+    "description_en": "Elegant WYSIWYG Markdown editor with real-time preview"
   },
   {
     "id": "marktext",
@@ -235,9 +342,14 @@
     "description": "Editor Markdown open source semplice e elegante",
     "downloadUrl": "https://github.com/marktext/marktext/releases/latest/download/marktext-setup.exe",
     "filename": "marktext-setup.exe",
-    "detectRegistry": ["Mark Text"],
-    "detectPaths": ["C:/Users/Pd85/AppData/Local/Programs/marktext/Mark Text.exe"],
-    "size": "~90MB"
+    "detectRegistry": [
+      "Mark Text"
+    ],
+    "detectPaths": [
+      "C:/Users/Pd85/AppData/Local/Programs/marktext/Mark Text.exe"
+    ],
+    "size": "~90MB",
+    "description_en": "Simple and elegant open source Markdown editor"
   },
   {
     "id": "ghostwriter",
@@ -245,9 +357,14 @@
     "description": "Editor Markdown minimalista e senza distrazioni per scrittori",
     "downloadUrl": "https://ghostwriter.kde.org/download/",
     "filename": "ghostwriter-setup.exe",
-    "detectRegistry": ["ghostwriter"],
-    "detectPaths": ["C:/Program Files/ghostwriter/ghostwriter.exe"],
-    "size": "~60MB"
+    "detectRegistry": [
+      "ghostwriter"
+    ],
+    "detectPaths": [
+      "C:/Program Files/ghostwriter/ghostwriter.exe"
+    ],
+    "size": "~60MB",
+    "description_en": "Minimalist distraction-free Markdown editor for writers"
   },
   {
     "id": "obsidian-office",
@@ -255,9 +372,14 @@
     "description": "App per appunti e knowledge base basata su Markdown con plugin",
     "downloadUrl": "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.12.4/Obsidian-1.12.4.exe",
     "filename": "Obsidian.exe",
-    "detectRegistry": ["Obsidian"],
-    "detectPaths": ["C:/Users/Pd85/AppData/Local/Obsidian/Obsidian.exe"],
-    "size": "~80MB"
+    "detectRegistry": [
+      "Obsidian"
+    ],
+    "detectPaths": [
+      "C:/Users/Pd85/AppData/Local/Obsidian/Obsidian.exe"
+    ],
+    "size": "~80MB",
+    "description_en": "Markdown-based note and knowledge base app with plugins"
   },
   {
     "id": "notion-office",
@@ -265,9 +387,14 @@
     "description": "Workspace all-in-one per documenti, wiki, database e progetti",
     "downloadUrl": "https://www.notion.so/desktop/windows/download",
     "filename": "Notion-Setup.exe",
-    "detectRegistry": ["Notion"],
-    "detectPaths": ["C:/Users/Pd85/AppData/Local/Programs/Notion/Notion.exe"],
-    "size": "~120MB"
+    "detectRegistry": [
+      "Notion"
+    ],
+    "detectPaths": [
+      "C:/Users/Pd85/AppData/Local/Programs/Notion/Notion.exe"
+    ],
+    "size": "~120MB",
+    "description_en": "All-in-one workspace for documents, wiki, database and projects"
   },
   {
     "id": "logseq",
@@ -275,9 +402,14 @@
     "description": "App di knowledge management open source basata su blocchi e grafi",
     "downloadUrl": "https://github.com/logseq/logseq/releases/download/0.10.15/Logseq-win-x64-0.10.15.exe",
     "filename": "Logseq-win-x64.exe",
-    "detectRegistry": ["Logseq"],
-    "detectPaths": ["C:/Users/Pd85/AppData/Local/Programs/Logseq/Logseq.exe"],
-    "size": "~100MB"
+    "detectRegistry": [
+      "Logseq"
+    ],
+    "detectPaths": [
+      "C:/Users/Pd85/AppData/Local/Programs/Logseq/Logseq.exe"
+    ],
+    "size": "~100MB",
+    "description_en": "Open source knowledge management app based on blocks and graphs"
   },
   {
     "id": "zettlr",
@@ -285,9 +417,14 @@
     "description": "Editor Markdown per ricerca accademica con citazioni e Zettelkasten",
     "downloadUrl": "https://github.com/Zettlr/Zettlr/releases/download/v4.2.0/Zettlr-4.2.0-x64.exe",
     "filename": "Zettlr-Setup.exe",
-    "detectRegistry": ["Zettlr"],
-    "detectPaths": ["C:/Users/Pd85/AppData/Local/Programs/zettlr/Zettlr.exe"],
-    "size": "~100MB"
+    "detectRegistry": [
+      "Zettlr"
+    ],
+    "detectPaths": [
+      "C:/Users/Pd85/AppData/Local/Programs/zettlr/Zettlr.exe"
+    ],
+    "size": "~100MB",
+    "description_en": "Markdown editor for academic research with citations and Zettelkasten"
   },
   {
     "id": "scrivener",
@@ -295,9 +432,14 @@
     "description": "Software di scrittura professionale per autori e sceneggiatori",
     "downloadUrl": "https://www.literatureandlatte.com/scrivener/download",
     "filename": "Scrivener-installer.exe",
-    "detectRegistry": ["Scrivener 3"],
-    "detectPaths": ["C:/Program Files/Scrivener3/Scrivener3.exe"],
-    "size": "~150MB"
+    "detectRegistry": [
+      "Scrivener 3"
+    ],
+    "detectPaths": [
+      "C:/Program Files/Scrivener3/Scrivener3.exe"
+    ],
+    "size": "~150MB",
+    "description_en": "Professional writing software for authors and screenwriters"
   },
   {
     "id": "yed",
@@ -305,9 +447,14 @@
     "description": "Editor di grafi e diagrammi gratuito con layout automatico",
     "downloadUrl": "https://www.yworks.com/resources/yed/demo/yEd-3.25.1_with-JRE23_64-bit_setup.exe",
     "filename": "yEd-with-JRE-setup.exe",
-    "detectRegistry": ["yEd"],
-    "detectPaths": ["C:/Program Files/yWorks/yEd/yEd.exe"],
-    "size": "~100MB"
+    "detectRegistry": [
+      "yEd"
+    ],
+    "detectPaths": [
+      "C:/Program Files/yWorks/yEd/yEd.exe"
+    ],
+    "size": "~100MB",
+    "description_en": "Free graph and diagram editor with automatic layout"
   },
   {
     "id": "drawio",
@@ -315,9 +462,14 @@
     "description": "Editor di diagrammi e schemi gratuito e open source",
     "downloadUrl": "https://github.com/jgraph/drawio-desktop/releases/download/v29.5.2/draw.io-29.5.2-windows-installer.exe",
     "filename": "draw.io-windows-installer.exe",
-    "detectRegistry": ["draw.io"],
-    "detectPaths": ["C:/Program Files/draw.io/draw.io.exe"],
-    "size": "~100MB"
+    "detectRegistry": [
+      "draw.io"
+    ],
+    "detectPaths": [
+      "C:/Program Files/draw.io/draw.io.exe"
+    ],
+    "size": "~100MB",
+    "description_en": "Free and open source diagram and schema editor"
   },
   {
     "id": "lucidchart",
@@ -327,7 +479,8 @@
     "filename": "",
     "detectRegistry": [],
     "detectPaths": [],
-    "size": "Web App"
+    "size": "Web App",
+    "description_en": "Professional online collaborative diagramming platform"
   },
   {
     "id": "miro",
@@ -337,7 +490,8 @@
     "filename": "",
     "detectRegistry": [],
     "detectPaths": [],
-    "size": "Web App"
+    "size": "Web App",
+    "description_en": "Online collaborative whiteboard for brainstorming and design"
   },
   {
     "id": "figma",
@@ -347,7 +501,8 @@
     "filename": "",
     "detectRegistry": [],
     "detectPaths": [],
-    "size": "Web App"
+    "size": "Web App",
+    "description_en": "Collaborative UI/UX design tool for prototyping"
   },
   {
     "id": "pencil-project",
@@ -355,9 +510,14 @@
     "description": "Strumento di prototipazione e wireframing open source",
     "downloadUrl": "https://pencil.evolus.vn/dl/V3.1.1.ga/Pencil-3.1.1.ga.exe",
     "filename": "Pencil-3.1.1.ga.exe",
-    "detectRegistry": ["Pencil"],
-    "detectPaths": ["C:/Program Files/Evolus Pencil/pencil.exe"],
-    "size": "~80MB"
+    "detectRegistry": [
+      "Pencil"
+    ],
+    "detectPaths": [
+      "C:/Program Files/Evolus Pencil/pencil.exe"
+    ],
+    "size": "~80MB",
+    "description_en": "Open source prototyping and wireframing tool"
   },
   {
     "id": "balsamiq",
@@ -365,9 +525,14 @@
     "description": "Strumento di wireframing rapido con stile sketch a mano",
     "downloadUrl": "https://balsamiq.com/wireframes/desktop/",
     "filename": "Balsamiq_Wireframes_Setup.exe",
-    "detectRegistry": ["Balsamiq Wireframes"],
-    "detectPaths": ["C:/Program Files/Balsamiq Wireframes/Balsamiq Wireframes.exe"],
-    "size": "~90MB"
+    "detectRegistry": [
+      "Balsamiq Wireframes"
+    ],
+    "detectPaths": [
+      "C:/Program Files/Balsamiq Wireframes/Balsamiq Wireframes.exe"
+    ],
+    "size": "~90MB",
+    "description_en": "Quick wireframing tool with hand-drawn sketch style"
   },
   {
     "id": "xmind",
@@ -375,9 +540,14 @@
     "description": "Software di mappe mentali professionale con template e temi",
     "downloadUrl": "https://xmind.com/download",
     "filename": "XMind-Setup.exe",
-    "detectRegistry": ["XMind"],
-    "detectPaths": ["C:/Users/Pd85/AppData/Local/Programs/Xmind/Xmind.exe"],
-    "size": "~120MB"
+    "detectRegistry": [
+      "XMind"
+    ],
+    "detectPaths": [
+      "C:/Users/Pd85/AppData/Local/Programs/Xmind/Xmind.exe"
+    ],
+    "size": "~120MB",
+    "description_en": "Professional mind mapping software with templates and themes"
   },
   {
     "id": "freemind",
@@ -385,9 +555,14 @@
     "description": "Software di mappe mentali open source e gratuito scritto in Java",
     "downloadUrl": "https://sourceforge.net/projects/freemind/files/freemind/1.0.1/FreeMind-Windows-Installer-1.0.1-max.exe/download",
     "filename": "FreeMind-Windows-Installer.exe",
-    "detectRegistry": ["FreeMind"],
-    "detectPaths": ["C:/Program Files/FreeMind/FreeMind.exe"],
-    "size": "~40MB"
+    "detectRegistry": [
+      "FreeMind"
+    ],
+    "detectPaths": [
+      "C:/Program Files/FreeMind/FreeMind.exe"
+    ],
+    "size": "~40MB",
+    "description_en": "Free and open source mind mapping software written in Java"
   },
   {
     "id": "mindmeister",
@@ -397,7 +572,8 @@
     "filename": "",
     "detectRegistry": [],
     "detectPaths": [],
-    "size": "Web App"
+    "size": "Web App",
+    "description_en": "Online collaborative mind mapping tool with sharing"
   },
   {
     "id": "ganttproject",
@@ -405,9 +581,14 @@
     "description": "Software di gestione progetti con diagrammi di Gantt open source",
     "downloadUrl": "https://github.com/bardsoftware/ganttproject/releases/download/ganttproject-3.3.3316/ganttproject-3.3.3316.exe",
     "filename": "ganttproject-3.3.3309.exe",
-    "detectRegistry": ["GanttProject"],
-    "detectPaths": ["C:/Program Files/GanttProject/ganttproject.exe"],
-    "size": "~80MB"
+    "detectRegistry": [
+      "GanttProject"
+    ],
+    "detectPaths": [
+      "C:/Program Files/GanttProject/ganttproject.exe"
+    ],
+    "size": "~80MB",
+    "description_en": "Project management software with open source Gantt charts"
   },
   {
     "id": "projectlibre",
@@ -415,9 +596,14 @@
     "description": "Software di gestione progetti open source alternativa a MS Project",
     "downloadUrl": "https://sourceforge.net/projects/projectlibre/files/ProjectLibre/1.9.3/projectlibre-1.9.3.exe/download",
     "filename": "projectlibre-1.9.3.exe",
-    "detectRegistry": ["ProjectLibre"],
-    "detectPaths": ["C:/Program Files/ProjectLibre/projectlibre.exe"],
-    "size": "~50MB"
+    "detectRegistry": [
+      "ProjectLibre"
+    ],
+    "detectPaths": [
+      "C:/Program Files/ProjectLibre/projectlibre.exe"
+    ],
+    "size": "~50MB",
+    "description_en": "Open source project management software, alternative to MS Project"
   },
   {
     "id": "toggl-track",
@@ -425,9 +611,14 @@
     "description": "App di time tracking semplice per freelancer e team",
     "downloadUrl": "https://toggl.com/track/toggl-desktop/",
     "filename": "TogglTrack-Setup.exe",
-    "detectRegistry": ["Toggl Track"],
-    "detectPaths": ["C:/Users/Pd85/AppData/Local/Programs/toggl-track/Toggl Track.exe"],
-    "size": "~80MB"
+    "detectRegistry": [
+      "Toggl Track"
+    ],
+    "detectPaths": [
+      "C:/Users/Pd85/AppData/Local/Programs/toggl-track/Toggl Track.exe"
+    ],
+    "size": "~80MB",
+    "description_en": "Simple time tracking app for freelancers and teams"
   },
   {
     "id": "clockify",
@@ -435,9 +626,14 @@
     "description": "App di time tracking gratuita per team con report dettagliati",
     "downloadUrl": "https://clockify.me/apps",
     "filename": "ClockifySetup.exe",
-    "detectRegistry": ["Clockify"],
-    "detectPaths": ["C:/Users/Pd85/AppData/Local/Programs/Clockify/Clockify.exe"],
-    "size": "~80MB"
+    "detectRegistry": [
+      "Clockify"
+    ],
+    "detectPaths": [
+      "C:/Users/Pd85/AppData/Local/Programs/Clockify/Clockify.exe"
+    ],
+    "size": "~80MB",
+    "description_en": "Free team time tracking app with detailed reports"
   },
   {
     "id": "rescuetime",
@@ -445,9 +641,14 @@
     "description": "Monitoraggio automatico del tempo e produttività al computer",
     "downloadUrl": "https://www.rescuetime.com/installers/RescueTimeInstaller.exe",
     "filename": "RescueTimeInstaller.exe",
-    "detectRegistry": ["RescueTime"],
-    "detectPaths": ["C:/Program Files (x86)/RescueTime/RescueTime.exe"],
-    "size": "~15MB"
+    "detectRegistry": [
+      "RescueTime"
+    ],
+    "detectPaths": [
+      "C:/Program Files (x86)/RescueTime/RescueTime.exe"
+    ],
+    "size": "~15MB",
+    "description_en": "Automatic time and productivity monitoring on computer"
   },
   {
     "id": "cold-turkey",
@@ -455,9 +656,14 @@
     "description": "Blocca siti web e app per migliorare concentrazione e produttività",
     "downloadUrl": "https://getcoldturkey.com/files/ColdTurkeyInstaller.exe",
     "filename": "ColdTurkeyInstaller.exe",
-    "detectRegistry": ["Cold Turkey Blocker"],
-    "detectPaths": ["C:/Program Files/Cold Turkey/Cold Turkey Blocker.exe"],
-    "size": "~15MB"
+    "detectRegistry": [
+      "Cold Turkey Blocker"
+    ],
+    "detectPaths": [
+      "C:/Program Files/Cold Turkey/Cold Turkey Blocker.exe"
+    ],
+    "size": "~15MB",
+    "description_en": "Blocks websites and apps to improve focus and productivity"
   },
   {
     "id": "focus-to-do",
@@ -465,9 +671,14 @@
     "description": "Timer Pomodoro combinato con gestore di attività e to-do list",
     "downloadUrl": "https://www.focustodo.cn/",
     "filename": "FocusTodo-Setup.exe",
-    "detectRegistry": ["Focus To-Do"],
-    "detectPaths": ["C:/Users/Pd85/AppData/Local/Programs/Focus To-Do/Focus To-Do.exe"],
-    "size": "~70MB"
+    "detectRegistry": [
+      "Focus To-Do"
+    ],
+    "detectPaths": [
+      "C:/Users/Pd85/AppData/Local/Programs/Focus To-Do/Focus To-Do.exe"
+    ],
+    "size": "~70MB",
+    "description_en": "Pomodoro timer combined with task and to-do manager"
   },
   {
     "id": "forest",
@@ -477,7 +688,8 @@
     "filename": "",
     "detectRegistry": [],
     "detectPaths": [],
-    "size": "Web App"
+    "size": "Web App",
+    "description_en": "Gamified productivity app that plants virtual trees during focus"
   },
   {
     "id": "anki",
@@ -485,9 +697,14 @@
     "description": "Software di flashcard con ripetizione spaziata per memorizzazione",
     "downloadUrl": "https://github.com/ankitects/anki/releases/download/25.09/anki-launcher-25.09-windows.exe",
     "filename": "anki-windows-qt6.exe",
-    "detectRegistry": ["Anki"],
-    "detectPaths": ["C:/Program Files/Anki/anki.exe"],
-    "size": "~130MB"
+    "detectRegistry": [
+      "Anki"
+    ],
+    "detectPaths": [
+      "C:/Program Files/Anki/anki.exe"
+    ],
+    "size": "~130MB",
+    "description_en": "Flashcard software with spaced repetition for memorization"
   },
   {
     "id": "quizlet",
@@ -497,6 +714,7 @@
     "filename": "",
     "detectRegistry": [],
     "detectPaths": [],
-    "size": "Web App"
+    "size": "Web App",
+    "description_en": "Learning platform with flashcards, quizzes and educational games"
   }
 ]
