@@ -62,8 +62,7 @@
             "x64"
           ]
         }
-      ],
-      "artifactName": "${productName}-${version}-${arch}-${target}.${ext}"
+      ]
     },
     "nsis": {
       "oneClick": false,
@@ -71,7 +70,8 @@
       "allowToChangeInstallationDirectory": true,
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true,
-      "shortcutName": "WgetApp"
+      "shortcutName": "WgetApp",
+      "artifactName": "${productName}-Setup-${version}-${arch}.${ext}"
     },
     "portable": {
       "artifactName": "${productName}-${version}-portable.${ext}"
