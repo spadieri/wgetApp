@@ -1,13 +1,13 @@
 # Wget App - Software Installer
 
-App desktop per Windows che permette di scaricare e installare software popolari con un click. Usa wget come motore di download e rileva automaticamente i software già installati.
+Windows desktop app to download and install popular software with a single click. Uses wget as the download engine and automatically detects already-installed software.
 
-## Requisiti
+## Requirements
 
 - [Node.js](https://nodejs.org/) 18+
 - Windows 10/11
 
-## Installazione
+## Installation
 
 ```bash
 git clone https://github.com/spadieri/wgetApp.git
@@ -15,25 +15,25 @@ cd wgetApp
 npm install
 ```
 
-## Avvio
+## Usage
 
 ```bash
 npm start
 ```
 
-## Funzionalità
+## Features
 
-- 8 categorie di software (Browser, Sviluppo, Multimedia, Utilità, Sicurezza, Comunicazione, Office, Sistema)
-- ~50 software per categoria
-- Rilevamento automatico software già installati (check verde)
-- Download con progress bar tramite wget integrato
-- Avvio automatico dell'installer dopo il download
-- Barra di ricerca per filtrare i software
-- Interfaccia dark mode moderna
+- 8 software categories (Browsers, Development, Multimedia, Utilities, Security, Communication, Office, System)
+- ~50 software per category
+- Automatic detection of already-installed software (green checkmark)
+- Download with progress bar via bundled wget
+- Automatic installer launch after download
+- Search bar to filter software
+- Modern dark mode UI
 
 ## Tech Stack
 
 - Electron
 - HTML/CSS/JS (vanilla)
 - wget (bundled)
-- Windows Registry per il rilevamento software
+- Windows Registry for software detection
