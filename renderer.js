@@ -21,6 +21,19 @@ let categories = [];
 const softwareData = {};
 const installedStatus = {};
 
+// ----- i18n -----
+let currentLang = localStorage.getItem('lang') || 'en';
+let i18n = {};
+
+async function loadI18n(lang) {
+  const response = await fetch(`data/i18n/${lang}.json`);
+  i18n = await response.json();
+}
+
+function t(key) {
+  return i18n[key] || key;
+}
+
 // ----- DOM References -----
 const sidebarNav = document.getElementById('sidebar-nav');
 const categoryTitle = document.getElementById('category-title');
@@ -32,6 +45,10 @@ const searchInput = document.getElementById('search');
 // ============================================================
 
 async function init() {
+  await loadI18n(currentLang);
+  document.documentElement.lang = currentLang;
+  updateToggleButtons();
+
   try {
     const response = await fetch('data/categories.json');
     categories = await response.json();
@@ -43,9 +60,10 @@ async function init() {
 
     setupProgressListener();
     setupSearchHandler();
+    setupLangToggle();
   } catch (err) {
     console.error('Failed to initialize app:', err);
-    showToast('Errore durante il caricamento delle categorie', 'error');
+    showToast(t('error.loadCategories'), 'error');
   }
 }
 
@@ -68,7 +86,7 @@ function renderSidebar(cats) {
 
     const labelSpan = document.createElement('span');
     labelSpan.className = 'tab-label';
-    labelSpan.textContent = cat.name;
+    labelSpan.textContent = currentLang === 'en' ? (cat.name_en || cat.name) : cat.name;
 
     const countSpan = document.createElement('span');
     countSpan.className = 'tab-count';
@@ -116,7 +134,7 @@ async function selectCategory(categoryId) {
   // Update header title
   const cat = categories.find(c => c.id === categoryId);
   if (cat) {
-    categoryTitle.textContent = cat.name;
+    categoryTitle.textContent = currentLang === 'en' ? (cat.name_en || cat.name) : cat.name;
   }
 
   // Clear search when changing categories
@@ -129,7 +147,7 @@ async function selectCategory(categoryId) {
       softwareData[categoryId] = await response.json();
     } catch (err) {
       console.error(`Failed to load category data for ${categoryId}:`, err);
-      showToast('Errore nel caricamento dei dati', 'error');
+      showToast(t('error.loadData'), 'error');
       softwareData[categoryId] = [];
     }
   }
@@ -168,8 +186,8 @@ function renderCards() {
     emptyDiv.className = 'empty-state';
     emptyDiv.innerHTML = `
       <div class="empty-state-icon">\u{1F50D}</div>
-      <div class="empty-state-title">Nessun risultato</div>
-      <div class="empty-state-description">Nessun software trovato${searchTerm ? ' per "' + escapeHtml(searchTerm) + '"' : ''}.</div>
+      <div class="empty-state-title">${t('empty.title')}</div>
+      <div class="empty-state-description">${searchTerm ? t('empty.search') + ' "' + escapeHtml(searchTerm) + '"' : t('empty.description')}.</div>
     `;
     cardsGrid.appendChild(emptyDiv);
     return;
@@ -205,7 +223,7 @@ function renderCards() {
     // Description
     const desc = document.createElement('p');
     desc.className = 'card-description';
-    desc.textContent = sw.description;
+    desc.textContent = currentLang === 'en' ? (sw.description_en || sw.description) : sw.description;
 
     // Footer
     const footer = document.createElement('div');
@@ -254,7 +272,7 @@ async function handleDownload(software, card) {
 
   // If already installed, show toast and return
   if (installedStatus[software.id] === true) {
-    showToast('Gi\u00E0 installato', 'warning');
+    showToast(t('toast.alreadyInstalled'), 'warning');
     return;
   }
 
@@ -271,13 +289,13 @@ async function handleDownload(software, card) {
   }
   if (progressText) {
     progressText.style.display = '';
-    progressText.textContent = 'Download...';
+    progressText.textContent = t('toast.downloading');
   }
 
   try {
     if (window.electronAPI && window.electronAPI.downloadSoftware) {
       await window.electronAPI.downloadSoftware(software);
-      showToast('Download completato, avvio installazione...', 'success');
+      showToast(t('toast.downloadComplete'), 'success');
 
       // Mark progress as complete
       if (progressBar) {
@@ -290,7 +308,7 @@ async function handleDownload(software, card) {
   } catch (err) {
     console.error('Download failed:', err);
     card.classList.add('error');
-    showToast(`Errore: ${err.message || 'Download fallito'}`, 'error');
+    showToast(`${t('toast.error')}${err.message || 'Download failed'}`, 'error');
 
     // Reset progress bar on error
     if (progressBar) {
@@ -368,14 +386,48 @@ function setupSearchHandler() {
       emptyDiv.className = 'empty-state';
       emptyDiv.innerHTML = `
         <div class="empty-state-icon">\u{1F50D}</div>
-        <div class="empty-state-title">Nessun risultato</div>
-        <div class="empty-state-description">Nessun software trovato per "${escapeHtml(searchTerm)}".</div>
+        <div class="empty-state-title">${t('empty.title')}</div>
+        <div class="empty-state-description">${t('empty.search')} "${escapeHtml(searchTerm)}".</div>
       `;
       cardsGrid.appendChild(emptyDiv);
     } else if (visibleCount > 0 && existingEmpty) {
       existingEmpty.remove();
     }
   });
+}
+
+// ============================================================
+// Language Toggle
+// ============================================================
+
+function setupLangToggle() {
+  document.getElementById('lang-en').addEventListener('click', () => switchLang('en'));
+  document.getElementById('lang-it').addEventListener('click', () => switchLang('it'));
+}
+
+async function switchLang(lang) {
+  if (lang === currentLang) return;
+  currentLang = lang;
+  localStorage.setItem('lang', lang);
+  await loadI18n(lang);
+  document.documentElement.lang = lang;
+  updateToggleButtons();
+  document.getElementById('search').placeholder = t('search.placeholder');
+  document.querySelector('.sidebar-title').textContent = t('sidebar.title');
+  renderSidebar(categories);
+  if (currentCategory) {
+    const cat = categories.find(c => c.id === currentCategory);
+    if (cat) {
+      document.getElementById('category-title').textContent =
+        currentLang === 'en' ? (cat.name_en || cat.name) : cat.name;
+    }
+    renderCards();
+  }
+}
+
+function updateToggleButtons() {
+  document.getElementById('lang-en').classList.toggle('active', currentLang === 'en');
+  document.getElementById('lang-it').classList.toggle('active', currentLang === 'it');
 }
 
 // ============================================================
