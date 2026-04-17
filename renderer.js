@@ -42,6 +42,7 @@ const cardsGrid = document.getElementById('cards-grid');
 const searchInput = document.getElementById('search');
 const updateBadge = document.getElementById('update-badge');
 const openDownloadsBtn = document.getElementById('open-downloads');
+const refreshInstalledBtn = document.getElementById('refresh-installed');
 
 // ============================================================
 // Initialization
@@ -53,8 +54,31 @@ async function init() {
   updateToggleButtons();
 
   try {
-    const response = await fetch('data/categories.json');
-    categories = await response.json();
+    // 1. Categories + all category JSONs + cached-installed in parallel.
+    //    None of these block on the slow registry+Appx scan.
+    const [catsRes, cachedInstalled] = await Promise.all([
+      fetch('data/categories.json').then(r => r.json()),
+      (window.electronAPI && window.electronAPI.getCachedInstalled
+        ? window.electronAPI.getCachedInstalled()
+        : Promise.resolve({}))
+    ]);
+    categories = catsRes;
+
+    if (cachedInstalled) Object.assign(installedStatus, cachedInstalled);
+
+    // Load all category JSONs in parallel so category switching is instant
+    // and so we can run one full checkInstalled against the complete catalog.
+    await Promise.all(categories.map(async (cat) => {
+      if (softwareData[cat.id]) return;
+      try {
+        const res = await fetch(`data/${cat.id}.json`);
+        softwareData[cat.id] = await res.json();
+      } catch (err) {
+        console.error(`Failed to load ${cat.id}.json:`, err);
+        softwareData[cat.id] = [];
+      }
+    }));
+
     renderSidebar(categories);
 
     if (categories.length > 0) {
@@ -66,6 +90,14 @@ async function init() {
     setupLangToggle();
     setupUpdateBadge();
     setupDownloadsButton();
+    setupRefreshButton();
+
+    // 2. Fire the authoritative installed-scan in the background.
+    //    If scan is already cached fresh from app-ready kickoff, this is instant.
+    //    Otherwise it takes ~1-3s, badges update in-place when ready (no full re-render).
+    refreshInstalledStatusForAll().then(() => {
+      if (currentCategory) patchInstalledBadgesInPlace();
+    });
   } catch (err) {
     console.error('Failed to initialize app:', err);
     showToast(t('error.loadCategories'), 'error');
@@ -145,7 +177,7 @@ async function selectCategory(categoryId) {
   // Clear search when changing categories
   searchInput.value = '';
 
-  // Load category data if not cached
+  // Category JSONs are pre-loaded by init(); lazy-load only if somehow missing.
   if (!softwareData[categoryId]) {
     try {
       const response = await fetch(`data/${categoryId}.json`);
@@ -157,18 +189,8 @@ async function selectCategory(categoryId) {
     }
   }
 
-  // Check installed status via electronAPI
-  try {
-    if (window.electronAPI && window.electronAPI.checkInstalled) {
-      const results = await window.electronAPI.checkInstalled(softwareData[categoryId]);
-      if (results && typeof results === 'object') {
-        Object.assign(installedStatus, results);
-      }
-    }
-  } catch (err) {
-    console.error('Failed to check installed status:', err);
-  }
-
+  // installedStatus is populated from cache at init() and refreshed in the
+  // background by refreshInstalledStatusForAll — no per-category scan here.
   renderCards();
 }
 
@@ -528,6 +550,82 @@ function setupDownloadsButton() {
   });
 }
 
+function setupRefreshButton() {
+  if (!refreshInstalledBtn) return;
+  refreshInstalledBtn.addEventListener('click', async () => {
+    if (refreshInstalledBtn.classList.contains('spinning')) return;
+    const api = window.electronAPI;
+    if (!api || !api.refreshInstalled) return;
+
+    refreshInstalledBtn.classList.add('spinning');
+    refreshInstalledBtn.disabled = true;
+    showToast(t('toast.refreshing'), 'info');
+
+    try {
+      await api.refreshInstalled();
+      await refreshInstalledStatusForAllFresh();
+      patchInstalledBadgesInPlace();
+      showToast(t('toast.refreshed'), 'success');
+    } catch (err) {
+      console.error('Refresh failed:', err);
+      showToast(`${t('toast.error')}${err.message || 'refresh failed'}`, 'error');
+    } finally {
+      refreshInstalledBtn.classList.remove('spinning');
+      refreshInstalledBtn.disabled = false;
+    }
+  });
+}
+
+// Update only the installed-badge on existing cards without rebuilding the
+// whole grid. Avoids the visual "flash" of renderCards() clearing + re-adding
+// every card when only a few badges actually changed.
+function patchInstalledBadgesInPlace() {
+  const cards = cardsGrid.querySelectorAll('.card');
+  cards.forEach(card => {
+    const id = card.dataset.id;
+    const nowInstalled = installedStatus[id] === true;
+    const wasInstalled = card.classList.contains('installed');
+    if (nowInstalled === wasInstalled) return;
+
+    card.classList.toggle('installed', nowInstalled);
+    const existingBadge = card.querySelector('.installed-badge');
+    if (nowInstalled && !existingBadge) {
+      const badge = document.createElement('span');
+      badge.className = 'installed-badge';
+      const header = card.querySelector('.card-header');
+      if (header) {
+        const chip = header.querySelector('.category-chip');
+        if (chip) header.insertBefore(badge, chip);
+        else header.appendChild(badge);
+      }
+    } else if (!nowInstalled && existingBadge) {
+      existingBadge.remove();
+    }
+  });
+}
+
+async function refreshInstalledStatusForAllFresh() {
+  const all = [];
+  for (const list of Object.values(softwareData)) {
+    if (Array.isArray(list)) all.push(...list);
+  }
+  if (!all.length) return;
+  try {
+    if (window.electronAPI && window.electronAPI.checkInstalled) {
+      const results = await window.electronAPI.checkInstalled(all);
+      if (results) {
+        // Clear keys that are no longer installed (user uninstalled something)
+        for (const key of Object.keys(installedStatus)) {
+          if (results[key] === false) delete installedStatus[key];
+        }
+        Object.assign(installedStatus, results);
+      }
+    }
+  } catch (err) {
+    console.error('Failed fresh installed status scan:', err);
+  }
+}
+
 // ============================================================
 // Language Toggle
 // ============================================================
@@ -559,6 +657,9 @@ async function switchLang(lang) {
   if (openDownloadsBtn) {
     openDownloadsBtn.title = t('tooltip.openDownloads');
   }
+  if (refreshInstalledBtn) {
+    refreshInstalledBtn.title = t('tooltip.refreshInstalled');
+  }
 }
 
 function updateToggleButtons() {
@@ -571,6 +672,9 @@ function updateToggleButtons() {
 // ============================================================
 
 function showToast(message, type = 'info') {
+  // Only show the most recent toast — dismiss any existing ones
+  document.querySelectorAll('.toast').forEach(t => t.remove());
+
   const toast = document.createElement('div');
   toast.className = `toast toast-${type}`;
   toast.textContent = message;

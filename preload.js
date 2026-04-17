@@ -3,6 +3,8 @@ const { contextBridge, ipcRenderer } = require('electron');
 contextBridge.exposeInMainWorld('electronAPI', {
   downloadSoftware: (software) => ipcRenderer.invoke('download-software', software),
   checkInstalled: (softwareList) => ipcRenderer.invoke('check-installed', softwareList),
+  getCachedInstalled: () => ipcRenderer.invoke('get-cached-installed'),
+  refreshInstalled: () => ipcRenderer.invoke('refresh-installed'),
   onDownloadProgress: (callback) => ipcRenderer.on('download-progress', (_event, data) => callback(data)),
   getDownloadsPath: () => ipcRenderer.invoke('get-downloads-path'),
   openDownloadsFolder: () => ipcRenderer.invoke('open-downloads-folder'),

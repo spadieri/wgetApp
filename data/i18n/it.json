@@ -14,6 +14,9 @@
   "update.downloading": "Scaricamento {percent}%",
   "update.ready": "Riavvia e installa v{version}",
   "tooltip.openDownloads": "Apri cartella download",
+  "tooltip.refreshInstalled": "Aggiorna stato installati",
+  "toast.refreshing": "Verifica software installati...",
+  "toast.refreshed": "Stato installati aggiornato",
   "card.projectLink": "Apri pagina progetto",
   "card.projectLabel": "Link al sito"
 }

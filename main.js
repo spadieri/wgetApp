@@ -36,6 +36,9 @@ function createWindow() {
 
 app.whenReady().then(() => {
   createWindow();
+  // Kick off registry + Appx scan in parallel with window load
+  // so by the time the renderer asks, it's often already ready.
+  startInstalledScan();
   if (app.isPackaged) {
     setTimeout(checkForUpdates, 3000);
   }
@@ -230,22 +233,75 @@ function getAppxInstalledNames() {
   return appxNamesCache;
 }
 
+// In-flight scan: started at app-ready, so by the time the renderer asks,
+// it's often already done and check-installed returns instantly.
+let installedNamesPromise = null;
+function startInstalledScan() {
+  if (installedNamesPromise) return installedNamesPromise;
+  installedNamesPromise = new Promise((resolve) => {
+    setImmediate(() => {
+      try {
+        const names = [
+          ...getRegistryInstalledNames(),
+          ...getAppxInstalledNames()
+        ];
+        resolve(names);
+      } catch (err) {
+        console.error('Installed scan failed:', err);
+        resolve([]);
+      }
+    });
+  });
+  return installedNamesPromise;
+}
+
+function installedCachePath() {
+  return path.join(app.getPath('userData'), 'installed-cache.json');
+}
+
+function writeInstalledCache(installedMap) {
+  try {
+    fs.writeFileSync(installedCachePath(), JSON.stringify({
+      timestamp: Date.now(),
+      installed: installedMap
+    }));
+  } catch (err) {
+    console.error('Failed to write installed cache:', err);
+  }
+}
+
+function readInstalledCache() {
+  try {
+    const raw = fs.readFileSync(installedCachePath(), 'utf8');
+    const parsed = JSON.parse(raw);
+    return parsed.installed || {};
+  } catch {
+    return {};
+  }
+}
+
+ipcMain.handle('get-cached-installed', () => readInstalledCache());
+
+// User-triggered refresh: invalidate the in-memory caches so the next
+// check-installed forces a fresh scan. Returns when the scan is complete.
+ipcMain.handle('refresh-installed', async () => {
+  installedNamesPromise = null;
+  appxNamesCache = null;
+  await startInstalledScan();
+  return true;
+});
+
 ipcMain.handle('check-installed', async (_event, softwareList) => {
   const installed = {};
 
   try {
-    const installedNames = [
-      ...getRegistryInstalledNames(),
-      ...getAppxInstalledNames()
-    ];
+    const installedNames = await startInstalledScan();
 
     for (const software of softwareList) {
-      // Check registry DisplayName or Appx package name match
       const regMatch = software.detectRegistry?.some(name =>
         installedNames.some(n => n.includes(name.toLowerCase()))
       ) || false;
 
-      // Check file path existence
       const pathMatch = software.detectPaths?.some(p => {
         const resolved = p.replace(/%USERNAME%/g, process.env.USERNAME || '');
         return fs.existsSync(resolved);
@@ -253,8 +309,16 @@ ipcMain.handle('check-installed', async (_event, softwareList) => {
 
       installed[software.id] = regMatch || pathMatch;
     }
+
+    // Persist so the next app start can render badges from the first frame.
+    // Only overwrite when the list is meaningfully large (i.e. the renderer
+    // sent the full catalog) — avoids small per-category calls corrupting cache.
+    if (softwareList.length >= 50) {
+      const existing = readInstalledCache();
+      writeInstalledCache({ ...existing, ...installed });
+    }
   } catch (err) {
-    console.error('Registry scan error:', err);
+    console.error('check-installed failed:', err);
   }
 
   return installed;
