@@ -155,7 +155,10 @@ def main():
             if args[i] == '--homepages':
                 include_homepages = True
             i += 1
-        items = check_catalog(args[i - 1], include_homepages)
+        if i >= len(args):
+            print('manca la directory data')
+            sys.exit(2)
+        items = check_catalog(args[i], include_homepages)
     else:
         with open(args[0], encoding='utf-8-sig') as f:
             items = json.load(f)

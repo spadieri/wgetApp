@@ -99,7 +99,8 @@
     "id": "glasswire",
     "name": "GlassWire",
     "description": "Monitor di rete e firewall con interfaccia visuale",
-    "downloadUrl": "https://download.glasswire.com/GlassWireSetup.exe",
+    "source": "browser",
+    "downloadUrl": "https://www.glasswire.com/download/",
     "homepage": "https://www.glasswire.com",
     "filename": "GlassWireSetup.exe",
     "detectRegistry": [
@@ -108,7 +109,7 @@
     "detectPaths": [
       "C:/Program Files (x86)/GlassWire/GlassWire.exe"
     ],
-    "size": "~50MB",
+    "size": "~120MB",
     "description_en": "Network monitor and firewall with visual interface"
   },
   {
@@ -407,7 +408,7 @@
     "id": "torbrowser",
     "name": "Tor Browser",
     "description": "Browser anonimo basato su Firefox con rete Tor",
-    "downloadUrl": "https://dist.torproject.org/torbrowser/15.0.19/tor-browser-windows-x86_64-portable-15.0.19.exe",
+    "downloadUrl": "https://dist.torproject.org/torbrowser/15.0.20/tor-browser-windows-x86_64-portable-15.0.20.exe",
     "homepage": "https://www.torproject.org",
     "filename": "tor-browser-install.exe",
     "detectRegistry": [

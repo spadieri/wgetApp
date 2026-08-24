@@ -722,6 +722,7 @@
     "id": "quizlet",
     "name": "Quizlet",
     "description": "Piattaforma di apprendimento con flashcard, quiz e giochi educativi",
+    "source": "browser",
     "downloadUrl": "https://quizlet.com/",
     "filename": "",
     "detectRegistry": [],
