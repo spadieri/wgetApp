@@ -229,14 +229,14 @@
     "description": "Gestore di e-book completo con conversione tra formati",
     "downloadUrl": "https://calibre-ebook.com/dist/win64",
     "homepage": "https://calibre-ebook.com",
-    "filename": "calibre-64bit.msi",
+    "filename": "calibre-64bit-9.13.0.msi",
     "detectRegistry": [
       "calibre 64bit"
     ],
     "detectPaths": [
       "C:/Program Files/Calibre2/calibre.exe"
     ],
-    "size": "~160MB",
+    "size": "~175MB",
     "description_en": "Complete e-book manager with format conversion"
   },
   {
@@ -481,23 +481,6 @@
     ],
     "size": "~100MB",
     "description_en": "Free graph and diagram editor with automatic layout"
-  },
-  {
-    "id": "drawio",
-    "name": "draw.io Desktop",
-    "description": "Editor di diagrammi e schemi gratuito e open source",
-    "source": "github",
-    "repo": "jgraph/drawio-desktop",
-    "assetPattern": "^draw\\.io-[\\d.]+-windows-installer\\.exe$",
-    "filename": "drawio-setup.exe",
-    "detectRegistry": [
-      "draw.io"
-    ],
-    "detectPaths": [
-      "C:/Program Files/draw.io/draw.io.exe"
-    ],
-    "size": "~100MB",
-    "description_en": "Free and open source diagram and schema editor"
   },
   {
     "id": "lucidchart",

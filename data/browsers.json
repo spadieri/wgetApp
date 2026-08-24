@@ -99,7 +99,7 @@
     "id": "tor-browser",
     "name": "Tor Browser",
     "description": "Browser per la navigazione anonima tramite rete Tor",
-    "downloadUrl": "https://dist.torproject.org/torbrowser/15.0.19/tor-browser-windows-x86_64-portable-15.0.19.exe",
+    "downloadUrl": "https://dist.torproject.org/torbrowser/15.0.20/tor-browser-windows-x86_64-portable-15.0.20.exe",
     "homepage": "https://www.torproject.org",
     "filename": "tor-browser-install.exe",
     "detectRegistry": [
@@ -247,54 +247,6 @@
     "size": "~70MB"
   },
   {
-    "id": "thunderbird",
-    "name": "Mozilla Thunderbird",
-    "description": "Client email open source di Mozilla con calendario integrato",
-    "downloadUrl": "https://download.mozilla.org/?product=thunderbird-latest-ssl&os=win64&lang=it",
-    "homepage": "https://www.thunderbird.net",
-    "filename": "Thunderbird_Setup.exe",
-    "detectRegistry": [
-      "Mozilla Thunderbird"
-    ],
-    "detectPaths": [
-      "C:/Program Files/Mozilla Thunderbird/thunderbird.exe"
-    ],
-    "size": "~55MB",
-    "description_en": "Mozilla's open source email client with integrated calendar"
-  },
-  {
-    "id": "mailspring",
-    "name": "Mailspring",
-    "description": "Client email moderno con interfaccia elegante",
-    "downloadUrl": "https://updates.getmailspring.com/download?platform=win32",
-    "homepage": "https://getmailspring.com",
-    "filename": "Mailspring_Setup.exe",
-    "detectRegistry": [
-      "Mailspring"
-    ],
-    "detectPaths": [
-      "C:/Users/%USERNAME%/AppData/Local/Mailspring/mailspring.exe"
-    ],
-    "size": "~90MB",
-    "description_en": "Modern email client with elegant interface"
-  },
-  {
-    "id": "em-client",
-    "name": "eM Client",
-    "description": "Client email completo con calendario, contatti e chat",
-    "downloadUrl": "https://www.emclient.com/dist/latest/setup.msi",
-    "homepage": "https://www.emclient.com",
-    "filename": "emclient_setup.msi",
-    "detectRegistry": [
-      "eM Client"
-    ],
-    "detectPaths": [
-      "C:/Program Files (x86)/eM Client/MailClient.exe"
-    ],
-    "size": "~75MB",
-    "description_en": "Full-featured email client with calendar, contacts and chat"
-  },
-  {
     "id": "filezilla",
     "name": "FileZilla",
     "description": "Client FTP/SFTP open source per trasferimento file",
@@ -330,7 +282,7 @@
     "id": "putty",
     "name": "PuTTY",
     "description": "Client SSH e Telnet leggero per connessioni remote",
-    "downloadUrl": "https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-0.84-installer.msi",
+    "downloadUrl": "https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-0.85-installer.msi",
     "homepage": "https://www.chiark.greenend.org.uk/~sgtatham/putty/",
     "filename": "putty-installer.msi",
     "detectRegistry": [
@@ -365,7 +317,7 @@
     "description_en": "Local file sharing over LAN without cloud",
     "source": "github",
     "repo": "localsend/localsend",
-    "assetPattern": "^LocalSend-[\\d.]+-windows-x86-64\\.exe$",
+    "assetPattern": "^LocalSend-[\\d.]+-windows-x86-64\\.zip$",
     "homepage": "https://localsend.app",
     "filename": "localsend-setup.exe",
     "detectRegistry": [
@@ -605,54 +557,6 @@
     "size": "~20MB"
   },
   {
-    "id": "wireshark",
-    "name": "Wireshark",
-    "description": "Analizzatore di protocolli di rete open source",
-    "downloadUrl": "https://2.na.dl.wireshark.org/win64/Wireshark-4.6.7-x64.exe",
-    "homepage": "https://www.wireshark.org",
-    "filename": "Wireshark-x64.exe",
-    "detectRegistry": [
-      "Wireshark"
-    ],
-    "detectPaths": [
-      "C:/Program Files/Wireshark/Wireshark.exe"
-    ],
-    "size": "~80MB",
-    "description_en": "Open source network protocol analyzer"
-  },
-  {
-    "id": "fiddler",
-    "name": "Fiddler Classic",
-    "description": "Proxy di debug HTTP per analisi traffico web",
-    "downloadUrl": "https://telerik-fiddler.s3.amazonaws.com/fiddler/FiddlerSetup.exe",
-    "homepage": "https://www.telerik.com/fiddler",
-    "filename": "FiddlerSetup.exe",
-    "detectRegistry": [
-      "Fiddler"
-    ],
-    "detectPaths": [
-      "C:/Users/%USERNAME%/AppData/Local/Programs/Fiddler/Fiddler.exe"
-    ],
-    "size": "~10MB",
-    "description_en": "HTTP debug proxy for web traffic analysis"
-  },
-  {
-    "id": "postman",
-    "name": "Postman",
-    "description": "Piattaforma per test e sviluppo di API",
-    "downloadUrl": "https://dl.pstmn.io/download/latest/win64",
-    "homepage": "https://www.postman.com",
-    "filename": "Postman-win64-Setup.exe",
-    "detectRegistry": [
-      "Postman"
-    ],
-    "detectPaths": [
-      "C:/Users/%USERNAME%/AppData/Local/Postman/Postman.exe"
-    ],
-    "size": "~150MB",
-    "description_en": "Platform for API testing and development"
-  },
-  {
     "id": "bruno",
     "name": "Bruno",
     "description": "Client API open source e offline, alternativa a Postman",
@@ -717,102 +621,6 @@
     "description_en": "Network traffic monitoring and control tool"
   },
   {
-    "id": "glasswire",
-    "name": "GlassWire",
-    "description": "Firewall e monitor di rete con interfaccia grafica",
-    "downloadUrl": "https://download.glasswire.com/GlassWireSetup.exe",
-    "homepage": "https://www.glasswire.com",
-    "filename": "GlassWireSetup.exe",
-    "detectRegistry": [
-      "GlassWire"
-    ],
-    "detectPaths": [
-      "C:/Program Files (x86)/GlassWire/GlassWire.exe"
-    ],
-    "size": "~50MB",
-    "description_en": "Network firewall and monitor with graphical interface"
-  },
-  {
-    "id": "netlimiter",
-    "name": "NetLimiter",
-    "description": "Strumento per controllo e limitazione banda di rete (versione di prova)",
-    "downloadUrl": "https://download.netlimiter.com/nl/netlimiter-5.3.26.0.exe",
-    "homepage": "https://www.netlimiter.com",
-    "filename": "netlimiter-5-setup.exe",
-    "detectRegistry": [
-      "NetLimiter 5"
-    ],
-    "detectPaths": [
-      "C:/Program Files/Locktime Software/NetLimiter/NLClientApp.exe"
-    ],
-    "size": "~12MB",
-    "description_en": "Network bandwidth control and limiting tool (trial)"
-  },
-  {
-    "id": "protonvpn",
-    "name": "ProtonVPN",
-    "description": "VPN gratuita e sicura di Proton con crittografia avanzata",
-    "downloadUrl": "https://protonvpn.com/download/ProtonVPN_v3.3.1.exe",
-    "homepage": "https://protonvpn.com",
-    "filename": "ProtonVPN_Setup.exe",
-    "detectRegistry": [
-      "Proton VPN"
-    ],
-    "detectPaths": [
-      "C:/Program Files/Proton/VPN/ProtonVPN.exe"
-    ],
-    "size": "~60MB",
-    "description_en": "Free and secure VPN by Proton with advanced encryption"
-  },
-  {
-    "id": "windscribe",
-    "name": "Windscribe",
-    "description": "VPN con piano gratuito generoso e blocco pubblicità",
-    "downloadUrl": "https://windscribe.com/install/desktop/windows",
-    "homepage": "https://windscribe.com",
-    "filename": "Windscribe_Setup.exe",
-    "detectRegistry": [
-      "Windscribe"
-    ],
-    "detectPaths": [
-      "C:/Program Files (x86)/Windscribe/Windscribe.exe"
-    ],
-    "size": "~25MB",
-    "description_en": "VPN with generous free plan and ad blocking"
-  },
-  {
-    "id": "openvpn",
-    "name": "OpenVPN",
-    "description": "Client VPN open source per connessioni sicure",
-    "downloadUrl": "https://swupdate.openvpn.org/community/releases/OpenVPN-2.6.12-I001-amd64.msi",
-    "homepage": "https://openvpn.net",
-    "filename": "OpenVPN-amd64.msi",
-    "detectRegistry": [
-      "OpenVPN"
-    ],
-    "detectPaths": [
-      "C:/Program Files/OpenVPN/bin/openvpn.exe"
-    ],
-    "size": "~8MB",
-    "description_en": "Open source VPN client for secure connections"
-  },
-  {
-    "id": "wireguard",
-    "name": "WireGuard",
-    "description": "VPN moderna, veloce e sicura con crittografia all'avanguardia",
-    "downloadUrl": "https://download.wireguard.com/windows-client/wireguard-installer.exe",
-    "homepage": "https://www.wireguard.com",
-    "filename": "wireguard-installer.exe",
-    "detectRegistry": [
-      "WireGuard"
-    ],
-    "detectPaths": [
-      "C:/Program Files/WireGuard/wireguard.exe"
-    ],
-    "size": "~8MB",
-    "description_en": "Modern, fast and secure VPN with cutting-edge encryption"
-  },
-  {
     "id": "tailscale",
     "name": "Tailscale",
     "description": "Mesh VPN basata su WireGuard per reti private semplici",
@@ -843,21 +651,5 @@
     ],
     "size": "~100MB",
     "description_en": "Cloudflare's free VPN for fast and secure browsing"
-  },
-  {
-    "id": "nordvpn",
-    "name": "NordVPN",
-    "description": "VPN premium con ampia rete di server globali (versione di prova)",
-    "downloadUrl": "https://downloads.nordcdn.com/apps/windows/NordVPN/latest/NordVPNSetup.exe",
-    "homepage": "https://nordvpn.com",
-    "filename": "NordVPNSetup.exe",
-    "detectRegistry": [
-      "NordVPN"
-    ],
-    "detectPaths": [
-      "C:/Program Files/NordVPN/NordVPN.exe"
-    ],
-    "size": "~45MB",
-    "description_en": "Premium VPN with extensive global server network (trial)"
   }
 ]

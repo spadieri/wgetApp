@@ -518,10 +518,8 @@
     "id": "obsidian",
     "name": "Obsidian",
     "description": "App per appunti basata su Markdown con collegamenti tra note",
-    "source": "github",
-    "repo": "obsidianmd/obsidian-releases",
-    "assetPattern": "^Obsidian-[\\d.]+\\.exe$",
-    "filename": "obsidian-setup.exe",
+    "downloadUrl": "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.13.7/Obsidian-1.13.7.exe",
+    "filename": "Obsidian-1.13.7.exe",
     "detectRegistry": [
       "Obsidian"
     ],
@@ -530,23 +528,6 @@
     ],
     "size": "~80MB",
     "description_en": "Markdown-based note-taking app with linked notes"
-  },
-  {
-    "id": "joplin",
-    "name": "Joplin",
-    "description": "App di note-taking open source con sincronizzazione e crittografia",
-    "source": "github",
-    "repo": "laurent22/joplin",
-    "assetPattern": "^Joplin-Setup-[\\d.]+\\.exe$",
-    "filename": "joplin-setup.exe",
-    "detectRegistry": [
-      "Joplin"
-    ],
-    "detectPaths": [
-      "C:/Users/Pd85/AppData/Local/Programs/Joplin/Joplin.exe"
-    ],
-    "size": "~180MB",
-    "description_en": "Open source note-taking app with sync and encryption"
   },
   {
     "id": "standard-notes",

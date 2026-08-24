@@ -548,7 +548,7 @@
     "name": "WampServer",
     "description": "Ambiente di sviluppo web Windows con Apache, MySQL e PHP",
     "downloadUrl": "https://sourceforge.net/projects/wampserver/files/WampServer%203/WampServer%203.0.0/wampserver3.4.0_x64.exe/download",
-    "homepage": "https://www.wampserver.com",
+    "homepage": "https://sourceforge.net/projects/wampserver/",
     "filename": "wampserver3_x64.exe",
     "detectRegistry": [
       "WampServer"

@@ -423,9 +423,9 @@
     "id": "tails",
     "name": "Tails",
     "description": "Sistema operativo live anonimo basato su Tor",
-    "downloadUrl": "https://download.tails.net/tails/stable/tails-amd64-7.10/tails-amd64-7.10.img",
+    "downloadUrl": "https://download.tails.net/tails/stable/tails-amd64-7.11/tails-amd64-7.11.img",
     "homepage": "https://tails.net",
-    "filename": "tails-amd64-7.10.img",
+    "filename": "tails-amd64-7.11.img",
     "detectRegistry": [
       "Tails"
     ],
@@ -512,22 +512,6 @@
     ],
     "size": "~10MB",
     "description_en": "Per-application network traffic control and limiting"
-  },
-  {
-    "id": "wireshark",
-    "name": "Wireshark",
-    "description": "Analizzatore di protocolli di rete professionale",
-    "downloadUrl": "https://2.na.dl.wireshark.org/win64/Wireshark-4.6.7-x64.exe",
-    "homepage": "https://www.wireshark.org",
-    "filename": "Wireshark-x64.exe",
-    "detectRegistry": [
-      "Wireshark"
-    ],
-    "detectPaths": [
-      "C:/Program Files/Wireshark/Wireshark.exe"
-    ],
-    "size": "~85MB",
-    "description_en": "Professional network protocol analyzer"
   },
   {
     "id": "nmap",

@@ -310,9 +310,11 @@
     "id": "wsus-offline",
     "name": "WSUS Offline Update",
     "description": "Scarica e installa aggiornamenti Windows offline senza connessione",
-    "downloadUrl": "https://download.wsusoffline.net/wsusoffline120.zip",
+    "source": "github",
+    "repo": "wsusoffline/wsusoffline",
+    "assetPattern": "^wsusoffline\\d+\\.zip$",
     "homepage": "https://download.wsusoffline.net",
-    "filename": "wsusoffline120.zip",
+    "filename": "wsusoffline.zip",
     "detectRegistry": [],
     "detectPaths": [
       "C:/wsusoffline/UpdateGenerator.exe"

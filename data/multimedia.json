@@ -3,9 +3,9 @@
     "id": "vlc",
     "name": "VLC media player",
     "description": "Lettore multimediale open source che riproduce qualsiasi formato",
-    "downloadUrl": "https://get.videolan.org/vlc/3.0.21/win64/vlc-3.0.21-win64.exe",
+    "downloadUrl": "https://get.videolan.org/vlc/3.0.23/win64/vlc-3.0.23-win64.exe",
     "homepage": "https://www.videolan.org/vlc/",
-    "filename": "vlc-3.0.21-win64.exe",
+    "filename": "vlc-3.0.23-win64.exe",
     "detectRegistry": [
       "VLC media player"
     ],
@@ -36,8 +36,8 @@
     "id": "potplayer",
     "name": "PotPlayer",
     "description": "Lettore multimediale avanzato con accelerazione hardware DXVA",
-    "downloadUrl": "https://t1.daumcdn.net/potplayer/PotPlayer/Version/Latest/PotPlayerSetup64.exe",
-    "homepage": "https://potplayer.daum.net",
+    "downloadUrl": "https://t1.kakaocdn.net/potplayer/PotPlayer/Version/Latest/PotPlayerSetup64.exe",
+    "homepage": "https://potplayer.tv/",
     "filename": "PotPlayerSetup64.exe",
     "detectRegistry": [
       "PotPlayer 64 bit"
@@ -194,9 +194,9 @@
     "id": "aimp",
     "name": "AIMP",
     "description": "Lettore musicale leggero con equalizzatore e convertitore integrato",
-    "downloadUrl": "https://www.aimp.ru/files/windows/builds/aimp_5.30.2530.exe",
+    "downloadUrl": "https://aimp.ru/files/desktop/builds/aimp_5.40.2725_w64.exe",
     "homepage": "https://www.aimp.ru",
-    "filename": "aimp_5.30.2530.exe",
+    "filename": "aimp_5.40.2725_w64.exe",
     "detectRegistry": [
       "AIMP"
     ],
@@ -570,9 +570,11 @@
     "id": "imagemagick",
     "name": "ImageMagick",
     "description": "Suite a riga di comando per creare, modificare e convertire immagini",
-    "downloadUrl": "https://download.imagemagick.org/archive/binaries/ImageMagick-7.1.2-29-Q16-HDRI-x64-dll.exe",
+    "source": "github",
+    "repo": "ImageMagick/ImageMagick",
+    "assetPattern": "^ImageMagick-7\\.\\d+\\.\\d+-\\d+-Q16-HDRI-x64-dll\\.exe$",
     "homepage": "https://imagemagick.org",
-    "filename": "ImageMagick-7.1.2-29-Q16-HDRI-x64-dll.exe",
+    "filename": "ImageMagick-setup.exe",
     "detectRegistry": [
       "ImageMagick"
     ],
@@ -649,40 +651,6 @@
     "description_en": "Open source and cross-platform RAW photo processor"
   },
   {
-    "id": "calibre",
-    "name": "Calibre",
-    "description": "Gestore di e-book completo con convertitore e lettore integrato",
-    "downloadUrl": "https://calibre-ebook.com/dist/win64",
-    "homepage": "https://calibre-ebook.com",
-    "filename": "calibre-64bit-7.23.0.msi",
-    "detectRegistry": [
-      "calibre 64bit"
-    ],
-    "detectPaths": [
-      "C:/Program Files/Calibre2/calibre.exe"
-    ],
-    "size": "~175MB",
-    "description_en": "Complete e-book manager with converter and reader"
-  },
-  {
-    "id": "sharex",
-    "name": "ShareX",
-    "description": "Strumento open source per cattura schermo, registrazione e condivisione",
-    "description_en": "Open source screen capture, recording and sharing tool",
-    "source": "github",
-    "repo": "ShareX/ShareX",
-    "assetPattern": "^ShareX-[\\d.]+-setup-x64\\.exe$",
-    "homepage": "https://getsharex.com",
-    "filename": "sharex-setup.exe",
-    "detectRegistry": [
-      "ShareX"
-    ],
-    "detectPaths": [
-      "C:/Program Files/ShareX/ShareX.exe"
-    ],
-    "size": "~15MB"
-  },
-  {
     "id": "losslesscut",
     "name": "LosslessCut",
     "description": "Taglio video e audio senza ricodifica, veloce e senza perdita di qualità",
@@ -713,5 +681,21 @@
       "C:/Program Files/ocenaudio/ocenaudio.exe"
     ],
     "size": "~40MB"
+  },
+  {
+    "id": "ytdlp",
+    "name": "yt-dlp",
+    "description": "Downloader di video da riga di comando, supporta centinaia di siti",
+    "description_en": "Command-line video downloader supporting hundreds of sites",
+    "source": "github",
+    "repo": "yt-dlp/yt-dlp",
+    "assetPattern": "^yt-dlp\\.exe$",
+    "homepage": "https://github.com/yt-dlp/yt-dlp",
+    "filename": "yt-dlp.exe",
+    "detectRegistry": [],
+    "detectPaths": [
+      "C:/Program Files/yt-dlp/yt-dlp.exe"
+    ],
+    "size": "~18MB"
   }
 ]

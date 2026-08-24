@@ -149,23 +149,6 @@
     "description_en": "Open source AI editor, alternative to Cursor"
   },
   {
-    "id": "zed",
-    "name": "Zed",
-    "description": "Editor di codice veloce con funzioni AI integrate",
-    "source": "github",
-    "repo": "zed-industries/zed",
-    "assetPattern": "^Zed-x86_64\\.exe$",
-    "filename": "zed-setup.exe",
-    "detectRegistry": [
-      "Zed"
-    ],
-    "detectPaths": [
-      "C:/Users/%USERNAME%/AppData/Local/Zed/Zed.exe"
-    ],
-    "size": "~160MB",
-    "description_en": "Fast code editor with built-in AI features"
-  },
-  {
     "id": "pinokio",
     "name": "Pinokio",
     "description": "Browser AI per installare ed eseguire app di intelligenza artificiale con un clic",

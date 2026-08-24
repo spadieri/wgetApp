@@ -199,9 +199,9 @@
     "description": "CLI open source per scaricare e avviare giochi da Epic Games Store",
     "description_en": "Open source CLI to download and launch Epic Games Store titles",
     "source": "github",
-    "repo": "legendary-gl/legendary",
-    "assetPattern": "^legendary\\.exe$",
-    "homepage": "https://github.com/legendary-gl/legendary",
+    "repo": "derrod/legendary",
+    "assetPattern": "^legendary_windows_x64\\.exe$",
+    "homepage": "https://github.com/derrod/legendary",
     "filename": "legendary.exe",
     "detectRegistry": [],
     "detectPaths": [
@@ -429,6 +429,40 @@
       "C:/xenia-canary/xenia_canary.exe"
     ],
     "size": "~30MB"
+  },
+  {
+    "id": "duckstation",
+    "name": "DuckStation",
+    "description": "Emulatore PS1 moderno, molto preciso e performante",
+    "description_en": "Modern, accurate and fast PS1 emulator",
+    "source": "github",
+    "repo": "stenzek/duckstation",
+    "assetPattern": "^duckstation-windows-x64-installer\\.exe$",
+    "homepage": "https://www.duckstation.org/",
+    "filename": "duckstation-setup.exe",
+    "detectRegistry": [
+      "DuckStation"
+    ],
+    "detectPaths": [
+      "C:/Program Files/DuckStation/duckstation.exe"
+    ],
+    "size": "~45MB"
+  },
+  {
+    "id": "cemu",
+    "name": "Cemu",
+    "description": "Emulatore per Wii e Wii U, versione portatile (estrarre lo zip)",
+    "description_en": "Wii and Wii U emulator, portable version (extract the zip)",
+    "source": "github",
+    "repo": "cemu-project/Cemu",
+    "assetPattern": "^cemu-[\\d.]+-windows-x64\\.zip$",
+    "homepage": "https://cemu.info/",
+    "filename": "cemu-windows-x64.zip",
+    "detectRegistry": [],
+    "detectPaths": [
+      "C:/Cemu/Cemu.exe"
+    ],
+    "size": "~26MB"
   },
   {
     "id": "logitech-g-hub",

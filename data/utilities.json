@@ -3,16 +3,16 @@
     "id": "7zip",
     "name": "7-Zip",
     "description": "Compressore e estrattore di archivi open source",
-    "downloadUrl": "https://www.7-zip.org/a/7z2408-x64.exe",
+    "downloadUrl": "https://www.7-zip.org/a/7z2602-x64.exe",
     "homepage": "https://www.7-zip.org",
-    "filename": "7z2408-x64.exe",
+    "filename": "7z2602-x64.exe",
     "detectRegistry": [
       "7-Zip"
     ],
     "detectPaths": [
       "C:/Program Files/7-Zip/7z.exe"
     ],
-    "size": "~1.5MB",
+    "size": "~1.6MB",
     "description_en": "Open source archive compressor and extractor"
   },
   {
@@ -85,16 +85,16 @@
     "id": "everything",
     "name": "Everything",
     "description": "Motore di ricerca file istantaneo per Windows",
-    "downloadUrl": "https://www.voidtools.com/Everything-1.4.1.1026.x64-Setup.exe",
+    "downloadUrl": "https://www.voidtools.com/Everything-1.4.1.1032.x64-Setup.exe",
     "homepage": "https://www.voidtools.com",
-    "filename": "Everything-1.4.1.1026.x64-Setup.exe",
+    "filename": "Everything-1.4.1.1032.x64-Setup.exe",
     "detectRegistry": [
       "Everything"
     ],
     "detectPaths": [
       "C:/Program Files/Everything/Everything.exe"
     ],
-    "size": "~1.7MB",
+    "size": "~2MB",
     "description_en": "Instant file search engine for Windows"
   },
   {
@@ -213,6 +213,20 @@
     ],
     "size": "~25MB",
     "description_en": "Powerful and customizable screenshot tool"
+  },
+  {
+    "id": "snipaste",
+    "name": "Snipaste",
+    "description": "Strumento di screenshot con pinning a schermo, versione portatile (estrarre lo zip)",
+    "description_en": "Screenshot tool with pin-to-screen, portable version (extract the zip)",
+    "downloadUrl": "https://dl.snipaste.com/win-x64",
+    "homepage": "https://www.snipaste.com/",
+    "filename": "snipaste-win-x64.zip",
+    "detectRegistry": [],
+    "detectPaths": [
+      "C:/Snipaste/snipaste.exe"
+    ],
+    "size": "~19MB"
   },
   {
     "id": "sharex",
@@ -576,7 +590,7 @@
     "name": "Virtual CloneDrive",
     "description": "Lettore virtuale di immagini disco gratuito",
     "downloadUrl": "https://www.elby.ch/download/SetupVCD.exe",
-    "homepage": "https://www.redfox.bz/virtual-clonedrive.html",
+    "homepage": "https://virtualclonedrive.com",
     "filename": "SetupVCD.exe",
     "detectRegistry": [
       "Virtual CloneDrive"
@@ -816,24 +830,6 @@
       "C:/Users/%USERNAME%/AppData/Local/Programs/UniGetUI/UniGetUI.exe"
     ],
     "size": "~85MB"
-  },
-  {
-    "id": "bulk-crap-uninstaller",
-    "name": "Bulk Crap Uninstaller",
-    "description": "Disinstallatore open source per rimozione multipla di programmi",
-    "description_en": "Open source uninstaller for bulk program removal",
-    "source": "github",
-    "repo": "BCUninstaller/Bulk-Crap-Uninstaller",
-    "assetPattern": "^BCUninstaller_[\\d.]+_setup\\.exe$",
-    "homepage": "https://www.bcuninstaller.com",
-    "filename": "bcuninstaller-setup.exe",
-    "detectRegistry": [
-      "Bulk Crap Uninstaller"
-    ],
-    "detectPaths": [
-      "C:/Program Files/BCUninstaller/BCUninstaller.exe"
-    ],
-    "size": "~90MB"
   },
   {
     "id": "wiztree",
